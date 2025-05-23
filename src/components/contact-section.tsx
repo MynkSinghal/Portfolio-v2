@@ -1,6 +1,8 @@
+import { parseText } from '@/lib/text-parser';
+
 export default function ContactSection() {
   return (
-    <section className="py-16 md:py-20 lg:py-28">
+    <section className="py-16 md:py-20 lg:py-28" data-section="contact">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <div className="max-w-md mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-2">🎙️ Let's Vibe</h2>
@@ -51,7 +53,7 @@ export default function ContactSection() {
           </form>
           
           <p className="text-sm text-muted-foreground mt-4">
-            *Usually respond within 24 hours (unless I'm deep in a coding session)*
+            {parseText("<italic>Usually respond within 24 hours (unless I'm deep in a coding session)</italic>")}
           </p>
         </div>
       </div>

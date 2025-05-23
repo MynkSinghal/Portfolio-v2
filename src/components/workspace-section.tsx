@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { parseText } from '@/lib/text-parser';
 
 export default function WorkspaceSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,28 +12,28 @@ export default function WorkspaceSection() {
       id: 1,
       url: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=600&h=400&fit=crop&crop=center",
       alt: "Modern workspace with laptop and coffee",
-      caption: "☕ **Morning vibes** — Coffee #3, idea #47, still in pajamas",
+      caption: "☕ <bold>Morning vibes</bold> — Coffee #3, idea #47, still in pajamas",
       chaosLevel: "Organized Chaos"
     },
     {
       id: 2,
       url: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=600&h=400&fit=crop&crop=center",
       alt: "Cluttered desk with multiple monitors",
-      caption: "🖥️ **Peak productivity** — When 3 monitors still isn't enough",
+      caption: "🖥️ <bold>Peak productivity</bold> — When 3 monitors still isn't enough",
       chaosLevel: "Beautiful Mess"
     },
     {
       id: 3,
       url: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&h=400&fit=crop&crop=center",
       alt: "Creative workspace with sketches and tools",
-      caption: "✏️ **Analog thinking** — Sometimes the best ideas start on paper",
+      caption: "✏️ <bold>Analog thinking</bold> — Sometimes the best ideas start on paper",
       chaosLevel: "Creative Storm"
     },
     {
       id: 4,
       url: "https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=600&h=400&fit=crop&crop=center",
       alt: "Late night coding session",
-      caption: "🌙 **3 AM energy** — When the bugs become features",
+      caption: "🌙 <bold>3 AM energy</bold> — When the bugs become features",
       chaosLevel: "Midnight Magic"
     }
   ];
@@ -74,7 +75,7 @@ export default function WorkspaceSection() {
           </h2>
 
           <p className="text-lg mb-12 text-foreground/80">
-            Where the magic happens — **coffee stains**, **late nights**, and **beautiful chaos**. Every great idea starts somewhere, mine usually start in this organized mess.
+            Where the magic happens — {parseText("<bold>coffee stains</bold>")}, {parseText("<bold>late nights</bold>")}, and {parseText("<bold>beautiful chaos</bold>")}. Every great idea starts somewhere, mine usually start in this organized mess.
           </p>
         </div>
 
@@ -108,7 +109,7 @@ export default function WorkspaceSection() {
                 {/* Caption */}
                 <div className="p-4">
                   <p className="text-sm text-foreground/80 group-hover:text-foreground transition-colors duration-200">
-                    {image.caption}
+                    {parseText(image.caption)}
                   </p>
                 </div>
               </div>
@@ -126,7 +127,7 @@ export default function WorkspaceSection() {
           transitionDelay: `${workspaceImages.length * 200 + 300}ms`
         }}>
           <p className="text-base md:text-lg leading-relaxed text-foreground/80 text-center">
-            *Current status: Building something new, probably with too much coffee and not enough sleep* ☕
+            {parseText("<italic>Current status: Building something new, probably with too much coffee and not enough sleep</italic>")} ☕
           </p>
         </div>
       </div>

@@ -115,4 +115,8 @@
   .accent-glow {
     box-shadow: 0 0 20px hsla(var(--accent), 0.3);
   }
+  
+  .font-libre-caslon {
+    font-family: var(--font-libre-caslon), serif;
+  }
 }
