@@ -27,17 +27,20 @@ export default function QuickNavSection() {
                 Skip the story, show me the goods?
               </p>
             </div>
-            <button 
-              onClick={() => {
-                const projectsSection = document.querySelector('[data-section="projects"]');
-                if (projectsSection) {
-                  projectsSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-              className="text-xs text-foreground/60 hover:text-foreground/90 underline underline-offset-2 transition-colors"
-            >
-              Skip to Projects
-            </button>
+            <div className="flex items-center gap-3">
+              
+              <button 
+                onClick={() => {
+                  const projectsSection = document.querySelector('[data-section="projects"]');
+                  if (projectsSection) {
+                    projectsSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="text-xs text-foreground/60 hover:text-foreground/90 underline underline-offset-2 transition-colors"
+              >
+                Skip to Projects
+              </button>
+            </div>
           </div>
         </div>
       </div>

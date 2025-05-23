@@ -1417,6 +1417,11 @@ video {
   background-color: rgb(242 242 242 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-\[\#ebebeb\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 235 235 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-foreground:hover {
   color: hsl(var(--foreground));
 }

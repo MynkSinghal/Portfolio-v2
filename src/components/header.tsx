@@ -13,6 +13,15 @@ export default function Header() {
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
             <span>Currently building</span>
           </div>
+          
+          <a 
+            href="/resume.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-sm bg-black text-white px-3 py-1.5 rounded-md hover:bg-black/90 transition-colors"
+          >
+            📄 Resume
+          </a>
         </div>
       </div>
     </header>
