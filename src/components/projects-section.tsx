@@ -8,6 +8,7 @@ export default function ProjectsSection() {
   const [isScrolling, setIsScrolling] = useState(false);
   const [itemsPerView, setItemsPerView] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  const [isVisible, setIsVisible] = useState(false);
 
   const projects = [
     {
@@ -53,6 +54,29 @@ export default function ProjectsSection() {
       icon: "triangle"
     }
   ];
+
+  // Intersection Observer for fade-in animation
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    const currentRef = scrollRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
 
   // Calculate items per view and total pages based on screen size
   useEffect(() => {
@@ -170,13 +194,20 @@ export default function ProjectsSection() {
   return (
     <section className="py-12 md:py-16 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 tracking-tight uppercase">
-          Things I&apos;ve Built
-        </h2>
+        {/* Animated Header */}
+        <div className={`transition-all duration-1000 ease-out ${
+          isVisible 
+            ? 'opacity-100 translate-y-0' 
+            : 'opacity-0 translate-y-8'
+        }`}>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 tracking-tight uppercase">
+            Things I&apos;ve Built
+          </h2>
 
-        <p className="text-lg mb-12 text-foreground/80">
-          A few of my best experiments — shipped for energy, lessons, and fun.
-        </p>
+          <p className="text-lg mb-12 text-foreground/80">
+            A few of my best experiments — shipped for energy, lessons, and fun.
+          </p>
+        </div>
 
         {/* Carousel Container */}
         <div className="relative">
@@ -189,32 +220,45 @@ export default function ProjectsSection() {
               WebkitOverflowScrolling: 'touch'
             }}
           >
-            {projects.map((project) => (
+            {projects.map((project, index) => (
               <div 
                 key={project.id} 
-                className="flex-none w-[80%] md:w-[45%] lg:w-[30%] snap-start"
+                className={`flex-none w-[80%] md:w-[45%] lg:w-[30%] snap-start transition-all duration-700 ease-out ${
+                  isVisible 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-12'
+                }`}
+                style={{
+                  transitionDelay: `${index * 150}ms`
+                }}
               >
-                <div className="bg-[#f2f2f2] p-6 rounded-lg hover:shadow-sm transition-shadow duration-300 h-full">
-                  <div className="h-48 w-full flex items-center justify-center mb-8 bg-[#f5f5f5] rounded-md">
+                <div className="bg-[#f2f2f2] p-6 rounded-lg hover:shadow-lg hover:shadow-black/5 hover:-translate-y-1 transition-all duration-300 ease-out h-full group">
+                  <div className="h-48 w-full flex items-center justify-center mb-8 bg-[#f5f5f5] rounded-md overflow-hidden">
                     {project.icon === "square" && (
-                      <div className="w-24 h-24 bg-[#FFFFF0] rounded-md shadow-sm"></div>
+                      <div className="w-24 h-24 bg-[#FFFFF0] rounded-md shadow-sm group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 ease-out"></div>
                     )}
                     {project.icon === "circle" && (
-                      <div className="w-24 h-24 bg-[#FFFFF0] rounded-full shadow-sm"></div>
+                      <div className="w-24 h-24 bg-[#FFFFF0] rounded-full shadow-sm group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 ease-out"></div>
                     )}
                     {project.icon === "triangle" && (
-                      <div className="w-0 h-0 border-l-[45px] border-r-[45px] border-b-[80px] border-[#FFFFF0] shadow-sm"></div>
+                      <div className="w-0 h-0 border-l-[45px] border-r-[45px] border-b-[80px] border-[#FFFFF0] shadow-sm group-hover:scale-110 group-hover:-rotate-6 transition-all duration-300 ease-out"></div>
                     )}
                   </div>
 
-                  <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+                  <h3 className="text-xl font-semibold mb-3 group-hover:text-foreground/90 transition-colors duration-200">{project.title}</h3>
 
-                  <p className="text-sm text-foreground/70 mb-4">{project.description}</p>
+                  <p className="text-sm text-foreground/70 mb-4 group-hover:text-foreground/80 transition-colors duration-200">{project.description}</p>
 
                   <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, index) => (
-                      <span key={index} className="text-xs text-foreground/50">
-                        {index !== 0 && "• "}{tag}
+                    {project.tags.map((tag, tagIndex) => (
+                      <span 
+                        key={tagIndex} 
+                        className="text-xs text-foreground/50 group-hover:text-foreground/60 transition-all duration-200"
+                        style={{
+                          transitionDelay: `${tagIndex * 50}ms`
+                        }}
+                      >
+                        {tagIndex !== 0 && "• "}{tag}
                       </span>
                     ))}
                   </div>
@@ -223,17 +267,24 @@ export default function ProjectsSection() {
             ))}
           </div>
 
-          {/* Dot Indicators - Only show if there are multiple pages */}
+          {/* Animated Dot Indicators */}
           {totalPages > 1 && (
-            <div className="flex justify-center mt-8 gap-2">
+            <div className={`flex justify-center mt-8 gap-2 transition-all duration-1000 ease-out ${
+              isVisible 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-4'
+            }`}
+            style={{
+              transitionDelay: `${projects.length * 150 + 200}ms`
+            }}>
               {Array.from({ length: totalPages }, (_, index) => (
                 <button
                   key={index}
                   onClick={() => scrollToIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  className={`h-2 rounded-full transition-all duration-500 ease-out hover:scale-125 ${
                     index === currentIndex 
-                      ? 'bg-foreground/80 w-6' 
-                      : 'bg-foreground/20 hover:bg-foreground/40'
+                      ? 'bg-foreground/80 w-6 shadow-sm' 
+                      : 'bg-foreground/20 hover:bg-foreground/40 w-2'
                   }`}
                   aria-label={`Go to page ${index + 1}`}
                 />
