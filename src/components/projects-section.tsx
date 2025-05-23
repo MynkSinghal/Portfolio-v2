@@ -6,6 +6,8 @@ export default function ProjectsSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [itemsPerView, setItemsPerView] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
 
   const projects = [
     {
@@ -52,17 +54,63 @@ export default function ProjectsSection() {
     }
   ];
 
+  // Calculate items per view and total pages based on screen size
+  useEffect(() => {
+    const calculateLayout = () => {
+      if (!scrollRef.current) return;
+      
+      const container = scrollRef.current;
+      const containerWidth = container.offsetWidth;
+      
+      // Calculate how many items are visible based on responsive widths
+      let itemsVisible: number;
+      if (containerWidth >= 1024) { // lg breakpoint - 30% width items
+        itemsVisible = Math.floor(1 / 0.3); // Approximately 3 items visible
+      } else if (containerWidth >= 768) { // md breakpoint - 45% width items  
+        itemsVisible = Math.floor(1 / 0.45); // Approximately 2 items visible
+      } else { // mobile - 80% width items
+        itemsVisible = Math.floor(1 / 0.8); // Approximately 1 item visible
+      }
+      
+      // Calculate total scrollable pages
+      const pages = Math.max(1, projects.length - itemsVisible + 1);
+      
+      setItemsPerView(itemsVisible);
+      setTotalPages(pages);
+    };
+
+    calculateLayout();
+    
+    const handleResize = () => {
+      calculateLayout();
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [projects.length]);
+
   useEffect(() => {
     const handleScroll = () => {
       if (!scrollRef.current || isScrolling) return;
       
       const container = scrollRef.current;
       const scrollLeft = container.scrollLeft;
-      const itemWidth = container.offsetWidth * 0.8; // 80% width per item
+      const containerWidth = container.offsetWidth;
+      
+      // Calculate item width based on screen size (including gap)
+      let itemWidth: number;
+      if (containerWidth >= 1024) {
+        itemWidth = containerWidth * 0.3 + 24; // 30% + gap
+      } else if (containerWidth >= 768) {
+        itemWidth = containerWidth * 0.45 + 24; // 45% + gap
+      } else {
+        itemWidth = containerWidth * 0.8 + 24; // 80% + gap
+      }
+      
       const newIndex = Math.round(scrollLeft / itemWidth);
       
       if (newIndex !== currentIndex) {
-        setCurrentIndex(Math.min(Math.max(newIndex, 0), projects.length - 1));
+        setCurrentIndex(Math.min(Math.max(newIndex, 0), totalPages - 1));
       }
     };
 
@@ -71,18 +119,29 @@ export default function ProjectsSection() {
       scrollContainer.addEventListener('scroll', handleScroll, { passive: true });
       return () => scrollContainer.removeEventListener('scroll', handleScroll);
     }
-  }, [currentIndex, isScrolling]);
+  }, [currentIndex, isScrolling, totalPages]);
 
   const scrollToIndex = (index: number) => {
     if (!scrollRef.current) return;
     
     setIsScrolling(true);
     const container = scrollRef.current;
-    const itemWidth = container.offsetWidth * 0.8;
-    const scrollLeft = index * itemWidth;
+    const containerWidth = container.offsetWidth;
+    
+    // Calculate item width based on screen size (including gap)
+    let itemWidth: number;
+    if (containerWidth >= 1024) {
+      itemWidth = containerWidth * 0.3 + 24; // 30% + gap
+    } else if (containerWidth >= 768) {
+      itemWidth = containerWidth * 0.45 + 24; // 45% + gap
+    } else {
+      itemWidth = containerWidth * 0.8 + 24; // 80% + gap
+    }
+    
+    const scrollDistance = index * itemWidth;
     
     container.scrollTo({
-      left: scrollLeft,
+      left: scrollDistance,
       behavior: 'smooth'
     });
     
@@ -148,21 +207,23 @@ export default function ProjectsSection() {
             ))}
           </div>
 
-          {/* Dot Indicators */}
-          <div className="flex justify-center mt-8 gap-2">
-            {projects.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => scrollToIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentIndex 
-                    ? 'bg-foreground/80 w-6' 
-                    : 'bg-foreground/20 hover:bg-foreground/40'
-                }`}
-                aria-label={`Go to project ${index + 1}`}
-              />
-            ))}
-          </div>
+          {/* Dot Indicators - Only show if there are multiple pages */}
+          {totalPages > 1 && (
+            <div className="flex justify-center mt-8 gap-2">
+              {Array.from({ length: totalPages }, (_, index) => (
+                <button
+                  key={index}
+                  onClick={() => scrollToIndex(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    index === currentIndex 
+                      ? 'bg-foreground/80 w-6' 
+                      : 'bg-foreground/20 hover:bg-foreground/40'
+                  }`}
+                  aria-label={`Go to page ${index + 1}`}
+                />
+              ))}
+            </div>
+          )}
         </div>
       </div>
 

@@ -740,6 +740,9 @@ video {
   white-space: nowrap;
   border-width: 0;
 }
+.visible {
+  visibility: visible;
+}
 .fixed {
   position: fixed;
 }
@@ -842,6 +845,9 @@ video {
 }
 .resize-none {
   resize: none;
+}
+.resize {
+  resize: both;
 }
 .snap-x {
   scroll-snap-type: x var(--tw-scroll-snap-strictness);
