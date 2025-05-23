@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
+import QuickNavSection from "@/components/quick-nav-section";
 import JourneySection from "@/components/journey-section";
 import WorkspaceSection from "@/components/workspace-section";
 import ProjectsSection from "@/components/projects-section";
@@ -13,6 +14,7 @@ export default function Home() {
 
       <main className="flex-grow">
         <HeroSection />
+        <QuickNavSection />
         <JourneySection />
         <WorkspaceSection />
         <ProjectsSection />

@@ -192,7 +192,7 @@ export default function ProjectsSection() {
   };
 
   return (
-    <section className="py-12 md:py-16 lg:py-24">
+    <section className="py-12 md:py-16 lg:py-24" data-section="projects">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         {/* Animated Header */}
         <div className={`transition-all duration-1000 ease-out ${
@@ -204,45 +204,9 @@ export default function ProjectsSection() {
             Things I&apos;ve Built
           </h2>
 
-          <p className="text-lg mb-8 text-foreground/80">
+          <p className="text-lg mb-12 text-foreground/80">
             A few of my best experiments — shipped for energy, lessons, and fun.
           </p>
-
-          {/* Quick Navigation for Impatient Visitors */}
-          <div className="bg-[#f8f8f8] border border-[#ebebeb] rounded-lg p-4 mb-8">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="text-lg">⚡</div>
-                <div>
-                  <p className="text-sm font-medium text-foreground/90">
-                    Skip the story, show me the goods?
-                  </p>
-                  <p className="text-xs text-foreground/60">
-                    Quick portfolio overview for the impatient
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-2">
-                <button 
-                  onClick={() => scrollToIndex(0)}
-                  className="text-xs bg-black text-white px-3 py-1.5 rounded-md hover:bg-black/90 transition-colors"
-                >
-                  Start Here
-                </button>
-                <button 
-                  onClick={() => {
-                    const contactSection = document.querySelector('[data-section="contact"]');
-                    if (contactSection) {
-                      contactSection.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }}
-                  className="text-xs border border-[#ebebeb] px-3 py-1.5 rounded-md hover:bg-[#f2f2f2] transition-colors"
-                >
-                  Skip to Contact
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Carousel Container */}
