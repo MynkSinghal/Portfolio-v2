@@ -14,42 +14,42 @@ export default function ProjectsSection() {
     {
       id: 1,
       title: "Palette Party",
-      description: "Color tool for designers. Fast, pretty, always in theme.",
+      description: "🎨 Color tool that hits different. Like having a personal stylist for your designs — fast, pretty, always in theme. Built with React + Tailwind because life's too short for ugly UIs.",
       tags: ["react", "tailwind", "supabase"],
       icon: "square"
     },
     {
       id: 2,
       title: "Glitch Menu",
-      description: "AR menu app. Learned more from bugs than launches.",
+      description: "📱 AR menu app that taught me more from its bugs than its launches. Sometimes the best lessons come from spectacular failures. Swift + ARKit = expensive education.",
       tags: ["ai", "ar", "mobile"],
       icon: "circle"
     },
     {
       id: 3,
       title: "Hunter AI",
-      description: "AI tools for creators. Broke prod, fixed quick, launched wild.",
+      description: "🤖 AI tools for creators that broke prod, got fixed quick, and launched wild. Real-time magic powered by Python + ML models. The chaos was worth it.",
       tags: ["ai", "ml", "realtime"],
       icon: "triangle"
     },
     {
       id: 4,
       title: "Vibe Tools",
-      description: "Creator toolkit. Built for speed, shipped with love.",
+      description: "⚡ Creator toolkit built for speed, shipped with love. Like a Swiss Army knife for content creators — every tool you need, none you don't. TypeScript + good vibes.",
       tags: ["tools", "creators", "productivity"],
       icon: "square"
     },
     {
       id: 5,
       title: "Buildspace Campus",
-      description: "Physical space for builders. Community, chaos, creation.",
+      description: "🏢 Physical space where digital dreams became reality. Community, chaos, creation — all under one roof. Not just a building, but a vibe that changed lives.",
       tags: ["community", "physical", "education"],
       icon: "circle"
     },
     {
       id: 6,
       title: "Esports Analytics",
-      description: "Deep learning models for gaming. Data-driven insights.",
+      description: "📊 Deep learning models that turned gaming chaos into insights. TensorFlow + passion = predicting the unpredictable. Data never felt this exciting.",
       tags: ["ml", "gaming", "analytics"],
       icon: "triangle"
     }

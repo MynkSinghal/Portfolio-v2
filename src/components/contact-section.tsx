@@ -3,8 +3,8 @@ export default function ContactSection() {
     <section className="py-16 md:py-20 lg:py-28">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <div className="max-w-md mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-2">Jam with Me</h2>
-          <p className="text-muted-foreground mb-10">Send a meme, pitch a collab.</p>
+          <h2 className="text-2xl md:text-3xl font-bold mb-2">🎙️ Let's Vibe</h2>
+          <p className="text-muted-foreground mb-10">Send a meme, pitch a collab, or just say what's good. I respond to everything that's not spam.</p>
 
           <form className="space-y-5">
             <div>
@@ -13,7 +13,7 @@ export default function ContactSection() {
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Jane Smith"
+                placeholder="Your name (or alias, I don't judge)"
                 className="w-full px-4 py-3 bg-[#f2f2f2] border-none rounded-md focus:ring-1 focus:ring-accent"
               />
             </div>
@@ -24,7 +24,7 @@ export default function ContactSection() {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="jane@framer.com"
+                placeholder="your.email@wherever.com"
                 className="w-full px-4 py-3 bg-[#f2f2f2] border-none rounded-md focus:ring-1 focus:ring-accent"
               />
             </div>
@@ -34,7 +34,7 @@ export default function ContactSection() {
               <textarea
                 id="message"
                 name="message"
-                placeholder="Your message..."
+                placeholder="What's on your mind? Project ideas, random thoughts, or just saying hi..."
                 rows={5}
                 className="w-full px-4 py-3 bg-[#f2f2f2] border-none rounded-md resize-none focus:ring-1 focus:ring-accent"
               ></textarea>
@@ -45,10 +45,14 @@ export default function ContactSection() {
                 type="submit"
                 className="w-full bg-black text-white px-6 py-3 rounded-md font-medium hover:bg-black/90 transition-colors"
               >
-                Contact Farza
+                ⚡ Hit Up Mayank
               </button>
             </div>
           </form>
+          
+          <p className="text-sm text-muted-foreground mt-4">
+            *Usually respond within 24 hours (unless I'm deep in a coding session)*
+          </p>
         </div>
       </div>
     </section>

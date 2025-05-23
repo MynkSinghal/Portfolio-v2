@@ -20,6 +20,8 @@
     --muted-foreground: 240 4% 62%; /* #9f9f9f */
     --accent: 198 87% 53%; /* #19b6f3 */
     --accent-foreground: 0 0% 98%;
+    --accent-secondary: 280 65% 60%; /* Purple vibe */
+    --accent-tertiary: 45 93% 58%; /* Golden energy */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 6% 90%;
@@ -48,6 +50,8 @@
     --muted-foreground: 240 5% 64.9%;
     --accent: 198 87% 53%;
     --accent-foreground: 0 0% 98%;
+    --accent-secondary: 280 65% 60%; /* Purple vibe */
+    --accent-tertiary: 45 93% 58%; /* Golden energy */
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 3.7% 15.9%;
@@ -99,5 +103,16 @@
 
   .section {
     @apply py-12 md:py-16 lg:py-20;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-secondary)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .accent-glow {
+    box-shadow: 0 0 20px hsla(var(--accent), 0.3);
   }
 }
