@@ -940,6 +940,10 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
+.border-\[\#FFFFF0\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 240 / var(--tw-border-opacity, 1));
+}
 .bg-\[\#f2f2f2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(242 242 242 / var(--tw-bg-opacity, 1));
@@ -964,6 +968,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.bg-\[\#FFFFF0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 240 / var(--tw-bg-opacity, 1));
 }
 .p-6 {
   padding: 1.5rem;
