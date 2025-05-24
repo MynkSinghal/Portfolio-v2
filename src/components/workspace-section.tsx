@@ -70,11 +70,11 @@ export default function WorkspaceSection() {
             ? 'opacity-100 translate-y-0' 
             : 'opacity-0 translate-y-8'
         }`}>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 tracking-tight">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6 tracking-tight">
             My Workspace
           </h2>
 
-          <p className="text-lg text-foreground/70 max-w-2xl">
+          <p className="text-base text-foreground/70 max-w-2xl">
             Where ideas come to life.
           </p>
         </div>
