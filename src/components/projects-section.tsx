@@ -19,7 +19,7 @@ export default function ProjectsSection() {
       description: "🎨 Modern color palette management that hits different. Like having a personal stylist for your designs — fast, pretty, always in theme.",
       tags: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
       icon: "square",
-      link: "#", // Add your project link here
+      link: "https://vibrant-hues-color-picker-website-zjhg.vercel.app/", // Add your project link here
       details: {
         fullDescription: "A modern colour palette management application that helps designers and developers discover, create, and preview color palettes in both light and dark modes. Features include palette downloads, real-time previews, and an intuitive user interface.",
         whyExists: "Because finding the perfect color palette shouldn't feel like searching for a needle in a haystack. Designers needed a tool that actually understood their workflow.",
@@ -33,12 +33,12 @@ export default function ProjectsSection() {
       description: "👗 AI-powered virtual try-on that actually works. Like having a magic mirror, but for your phone. No more guessing if that shirt fits.",
       tags: ["React", "TensorFlow.js", "Node.js", "Express"],
       icon: "circle",
-      link: "#", // Add your project link here
+      link: "https://trylo-virtual-try-on.vercel.app/", // Add your project link here
       details: {
         fullDescription: "An innovative AI-powered virtual try-on platform enabling realistic garment visualization on various pose or body stances. This technology bridges the gap between online shopping and the physical fitting room experience.",
         whyExists: "Online shopping is broken. 30% return rates because clothes don't fit. Someone had to fix this mess.",
-        howStarted: "Saw my sister return 5 dresses in one week. Thought 'there has to be a better way.' Turns out, computer vision is hard.",
-        whatBroke: "The pose detection kept thinking arms were legs. Also, the AI occasionally made people look like abstract art. Fun times."
+        howStarted: "Built it because guessing your size at checkout feels like playing fashion roulette—and losing.",
+        whatBroke: "The pose detection kept thinking arms were legs. Also, the AI occasionally made people look like abstract art."
       }
     },
     {
@@ -47,12 +47,12 @@ export default function ProjectsSection() {
       description: "📅 Appointment booking that doesn't make you want to scream. Doctors love it, patients love it, even the receptionist loves it.",
       tags: ["React", "TypeScript", "Node.js", "Supabase"],
       icon: "triangle",
-      link: "#", // Add your project link here
+      link: "https://docbook-one.vercel.app/", // Add your project link here
       details: {
         fullDescription: "DocBook: Effortlessly manage doctor appointments with automated booking, reminders, and seamless calendar for patients and healthcare providers.",
         whyExists: "Healthcare booking is stuck in 1995. Patients deserve better than calling and waiting on hold for 20 minutes.",
-        howStarted: "Built this after my mom spent 2 hours trying to book a simple checkup. Healthcare tech needed a serious upgrade.",
-        whatBroke: "Time zones. Oh god, the time zones. Also, doctors kept double-booking themselves because they didn't trust the system initially."
+        howStarted: "Just a college project. But even the basics—booking, doctor info, appointments—felt way harder than it should be. So I built a simpler flow.",
+        whatBroke: "Availability timings. Oh god, the availability timings. Also, patients kept double-booking themselves because they didn't trust the system initially."
       }
     },
     {
@@ -61,7 +61,7 @@ export default function ProjectsSection() {
       description: "✍️ MacOS app for flow writing. 3 random words, no backspace, pure creative chaos. Writers either love it or hate it.",
       tags: ["Swift", "MacOS", "Creative Tools"],
       icon: "square",
-      link: "#", // Add your project link here
+      link: "https://github.com/MynkSinghal/IdeaDice/releases/download/v1.0.0/IdeaDice.app.zip", // Add your project link here
       details: {
         fullDescription: "A MacOS App, which helps in flow-writing by giving you 3 random words, and makes you wander your mind, write freely! No backspaces allowed, just free writing.",
         whyExists: "Writer's block is real. Sometimes you need to trick your brain into being creative. Constraints breed creativity.",
@@ -75,7 +75,7 @@ export default function ProjectsSection() {
       description: "🎬 Movie search that actually finds what you're looking for. No more scrolling through Netflix for 2 hours just to watch The Office again.",
       tags: ["JavaScript", "Node.js", "Express", "OMDB API"],
       icon: "circle",
-      link: "#", // Add your project link here
+      link: "https://web-dev-movie-search-app-using-api.vercel.app/", // Add your project link here
       details: {
         fullDescription: "A dynamic movie search application integrated with the OMDB API, allowing users to explore a vast database of films. Features include detailed movie information, responsive design, and real-time search functionality.",
         whyExists: "Movie discovery is broken. You know that feeling when you can't remember that movie with 'that guy from that thing'? This fixes that.",
@@ -89,7 +89,7 @@ export default function ProjectsSection() {
       description: "❤️ ML model that predicts heart disease risk. Because your heart is important, and early detection saves lives. Science is cool.",
       tags: ["Python", "TensorFlow", "React", "Scikit-learn"],
       icon: "triangle",
-      link: "#", // Add your project link here
+      link: "https://healthcare-ai-lab.vercel.app/", // Add your project link here
       details: {
         fullDescription: "A machine learning-powered web application that predicts heart disease risk using the Kaggle dataset. The model analyzes various health parameters providing risk assessment and further helping in early detection and prevention.",
         whyExists: "Heart disease is the #1 killer globally. If ML can help catch it early, why aren't we using it everywhere?",

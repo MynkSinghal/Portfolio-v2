@@ -1,102 +1,103 @@
 [
-  {
-    "id": 1,
-    "quote": "The way to get started is to quit talking and begin doing.",
-    "author": "Walt Disney"
-  },
-  {
-    "id": 2,
-    "quote": "Innovation distinguishes between a leader and a follower.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 3,
-    "quote": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 4,
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "author": "Eleanor Roosevelt"
-  },
-  {
-    "id": 5,
-    "quote": "It is during our darkest moments that we must focus to see the light.",
-    "author": "Aristotle"
-  },
-  {
-    "id": 6,
-    "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-    "author": "Winston Churchill"
-  },
-  {
-    "id": 7,
-    "quote": "The only impossible journey is the one you never begin.",
-    "author": "Tony Robbins"
-  },
-  {
-    "id": 8,
-    "quote": "In the middle of difficulty lies opportunity.",
-    "author": "Albert Einstein"
-  },
-  {
-    "id": 9,
-    "quote": "Believe you can and you're halfway there.",
-    "author": "Theodore Roosevelt"
-  },
-  {
-    "id": 10,
-    "quote": "The only way to do great work is to love what you do.",
-    "author": "Steve Jobs"
-  },
-  {
-    "id": 11,
-    "quote": "Life is what happens to you while you're busy making other plans.",
-    "author": "John Lennon"
-  },
-  {
-    "id": 12,
-    "quote": "The future depends on what you do today.",
-    "author": "Mahatma Gandhi"
-  },
-  {
-    "id": 13,
-    "quote": "You miss 100% of the shots you don't take.",
-    "author": "Wayne Gretzky"
-  },
-  {
-    "id": 14,
-    "quote": "Whether you think you can or you think you can't, you're right.",
-    "author": "Henry Ford"
-  },
-  {
-    "id": 15,
-    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-    "author": "Nelson Mandela"
-  },
-  {
-    "id": 16,
-    "quote": "Don't be afraid to give up the good to go for the great.",
-    "author": "John D. Rockefeller"
-  },
-  {
-    "id": 17,
-    "quote": "If you want to live a happy life, tie it to a goal, not to people or things.",
-    "author": "Albert Einstein"
-  },
-  {
-    "id": 18,
-    "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
-    "author": "Chinese Proverb"
-  },
-  {
-    "id": 19,
-    "quote": "Your limitation—it's only your imagination.",
-    "author": "Unknown"
-  },
-  {
-    "id": 20,
-    "quote": "Push yourself, because no one else is going to do it for you.",
-    "author": "Unknown"
-  }
-] 
+    {
+      "id": 1,
+      "quote": "Programs must be written for people to read, and only incidentally for machines to execute.",
+      "author": "Harold Abelson"
+    },
+    {
+      "id": 2,
+      "quote": "The best way to predict the future is to invent it.",
+      "author": "Alan Kay"
+    },
+    {
+      "id": 3,
+      "quote": "Don’t worry about failure; you only have to be right once.",
+      "author": "Drew Houston"
+    },
+    {
+      "id": 4,
+      "quote": "If you are not embarrassed by the first version of your product, you’ve launched too late.",
+      "author": "Reid Hoffman"
+    },
+    {
+      "id": 5,
+      "quote": "Great companies are built on great products.",
+      "author": "Elon Musk"
+    },
+    {
+      "id": 6,
+      "quote": "Code is like humor. When you have to explain it, it’s bad.",
+      "author": "Cory House"
+    },
+    {
+      "id": 7,
+      "quote": "The secret to getting ahead is getting started.",
+      "author": "Mark Twain"
+    },
+    {
+      "id": 8,
+      "quote": "Chase the vision, not the money; the money will end up following you.",
+      "author": "Tony Hsieh"
+    },
+    {
+      "id": 9,
+      "quote": "A user interface is like a joke. If you have to explain it, it’s not that good.",
+      "author": "Martin LeBlanc"
+    },
+    {
+      "id": 10,
+      "quote": "Don’t let yesterday take up too much of today.",
+      "author": "Will Rogers"
+    },
+    {
+      "id": 11,
+      "quote": "It’s not about ideas. It’s about making ideas happen.",
+      "author": "Scott Belsky"
+    },
+    {
+      "id": 12,
+      "quote": "Move fast and break things. Unless you are breaking stuff, you are not moving fast enough.",
+      "author": "Mark Zuckerberg"
+    },
+    {
+      "id": 13,
+      "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
+      "author": "Franklin D. Roosevelt"
+    },
+    {
+      "id": 14,
+      "quote": "Simplicity is the soul of efficiency.",
+      "author": "Austin Freeman"
+    },
+    {
+      "id": 15,
+      "quote": "Don’t watch the clock; do what it does. Keep going.",
+      "author": "Sam Levenson"
+    },
+    {
+      "id": 16,
+      "quote": "If you’re not a little bit uncomfortable on a daily basis, it means you’re not growing.",
+      "author": "Sallie Krawcheck"
+    },
+    {
+      "id": 17,
+      "quote": "The function of good software is to make the complex appear to be simple.",
+      "author": "Grady Booch"
+    },
+    {
+      "id": 18,
+      "quote": "Opportunities don't happen. You create them.",
+      "author": "Chris Grosser"
+    },
+    {
+      "id": 19,
+      "quote": "Stay hungry, stay foolish.",
+      "author": "Steve Jobs"
+    },
+    {
+      "id": 20,
+      "quote": "Success is not how high you have climbed, but how you make a positive difference to the world.",
+      "author": "Roy T. Bennett"
+    }
+  ]
+  
