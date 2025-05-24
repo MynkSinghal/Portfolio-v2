@@ -12,8 +12,8 @@ export default function WorkspaceSection() {
       id: 1,
       url: "/images/workspace/setup-1.png",
       alt: "My workspace setup",
-      caption: "☕ <bold>Where the magic happens</bold> — Coffee, code, and creative chaos",
-      chaosLevel: "Organized Chaos"
+      
+      subcaption: "Dual monitors, mechanical keyboard, and enough RGB"
     }
   ];
 
@@ -49,13 +49,16 @@ export default function WorkspaceSection() {
             ? 'opacity-100 translate-y-0' 
             : 'opacity-0 translate-y-8'
         }`}>
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6 tracking-tight">
-            My Workspace
-          </h2>
+          <div className="mb-8">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 tracking-tight">
+              My Setup
+            </h2>
+            <p className="text-base text-foreground/60 italic">
+              (Pixels, passion, and lots of Ctrl+Z)
+            </p>
+          </div>
 
-          <p className="text-base text-foreground/70 max-w-2xl">
-            Where ideas come to life.
-          </p>
+          
         </div>
 
         {/* Image Grid */}
@@ -80,6 +83,15 @@ export default function WorkspaceSection() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out filter grayscale"
                     loading="lazy"
                   />
+                </div>
+                
+                {/* Caption */}
+                <div className="p-6 text-center">
+                  
+                  
+                  <p className="text-sm text-foreground/60 italic">
+                    {image.subcaption}
+                  </p>
                 </div>
               </div>
             </div>

@@ -209,14 +209,7 @@ export default function ProjectsSection() {
             </p>
           </div>
 
-          <div className="space-y-3 mb-12">
-            <p className="text-base md:text-lg text-foreground/80">
-              A few of my best experiments — shipped for energy, lessons, and fun.
-            </p>
-            <p className="text-sm text-foreground/50 italic">
-              *Each one taught me something new, usually that I don't know anything
-            </p>
-          </div>
+          
         </div>
 
         {/* Carousel Container */}

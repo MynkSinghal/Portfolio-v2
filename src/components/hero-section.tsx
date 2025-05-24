@@ -27,15 +27,15 @@ export default function HeroSection() {
         {/* Status Updates */}
         <div className="space-y-3 mb-8">
           <div className="flex items-start gap-3">
-            <span className="text-sm font-medium text-foreground/50 min-w-[80px]">Currently:</span>
+            <span className="text-sm font-medium text-foreground/50 min-w-[90px]">Currently:</span>
             <span className="text-base md:text-lg">Shipping internet chaos since I was 15</span>
           </div>
           <div className="flex items-start gap-3">
-            <span className="text-sm font-medium text-foreground/50 min-w-[80px]">Previously:</span>
+            <span className="text-sm font-medium text-foreground/50 min-w-[90px]">Previously:</span>
             <span className="text-base md:text-lg">Flipping meme coins & Pokémon cards on Discord</span>
           </div>
           <div className="flex items-start gap-3">
-            <span className="text-sm font-medium text-foreground/50 min-w-[80px]">Always:</span>
+            <span className="text-sm font-medium text-foreground/50 min-w-[90px]">Always:</span>
             <span className="text-base md:text-lg">Caffeinated and curious</span>
           </div>
         </div>

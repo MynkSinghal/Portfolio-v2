@@ -116,15 +116,7 @@ export default function JourneySection() {
           </div>
 
           {/* Current Status */}
-          <div className="text-center py-8 border border-foreground/10 rounded-lg bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
-            <p className="text-xl md:text-2xl font-bold mb-2">
-              {parseText("<bold>Still vibing. Still building.</bold>")}
-            </p>
-            
-            <p className="text-sm text-foreground/50 mt-3 italic">
-              *The journey never actually ends, does it?
-            </p>
-          </div>
+          
         </div>
       </div>
     </section>
