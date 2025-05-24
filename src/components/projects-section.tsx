@@ -24,12 +24,7 @@ export default function ProjectsSection() {
         fullDescription: "A modern colour palette management application that helps designers and developers discover, create, and preview color palettes in both light and dark modes. Features include palette downloads, real-time previews, and an intuitive user interface.",
         whyExists: "Because finding the perfect color palette shouldn't feel like searching for a needle in a haystack. Designers needed a tool that actually understood their workflow.",
         howStarted: "Started as a weekend project when I got frustrated with existing color tools. Spent way too much time tweaking gradients instead of building features.",
-        whatBroke: "The color picker broke on Safari (classic). Spent 3 days debugging CSS color spaces. Also, the database kept timing out when generating palettes.",
-        feedback: [
-          "\"Finally, a color tool that doesn't suck\" - @designer_sarah",
-          "\"This saved me 2 hours on my last project\" - Reddit user",
-          "\"The dark mode preview is *chef's kiss*\" - ProductHunt comment"
-        ]
+        whatBroke: "The color picker broke on Safari (classic). Spent 3 days debugging CSS color spaces. Also, the database kept timing out when generating palettes."
       }
     },
     {
@@ -43,12 +38,7 @@ export default function ProjectsSection() {
         fullDescription: "An innovative AI-powered virtual try-on platform enabling realistic garment visualization on various pose or body stances. This technology bridges the gap between online shopping and the physical fitting room experience.",
         whyExists: "Online shopping is broken. 30% return rates because clothes don't fit. Someone had to fix this mess.",
         howStarted: "Saw my sister return 5 dresses in one week. Thought 'there has to be a better way.' Turns out, computer vision is hard.",
-        whatBroke: "The pose detection kept thinking arms were legs. Also, the AI occasionally made people look like abstract art. Fun times.",
-        feedback: [
-          "\"This is the future of shopping\" - TechCrunch mention",
-          "\"Tried it with 10 outfits, 8 looked accurate\" - Beta tester",
-          "\"My return rate dropped 60%\" - E-commerce store owner"
-        ]
+        whatBroke: "The pose detection kept thinking arms were legs. Also, the AI occasionally made people look like abstract art. Fun times."
       }
     },
     {
@@ -62,12 +52,7 @@ export default function ProjectsSection() {
         fullDescription: "DocBook: Effortlessly manage doctor appointments with automated booking, reminders, and seamless calendar for patients and healthcare providers.",
         whyExists: "Healthcare booking is stuck in 1995. Patients deserve better than calling and waiting on hold for 20 minutes.",
         howStarted: "Built this after my mom spent 2 hours trying to book a simple checkup. Healthcare tech needed a serious upgrade.",
-        whatBroke: "Time zones. Oh god, the time zones. Also, doctors kept double-booking themselves because they didn't trust the system initially.",
-        feedback: [
-          "\"Cut our booking time by 70%\" - Dr. Martinez",
-          "\"Finally, I can book appointments at 2am\" - Patient review",
-          "\"The reminder system is a lifesaver\" - Clinic manager"
-        ]
+        whatBroke: "Time zones. Oh god, the time zones. Also, doctors kept double-booking themselves because they didn't trust the system initially."
       }
     },
     {
@@ -81,12 +66,7 @@ export default function ProjectsSection() {
         fullDescription: "A MacOS App, which helps in flow-writing by giving you 3 random words, and makes you wander your mind, write freely! No backspaces allowed, just free writing.",
         whyExists: "Writer's block is real. Sometimes you need to trick your brain into being creative. Constraints breed creativity.",
         howStarted: "Inspired by Julia Cameron's morning pages. Wanted to gamify the writing process and remove the perfectionist paralysis.",
-        whatBroke: "The random word generator kept giving inappropriate combinations. Had to build a filter. Also, users kept trying to hack the 'no backspace' rule.",
-        feedback: [
-          "\"Broke through my 3-month writer's block\" - Medium writer",
-          "\"Frustrating but effective\" - App Store review",
-          "\"My therapist recommended this\" - User email"
-        ]
+        whatBroke: "The random word generator kept giving inappropriate combinations. Had to build a filter. Also, users kept trying to hack the 'no backspace' rule."
       }
     },
     {
@@ -100,12 +80,7 @@ export default function ProjectsSection() {
         fullDescription: "A dynamic movie search application integrated with the OMDB API, allowing users to explore a vast database of films. Features include detailed movie information, responsive design, and real-time search functionality.",
         whyExists: "Movie discovery is broken. You know that feeling when you can't remember that movie with 'that guy from that thing'? This fixes that.",
         howStarted: "Built during a movie night when we spent more time searching than watching. The OMDB API was free, so why not?",
-        whatBroke: "Rate limiting. Turns out, free APIs don't like it when you hammer them with requests. Had to implement caching and request throttling.",
-        feedback: [
-          "\"Found that obscure 90s movie in 2 seconds\" - Friend",
-          "\"Better than IMDb's search\" - Reddit comment",
-          "\"Bookmarked this immediately\" - User feedback"
-        ]
+        whatBroke: "Rate limiting. Turns out, free APIs don't like it when you hammer them with requests. Had to implement caching and request throttling."
       }
     },
     {
@@ -119,12 +94,7 @@ export default function ProjectsSection() {
         fullDescription: "A machine learning-powered web application that predicts heart disease risk using the Kaggle dataset. The model analyzes various health parameters providing risk assessment and further helping in early detection and prevention.",
         whyExists: "Heart disease is the #1 killer globally. If ML can help catch it early, why aren't we using it everywhere?",
         howStarted: "Started as a college project, got obsessed with the accuracy metrics. Turns out, healthcare data is messy but fascinating.",
-        whatBroke: "The model kept overfitting. Spent weeks tuning hyperparameters. Also, medical disclaimers are harder to write than the actual code.",
-        feedback: [
-          "\"Scary accurate for my dad's results\" - User testimonial",
-          "\"This should be in every clinic\" - Healthcare worker",
-          "\"The UI makes complex data digestible\" - UX designer"
-        ]
+        whatBroke: "The model kept overfitting. Spent weeks tuning hyperparameters. Also, medical disclaimers are harder to write than the actual code."
       }
     }
   ];
@@ -457,18 +427,6 @@ export default function ProjectsSection() {
                     <div>
                       <h3 className="text-lg font-semibold mb-3">💥 What Broke</h3>
                       <p className="text-foreground/80 leading-relaxed">{project.details.whatBroke}</p>
-                    </div>
-
-                    {/* Feedback */}
-                    <div>
-                      <h3 className="text-lg font-semibold mb-3">💬 What People Said</h3>
-                      <div className="space-y-3">
-                        {project.details.feedback.map((feedback, index) => (
-                          <div key={index} className="bg-foreground/5 p-4 rounded-lg border-l-2 border-foreground/20">
-                            <p className="text-foreground/80 italic">{parseText(feedback)}</p>
-                          </div>
-                        ))}
-                      </div>
                     </div>
                   </div>
 
