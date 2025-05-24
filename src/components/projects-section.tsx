@@ -200,11 +200,11 @@ export default function ProjectsSection() {
             ? 'opacity-100 translate-y-0' 
             : 'opacity-0 translate-y-8'
         }`}>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 tracking-tight uppercase">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 tracking-tight uppercase">
             Things I&apos;ve Built
           </h2>
 
-          <p className="text-lg mb-12 text-foreground/80">
+          <p className="text-base mb-12 text-foreground/80">
             A few of my best experiments — shipped for energy, lessons, and fun.
           </p>
         </div>
@@ -245,9 +245,9 @@ export default function ProjectsSection() {
                     )}
                   </div>
 
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-foreground/90 transition-colors duration-200">{project.title}</h3>
+                  <h3 className="text-lg font-semibold mb-3 group-hover:text-foreground/90 transition-colors duration-200">{project.title}</h3>
 
-                  <p className="text-sm text-foreground/70 mb-4 group-hover:text-foreground/80 transition-colors duration-200">{project.description}</p>
+                  <p className="text-xs text-foreground/70 mb-4 group-hover:text-foreground/80 transition-colors duration-200">{project.description}</p>
 
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag, tagIndex) => (
