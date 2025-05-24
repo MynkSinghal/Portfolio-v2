@@ -62,25 +62,25 @@ export default function WorkspaceSection() {
   }, []);
 
   return (
-    <section id="workspace-section" className="py-12 md:py-16 lg:py-24">
+    <section id="workspace-section" className="py-16 md:py-20 lg:py-28">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-        {/* Animated Header */}
-        <div className={`transition-all duration-1000 ease-out ${
+        {/* Simplified Header */}
+        <div className={`transition-all duration-1000 ease-out mb-16 ${
           isVisible 
             ? 'opacity-100 translate-y-0' 
             : 'opacity-0 translate-y-8'
         }`}>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 tracking-tight uppercase">
-            🎯 My Workspace Chaos
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 tracking-tight">
+            My Workspace
           </h2>
 
-          <p className="text-lg mb-12 text-foreground/80">
-            Where the magic happens — {parseText("<bold>coffee stains</bold>")}, {parseText("<bold>late nights</bold>")}, and {parseText("<bold>beautiful chaos</bold>")}. Every great idea starts somewhere, mine usually start in this organized mess.
+          <p className="text-lg text-foreground/70 max-w-2xl">
+            Where ideas come to life.
           </p>
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
           {workspaceImages.map((image, index) => (
             <div 
               key={image.id}
@@ -101,34 +101,10 @@ export default function WorkspaceSection() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                     loading="lazy"
                   />
-                  {/* Chaos Level Badge */}
-                  <div className="absolute top-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded-full backdrop-blur-sm">
-                    {image.chaosLevel}
-                  </div>
-                </div>
-                {/* Caption */}
-                <div className="p-4">
-                  <p className="text-sm text-foreground/80 group-hover:text-foreground transition-colors duration-200">
-                    {parseText(image.caption)}
-                  </p>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Bottom text */}
-        <div className={`mt-12 transition-all duration-1000 ease-out ${
-          isVisible 
-            ? 'opacity-100 translate-y-0' 
-            : 'opacity-0 translate-y-8'
-        }`}
-        style={{
-          transitionDelay: `${workspaceImages.length * 200 + 300}ms`
-        }}>
-          <p className="text-base md:text-lg leading-relaxed text-foreground/80 text-center">
-            {parseText("<italic>Current status: Building something new, probably with too much coffee and not enough sleep</italic>")} ☕
-          </p>
         </div>
       </div>
     </section>

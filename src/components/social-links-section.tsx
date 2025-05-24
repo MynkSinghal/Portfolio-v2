@@ -6,7 +6,7 @@ export default function SocialLinksSection() {
           {/* Social/Contact Links */}
           <div className="flex justify-center gap-4">
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/MynkSinghal" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm bg-[#f2f2f2] hover:bg-[#ebebeb] px-4 py-3 rounded-md transition-colors group"
@@ -17,7 +17,7 @@ export default function SocialLinksSection() {
               <span>GitHub</span>
             </a>
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://www.linkedin.com/in/mynkkkk/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm bg-[#f2f2f2] hover:bg-[#ebebeb] px-4 py-3 rounded-md transition-colors group"
@@ -28,7 +28,7 @@ export default function SocialLinksSection() {
               <span>LinkedIn</span>
             </a>
             <a 
-              href="mailto:your.email@example.com"
+              href="mailto:singhal2004mayank@gmail.com"
               className="flex items-center gap-2 text-sm bg-[#f2f2f2] hover:bg-[#ebebeb] px-4 py-3 rounded-md transition-colors group"
             >
               <svg className="w-5 h-5 fill-current text-[#ea4335]" viewBox="0 0 24 24">
@@ -37,7 +37,7 @@ export default function SocialLinksSection() {
               <span>Email</span>
             </a>
             <a 
-              href="tel:+1234567890"
+              href="tel:+918448039908"
               className="flex items-center gap-2 text-sm bg-[#f2f2f2] hover:bg-[#ebebeb] px-4 py-3 rounded-md transition-colors group"
             >
               <svg className="w-5 h-5 fill-current text-[#34a853]" viewBox="0 0 24 24">

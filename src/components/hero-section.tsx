@@ -4,16 +4,16 @@ export default function HeroSection() {
   return (
     <section className="py-12 md:py-16 lg:py-24 pt-10 md:pt-16 lg:pt-20 pb-6 md:pb-8 lg:pb-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight">
-          🔥 {parseText("<bold>Building stuff that doesn't suck</bold>")}
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 tracking-tight">
+          🔥 {parseText("<bold>Making Chaos Look Cool</bold>")}
         </h1>
 
-        <p className="text-lg md:text-xl leading-relaxed max-w-3xl text-foreground/80 mb-4">
-          I'm {parseText("<bold>Mayank</bold>")} — been shipping wild ideas since I was 13. From flipping Dragon Ball Z games on eBay to scaling communities of 100K+ builders.
+        <p className="text-base md:text-lg leading-relaxed max-w-3xl text-foreground/80 mb-4">
+          I'm {parseText("<bold>Mayank Singhal</bold>")} — been shipping internet chaos since I was 15. From flipping meme coins and Pokémon cards on Discord to building wild communities and earning real cash before I even knew what a "startup" was.
         </p>
         
-        <p className="text-lg md:text-xl leading-relaxed max-w-3xl text-foreground/80">
-          {parseText("<italic>Currently vibing</italic>")} between projects, documenting the chaos, and helping others build their dreams into reality.
+        <p className="text-base md:text-lg leading-relaxed max-w-3xl text-foreground/80">
+          {parseText("Currently dancing between side quests, documenting the madness, and helping others turn their <bold>weird ideas</bold> into working stuff.")}
         </p>
       </div>
     </section>

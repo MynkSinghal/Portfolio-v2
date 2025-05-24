@@ -5,7 +5,7 @@ export default function ContactSection() {
     <section className="py-16 md:py-20 lg:py-28" data-section="contact">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <div className="max-w-md mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-2">🎙️ Let's Vibe</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-2">🎙️ Let's Vibe</h2>
           <p className="text-muted-foreground mb-10">Send a meme, pitch a collab, or just say what's good. I respond to everything that's not spam.</p>
 
           <form className="space-y-5">

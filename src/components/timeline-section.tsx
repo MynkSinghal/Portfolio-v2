@@ -47,7 +47,7 @@ export default function TimelineSection() {
               key={exp.id}
               className="flex justify-between items-center py-4 border-t border-[#ebebeb] last:border-b"
             >
-              <div className="font-medium text-lg">{exp.title}</div>
+              <div className="font-medium text-base">{exp.title}</div>
               <div className="flex items-center space-x-6">
                 <span className="text-foreground/60">{exp.role}</span>
                 <span className="text-sm text-foreground/50">{exp.period}</span>
