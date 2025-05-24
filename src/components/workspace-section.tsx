@@ -10,31 +10,10 @@ export default function WorkspaceSection() {
   const workspaceImages = [
     {
       id: 1,
-      url: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=600&h=400&fit=crop&crop=center",
-      alt: "Modern workspace with laptop and coffee",
-      caption: "☕ <bold>Morning vibes</bold> — Coffee #3, idea #47, still in pajamas",
+      url: "/images/workspace/setup-1.png",
+      alt: "My workspace setup",
+      caption: "☕ <bold>Where the magic happens</bold> — Coffee, code, and creative chaos",
       chaosLevel: "Organized Chaos"
-    },
-    {
-      id: 2,
-      url: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=600&h=400&fit=crop&crop=center",
-      alt: "Cluttered desk with multiple monitors",
-      caption: "🖥️ <bold>Peak productivity</bold> — When 3 monitors still isn't enough",
-      chaosLevel: "Beautiful Mess"
-    },
-    {
-      id: 3,
-      url: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&h=400&fit=crop&crop=center",
-      alt: "Creative workspace with sketches and tools",
-      caption: "✏️ <bold>Analog thinking</bold> — Sometimes the best ideas start on paper",
-      chaosLevel: "Creative Storm"
-    },
-    {
-      id: 4,
-      url: "https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=600&h=400&fit=crop&crop=center",
-      alt: "Late night coding session",
-      caption: "🌙 <bold>3 AM energy</bold> — When the bugs become features",
-      chaosLevel: "Midnight Magic"
     }
   ];
 
@@ -80,11 +59,11 @@ export default function WorkspaceSection() {
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+        <div className="flex justify-center">
           {workspaceImages.map((image, index) => (
             <div 
               key={image.id}
-              className={`transition-all duration-700 ease-out ${
+              className={`transition-all duration-700 ease-out max-w-3xl w-full ${
                 isVisible 
                   ? 'opacity-100 translate-y-0' 
                   : 'opacity-0 translate-y-12'
@@ -98,7 +77,7 @@ export default function WorkspaceSection() {
                   <img 
                     src={image.url}
                     alt={image.alt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out filter grayscale"
                     loading="lazy"
                   />
                 </div>
