@@ -47,7 +47,7 @@ export default function ContactSection() {
                 type="submit"
                 className="w-full bg-black text-white px-6 py-3 rounded-md font-medium hover:bg-black/90 transition-colors"
               >
-                ⚡ Hit Up Mayank
+                ⚡ Hit me up
               </button>
             </div>
           </form>

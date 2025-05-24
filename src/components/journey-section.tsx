@@ -50,7 +50,7 @@ export default function JourneySection() {
 
           <div>
             <h3 className="text-base md:text-lg font-medium mb-4 text-foreground">
-              🎯 {parseText("<bold>Bonus Levels: The Remix Era</bold>")}
+              🎯 {parseText("<bold>Chaos, Crashes & Comebacks</bold>")}
             </h3>
             <p className="text-sm md:text-base leading-relaxed">
               Tried a bit of everything — and I mean {parseText("<italic>everything</italic>")}.
