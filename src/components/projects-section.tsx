@@ -200,13 +200,23 @@ export default function ProjectsSection() {
             ? 'opacity-100 translate-y-0' 
             : 'opacity-0 translate-y-8'
         }`}>
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 tracking-tight uppercase">
-            Things I&apos;ve Built
-          </h2>
+          <div className="mb-8">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 tracking-tight uppercase">
+              Things I&apos;ve Built
+            </h2>
+            <p className="text-base text-foreground/60 italic">
+              (and somehow didn't break)
+            </p>
+          </div>
 
-          <p className="text-base mb-12 text-foreground/80">
-            A few of my best experiments — shipped for energy, lessons, and fun.
-          </p>
+          <div className="space-y-3 mb-12">
+            <p className="text-base md:text-lg text-foreground/80">
+              A few of my best experiments — shipped for energy, lessons, and fun.
+            </p>
+            <p className="text-sm text-foreground/50 italic">
+              *Each one taught me something new, usually that I don't know anything
+            </p>
+          </div>
         </div>
 
         {/* Carousel Container */}
