@@ -18,9 +18,9 @@ export default function Header() {
             href="/resume.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-sm bg-[#f2f2f2] hover:bg-[#ebebeb] text-foreground px-4 py-2 rounded-full transition-colors"
+            className="text-sm bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-full transition-colors"
           >
-            📄 Resume
+            Resume
           </a>
         </div>
       </div>
