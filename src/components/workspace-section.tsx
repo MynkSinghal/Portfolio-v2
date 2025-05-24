@@ -62,7 +62,7 @@ export default function WorkspaceSection() {
   }, []);
 
   return (
-    <section id="workspace-section" className="py-16 md:py-20 lg:py-28">
+    <section id="workspace-section" className="py-16 md:py-20 lg:py-28 pt-8 md:pt-10 lg:pt-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         {/* Simplified Header */}
         <div className={`transition-all duration-1000 ease-out mb-16 ${

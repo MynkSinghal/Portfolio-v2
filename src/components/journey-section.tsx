@@ -2,7 +2,7 @@ import { parseText } from '@/lib/text-parser';
 
 export default function JourneySection() {
   return (
-    <section className="py-16 md:py-20 lg:py-24 pt-6 md:pt-8 lg:pt-12">
+    <section className="py-16 md:py-20 lg:py-24 pt-6 md:pt-8 lg:pt-12 pb-8 md:pb-10 lg:pb-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-10 tracking-tight uppercase">
           My Real Journey
