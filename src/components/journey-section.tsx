@@ -22,16 +22,16 @@ export default function JourneySection() {
             
             <div className="space-y-4">
               <p className="text-base md:text-lg leading-relaxed">
-                Picture this: it's 2019, lockdown world, 15-year-old me stumbles into Discord and {parseText("<italic>accidentally builds an empire.</italic>")}
+              Picture this: it’s 2019, lockdown hits, and 15-year-old me stumbles into Discord — just messing around — and ends up {parseText("<italic>building a community that actually took off.</italic>")}
               </p>
               
               <div className="bg-gray-50 dark:bg-gray-900/50 p-4 rounded-lg border-l-2 border-yellow-500/50">
                 <p className="text-sm md:text-base leading-relaxed">
-                  Started flipping {parseText("<bold>Pokémon cards and meme currencies</bold>")} for laughs.
+                  Started flipping {parseText("<bold>Pokémon cards and in-game currencies</bold>")} for laughs.
                   <br />
-                  That first sale? {parseText("<italic>Electric</italic>")}. 
+                  
                   <br />
-                  Like getting a shiny Charizard with pizza money.
+                  First time someone paid? {parseText("<italic>Unreal..</italic>")}
                 </p>
               </div>
 

@@ -6,8 +6,13 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         {/* Main Hook - Big and Bold */}
         <div className="mb-8">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight leading-tight">
-            Hey, I'm {parseText("<bold>Mayank</bold>")} 👋
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight leading-tight flex items-center gap-3">
+            Hey, I'm {parseText("<bold>Mayank</bold>")} 
+            <img 
+              src="/hi.gif" 
+              alt="Waving hand" 
+              className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 inline-block"
+            />
           </h1>
           <p className="text-lg md:text-xl text-foreground/60 font-light italic">
             (yes, another developer who thinks they're different)
@@ -27,15 +32,15 @@ export default function HeroSection() {
         {/* Status Updates */}
         <div className="space-y-3 mb-8">
           <div className="flex items-start gap-3">
-            <span className="text-sm font-medium text-foreground/50 min-w-[90px]">Currently:</span>
+            <span className="text-sm font-medium text-foreground/50 min-w-[100px]">Currently:</span>
             <span className="text-base md:text-lg">Shipping internet chaos since I was 15</span>
           </div>
           <div className="flex items-start gap-3">
-            <span className="text-sm font-medium text-foreground/50 min-w-[90px]">Previously:</span>
+            <span className="text-sm font-medium text-foreground/50 min-w-[100px]">Previously:</span>
             <span className="text-base md:text-lg">Flipping meme coins & Pokémon cards on Discord</span>
           </div>
           <div className="flex items-start gap-3">
-            <span className="text-sm font-medium text-foreground/50 min-w-[90px]">Always:</span>
+            <span className="text-sm font-medium text-foreground/50 min-w-[100px]">Always:</span>
             <span className="text-base md:text-lg">Caffeinated and curious</span>
           </div>
         </div>

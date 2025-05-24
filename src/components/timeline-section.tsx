@@ -2,40 +2,22 @@ export default function TimelineSection() {
   const experiences = [
     {
       id: 1,
-      title: "Hunter AI",
-      role: "Lead Builder",
-      period: "2023-2024"
+      title: "Publicis Sapient",
+      role: "Intern - Engineering Python",
+      period: "May 2025 - Present"
     },
     {
       id: 2,
-      title: "Vibe Tools",
-      role: "Sole Dev",
-      period: "2022-2023"
+      title: "MUJ ACM",
+      role: "Team Head",
+      period: "2023-2024"
     },
     {
       id: 3,
-      title: "Late Night Jams",
-      role: "Hustler",
-      period: "2021-2022"
-    },
-    {
-      id: 4,
-      title: "Palette Party",
+      title: "Lavisuals",
       role: "Founder",
-      period: "2024"
-    },
-    {
-      id: 5,
-      title: "Glitch Menu",
-      role: "Creator",
-      period: "2023"
-    },
-    {
-      id: 6,
-      title: "Esports School Shipped",
-      role: "Founder",
-      period: "2021"
-    },
+      period: "2021-2023"
+    }
   ];
 
   return (

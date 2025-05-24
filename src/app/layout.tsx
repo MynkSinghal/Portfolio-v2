@@ -18,8 +18,8 @@ const libreCaslonText = Libre_Caslon_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Farza: Still Shipping Wild Ideas",
-  description: "Farza – Modern Tech Creator Portfolio",
+  title: "Mayank: Still Shipping Wild Ideas",
+  description: "Mayank – Modern Tech Creator Portfolio",
 };
 
 export default function RootLayout({

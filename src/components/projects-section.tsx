@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState, useEffect } from 'react';
+import { parseText } from '@/lib/text-parser';
 
 export default function ProjectsSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -9,49 +10,122 @@ export default function ProjectsSection() {
   const [itemsPerView, setItemsPerView] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [isVisible, setIsVisible] = useState(false);
+  const [expandedProject, setExpandedProject] = useState<number | null>(null);
 
   const projects = [
     {
       id: 1,
-      title: "Palette Party",
-      description: "🎨 Color tool that hits different. Like having a personal stylist for your designs — fast, pretty, always in theme. Built with React + Tailwind because life's too short for ugly UIs.",
-      tags: ["react", "tailwind", "supabase"],
-      icon: "square"
+      title: "Vibrant Hues",
+      description: "🎨 Modern color palette management that hits different. Like having a personal stylist for your designs — fast, pretty, always in theme.",
+      tags: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
+      icon: "square",
+      link: "#", // Add your project link here
+      details: {
+        fullDescription: "A modern colour palette management application that helps designers and developers discover, create, and preview color palettes in both light and dark modes. Features include palette downloads, real-time previews, and an intuitive user interface.",
+        whyExists: "Because finding the perfect color palette shouldn't feel like searching for a needle in a haystack. Designers needed a tool that actually understood their workflow.",
+        howStarted: "Started as a weekend project when I got frustrated with existing color tools. Spent way too much time tweaking gradients instead of building features.",
+        whatBroke: "The color picker broke on Safari (classic). Spent 3 days debugging CSS color spaces. Also, the database kept timing out when generating palettes.",
+        feedback: [
+          "\"Finally, a color tool that doesn't suck\" - @designer_sarah",
+          "\"This saved me 2 hours on my last project\" - Reddit user",
+          "\"The dark mode preview is *chef's kiss*\" - ProductHunt comment"
+        ]
+      }
     },
     {
       id: 2,
-      title: "Glitch Menu",
-      description: "📱 AR menu app that taught me more from its bugs than its launches. Sometimes the best lessons come from spectacular failures. Swift + ARKit = expensive education.",
-      tags: ["ai", "ar", "mobile"],
-      icon: "circle"
+      title: "Trylo - Virtual Try-On",
+      description: "👗 AI-powered virtual try-on that actually works. Like having a magic mirror, but for your phone. No more guessing if that shirt fits.",
+      tags: ["React", "TensorFlow.js", "Node.js", "Express"],
+      icon: "circle",
+      link: "#", // Add your project link here
+      details: {
+        fullDescription: "An innovative AI-powered virtual try-on platform enabling realistic garment visualization on various pose or body stances. This technology bridges the gap between online shopping and the physical fitting room experience.",
+        whyExists: "Online shopping is broken. 30% return rates because clothes don't fit. Someone had to fix this mess.",
+        howStarted: "Saw my sister return 5 dresses in one week. Thought 'there has to be a better way.' Turns out, computer vision is hard.",
+        whatBroke: "The pose detection kept thinking arms were legs. Also, the AI occasionally made people look like abstract art. Fun times.",
+        feedback: [
+          "\"This is the future of shopping\" - TechCrunch mention",
+          "\"Tried it with 10 outfits, 8 looked accurate\" - Beta tester",
+          "\"My return rate dropped 60%\" - E-commerce store owner"
+        ]
+      }
     },
     {
       id: 3,
-      title: "Hunter AI",
-      description: "🤖 AI tools for creators that broke prod, got fixed quick, and launched wild. Real-time magic powered by Python + ML models. The chaos was worth it.",
-      tags: ["ai", "ml", "realtime"],
-      icon: "triangle"
+      title: "DocBook",
+      description: "📅 Appointment booking that doesn't make you want to scream. Doctors love it, patients love it, even the receptionist loves it.",
+      tags: ["React", "TypeScript", "Node.js", "Supabase"],
+      icon: "triangle",
+      link: "#", // Add your project link here
+      details: {
+        fullDescription: "DocBook: Effortlessly manage doctor appointments with automated booking, reminders, and seamless calendar for patients and healthcare providers.",
+        whyExists: "Healthcare booking is stuck in 1995. Patients deserve better than calling and waiting on hold for 20 minutes.",
+        howStarted: "Built this after my mom spent 2 hours trying to book a simple checkup. Healthcare tech needed a serious upgrade.",
+        whatBroke: "Time zones. Oh god, the time zones. Also, doctors kept double-booking themselves because they didn't trust the system initially.",
+        feedback: [
+          "\"Cut our booking time by 70%\" - Dr. Martinez",
+          "\"Finally, I can book appointments at 2am\" - Patient review",
+          "\"The reminder system is a lifesaver\" - Clinic manager"
+        ]
+      }
     },
     {
       id: 4,
-      title: "Vibe Tools",
-      description: "⚡ Creator toolkit built for speed, shipped with love. Like a Swiss Army knife for content creators — every tool you need, none you don't. TypeScript + good vibes.",
-      tags: ["tools", "creators", "productivity"],
-      icon: "square"
+      title: "Flow-write",
+      description: "✍️ MacOS app for flow writing. 3 random words, no backspace, pure creative chaos. Writers either love it or hate it.",
+      tags: ["Swift", "MacOS", "Creative Tools"],
+      icon: "square",
+      link: "#", // Add your project link here
+      details: {
+        fullDescription: "A MacOS App, which helps in flow-writing by giving you 3 random words, and makes you wander your mind, write freely! No backspaces allowed, just free writing.",
+        whyExists: "Writer's block is real. Sometimes you need to trick your brain into being creative. Constraints breed creativity.",
+        howStarted: "Inspired by Julia Cameron's morning pages. Wanted to gamify the writing process and remove the perfectionist paralysis.",
+        whatBroke: "The random word generator kept giving inappropriate combinations. Had to build a filter. Also, users kept trying to hack the 'no backspace' rule.",
+        feedback: [
+          "\"Broke through my 3-month writer's block\" - Medium writer",
+          "\"Frustrating but effective\" - App Store review",
+          "\"My therapist recommended this\" - User email"
+        ]
+      }
     },
     {
       id: 5,
-      title: "Buildspace Campus",
-      description: "🏢 Physical space where digital dreams became reality. Community, chaos, creation — all under one roof. Not just a building, but a vibe that changed lives.",
-      tags: ["community", "physical", "education"],
-      icon: "circle"
+      title: "OMDB Movie Database",
+      description: "🎬 Movie search that actually finds what you're looking for. No more scrolling through Netflix for 2 hours just to watch The Office again.",
+      tags: ["JavaScript", "Node.js", "Express", "OMDB API"],
+      icon: "circle",
+      link: "#", // Add your project link here
+      details: {
+        fullDescription: "A dynamic movie search application integrated with the OMDB API, allowing users to explore a vast database of films. Features include detailed movie information, responsive design, and real-time search functionality.",
+        whyExists: "Movie discovery is broken. You know that feeling when you can't remember that movie with 'that guy from that thing'? This fixes that.",
+        howStarted: "Built during a movie night when we spent more time searching than watching. The OMDB API was free, so why not?",
+        whatBroke: "Rate limiting. Turns out, free APIs don't like it when you hammer them with requests. Had to implement caching and request throttling.",
+        feedback: [
+          "\"Found that obscure 90s movie in 2 seconds\" - Friend",
+          "\"Better than IMDb's search\" - Reddit comment",
+          "\"Bookmarked this immediately\" - User feedback"
+        ]
+      }
     },
     {
       id: 6,
-      title: "Esports Analytics",
-      description: "📊 Deep learning models that turned gaming chaos into insights. TensorFlow + passion = predicting the unpredictable. Data never felt this exciting.",
-      tags: ["ml", "gaming", "analytics"],
-      icon: "triangle"
+      title: "Heart Risk Detection",
+      description: "❤️ ML model that predicts heart disease risk. Because your heart is important, and early detection saves lives. Science is cool.",
+      tags: ["Python", "TensorFlow", "React", "Scikit-learn"],
+      icon: "triangle",
+      link: "#", // Add your project link here
+      details: {
+        fullDescription: "A machine learning-powered web application that predicts heart disease risk using the Kaggle dataset. The model analyzes various health parameters providing risk assessment and further helping in early detection and prevention.",
+        whyExists: "Heart disease is the #1 killer globally. If ML can help catch it early, why aren't we using it everywhere?",
+        howStarted: "Started as a college project, got obsessed with the accuracy metrics. Turns out, healthcare data is messy but fascinating.",
+        whatBroke: "The model kept overfitting. Spent weeks tuning hyperparameters. Also, medical disclaimers are harder to write than the actual code.",
+        feedback: [
+          "\"Scary accurate for my dad's results\" - User testimonial",
+          "\"This should be in every clinic\" - Healthcare worker",
+          "\"The UI makes complex data digestible\" - UX designer"
+        ]
+      }
     }
   ];
 
@@ -248,22 +322,42 @@ export default function ProjectsSection() {
                     )}
                   </div>
 
-                  <h3 className="text-lg font-semibold mb-3 group-hover:text-foreground/90 transition-colors duration-200">{project.title}</h3>
+                  <div className="flex flex-col h-[calc(100%-14rem)]">
+                    <h3 className="text-lg font-semibold mb-3 group-hover:text-foreground/90 transition-colors duration-200">{project.title}</h3>
 
-                  <p className="text-xs text-foreground/70 mb-4 group-hover:text-foreground/80 transition-colors duration-200">{project.description}</p>
+                    <p className="text-xs text-foreground/70 mb-4 group-hover:text-foreground/80 transition-colors duration-200 flex-grow">{project.description}</p>
 
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, tagIndex) => (
-                      <span 
-                        key={tagIndex} 
-                        className="text-xs text-foreground/50 group-hover:text-foreground/60 transition-all duration-200"
-                        style={{
-                          transitionDelay: `${tagIndex * 50}ms`
-                        }}
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.tags.map((tag, tagIndex) => (
+                        <span 
+                          key={tagIndex} 
+                          className="text-xs text-foreground/50 group-hover:text-foreground/60 transition-all duration-200"
+                          style={{
+                            transitionDelay: `${tagIndex * 50}ms`
+                          }}
+                        >
+                          {tagIndex !== 0 && "• "}{tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* Action Buttons */}
+                    <div className="flex gap-2 mt-auto">
+                      <button
+                        onClick={() => setExpandedProject(project.id)}
+                        className="flex-1 bg-foreground/10 hover:bg-foreground/20 text-foreground/80 text-xs py-2 px-3 rounded-md transition-all duration-200 hover:scale-105"
                       >
-                        {tagIndex !== 0 && "• "}{tag}
-                      </span>
-                    ))}
+                        🔍 Deep Dive
+                      </button>
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-foreground/80 hover:bg-foreground text-white text-xs py-2 px-3 rounded-md transition-all duration-200 hover:scale-105"
+                      >
+                        🚀 Visit
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -296,6 +390,111 @@ export default function ProjectsSection() {
           )}
         </div>
       </div>
+
+      {/* Expanded Project Modal */}
+      {expandedProject && (
+        <div 
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          onClick={() => setExpandedProject(null)}
+        >
+          <div 
+            className="bg-white dark:bg-gray-900 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {(() => {
+              const project = projects.find(p => p.id === expandedProject);
+              if (!project) return null;
+              
+              return (
+                <div className="p-8">
+                  {/* Header */}
+                  <div className="flex justify-between items-start mb-8">
+                    <div>
+                      <h2 className="text-2xl md:text-3xl font-bold mb-2">{project.title}</h2>
+                      <p className="text-foreground/70">{project.description}</p>
+                    </div>
+                    <button
+                      onClick={() => setExpandedProject(null)}
+                      className="text-foreground/50 hover:text-foreground/80 text-2xl p-2 hover:bg-foreground/10 rounded-full transition-all duration-200"
+                    >
+                      ✕
+                    </button>
+                  </div>
+
+                  {/* Tech Stack */}
+                  <div className="mb-8">
+                    <h3 className="text-lg font-semibold mb-3">Built With</h3>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag, index) => (
+                        <span key={index} className="bg-foreground/10 text-foreground/80 px-3 py-1 rounded-full text-sm">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Project Details */}
+                  <div className="space-y-8">
+                    {/* Full Description */}
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3">What It Is</h3>
+                      <p className="text-foreground/80 leading-relaxed">{project.details.fullDescription}</p>
+                    </div>
+
+                    {/* Why It Exists */}
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3">🤔 Why It Exists</h3>
+                      <p className="text-foreground/80 leading-relaxed">{project.details.whyExists}</p>
+                    </div>
+
+                    {/* How It Started */}
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3">🚀 How It Started</h3>
+                      <p className="text-foreground/80 leading-relaxed">{project.details.howStarted}</p>
+                    </div>
+
+                    {/* What Broke */}
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3">💥 What Broke</h3>
+                      <p className="text-foreground/80 leading-relaxed">{project.details.whatBroke}</p>
+                    </div>
+
+                    {/* Feedback */}
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3">💬 What People Said</h3>
+                      <div className="space-y-3">
+                        {project.details.feedback.map((feedback, index) => (
+                          <div key={index} className="bg-foreground/5 p-4 rounded-lg border-l-2 border-foreground/20">
+                            <p className="text-foreground/80 italic">{parseText(feedback)}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Action Buttons */}
+                  <div className="flex gap-4 mt-8 pt-6 border-t border-foreground/10">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-foreground text-white px-6 py-3 rounded-lg hover:bg-foreground/90 transition-all duration-200 hover:scale-105 font-medium"
+                    >
+                      🚀 Visit Project
+                    </a>
+                    <button
+                      onClick={() => setExpandedProject(null)}
+                      className="bg-foreground/10 text-foreground/80 px-6 py-3 rounded-lg hover:bg-foreground/20 transition-all duration-200 font-medium"
+                    >
+                      ← Back to Projects
+                    </button>
+                  </div>
+                </div>
+              );
+            })()}
+          </div>
+        </div>
+      )}
 
       <style jsx>{`
         .scrollbar-hide {
