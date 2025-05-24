@@ -23,13 +23,9 @@ export default function QuotesSection() {
   }
 
   return (
-    <section className="pt-6 md:pt-8 lg:pt-10 pb-12 md:pb-16 lg:pb-24">
+    <section className="pt-8 md:pt-12 lg:pt-16 pb-12 md:pb-16 lg:pb-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="text-center">
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-12 md:mb-16">
-            Words of Wisdom
-          </h2>
-          
           <div className="max-w-3xl mx-auto">
             <blockquote className="text-lg md:text-xl lg:text-2xl font-medium text-foreground/90 leading-relaxed mb-6 italic">
               "{currentQuote.quote}"
