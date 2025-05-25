@@ -50,7 +50,7 @@ export default function JourneySection() {
             
             <div className="space-y-4">
               <p className="text-base md:text-lg leading-relaxed">
-                Next stop: {parseText("<bold>LaVisuals</bold>")} — a global creative community born from Discord vibes and anime obsession.
+                Next stop: {parseText("<bold>LaVisuals</bold>")} — a global creative community born from Discord and anime obsession.
               </p>
               
               <div className="grid md:grid-cols-2 gap-4 my-6">
