@@ -33,7 +33,7 @@ export default function HeroSection() {
         <div className="space-y-3 mb-8">
           <div className="flex items-start gap-3">
             <span className="text-sm font-medium text-foreground/50 min-w-[100px]">Currently:</span>
-            <span className="text-base md:text-lg">Shipping internet chaos since I was 15</span>
+            <span className="text-base md:text-lg">Chasing the same curiosity I had at 15.</span>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-sm font-medium text-foreground/50 min-w-[100px]">Previously:</span>
