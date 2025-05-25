@@ -48,7 +48,7 @@ export default function HeroSection() {
         {/* The Kicker */}
         <div className="border-l-2 border-foreground/20 pl-6">
           <p className="text-lg md:text-xl leading-relaxed text-foreground/80 mb-3">
-            {parseText("From earning real cash before knowing what a \"startup\" was to helping others turn their <bold>weird ideas</bold> into working stuff.")}
+            {parseText("From earning real cash before knowing what a \"startup\" was, to helping others turn their <bold>weird ideas</bold> into working stuff.")}
           </p>
           <p className="text-sm text-foreground/50 italic">
             *Plot twist: The weird ideas are usually the best ones

@@ -22,21 +22,15 @@ export default function JourneySection() {
             
             <div className="space-y-4">
               <p className="text-base md:text-lg leading-relaxed">
-              Picture this: it’s 2019, lockdown hits, and 15-year-old me stumbles into Discord — just messing around — and ends up {parseText("<italic>building a community that actually took off.</italic>")}
+              Picture this: it's 2019, lockdown hits, and 15-year-old me stumbles into Discord — just messing around — and ends up {parseText("<italic>building a community that actually took off.</italic>")}
               </p>
               
-              <div className="bg-gray-50 dark:bg-gray-900/50 p-4 rounded-lg border-l-2 border-yellow-500/50">
-                <p className="text-sm md:text-base leading-relaxed">
-                  Started flipping {parseText("<bold>Pokémon cards and in-game currencies</bold>")} for laughs.
-                  <br />
-                  
-                  <br />
-                  First time someone paid? {parseText("<italic>Unreal..</italic>")}
-                </p>
-              </div>
+              <p className="text-base md:text-lg leading-relaxed">
+                Started flipping {parseText("<bold>Pokémon cards and in-game currencies</bold>")} for laughs.
+              </p>
 
               <p className="text-base md:text-lg leading-relaxed">
-                What started as side hustle cash quickly turned into {parseText("<bold>$1,000 MRR</bold>")}, all before I knew what APIs or business models even were.
+                First time someone paid? {parseText("<italic>Unreal..</italic>")}
               </p>
 
               <blockquote className="text-center py-6 border-y border-foreground/10">
@@ -80,7 +74,13 @@ export default function JourneySection() {
                 </div>
               </div>
 
-              <p className="text-base leading-relaxed italic text-foreground/70">
+              
+
+              <p className="text-base md:text-lg leading-relaxed">
+                {parseText("It began as <italic>just-for-fun</italic>. Before I knew it, there were <bold>late-night orders</bold>, <bold>DMs</bold>, and <bold>a wave of demand</bold> I didn't know what to do with.")}
+              </p>
+
+              <p className="text-base leading-relaxed italic text-foreground/70 mt-4">
                 *Nobody else was doing it like this. We basically invented a whole vibe.
               </p>
             </div>
@@ -97,20 +97,29 @@ export default function JourneySection() {
                 Tried a bit of everything — and I mean {parseText("<italic>everything</italic>")}.
               </p>
 
-              <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
-                <h4 className="font-semibold mb-3 text-red-800 dark:text-red-200">The Experiment List:</h4>
-                <ul className="text-sm space-y-1 text-red-700 dark:text-red-300">
-                  <li>• Built bots, ran gaming servers</li>
-                  <li>• Hosted Minecraft tourneys (till Discord banned us... {parseText("<italic>oops</italic>")})</li>
-                  <li>• Created investment servers & game nights</li>
-                  <li>• Got the verified bot dev badge 🏆</li>
-                  <li>• Made products that went viral</li>
-                  <li>• Made products that flopped ({parseText("<italic>hard</italic>")})</li>
-                </ul>
+              <div className="space-y-3 my-6 pl-4 border-l-2 border-foreground/10">
+                <div className="text-base text-foreground leading-relaxed">
+                  Built bots, ran gaming servers
+                </div>
+                <div className="text-base text-foreground leading-relaxed">
+                  Hosted Minecraft tourneys (till Discord banned us... {parseText("<italic>oops</italic>")})
+                </div>
+                <div className="text-base text-foreground leading-relaxed">
+                  Created investment servers & game nights
+                </div>
+                <div className="text-base text-foreground leading-relaxed">
+                  Got the verified bot dev badge {parseText("<bold>🏆</bold>")}
+                </div>
+                <div className="text-base text-foreground leading-relaxed">
+                  Made products that went viral
+                </div>
+                <div className="text-base text-foreground leading-relaxed">
+                  Made products that flopped ({parseText("<italic>hard</italic>")})
+                </div>
               </div>
 
-              <p className="text-base leading-relaxed">
-              {parseText("<bold>Took some L's, took some learning...</bold>")}
+              <p className="text-base md:text-lg leading-relaxed font-medium">
+              {parseText("<bold>Took some L's, Took some learning...</bold>")}
               </p>
             </div>
           </div>

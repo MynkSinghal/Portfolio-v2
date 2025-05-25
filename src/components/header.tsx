@@ -9,10 +9,7 @@ export default function Header() {
         </Link>
         
         <div className="flex items-center gap-4">
-          <div className="hidden sm:flex items-center gap-2 text-sm text-foreground/60">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span>Currently building</span>
-          </div>
+          
           
           <a 
             href="/resume.pdf" 
