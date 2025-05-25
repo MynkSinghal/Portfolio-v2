@@ -55,7 +55,7 @@ export default function JourneySection() {
               
               <div className="grid md:grid-cols-2 gap-4 my-6">
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-foreground/90">What we built:</h4>
+                  <h4 className="font-semibold text-foreground/90">What came out of it:</h4>
                   <ul className="text-sm space-y-1 text-foreground/70">
                     <li>• Animated banners that slapped</li>
                     <li>• 3D avatars with personality</li>
@@ -81,7 +81,7 @@ export default function JourneySection() {
               </p>
 
               <p className="text-base leading-relaxed italic text-foreground/70 mt-4">
-                *Nobody else was doing it like this. We basically invented a whole vibe.
+                *Nobody else was doing it like this. Basically invented a whole vibe.
               </p>
             </div>
           </div>
