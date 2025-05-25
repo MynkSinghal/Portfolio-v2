@@ -1,103 +1,103 @@
+
 [
-    {
-      "id": 1,
-      "quote": "Programs must be written for people to read, and only incidentally for machines to execute.",
-      "author": "Harold Abelson"
-    },
-    {
-      "id": 2,
-      "quote": "The best way to predict the future is to invent it.",
-      "author": "Alan Kay"
-    },
-    {
-      "id": 3,
-      "quote": "Don’t worry about failure; you only have to be right once.",
-      "author": "Drew Houston"
-    },
-    {
-      "id": 4,
-      "quote": "If you are not embarrassed by the first version of your product, you’ve launched too late.",
-      "author": "Reid Hoffman"
-    },
-    {
-      "id": 5,
-      "quote": "Great companies are built on great products.",
-      "author": "Elon Musk"
-    },
-    {
-      "id": 6,
-      "quote": "Code is like humor. When you have to explain it, it’s bad.",
-      "author": "Cory House"
-    },
-    {
-      "id": 7,
-      "quote": "The secret to getting ahead is getting started.",
-      "author": "Mark Twain"
-    },
-    {
-      "id": 8,
-      "quote": "Chase the vision, not the money; the money will end up following you.",
-      "author": "Tony Hsieh"
-    },
-    {
-      "id": 9,
-      "quote": "A user interface is like a joke. If you have to explain it, it’s not that good.",
-      "author": "Martin LeBlanc"
-    },
-    {
-      "id": 10,
-      "quote": "Don’t let yesterday take up too much of today.",
-      "author": "Will Rogers"
-    },
-    {
-      "id": 11,
-      "quote": "It’s not about ideas. It’s about making ideas happen.",
-      "author": "Scott Belsky"
-    },
-    {
-      "id": 12,
-      "quote": "Move fast and break things. Unless you are breaking stuff, you are not moving fast enough.",
-      "author": "Mark Zuckerberg"
-    },
-    {
-      "id": 13,
-      "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
-      "author": "Franklin D. Roosevelt"
-    },
-    {
-      "id": 14,
-      "quote": "Simplicity is the soul of efficiency.",
-      "author": "Austin Freeman"
-    },
-    {
-      "id": 15,
-      "quote": "Don’t watch the clock; do what it does. Keep going.",
-      "author": "Sam Levenson"
-    },
-    {
-      "id": 16,
-      "quote": "If you’re not a little bit uncomfortable on a daily basis, it means you’re not growing.",
-      "author": "Sallie Krawcheck"
-    },
-    {
-      "id": 17,
-      "quote": "The function of good software is to make the complex appear to be simple.",
-      "author": "Grady Booch"
-    },
-    {
-      "id": 18,
-      "quote": "Opportunities don't happen. You create them.",
-      "author": "Chris Grosser"
-    },
-    {
-      "id": 19,
-      "quote": "Stay hungry, stay foolish.",
-      "author": "Steve Jobs"
-    },
-    {
-      "id": 20,
-      "quote": "Success is not how high you have climbed, but how you make a positive difference to the world.",
-      "author": "Roy T. Bennett"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "quote": "Programs must be written for people to read, and only incidentally for machines to execute.",
+    "author": "Harold Abelson"
+  },
+  {
+    "id": 2,
+    "quote": "The best way to predict the future is to invent it.",
+    "author": "Alan Kay"
+  },
+  {
+    "id": 3,
+    "quote": "Spend so much time on self improvement that you have no time to criticize others.",
+    "author": "Norman Vincent Peale"
+  },
+  {
+    "id": 4,
+    "quote": "If you are not embarrassed by the first version of your product, you’ve launched too late.",
+    "author": "Reid Hoffman"
+  },
+  {
+    "id": 5,
+    "quote": "Great companies are built on great products.",
+    "author": "Elon Musk"
+  },
+  {
+    "id": 6,
+    "quote": "Code is like humor. When you have to explain it, it’s bad.",
+    "author": "Cory House"
+  },
+  {
+    "id": 7,
+    "quote": "The magic you are looking for is in the work you are avoiding.",
+    "author": "Dipen Parmar"
+  },
+  {
+    "id": 8,
+    "quote": "Chase the vision, not the money; the money will end up following you.",
+    "author": "Tony Hsieh"
+  },
+  {
+    "id": 9,
+    "quote": "A user interface is like a joke. If you have to explain it, it’s not that good.",
+    "author": "Martin LeBlanc"
+  },
+  {
+    "id": 10,
+    "quote": "Don’t let yesterday take up too much of today.",
+    "author": "Will Rogers"
+  },
+  {
+    "id": 11,
+    "quote": "There’s no losing, only learning. There’s no failure only opportunities, and there’s no problem, only solutions.",
+    "author": "Pitbull"
+  },
+  {
+    "id": 12,
+    "quote": "Move fast and break things. Unless you are breaking stuff, you are not moving fast enough.",
+    "author": "Mark Zuckerberg"
+  },
+  {
+    "id": 13,
+    "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
+    "author": "Franklin D. Roosevelt"
+  },
+  {
+    "id": 14,
+    "quote": "If you always do what you always did you’ll always get what you always got.",
+    "author": "Jessie Potter"
+  },
+  {
+    "id": 15,
+    "quote": "Don’t watch the clock; do what it does. Keep going.",
+    "author": "Sam Levenson"
+  },
+  {
+    "id": 16,
+    "quote": "If you’re not a little bit uncomfortable on a daily basis, it means you’re not growing.",
+    "author": "Sallie Krawcheck"
+  },
+  {
+    "id": 17,
+    "quote": "The function of good software is to make the complex appear to be simple.",
+    "author": "Grady Booch"
+  },
+  {
+    "id": 18,
+    "quote": "If you are a friend to everybody, you are an enemy to yourself.",
+    "author": "Mike Tyson"
+  },
+  {
+    "id": 19,
+    "quote": "Stay hungry, stay foolish.",
+    "author": "Steve Jobs"
+  },
+  {
+    "id": 20,
+    "quote": "Success is not how high you have climbed, but how you make a positive difference to the world.",
+    "author": "Roy T. Bennett"
+  }
+]
