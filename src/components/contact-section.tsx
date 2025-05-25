@@ -53,7 +53,7 @@ export default function ContactSection() {
           </form>
           
           <p className="text-sm text-muted-foreground mt-4">
-            {parseText("<italic>Usually respond within 24 hours (unless I'm deep in a coding session)</italic>")}
+            {parseText("<italic>Usually respond within 24 hours</italic>")}
           </p>
         </div>
       </div>
