@@ -37,7 +37,7 @@ export default function HeroSection() {
           </div>
           <div className="flex items-start gap-3">
             <span className="text-sm font-medium text-foreground/50 min-w-[100px]">Previously:</span>
-            <span className="text-base md:text-lg">Flipping meme coins & Pokémon cards on Discord</span>
+            <span className="text-base md:text-lg">Flipping game coins & Pokémon cards on Discord</span>
           </div>
           <div className="flex items-start gap-3">
             <span className="text-sm font-medium text-foreground/50 min-w-[100px]">Always:</span>
