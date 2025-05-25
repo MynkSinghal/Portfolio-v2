@@ -35,7 +35,7 @@ export default function JourneySection() {
 
               <blockquote className="text-center py-6 border-y border-foreground/10">
                 <p className="text-lg md:text-xl font-medium italic text-foreground/80">
-                  "No React. No roadmap. Just {parseText("<italic>curiosity and chaos.</italic>")}"
+                  "No roadmap. Just {parseText("<italic>curiosity and chaos.</italic>")}"
                 </p>
                 <p className="text-sm text-foreground/50 mt-2">— me, absolutely winging it (and somehow it worked)</p>
               </blockquote>
