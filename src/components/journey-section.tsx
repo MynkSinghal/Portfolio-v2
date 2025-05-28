@@ -9,7 +9,7 @@ export default function JourneySection() {
             My Real Journey
           </h2>
           <p className="text-base text-foreground/60 italic">
-            (spoiler: it's messier than my code)
+            (spoiler: it's like a TED Talk written at 3 AM)
           </p>
         </div>
 
