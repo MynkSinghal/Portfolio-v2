@@ -28,7 +28,6 @@ export default function QuickNavSection() {
               </p>
             </div>
             <div className="flex items-center gap-3">
-              
               <button 
                 onClick={() => {
                   const projectsSection = document.querySelector('[data-section="projects"]');
@@ -39,6 +38,18 @@ export default function QuickNavSection() {
                 className="text-xs text-foreground/60 hover:text-foreground/90 underline underline-offset-2 transition-colors"
               >
                 Skip to Projects
+              </button>
+              
+              <button 
+                onClick={() => {
+                  const blogsSection = document.querySelector('[data-section="blogs"]');
+                  if (blogsSection) {
+                    blogsSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="text-xs text-foreground/60 hover:text-foreground/90 underline underline-offset-2 transition-colors"
+              >
+                Blogs
               </button>
             </div>
           </div>

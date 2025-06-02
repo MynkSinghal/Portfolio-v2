@@ -4,6 +4,7 @@ import QuickNavSection from "@/components/quick-nav-section";
 import JourneySection from "@/components/journey-section";
 import WorkspaceSection from "@/components/workspace-section";
 import ProjectsSection from "@/components/projects-section";
+import BlogsSection from "@/components/blogs-section";
 import QuotesSection from "@/components/quotes-section";
 import TimelineSection from "@/components/timeline-section";
 import SocialLinksSection from "@/components/social-links-section";
@@ -20,6 +21,7 @@ export default function Home() {
         <JourneySection />
         <WorkspaceSection />
         <ProjectsSection />
+        <BlogsSection />
         <QuotesSection />
         <TimelineSection />
         <SocialLinksSection />

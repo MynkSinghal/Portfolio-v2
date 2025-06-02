@@ -18,8 +18,25 @@ const libreCaslonText = Libre_Caslon_Text({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mayanksinghal.tech'),
   title: "Mayank: Still Shipping Wild Ideas",
   description: "Mayank – Modern Tech Creator Portfolio",
+  openGraph: {
+    title: "Mayank: Still Shipping Wild Ideas",
+    description: "Mayank – Modern Tech Creator Portfolio",
+    url: "https://mayanksinghal.tech",
+    siteName: "Mayank Singhal",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mayank: Still Shipping Wild Ideas",
+    description: "Mayank – Modern Tech Creator Portfolio",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
