@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import BlogFeedback from '@/components/blog-feedback';
 
 export const metadata: Metadata = {
   title: 'The Shifting Sands: Why Traditional Education Fails in the Age of AI | Mayank Singhal',
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
     title: 'The Shifting Sands: Why Traditional Education Fails in the Age of AI',
     description: "We're living in an AI-powered world, yet our education system is still stuck in an era of textbooks and standardized tests. Learn why conventional education no longer aligns with reality.",
     type: 'article',
-    publishedTime: '2024-03-28',
+    publishedTime: '2025-05-28',
     authors: ['Mayank Singhal'],
     images: ['/blog-covers/ai-education.jpg'],
   },
@@ -32,8 +33,8 @@ export default function BlogPage() {
       "@type": "Person",
       "name": "Mayank Singhal"
     },
-    "datePublished": "2024-03-28",
-    "dateModified": "2024-03-28",
+    "datePublished": "2025-05-28",
+    "dateModified": "2025-05-28",
     "image": "/blog-covers/ai-education.jpg",
     "publisher": {
       "@type": "Person",
@@ -243,8 +244,21 @@ export default function BlogPage() {
               <p>Look at the tools or knowledge you already have. How can you wrap them into something <em>10x easier</em> for someone else?</p>
 
               <p>Let that be your next project.</p>
+
+              {/* Call-to-Action */}
+              
+
+              <p>📚 Enjoyed this breakdown? I'm working on a follow-up: <strong>"How to Build High-Value Wrappers in Your Career."</strong> Want it early? Drop a comment below!</p>
             </div>
           </article>
+
+          {/* Blog Feedback Section */}
+          <div className="mt-12">
+            <BlogFeedback 
+              blogSlug="traditional-education-fails-ai-age"
+              blogTitle="The Shifting Sands: Why Traditional Education Fails in the Age of AI"
+            />
+          </div>
 
           {/* Footer */}
           <footer className="mt-12 pt-8 border-t border-foreground/10">
@@ -265,7 +279,7 @@ export default function BlogPage() {
               </Link>
               
               <div className="text-sm text-foreground/50">
-                Published on Mar 28, 2024
+                Published on Dec 10, 2024
               </div>
             </div>
           </footer>

@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import BlogFeedback from '@/components/blog-feedback';
 
 export const metadata: Metadata = {
   title: '🇺🇸 Why America Builds Better Products (And What India Can Learn From It) | Mayank Singhal',
@@ -228,6 +229,14 @@ export default function BlogPage() {
               <p>Drop your answer in the comments — and tag a founder who needs to see this 👇</p>
             </div>
           </article>
+
+          {/* Blog Feedback Section */}
+          <div className="mt-12">
+            <BlogFeedback 
+              blogSlug="america-dominates-product-branding"
+              blogTitle="🇺🇸 Why America Builds Better Products (And What India Can Learn From It)"
+            />
+          </div>
 
           {/* Footer */}
           <footer className="mt-12 pt-8 border-t border-foreground/10">
