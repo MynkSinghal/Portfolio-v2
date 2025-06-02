@@ -61,7 +61,7 @@ export async function POST(request: NextRequest) {
               <h2 style="color: #495057; margin: 0 0 10px 0; font-size: 18px;">Blog Post Details</h2>
               <p style="margin: 5px 0;"><strong>Title:</strong> ${blogTitle}</p>
               <p style="margin: 5px 0;"><strong>Slug:</strong> ${blogSlug}</p>
-              <p style="margin: 5px 0;"><strong>URL:</strong> <a href="https://your-domain.com/blog/${blogSlug}" style="color: #007bff;">View Post</a></p>
+              <p style="margin: 5px 0;"><strong>URL:</strong> <a href="https://mayanksinghal.tech/blog/${blogSlug}" style="color: #007bff;">View Post</a></p>
             </div>
 
             <div style="background-color: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
