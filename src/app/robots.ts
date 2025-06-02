@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/admin/'],
     },
-    sitemap: 'https://your-domain.com/sitemap.xml', // Replace with your actual domain
+    sitemap: 'https://mayanksinghal.tech/sitemap.xml',
   };
 } 

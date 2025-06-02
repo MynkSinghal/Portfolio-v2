@@ -3,7 +3,7 @@ import { getAllBlogs } from '@/data/blogs';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const blogs = getAllBlogs();
-  const baseUrl = 'https://your-domain.com'; // Replace with your actual domain
+  const baseUrl = 'https://mayanksinghal.tech';
 
   const blogUrls = blogs.map((blog) => ({
     url: `${baseUrl}${blog.href}`,
