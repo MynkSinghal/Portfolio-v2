@@ -123,7 +123,7 @@ export default function BlogPage() {
               <p>Here's the uncomfortable truth:</p>
               <p>Traditional education was designed for an era before AI — when memorizing facts, writing code, and following procedures gave you an edge.</p>
 
-              <p>But as Varun Mayya points out, AI now does all that — faster and better.</p>
+              <p>AI now does all that — faster and better.</p>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 AI isn't just changing <em>how</em> we work. It's changing <em>what</em> is worth learning.
