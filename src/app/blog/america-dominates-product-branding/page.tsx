@@ -226,7 +226,7 @@ export default function BlogPage() {
 
               <h3 className="text-xl font-semibold mb-3 mt-6">🤔 What's the one Indian product you love but wish looked better?</h3>
 
-              <p>Drop your answer in the comments — and tag a founder who needs to see this 👇</p>
+              <p>Drop your answer in the comments 👇</p>
             </div>
           </article>
 

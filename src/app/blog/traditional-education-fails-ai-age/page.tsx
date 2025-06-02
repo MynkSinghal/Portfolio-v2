@@ -248,7 +248,7 @@ export default function BlogPage() {
               {/* Call-to-Action */}
               
 
-              <p>📚 Enjoyed this breakdown? I'm working on a follow-up: <strong>"How to Build High-Value Wrappers in Your Career."</strong> Want it early? Drop a comment below!</p>
+              <p>📚 Enjoyed this breakdown? Drop a feedback below!</p>
             </div>
           </article>
 
