@@ -32,7 +32,7 @@ export const blogs: BlogPost[] = [
     description: "In an era where artificial intelligence is reshaping every industry, our educational systems remain stuck in the past. Explore why the traditional approach to learning is becoming obsolete and what we need to do to prepare for an AI-driven future.",
     author: "Mayank Singhal",
     readTime: "10 min read",
-    date: "Jun 02, 2025",
+    date: "Jun 2, 2025",
     category: "Artificial Intelligence",
     slug: "traditional-education-fails-ai-age",
     href: "/blog/traditional-education-fails-ai-age",

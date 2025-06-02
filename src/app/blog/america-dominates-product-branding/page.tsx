@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: '🇺🇸 Why America Builds Better Products (And What India Can Learn From It)',
     description: "Ever walked into a U.S. grocery store and thought, 'Why does everything look so... perfect?' Discover the deeper system behind America's product perfection.",
     type: 'article',
-    publishedTime: '2024-12-15',
+    publishedTime: '2025-05-28',
     authors: ['Mayank Singhal'],
     images: ['/blog-covers/america-branding.jpg'],
   },
@@ -33,8 +33,8 @@ export default function BlogPage() {
       "@type": "Person",
       "name": "Mayank Singhal"
     },
-    "datePublished": "2024-12-15",
-    "dateModified": "2024-12-15",
+    "datePublished": "2025-05-28",
+    "dateModified": "2025-05-28",
     "image": "/blog-covers/america-branding.jpg",
     "publisher": {
       "@type": "Person",
@@ -83,7 +83,7 @@ export default function BlogPage() {
               <span>•</span>
               <span>8 min read</span>
               <span>•</span>
-              <span>Dec 15, 2024</span>
+              <span>May 28, 2025</span>
             </div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
@@ -257,7 +257,7 @@ export default function BlogPage() {
               </Link>
               
               <div className="text-sm text-foreground/50">
-                Published on Dec 15, 2024
+                Published on May 28, 2025
               </div>
             </div>
           </footer>
