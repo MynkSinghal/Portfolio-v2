@@ -252,7 +252,7 @@ export default function BlogPage() {
 
               <hr className="border-foreground/20 my-8" />
 
-              <h3 className="text-xl font-semibold mb-3 mt-6">💬 We'd love your feedback!</h3>
+              <h3 className="text-xl font-semibold mb-3 mt-6">💬 I'd love your feedback!</h3>
 
               <p>Found this breakdown useful? Confused about something?<br />
               Drop your thoughts or suggestions in the comments — your input helps shape better posts ahead.</p>
