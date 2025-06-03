@@ -14,6 +14,19 @@ export interface BlogPost {
 
 export const blogs: BlogPost[] = [
   {
+    id: "4",
+    title: "🎟️ The Subscription Trap: Are We Leasing Our Lives Away?",
+    description: "You don't own it — you just access it… until you stop paying. Discover the hidden costs of the subscription economy and how to make smarter choices.",
+    author: "Mayank Singhal",
+    readTime: "10 min read",
+    date: "Jun 7, 2025",
+    category: "Finance & Digital Life",
+    slug: "subscription-trap-leasing-lives",
+    href: "/blog/subscription-trap-leasing-lives",
+    coverImage: "/blog-covers/subscription-trap.jpg",
+    published: true,
+  },
+  {
     id: "3",
     title: "🧠 Why the Smartest Career Advice Rarely Comes From Tutorial Creators",
     description: "If everyone's learning the same thing, who's creating the future? Discover why real breakthroughs come from builders, not tutorial makers.",
