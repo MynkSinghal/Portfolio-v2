@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: '🎟️ The Subscription Trap: Are We Leasing Our Lives Away?',
     description: "You don't own it — you just access it… until you stop paying. Discover the hidden costs of the subscription economy and how to make smarter choices.",
     type: 'article',
-    publishedTime: '2025-06-07',
+    publishedTime: '2025-06-04',
     authors: ['Mayank Singhal'],
     images: ['/blog-covers/subscription-trap.jpg'],
   },
@@ -33,8 +33,8 @@ export default function BlogPage() {
       "@type": "Person",
       "name": "Mayank Singhal"
     },
-    "datePublished": "2025-06-07",
-    "dateModified": "2025-06-07",
+    "datePublished": "2025-06-04",
+    "dateModified": "2025-06-04",
     "image": "/blog-covers/subscription-trap.jpg",
     "publisher": {
       "@type": "Person",
@@ -81,9 +81,9 @@ export default function BlogPage() {
             <div className="flex items-center gap-2 text-sm text-foreground/60 mb-4">
               <span className="font-medium">Mayank Singhal</span>
               <span>•</span>
-              <span>10 min read</span>
+              <span>3 min read</span>
               <span>•</span>
-              <span>Jun 7, 2025</span>
+              <span>Jun 4, 2025</span>
             </div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
@@ -286,7 +286,7 @@ export default function BlogPage() {
               </Link>
               
               <div className="text-sm text-foreground/50">
-                Published on Jun 7, 2025
+                Published on Jun 4, 2025
               </div>
             </div>
           </footer>

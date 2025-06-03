@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'The Shifting Sands: Why Traditional Education Fails in the Age of AI',
     description: "We're living in an AI-powered world, yet our education system is still stuck in an era of textbooks and standardized tests. Learn why conventional education no longer aligns with reality.",
     type: 'article',
-    publishedTime: '2025-06-02',
+    publishedTime: '2025-05-20',
     authors: ['Mayank Singhal'],
     images: ['/blog-covers/ai-education.jpg'],
   },
@@ -33,8 +33,8 @@ export default function BlogPage() {
       "@type": "Person",
       "name": "Mayank Singhal"
     },
-    "datePublished": "2025-06-02",
-    "dateModified": "2025-06-02",
+    "datePublished": "2025-05-20",
+    "dateModified": "2025-05-20",
     "image": "/blog-covers/ai-education.jpg",
     "publisher": {
       "@type": "Person",
@@ -81,9 +81,9 @@ export default function BlogPage() {
             <div className="flex items-center gap-2 text-sm text-foreground/60 mb-4">
               <span className="font-medium">Mayank Singhal</span>
               <span>•</span>
-              <span>8 min read</span>
+              <span>3 min read</span>
               <span>•</span>
-              <span>Jun 2, 2025</span>
+              <span>May 20, 2025</span>
             </div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
@@ -279,7 +279,7 @@ export default function BlogPage() {
               </Link>
               
               <div className="text-sm text-foreground/50">
-                Published on Jun 2, 2025
+                Published on May 20, 2025
               </div>
             </div>
           </footer>

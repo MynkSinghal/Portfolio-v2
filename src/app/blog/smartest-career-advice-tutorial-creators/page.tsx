@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: '🧠 Why the Smartest Career Advice Rarely Comes From Tutorial Creators',
     description: "If everyone's learning the same thing, who's creating the future? Discover why real breakthroughs come from builders, not tutorial makers.",
     type: 'article',
-    publishedTime: '2025-06-05',
+    publishedTime: '2025-06-01',
     authors: ['Mayank Singhal'],
     images: ['/blog-covers/career-advice.jpg'],
   },
@@ -33,8 +33,8 @@ export default function BlogPage() {
       "@type": "Person",
       "name": "Mayank Singhal"
     },
-    "datePublished": "2025-06-05",
-    "dateModified": "2025-06-05",
+    "datePublished": "2025-06-01",
+    "dateModified": "2025-06-01",
     "image": "/blog-covers/career-advice.jpg",
     "publisher": {
       "@type": "Person",
@@ -81,9 +81,9 @@ export default function BlogPage() {
             <div className="flex items-center gap-2 text-sm text-foreground/60 mb-4">
               <span className="font-medium">Mayank Singhal</span>
               <span>•</span>
-              <span>12 min read</span>
+              <span>3 min read</span>
               <span>•</span>
-              <span>Jun 5, 2025</span>
+              <span>Jun 1, 2025</span>
             </div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
@@ -333,7 +333,7 @@ export default function BlogPage() {
               </Link>
               
               <div className="text-sm text-foreground/50">
-                Published on Jun 5, 2025
+                Published on Jun 1, 2025
               </div>
             </div>
           </footer>
