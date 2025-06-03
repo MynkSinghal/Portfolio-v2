@@ -14,6 +14,19 @@ export interface BlogPost {
 
 export const blogs: BlogPost[] = [
   {
+    id: "3",
+    title: "🧠 Why the Smartest Career Advice Rarely Comes From Tutorial Creators",
+    description: "If everyone's learning the same thing, who's creating the future? Discover why real breakthroughs come from builders, not tutorial makers.",
+    author: "Mayank Singhal",
+    readTime: "12 min read",
+    date: "Jun 5, 2025",
+    category: "Career & AI",
+    slug: "smartest-career-advice-tutorial-creators",
+    href: "/blog/smartest-career-advice-tutorial-creators",
+    coverImage: "/blog-covers/career-advice.jpg",
+    published: true,
+  },
+  {
     id: "2",
     title: "🇺🇸 Why America Builds Better Products (And What India Can Learn From It)",
     description: "Ever walked into a U.S. grocery store and thought, 'Why does everything look so... perfect?' Discover the deeper system behind America's product perfection.",
