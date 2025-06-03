@@ -54,7 +54,7 @@ export const blogs: BlogPost[] = [
   },
   {
     id: "1",
-    title: "The Shifting Sands: Why Traditional Education Fails in the Age of AI",
+    title: "📉 The Shifting Sands: Why Traditional Education Fails in the Age of AI",
     description: "In an era where artificial intelligence is reshaping every industry, our educational systems remain stuck in the past. Explore why the traditional approach to learning is becoming obsolete and what we need to do to prepare for an AI-driven future.",
     author: "Mayank Singhal",
     readTime: "10 min read",
