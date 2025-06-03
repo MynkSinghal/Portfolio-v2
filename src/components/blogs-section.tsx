@@ -96,7 +96,7 @@ export default function BlogsSection() {
   };
 
   return (
-    <section className="py-16 md:py-20 lg:py-24 pt-6 md:pt-8 lg:pt-12 pb-8 md:pb-10 lg:pb-12" data-section="blogs">
+    <section id="blogs" className="py-16 md:py-20 lg:py-24 pt-6 md:pt-8 lg:pt-12 pb-8 md:pb-10 lg:pb-12" data-section="blogs">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         {/* Animated Header */}
         <div className={`transition-all duration-1000 ease-out ${
