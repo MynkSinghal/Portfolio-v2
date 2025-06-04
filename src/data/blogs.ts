@@ -14,6 +14,32 @@ export interface BlogPost {
 
 export const blogs: BlogPost[] = [
   {
+    id: "6",
+    title: "💸 The UPI Revolution: How India Went From Cash to Tap",
+    description: "From 2 billion to 7.3 billion transactions per month. UPI didn't just digitize payments—it rewired a nation. Discover how India built the world's most successful payment system.",
+    author: "Mayank Singhal",
+    readTime: "4 min read",
+    date: "Jun 18, 2025",
+    category: "Fintech & Digital India",
+    slug: "upi-revolution-india-cash-to-tap",
+    href: "/blog/upi-revolution-india-cash-to-tap",
+    coverImage: "/blog-covers/upi-revolution.jpg",
+    published: false,
+  },
+  {
+    id: "5",
+    title: "🏪 Kirana vs Quick Commerce: The Battle for India's Retail Soul",
+    description: "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR. This isn't just competition—it's a transformation of how India shops.",
+    author: "Mayank Singhal",
+    readTime: "4 min read",
+    date: "Jun 11, 2025",
+    category: "Indian Retail",
+    slug: "kirana-vs-quick-commerce-india",
+    href: "/blog/kirana-vs-quick-commerce-india",
+    coverImage: "/blog-covers/kirana-quick-commerce.jpg",
+    published: false,
+  },
+  {
     id: "4",
     title: "🎟️ The Subscription Trap: Are We Leasing Our Lives Away?",
     description: "From Netflix to gym memberships, we're drowning in subscriptions. But what if this 'everything-as-a-service' world is rewiring our relationship with ownership itself?",
