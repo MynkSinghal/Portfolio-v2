@@ -78,6 +78,9 @@ def calculate_read_time(word_count):
         return f"{round(minutes)} min read"
 
 files = [
+    ('src/app/blog/knowledge-is-cheap-knowing-what-to-use-real-hustle/page.tsx', 'Knowledge Application'),
+    ('src/app/blog/forget-10000-hours-iterations-make-you-unstoppable/page.tsx', '10,000 Iterations'),
+    ('src/app/blog/internship-dilemma-no-badge-make-it-big/page.tsx', 'Internship Dilemma'),
     ('src/app/blog/upi-revolution-india-cash-to-tap/page.tsx', 'UPI Revolution'),
     ('src/app/blog/kirana-vs-quick-commerce-india/page.tsx', 'Kirana vs Quick Commerce'),
     ('src/app/blog/subscription-trap-leasing-lives/page.tsx', 'Subscription Trap'),
