@@ -111,7 +111,7 @@ export default function BlogPage() {
               </p>
 
               <p>
-                Then came a four-letter disruption: <strong>UPI.</strong>
+                Then came a three-letter disruption: <strong>UPI.</strong>
               </p>
 
               <p>

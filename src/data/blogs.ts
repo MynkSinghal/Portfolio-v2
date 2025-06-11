@@ -76,7 +76,7 @@ export const blogs: BlogPost[] = [
     slug: "kirana-vs-quick-commerce-india",
     href: "/blog/kirana-vs-quick-commerce-india",
     coverImage: "/blog-covers/kirana-quick-commerce.jpg",
-    published: false,
+    published: true,
   },
   {
     id: "4",
