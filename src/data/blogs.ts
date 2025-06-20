@@ -63,7 +63,7 @@ export const blogs: BlogPost[] = [
     slug: "upi-revolution-india-cash-to-tap",
     href: "/blog/upi-revolution-india-cash-to-tap",
     coverImage: "/blog-covers/upi-revolution.jpg",
-    published: false,
+    published: true,
   },
   {
     id: "5",
