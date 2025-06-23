@@ -78,6 +78,14 @@ def calculate_read_time(word_count):
         return f"{round(minutes)} min read"
 
 files = [
+    ('src/app/blog/the-real-ceos-of-india-are-not-on-linkedin/page.tsx', 'Real CEOs of India'),
+    ('src/app/blog/real-operations-dont-happen-on-slack-indian-edition/page.tsx', 'Real Operations Slack'),
+    ('src/app/blog/chaiwalas-and-chainstores-what-india-gets-right/page.tsx', 'Chaiwalas vs Chains'),
+    ('src/app/blog/why-cred-never-cared-about-revenue-until-it-had-to/page.tsx', 'CRED Revenue Strategy'),
+    ('src/app/blog/grit-over-gadgets-indian-smes-win-without-fancy-tech/page.tsx', 'Indian SMEs Grit Over Gadgets'),
+    ('src/app/blog/india-logistics-labyrinth-complexity-breeds-resilience/page.tsx', 'India Logistics Labyrinth'),
+    ('src/app/blog/minimalist-3000-crore-skincare-brand-radical-transparency/page.tsx', 'Minimalist Skincare Brand'),
+    ('src/app/blog/will-ai-make-us-smarter-or-stupider/page.tsx', 'AI Make Us Smarter/Stupider'),
     ('src/app/blog/knowledge-is-cheap-knowing-what-to-use-real-hustle/page.tsx', 'Knowledge Application'),
     ('src/app/blog/forget-10000-hours-iterations-make-you-unstoppable/page.tsx', '10,000 Iterations'),
     ('src/app/blog/internship-dilemma-no-badge-make-it-big/page.tsx', 'Internship Dilemma'),

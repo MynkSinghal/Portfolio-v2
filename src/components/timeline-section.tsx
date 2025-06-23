@@ -4,20 +4,20 @@ export default function TimelineSection() {
       id: 1,
       title: "Publicis Sapient",
       role: "Intern - Engineering Python",
-      period: "May 2025 - Present"
+      period: "May 2025 - Present",
     },
     {
       id: 2,
       title: "MUJ ACM",
       role: "Team Head",
-      period: "2023-2024"
+      period: "2023-2024",
     },
     {
       id: 3,
       title: "Lavisuals",
       role: "Founder",
-      period: "2021-2023"
-    }
+      period: "2021-2023",
+    },
   ];
 
   return (

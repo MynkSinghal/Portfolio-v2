@@ -1,14 +1,14 @@
+import BlogsSection from "@/components/blogs-section";
+import ContactSection from "@/components/contact-section";
 import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
-import QuickNavSection from "@/components/quick-nav-section";
 import JourneySection from "@/components/journey-section";
-import WorkspaceSection from "@/components/workspace-section";
 import ProjectsSection from "@/components/projects-section";
-import BlogsSection from "@/components/blogs-section";
+import QuickNavSection from "@/components/quick-nav-section";
 import QuotesSection from "@/components/quotes-section";
-import TimelineSection from "@/components/timeline-section";
 import SocialLinksSection from "@/components/social-links-section";
-import ContactSection from "@/components/contact-section";
+import TimelineSection from "@/components/timeline-section";
+import WorkspaceSection from "@/components/workspace-section";
 
 export default function Home() {
   return (

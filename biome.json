@@ -24,6 +24,12 @@
       "correctness": {
         "noUnusedVariables": "off"
       },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "style": {
+        "useImportType": "off"
+      },
       "nursery": {
         "noImgElement": "off"
       },
@@ -42,7 +48,8 @@
         "useAltText": "off",
         "useKeyWithClickEvents": "off",
         "useKeyWithMouseEvents": "off",
-        "useButtonType": "off"
+        "useButtonType": "off",
+        "useIframeTitle": "off"
       }
     }
   },

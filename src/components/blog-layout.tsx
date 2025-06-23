@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import BlogFeedback from '@/components/blog-feedback';
+import BlogFeedback from "@/components/blog-feedback";
+import Link from "next/link";
 
 interface BlogLayoutProps {
   children: React.ReactNode;
@@ -20,23 +20,28 @@ export default function BlogLayout({
   coverImage,
   author = "Mayank Singhal",
   readTime = "8 min read",
-  category
+  category,
 }: BlogLayoutProps) {
   return (
     <main className="min-h-screen bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12 md:py-16 lg:py-20">
         {/* Back Navigation */}
-        <Link 
-          href="/#blogs" 
+        <Link
+          href="/#blogs"
           className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors mb-8 group"
         >
-          <svg 
-            className="w-4 h-4 group-hover:-translate-x-1 transition-transform" 
-            fill="none" 
-            stroke="currentColor" 
+          <svg
+            className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
+            fill="none"
+            stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 12H5M12 19l-7-7 7-7" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 12H5M12 19l-7-7 7-7"
+            />
           </svg>
           Back to Blogs
         </Link>
@@ -44,8 +49,8 @@ export default function BlogLayout({
         {/* Cover Image */}
         {coverImage && (
           <div className="aspect-[2/1] rounded-2xl overflow-hidden mb-8 bg-foreground/5">
-            <img 
-              src={coverImage} 
+            <img
+              src={coverImage}
               alt={blogTitle}
               className="w-full h-full object-cover"
             />
@@ -74,36 +79,36 @@ export default function BlogLayout({
         </header>
 
         {/* Article Content */}
-        <article className="prose prose-lg max-w-none">
-          {children}
-        </article>
+        <article className="prose prose-lg max-w-none">{children}</article>
 
         {/* Blog Feedback Section */}
         <div className="mt-12">
-          <BlogFeedback 
-            blogSlug={blogSlug}
-            blogTitle={blogTitle}
-          />
+          <BlogFeedback blogSlug={blogSlug} blogTitle={blogTitle} />
         </div>
 
         {/* Footer */}
         <footer className="mt-12 pt-8 border-t border-foreground/10">
           <div className="flex items-center justify-between">
-            <Link 
-              href="/#blogs" 
+            <Link
+              href="/#blogs"
               className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors group"
             >
-              <svg 
-                className="w-4 h-4 group-hover:-translate-x-1 transition-transform" 
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 12H5M12 19l-7-7 7-7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 12H5M12 19l-7-7 7-7"
+                />
               </svg>
               Back to Blogs
             </Link>
-            
+
             <div className="text-sm text-foreground/50">
               Published on {publishDate}
             </div>
@@ -112,4 +117,4 @@ export default function BlogLayout({
       </div>
     </main>
   );
-} 
+}

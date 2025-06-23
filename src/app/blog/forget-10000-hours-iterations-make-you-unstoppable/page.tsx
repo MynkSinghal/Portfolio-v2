@@ -1,25 +1,40 @@
-import { Metadata } from 'next';
-import Link from 'next/link';
-import BlogFeedback from '@/components/blog-feedback';
+import BlogFeedback from "@/components/blog-feedback";
+import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: '🔥 Forget 10,000 Hours — It\'s 10,000 Iterations That Make You Unstoppable | Mayank Singhal',
-  description: "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again. Here's why iterations beat hours every time.",
+  title:
+    "🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable | Mayank Singhal",
+  description:
+    "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again. Here's why iterations beat hours every time.",
   openGraph: {
-    title: '🔥 Forget 10,000 Hours — It\'s 10,000 Iterations That Make You Unstoppable',
-    description: "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again. Here's why iterations beat hours every time.",
-    type: 'article',
-    publishedTime: '2025-07-02',
-    authors: ['Mayank Singhal'],
-    images: ['/blog-covers/10000-iterations.jpg'],
+    title:
+      "🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable",
+    description:
+      "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again. Here's why iterations beat hours every time.",
+    type: "article",
+    publishedTime: "2025-07-02",
+    authors: ["Mayank Singhal"],
+    images: ["/blog-covers/10000-iterations.jpg"],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: '🔥 Forget 10,000 Hours — It\'s 10,000 Iterations That Make You Unstoppable',
-    description: "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again.",
-    images: ['/blog-covers/10000-iterations.jpg'],
+    card: "summary_large_image",
+    title:
+      "🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable",
+    description:
+      "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again.",
+    images: ["/blog-covers/10000-iterations.jpg"],
   },
-  keywords: ['Skill Development', 'Mastery', 'Learning', 'Productivity', 'Growth Mindset', 'Iterations', 'blog', 'Mayank Singhal'],
+  keywords: [
+    "Skill Development",
+    "Mastery",
+    "Learning",
+    "Productivity",
+    "Growth Mindset",
+    "Iterations",
+    "blog",
+    "Mayank Singhal",
+  ],
 };
 
 export default function BlogPage() {
@@ -27,19 +42,21 @@ export default function BlogPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable",
-    "description": "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again. Here's why iterations beat hours every time.",
-    "author": {
+    headline:
+      "🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable",
+    description:
+      "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again. Here's why iterations beat hours every time.",
+    author: {
       "@type": "Person",
-      "name": "Mayank Singhal"
+      name: "Mayank Singhal",
     },
-    "datePublished": "2025-07-02",
-    "dateModified": "2025-07-02",
-    "image": "/blog-covers/10000-iterations.jpg",
-    "publisher": {
+    datePublished: "2025-07-02",
+    dateModified: "2025-07-02",
+    image: "/blog-covers/10000-iterations.jpg",
+    publisher: {
       "@type": "Person",
-      "name": "Mayank Singhal"
-    }
+      name: "Mayank Singhal",
+    },
   };
 
   return (
@@ -48,29 +65,34 @@ export default function BlogPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      
+
       <main className="min-h-screen bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12 md:py-16 lg:py-20">
           {/* Back Navigation */}
-          <Link 
-            href="/#blogs" 
+          <Link
+            href="/#blogs"
             className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors mb-8 group"
           >
-            <svg 
-              className="w-4 h-4 group-hover:-translate-x-1 transition-transform" 
-              fill="none" 
-              stroke="currentColor" 
+            <svg
+              className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
               viewBox="0 0 24 24"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 12H5M12 19l-7-7 7-7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 12H5M12 19l-7-7 7-7"
+              />
             </svg>
             Back to Blogs
           </Link>
 
           {/* Cover Image */}
           <div className="aspect-[2/1] rounded-2xl overflow-hidden mb-8 bg-foreground/5">
-            <img 
-              src="/blog-covers/10000-iterations.jpg" 
+            <img
+              src="/blog-covers/10000-iterations.jpg"
               alt="🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable"
               className="w-full h-full object-cover"
             />
@@ -87,7 +109,8 @@ export default function BlogPage() {
             </div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable
+              🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You
+              Unstoppable
             </h1>
 
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-foreground/10 text-sm font-medium text-foreground/80 mb-6">
@@ -99,62 +122,118 @@ export default function BlogPage() {
           <article className="prose prose-lg max-w-none">
             <div className="text-base md:text-lg leading-relaxed space-y-6">
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
-                <p>"You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again."</p>
+                <p>
+                  "You don't get better by clocking in time. You get better by
+                  bleeding, failing, shipping, and doing it all over again."
+                </p>
               </blockquote>
 
               <hr className="border-foreground/20 my-8" />
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">👀 Why the "10,000 Hours" Hype is Killing Your Progress</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
+                👀 Why the "10,000 Hours" Hype is Killing Your Progress
+              </h2>
 
-              <p>You've heard it a million times: <strong>"Mastery takes 10,000 hours."</strong></p>
+              <p>
+                You've heard it a million times:{" "}
+                <strong>"Mastery takes 10,000 hours."</strong>
+              </p>
 
-              <p>Malcolm Gladwell made it famous. The internet turned it into the ultimate <em>grind anthem</em>.</p>
+              <p>
+                Malcolm Gladwell made it famous. The internet turned it into the
+                ultimate <em>grind anthem</em>.
+              </p>
 
               <p>But here's the brutal truth no one wants to say:</p>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
-                <p><strong>Spending 10,000 hours means absolutely nothing if you're not actually doing the damn thing.</strong></p>
+                <p>
+                  <strong>
+                    Spending 10,000 hours means absolutely nothing if you're not
+                    actually doing the damn thing.
+                  </strong>
+                </p>
               </blockquote>
 
-              <p>Been there? Felt stuck spinning your wheels but going nowhere? Same.</p>
+              <p>
+                Been there? Felt stuck spinning your wheels but going nowhere?
+                Same.
+              </p>
 
               <hr className="border-foreground/20 my-8" />
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">🎯 What You're About to Learn (And Why It'll Blow Your Mind)</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
+                🎯 What You're About to Learn (And Why It'll Blow Your Mind)
+              </h2>
 
               <p>By the end of this post, you'll know exactly:</p>
 
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
-                <li>Why <strong>hours are a lazy metric</strong> that traps you</li>
-                <li>What <strong>iterations</strong> really mean for your growth rocket</li>
-                <li>How to stop waiting for perfect and <strong>start shipping fast</strong></li>
-                <li>The secret sauce pros use to level up <em>like crazy</em></li>
+                <li>
+                  Why <strong>hours are a lazy metric</strong> that traps you
+                </li>
+                <li>
+                  What <strong>iterations</strong> really mean for your growth
+                  rocket
+                </li>
+                <li>
+                  How to stop waiting for perfect and{" "}
+                  <strong>start shipping fast</strong>
+                </li>
+                <li>
+                  The secret sauce pros use to level up <em>like crazy</em>
+                </li>
               </ul>
 
-              <p>This isn't some vague motivational fluff — it's your wake-up call to break the perfection paralysis and launch into action.</p>
+              <p>
+                This isn't some vague motivational fluff — it's your wake-up
+                call to break the perfection paralysis and launch into action.
+              </p>
 
               <hr className="border-foreground/20 my-8" />
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">⏳ The 10,000 Hours Myth: Time Doesn't Equal Skill</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
+                ⏳ The 10,000 Hours Myth: Time Doesn't Equal Skill
+              </h2>
 
-              <p>The idea that just putting in hours leads to mastery is... well, outdated.</p>
+              <p>
+                The idea that just putting in hours leads to mastery is... well,
+                outdated.
+              </p>
 
-              <p>Sure, <strong>time matters</strong> — but it's not the <em>only</em> thing that matters.</p>
+              <p>
+                Sure, <strong>time matters</strong> — but it's not the{" "}
+                <em>only</em> thing that matters.
+              </p>
 
               <p>You can:</p>
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
-                <li>Spend 10,000 hours writing blog drafts... that never see the light of day</li>
-                <li>Spend 10,000 hours coding... but never launch a single app</li>
-                <li>Spend 10,000 hours planning... and get paralyzed by perfection</li>
+                <li>
+                  Spend 10,000 hours writing blog drafts... that never see the
+                  light of day
+                </li>
+                <li>
+                  Spend 10,000 hours coding... but never launch a single app
+                </li>
+                <li>
+                  Spend 10,000 hours planning... and get paralyzed by perfection
+                </li>
               </ul>
 
-              <p>Hours alone? That's just busywork. You're measuring effort, not results.</p>
+              <p>
+                Hours alone? That's just busywork. You're measuring effort, not
+                results.
+              </p>
 
               <hr className="border-foreground/20 my-8" />
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">🔄 Real Growth Comes from 10,000 Iterations — Not Hours</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
+                🔄 Real Growth Comes from 10,000 Iterations — Not Hours
+              </h2>
 
-              <p>An <strong>iteration</strong> is a cycle of:</p>
+              <p>
+                An <strong>iteration</strong> is a cycle of:
+              </p>
 
               <ol className="list-decimal list-inside space-y-2 text-foreground/80">
                 <li>Creating something</li>
@@ -163,47 +242,81 @@ export default function BlogPage() {
                 <li>Fixing and improving</li>
               </ol>
 
-              <p>Now imagine doing that loop 10,000 times. Boom — that's how you really get good.</p>
+              <p>
+                Now imagine doing that loop 10,000 times. Boom — that's how you
+                really get good.
+              </p>
 
               <p>Why? Because each iteration forces you to:</p>
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>Face reality and learn what works (and what doesn't)</li>
                 <li>Sharpen your instincts with real feedback</li>
-                <li>Build resilience by embracing failure as a stepping stone</li>
+                <li>
+                  Build resilience by embracing failure as a stepping stone
+                </li>
               </ul>
 
               <hr className="border-foreground/20 my-8" />
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">🍳 Real-Life Examples That Smash the Myth</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
+                🍳 Real-Life Examples That Smash the Myth
+              </h2>
 
-              <h3 className="text-xl font-semibold mb-3 mt-6">👨‍🍳 The Chef:</h3>
+              <h3 className="text-xl font-semibold mb-3 mt-6">
+                👨‍🍳 The Chef:
+              </h3>
               <p>
                 Doesn't become a legend by reading cookbooks for 10,000 hours.
-                They become a master by <strong>cooking, tasting, burning, and tweaking</strong> over and over.
+                They become a master by{" "}
+                <strong>cooking, tasting, burning, and tweaking</strong> over
+                and over.
               </p>
 
-              <h3 className="text-xl font-semibold mb-3 mt-6">🎨 The Artist:</h3>
+              <h3 className="text-xl font-semibold mb-3 mt-6">
+                🎨 The Artist:
+              </h3>
               <p>
                 Doesn't nail their style by painting the same thing endlessly.
-                They get there by trying <strong>thousands of strokes</strong>, making mistakes, and evolving.
+                They get there by trying <strong>thousands of strokes</strong>,
+                making mistakes, and evolving.
               </p>
 
-              <h3 className="text-xl font-semibold mb-3 mt-6">👨‍💻 The Coder:</h3>
+              <h3 className="text-xl font-semibold mb-3 mt-6">
+                👨‍💻 The Coder:
+              </h3>
               <p>
-                Doesn't level up by rewriting the same code over and over.
-                They grow by <strong>shipping projects, breaking things, debugging, and iterating</strong>.
+                Doesn't level up by rewriting the same code over and over. They
+                grow by{" "}
+                <strong>
+                  shipping projects, breaking things, debugging, and iterating
+                </strong>
+                .
               </p>
 
               <hr className="border-foreground/20 my-8" />
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">🧠 Why Iterations Crush Hours (Psychology + Practicality)</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
+                🧠 Why Iterations Crush Hours (Psychology + Practicality)
+              </h2>
 
-              <p><strong>Iterations win because:</strong></p>
+              <p>
+                <strong>Iterations win because:</strong>
+              </p>
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
-                <li><strong>Instant feedback</strong> trains your gut instincts</li>
-                <li><strong>Tiny wins</strong> fuel dopamine and keep you hungry</li>
-                <li><strong>Failure stings less</strong> because you're used to fast cycles</li>
-                <li><strong>Momentum builds</strong> like a snowball — every update pushes you higher</li>
+                <li>
+                  <strong>Instant feedback</strong> trains your gut instincts
+                </li>
+                <li>
+                  <strong>Tiny wins</strong> fuel dopamine and keep you hungry
+                </li>
+                <li>
+                  <strong>Failure stings less</strong> because you're used to
+                  fast cycles
+                </li>
+                <li>
+                  <strong>Momentum builds</strong> like a snowball — every
+                  update pushes you higher
+                </li>
               </ul>
 
               <p>Meanwhile, grinding hours without iteration leads to:</p>
@@ -215,14 +328,25 @@ export default function BlogPage() {
 
               <hr className="border-foreground/20 my-8" />
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">🚀 How to Start Iterating TODAY</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
+                🚀 How to Start Iterating TODAY
+              </h2>
 
-              <p>Stop obsessing over <em>how many hours</em> you put in. Instead, obsess over:</p>
+              <p>
+                Stop obsessing over <em>how many hours</em> you put in. Instead,
+                obsess over:
+              </p>
 
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
-                <li>How many <strong>shots you're taking</strong></li>
-                <li>How many <strong>things you ship</strong></li>
-                <li>How fast you can <strong>learn, fix, and launch again</strong></li>
+                <li>
+                  How many <strong>shots you're taking</strong>
+                </li>
+                <li>
+                  How many <strong>things you ship</strong>
+                </li>
+                <li>
+                  How fast you can <strong>learn, fix, and launch again</strong>
+                </li>
               </ul>
 
               <p>Write 100 bad tweets → then 10 great ones.</p>
@@ -230,16 +354,24 @@ export default function BlogPage() {
               <p>Record 100 cringe videos → discover your authentic voice.</p>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
-                <p><strong>Your first iteration is your key to breaking the cycle.</strong></p>
+                <p>
+                  <strong>
+                    Your first iteration is your key to breaking the cycle.
+                  </strong>
+                </p>
               </blockquote>
 
               <hr className="border-foreground/20 my-8" />
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">📊 The Math Behind Iterations vs Hours</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
+                📊 The Math Behind Iterations vs Hours
+              </h2>
 
               <p>Let's break down why iterations create exponential growth:</p>
 
-              <p><strong>The Hours Approach:</strong></p>
+              <p>
+                <strong>The Hours Approach:</strong>
+              </p>
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>1 project, perfected over 100 hours</li>
                 <li>Zero real-world feedback until the end</li>
@@ -247,7 +379,9 @@ export default function BlogPage() {
                 <li>Linear learning curve</li>
               </ul>
 
-              <p><strong>The Iterations Approach:</strong></p>
+              <p>
+                <strong>The Iterations Approach:</strong>
+              </p>
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>10 projects, 10 hours each</li>
                 <li>Feedback after every single project</li>
@@ -259,28 +393,52 @@ export default function BlogPage() {
 
               <hr className="border-foreground/20 my-8" />
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">🎯 Your Personal Iteration Strategy</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
+                🎯 Your Personal Iteration Strategy
+              </h2>
 
               <p>Here's how to build your iteration muscle:</p>
 
-              <h3 className="text-xl font-semibold mb-3 mt-6">💡 Step 1: Define Your Minimum Viable Iteration</h3>
-              <p>What's the smallest thing you can create and ship in 1-2 hours?</p>
+              <h3 className="text-xl font-semibold mb-3 mt-6">
+                💡 Step 1: Define Your Minimum Viable Iteration
+              </h3>
+              <p>
+                What's the smallest thing you can create and ship in 1-2 hours?
+              </p>
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
-                <li><strong>Writer:</strong> One 500-word blog post</li>
-                <li><strong>Designer:</strong> One landing page mockup</li>
-                <li><strong>Developer:</strong> One small feature or bug fix</li>
-                <li><strong>Creator:</strong> One short video or post</li>
+                <li>
+                  <strong>Writer:</strong> One 500-word blog post
+                </li>
+                <li>
+                  <strong>Designer:</strong> One landing page mockup
+                </li>
+                <li>
+                  <strong>Developer:</strong> One small feature or bug fix
+                </li>
+                <li>
+                  <strong>Creator:</strong> One short video or post
+                </li>
               </ul>
 
-              <h3 className="text-xl font-semibold mb-3 mt-6">📅 Step 2: Set Your Iteration Schedule</h3>
+              <h3 className="text-xl font-semibold mb-3 mt-6">
+                📅 Step 2: Set Your Iteration Schedule
+              </h3>
               <p>Commit to a realistic pace:</p>
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
-                <li><strong>Beginner:</strong> 1 iteration per week</li>
-                <li><strong>Intermediate:</strong> 2-3 iterations per week</li>
-                <li><strong>Advanced:</strong> 1 iteration per day</li>
+                <li>
+                  <strong>Beginner:</strong> 1 iteration per week
+                </li>
+                <li>
+                  <strong>Intermediate:</strong> 2-3 iterations per week
+                </li>
+                <li>
+                  <strong>Advanced:</strong> 1 iteration per day
+                </li>
               </ul>
 
-              <h3 className="text-xl font-semibold mb-3 mt-6">📝 Step 3: Track and Reflect</h3>
+              <h3 className="text-xl font-semibold mb-3 mt-6">
+                📝 Step 3: Track and Reflect
+              </h3>
               <p>After each iteration, ask:</p>
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>What worked well?</li>
@@ -291,78 +449,137 @@ export default function BlogPage() {
 
               <hr className="border-foreground/20 my-8" />
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">🌟 Success Stories: Iterations in Action</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
+                🌟 Success Stories: Iterations in Action
+              </h2>
 
-              <p>Let me share some real examples of iteration-driven success:</p>
-
-              <h3 className="text-xl font-semibold mb-3 mt-6">📱 The App Developer</h3>
               <p>
-                <strong>Sarah, 23:</strong> Instead of spending months on one "perfect" app, she built and launched 12 mini-apps in one year. 
-                App #8 went viral. Total downloads: 500K+. Now runs her own studio.
+                Let me share some real examples of iteration-driven success:
               </p>
 
-              <h3 className="text-xl font-semibold mb-3 mt-6">🎥 The Content Creator</h3>
+              <h3 className="text-xl font-semibold mb-3 mt-6">
+                📱 The App Developer
+              </h3>
               <p>
-                <strong>James, 19:</strong> Posted one TikTok every day for 100 days. First 50 videos got &lt; 1K views. 
-                Videos 51-100 averaged 50K+ views. Now has 2M followers and brand deals.
+                <strong>Sarah, 23:</strong> Instead of spending months on one
+                "perfect" app, she built and launched 12 mini-apps in one year.
+                App #8 went viral. Total downloads: 500K+. Now runs her own
+                studio.
               </p>
 
-              <h3 className="text-xl font-semibold mb-3 mt-6">🎨 The Designer</h3>
+              <h3 className="text-xl font-semibold mb-3 mt-6">
+                🎥 The Content Creator
+              </h3>
               <p>
-                <strong>Maya, 25:</strong> Designed one logo every day for 30 days. Posted them all on Dribbble. 
-                By day 20, agencies started reaching out. Now charges $5K+ per logo.
+                <strong>James, 19:</strong> Posted one TikTok every day for 100
+                days. First 50 videos got &lt; 1K views. Videos 51-100 averaged
+                50K+ views. Now has 2M followers and brand deals.
               </p>
 
-              <p>Notice the pattern? <strong>Ship fast, ship often, get better with each cycle.</strong></p>
+              <h3 className="text-xl font-semibold mb-3 mt-6">
+                🎨 The Designer
+              </h3>
+              <p>
+                <strong>Maya, 25:</strong> Designed one logo every day for 30
+                days. Posted them all on Dribbble. By day 20, agencies started
+                reaching out. Now charges $5K+ per logo.
+              </p>
+
+              <p>
+                Notice the pattern?{" "}
+                <strong>
+                  Ship fast, ship often, get better with each cycle.
+                </strong>
+              </p>
 
               <hr className="border-foreground/20 my-8" />
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">⚡ Breaking Through Common Iteration Blocks</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
+                ⚡ Breaking Through Common Iteration Blocks
+              </h2>
 
-              <p><strong>"But what if my first iteration sucks?"</strong></p>
-              <p>It will. That's the point. Every master was once a disaster at iteration #1.</p>
+              <p>
+                <strong>"But what if my first iteration sucks?"</strong>
+              </p>
+              <p>
+                It will. That's the point. Every master was once a disaster at
+                iteration #1.
+              </p>
 
-              <p><strong>"What if people judge my early work?"</strong></p>
-              <p>They're too busy worrying about their own work to judge yours. Ship anyway.</p>
+              <p>
+                <strong>"What if people judge my early work?"</strong>
+              </p>
+              <p>
+                They're too busy worrying about their own work to judge yours.
+                Ship anyway.
+              </p>
 
-              <p><strong>"What if I don't have time for multiple iterations?"</strong></p>
-              <p>You don't have time NOT to iterate. One perfect attempt takes longer than five rough ones.</p>
+              <p>
+                <strong>
+                  "What if I don't have time for multiple iterations?"
+                </strong>
+              </p>
+              <p>
+                You don't have time NOT to iterate. One perfect attempt takes
+                longer than five rough ones.
+              </p>
 
-              <p><strong>"What if I'm not ready yet?"</strong></p>
-              <p>You'll never be ready. Start iterating, and readiness will follow.</p>
+              <p>
+                <strong>"What if I'm not ready yet?"</strong>
+              </p>
+              <p>
+                You'll never be ready. Start iterating, and readiness will
+                follow.
+              </p>
 
               <hr className="border-foreground/20 my-8" />
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">🔥 Your Move: Ready to Ditch the Hours Trap?</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
+                🔥 Your Move: Ready to Ditch the Hours Trap?
+              </h2>
 
-              <p>Pick one skill you want to crush. Plan your <strong>first 10 iterations</strong> — and just start.</p>
+              <p>
+                Pick one skill you want to crush. Plan your{" "}
+                <strong>first 10 iterations</strong> — and just start.
+              </p>
 
               <p>Remember:</p>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
-                <p>"You don't need 10,000 hours to be world-class. You need 10,000 shots at <em>becoming</em> world-class."</p>
+                <p>
+                  "You don't need 10,000 hours to be world-class. You need
+                  10,000 shots at <em>becoming</em> world-class."
+                </p>
               </blockquote>
 
-              <p>🔥 What's your first shot? Drop it below and let's ignite your iteration streak today. 🔁</p>
+              <p>
+                🔥 What's your first shot? Drop it below and let's ignite your
+                iteration streak today. 🔁
+              </p>
 
               <hr className="border-foreground/20 my-8" />
 
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">💬 Start Your Iteration Journey</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
+                💬 Start Your Iteration Journey
+              </h2>
 
               <p>
-                This isn't just another productivity post. It's a fundamental shift in how you approach skill building and mastery.
+                This isn't just another productivity post. It's a fundamental
+                shift in how you approach skill building and mastery.
               </p>
 
               <p>
-                What skill will you start iterating on? What's your first tiny version that you can ship this week? 
-                Share your iteration plan below — your commitment might inspire someone else to break free from the hours trap.
+                What skill will you start iterating on? What's your first tiny
+                version that you can ship this week? Share your iteration plan
+                below — your commitment might inspire someone else to break free
+                from the hours trap.
               </p>
             </div>
           </article>
 
           {/* Blog Feedback Section */}
           <div className="mt-12">
-            <BlogFeedback 
+            <BlogFeedback
               blogSlug="forget-10000-hours-iterations-make-you-unstoppable"
               blogTitle="🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable"
             />
@@ -371,21 +588,26 @@ export default function BlogPage() {
           {/* Footer */}
           <footer className="mt-12 pt-8 border-t border-foreground/10">
             <div className="flex items-center justify-between">
-              <Link 
-                href="/#blogs" 
+              <Link
+                href="/#blogs"
                 className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors group"
               >
-                <svg 
-                  className="w-4 h-4 group-hover:-translate-x-1 transition-transform" 
-                  fill="none" 
-                  stroke="currentColor" 
+                <svg
+                  className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 12H5M12 19l-7-7 7-7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 12H5M12 19l-7-7 7-7"
+                  />
                 </svg>
                 Back to Blogs
               </Link>
-              
+
               <div className="text-sm text-foreground/50">
                 Published on Jul 2, 2025
               </div>
@@ -395,4 +617,4 @@ export default function BlogPage() {
       </main>
     </>
   );
-} 
+}

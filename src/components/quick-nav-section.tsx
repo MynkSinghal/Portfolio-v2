@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
 
 export default function QuickNavSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,23 +28,27 @@ export default function QuickNavSection() {
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <button 
+              <button
                 onClick={() => {
-                  const projectsSection = document.querySelector('[data-section="projects"]');
+                  const projectsSection = document.querySelector(
+                    '[data-section="projects"]',
+                  );
                   if (projectsSection) {
-                    projectsSection.scrollIntoView({ behavior: 'smooth' });
+                    projectsSection.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
                 className="text-xs text-foreground/60 hover:text-foreground/90 underline underline-offset-2 transition-colors"
               >
                 Skip to Projects
               </button>
-              
-              <button 
+
+              <button
                 onClick={() => {
-                  const blogsSection = document.querySelector('[data-section="blogs"]');
+                  const blogsSection = document.querySelector(
+                    '[data-section="blogs"]',
+                  );
                   if (blogsSection) {
-                    blogsSection.scrollIntoView({ behavior: 'smooth' });
+                    blogsSection.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
                 className="text-xs text-foreground/60 hover:text-foreground/90 underline underline-offset-2 transition-colors"
@@ -57,4 +61,4 @@ export default function QuickNavSection() {
       </div>
     </section>
   );
-} 
+}

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Libre_Caslon_Text } from "next/font/google";
 import "./globals.css";
-import ClientBody from "./ClientBody";
 import { Analytics } from "@vercel/analytics/next";
+import ClientBody from "./ClientBody";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -19,13 +19,13 @@ const libreCaslonText = Libre_Caslon_Text({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mayanksinghal.tech'),
+  metadataBase: new URL("https://mayanksinghal.tech"),
   title: "Mayank: Still Shipping Wild Ideas",
   description: "Mayank – Modern Tech Creator Portfolio",
   icons: {
-    icon: '/images/logo.png',
-    shortcut: '/images/logo.png',
-    apple: '/images/logo.png',
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
   },
   openGraph: {
     title: "Mayank: Still Shipping Wild Ideas",
@@ -73,6 +73,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
+            title="Google Tag Manager"
           />
         </noscript>
         {/* End Google Tag Manager (noscript) */}

@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import quotesData from "@/data/quotes.json";
+import { useEffect, useState } from "react";
 
 interface Quote {
   id: number;
@@ -30,7 +30,7 @@ export default function QuotesSection() {
             <blockquote className="text-lg md:text-xl lg:text-2xl font-medium text-foreground/90 leading-relaxed mb-6 italic">
               "{currentQuote.quote}"
             </blockquote>
-            
+
             <div className="flex items-center justify-center gap-3">
               <div className="w-8 h-px bg-foreground/20"></div>
               <cite className="text-sm md:text-base text-foreground/60 font-medium not-italic">
@@ -43,4 +43,4 @@ export default function QuotesSection() {
       </div>
     </section>
   );
-} 
+}

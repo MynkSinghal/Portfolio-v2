@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { parseText } from '@/lib/text-parser';
-import { useState } from 'react';
+import { parseText } from "@/lib/text-parser";
+import { useState } from "react";
 
 interface FormData {
   name: string;
@@ -11,59 +11,63 @@ interface FormData {
 
 export default function ContactSection() {
   const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('🎯 Form submission started');
-    console.log('📝 Form data:', formData);
-    
+    console.log("🎯 Form submission started");
+    console.log("📝 Form data:", formData);
+
     setIsSubmitting(true);
-    setSubmitStatus('idle');
+    setSubmitStatus("idle");
 
     try {
-      console.log('📡 Sending request to /api/contact...');
-      
-      const response = await fetch('/api/contact', {
-        method: 'POST',
+      console.log("📡 Sending request to /api/contact...");
+
+      const response = await fetch("/api/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
-      console.log('📨 Response status:', response.status);
-      console.log('📨 Response ok:', response.ok);
+      console.log("📨 Response status:", response.status);
+      console.log("📨 Response ok:", response.ok);
 
       if (response.ok) {
         const responseData = await response.json();
-        console.log('✅ Success response:', responseData);
-        setSubmitStatus('success');
-        setFormData({ name: '', email: '', message: '' }); // Reset form
+        console.log("✅ Success response:", responseData);
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", message: "" }); // Reset form
       } else {
         const errorData = await response.json();
-        console.log('❌ Error response:', errorData);
-        setSubmitStatus('error');
+        console.log("❌ Error response:", errorData);
+        setSubmitStatus("error");
       }
     } catch (error) {
-      console.error('💥 Error submitting form:', error);
-      setSubmitStatus('error');
+      console.error("💥 Error submitting form:", error);
+      setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
-      console.log('🏁 Form submission completed');
+      console.log("🏁 Form submission completed");
     }
   };
 
@@ -72,11 +76,16 @@ export default function ContactSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <div className="max-w-md mx-auto text-center">
           <h2 className="text-xl md:text-2xl font-bold mb-2">🎙️ Let's Vibe</h2>
-          <p className="text-muted-foreground mb-10">Send a meme, pitch a collab, or just say what's good. I respond to everything that's not spam.</p>
+          <p className="text-muted-foreground mb-10">
+            Send a meme, pitch a collab, or just say what's good. I respond to
+            everything that's not spam.
+          </p>
 
           <form className="space-y-5" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="name" className="sr-only">Name</label>
+              <label htmlFor="name" className="sr-only">
+                Name
+              </label>
               <input
                 type="text"
                 id="name"
@@ -91,7 +100,9 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label htmlFor="email" className="sr-only">Email</label>
+              <label htmlFor="email" className="sr-only">
+                Email
+              </label>
               <input
                 type="email"
                 id="email"
@@ -106,7 +117,9 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label htmlFor="message" className="sr-only">Message</label>
+              <label htmlFor="message" className="sr-only">
+                Message
+              </label>
               <textarea
                 id="message"
                 name="message"
@@ -126,23 +139,23 @@ export default function ContactSection() {
                 disabled={isSubmitting}
                 className="w-full bg-black text-white px-6 py-3 rounded-md font-medium hover:bg-black/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? '⏳ Sending...' : '⚡ Hit me up'}
+                {isSubmitting ? "⏳ Sending..." : "⚡ Hit me up"}
               </button>
             </div>
 
             {/* Status Messages */}
-            {submitStatus === 'success' && (
+            {submitStatus === "success" && (
               <div className="text-green-600 text-sm mt-2">
                 ✅ Message sent successfully! I'll get back to you soon.
               </div>
             )}
-            {submitStatus === 'error' && (
+            {submitStatus === "error" && (
               <div className="text-red-600 text-sm mt-2">
                 ❌ Something went wrong. Please try again or reach out directly.
               </div>
             )}
           </form>
-          
+
           <p className="text-sm text-muted-foreground mt-4">
             {parseText("<italic>Usually respond within 24 hours</italic>")}
           </p>

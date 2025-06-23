@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 interface FeedbackData {
   rating: number;
@@ -10,11 +10,11 @@ interface FeedbackData {
 }
 
 const EMOJIS = [
-  { value: 1, emoji: '😞', label: 'Very Poor' },
-  { value: 2, emoji: '😐', label: 'Poor' },
-  { value: 3, emoji: '🙂', label: 'Good' },
-  { value: 4, emoji: '😊', label: 'Great' },
-  { value: 5, emoji: '🤩', label: 'Excellent' }
+  { value: 1, emoji: "😞", label: "Very Poor" },
+  { value: 2, emoji: "😐", label: "Poor" },
+  { value: 3, emoji: "🙂", label: "Good" },
+  { value: 4, emoji: "😊", label: "Great" },
+  { value: 5, emoji: "🤩", label: "Excellent" },
 ];
 
 interface BlogFeedbackProps {
@@ -22,65 +22,83 @@ interface BlogFeedbackProps {
   blogTitle: string;
 }
 
-export default function BlogFeedback({ blogSlug, blogTitle }: BlogFeedbackProps) {
+export default function BlogFeedback({
+  blogSlug,
+  blogTitle,
+}: BlogFeedbackProps) {
   const [rating, setRating] = useState<number>(0);
-  const [comment, setComment] = useState<string>('');
+  const [comment, setComment] = useState<string>("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (rating === 0) {
-      alert('Please select a rating before submitting!');
+      alert("Please select a rating before submitting!");
       return;
     }
 
     setIsSubmitting(true);
-    setSubmitStatus('idle');
+    setSubmitStatus("idle");
 
     const feedbackData: FeedbackData = {
       rating,
       comment,
       blogSlug,
-      blogTitle
+      blogTitle,
     };
 
     try {
-      const response = await fetch('/api/blog-feedback', {
-        method: 'POST',
+      const response = await fetch("/api/blog-feedback", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(feedbackData),
       });
 
       if (response.ok) {
-        setSubmitStatus('success');
+        setSubmitStatus("success");
         setRating(0);
-        setComment('');
+        setComment("");
       } else {
-        setSubmitStatus('error');
+        setSubmitStatus("error");
       }
     } catch (error) {
-      console.error('Error submitting feedback:', error);
-      setSubmitStatus('error');
+      console.error("Error submitting feedback:", error);
+      setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  if (submitStatus === 'success') {
+  if (submitStatus === "success") {
     return (
       <div className="bg-foreground/5 rounded-2xl p-8 text-center">
         <div className="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
-          <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          <svg
+            className="w-8 h-8 text-green-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 13l4 4L19 7"
+            />
           </svg>
         </div>
-        <h3 className="text-xl font-semibold mb-2">Thank you for your feedback! 🙏</h3>
+        <h3 className="text-xl font-semibold mb-2">
+          Thank you for your feedback! 🙏
+        </h3>
         <p className="text-foreground/60">
-          Your thoughts help me create better content. I appreciate you taking the time!
+          Your thoughts help me create better content. I appreciate you taking
+          the time!
         </p>
       </div>
     );
@@ -98,7 +116,9 @@ export default function BlogFeedback({ blogSlug, blogTitle }: BlogFeedbackProps)
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Emoji Rating */}
         <div className="text-center">
-          <label className="block text-sm font-medium mb-4">Rate this post:</label>
+          <label className="block text-sm font-medium mb-4">
+            Rate this post:
+          </label>
           <div className="flex justify-center gap-2 mb-2">
             {EMOJIS.map((emojiData) => (
               <button
@@ -106,9 +126,9 @@ export default function BlogFeedback({ blogSlug, blogTitle }: BlogFeedbackProps)
                 type="button"
                 onClick={() => setRating(emojiData.value)}
                 className={`text-4xl p-2 rounded-lg transition-all hover:scale-110 ${
-                  rating === emojiData.value 
-                    ? 'bg-foreground/10 scale-110' 
-                    : 'hover:bg-foreground/5'
+                  rating === emojiData.value
+                    ? "bg-foreground/10 scale-110"
+                    : "hover:bg-foreground/5"
                 }`}
                 title={emojiData.label}
               >
@@ -118,14 +138,17 @@ export default function BlogFeedback({ blogSlug, blogTitle }: BlogFeedbackProps)
           </div>
           {rating > 0 && (
             <p className="text-sm text-foreground/60">
-              {EMOJIS.find(e => e.value === rating)?.label}
+              {EMOJIS.find((e) => e.value === rating)?.label}
             </p>
           )}
         </div>
 
         {/* Comment */}
         <div>
-          <label htmlFor="feedback-comment" className="block text-sm font-medium mb-2">
+          <label
+            htmlFor="feedback-comment"
+            className="block text-sm font-medium mb-2"
+          >
             Additional thoughts (optional):
           </label>
           <textarea
@@ -146,12 +169,12 @@ export default function BlogFeedback({ blogSlug, blogTitle }: BlogFeedbackProps)
             disabled={isSubmitting || rating === 0}
             className="bg-foreground text-background px-6 py-3 rounded-lg font-medium hover:bg-foreground/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {isSubmitting ? '📤 Sending...' : '🚀 Send Feedback'}
+            {isSubmitting ? "📤 Sending..." : "🚀 Send Feedback"}
           </button>
         </div>
 
         {/* Error Message */}
-        {submitStatus === 'error' && (
+        {submitStatus === "error" && (
           <div className="text-center text-red-600 text-sm">
             ❌ Something went wrong. Please try again later.
           </div>
@@ -159,4 +182,4 @@ export default function BlogFeedback({ blogSlug, blogTitle }: BlogFeedbackProps)
       </form>
     </div>
   );
-} 
+}

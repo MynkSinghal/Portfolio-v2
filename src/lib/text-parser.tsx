@@ -1,6 +1,6 @@
-import React from 'react';
-import Bold from '@/components/ui/Bold';
-import Italic from '@/components/ui/Italic';
+import Bold from "@/components/ui/Bold";
+import Italic from "@/components/ui/Italic";
+import React from "react";
 
 export function parseText(text: string): React.ReactNode[] {
   const parts: React.ReactNode[] = [];
@@ -23,10 +23,10 @@ export function parseText(text: string): React.ReactNode[] {
     // Add the component based on the tag type
     const tagType = match[1];
     const content = match[2];
-    
-    if (tagType === 'bold') {
+
+    if (tagType === "bold") {
       parts.push(<Bold key={`bold-${keyCounter++}`}>{content}</Bold>);
-    } else if (tagType === 'italic') {
+    } else if (tagType === "italic") {
       parts.push(<Italic key={`italic-${keyCounter++}`}>{content}</Italic>);
     }
 
@@ -42,4 +42,4 @@ export function parseText(text: string): React.ReactNode[] {
   }
 
   return parts.length > 0 ? parts : [text];
-} 
+}

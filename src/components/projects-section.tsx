@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useRef, useState, useEffect } from 'react';
-import { parseText } from '@/lib/text-parser';
+import { parseText } from "@/lib/text-parser";
+import { useEffect, useRef, useState } from "react";
 
 export default function ProjectsSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -16,87 +16,117 @@ export default function ProjectsSection() {
     {
       id: 1,
       title: "Vibrant Hues",
-      description: "🎨 Modern color palette management that hits different. Like having a personal stylist for your designs — fast, pretty, always in theme.",
+      description:
+        "🎨 Modern color palette management that hits different. Like having a personal stylist for your designs — fast, pretty, always in theme.",
       tags: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
       icon: "square",
       link: "https://vibrant-hues-color-picker-website-zjhg.vercel.app/", // Add your project link here
       details: {
-        fullDescription: "A modern colour palette management application that helps designers and developers discover, create, and preview color palettes in both light and dark modes. Features include palette downloads, real-time previews, and an intuitive user interface.",
-        whyExists: "Because finding the perfect color palette shouldn't feel like searching for a needle in a haystack. Designers needed a tool that actually understood their workflow.",
-        howStarted: "Started as a weekend project when I got frustrated with existing color tools. Spent way too much time tweaking gradients instead of building features.",
-        whatBroke: "The color picker broke on Safari (classic). Spent 3 days debugging CSS color spaces. Also, the database kept timing out when generating palettes."
-      }
+        fullDescription:
+          "A modern colour palette management application that helps designers and developers discover, create, and preview color palettes in both light and dark modes. Features include palette downloads, real-time previews, and an intuitive user interface.",
+        whyExists:
+          "Because finding the perfect color palette shouldn't feel like searching for a needle in a haystack. Designers needed a tool that actually understood their workflow.",
+        howStarted:
+          "Started as a weekend project when I got frustrated with existing color tools. Spent way too much time tweaking gradients instead of building features.",
+        whatBroke:
+          "The color picker broke on Safari (classic). Spent 3 days debugging CSS color spaces. Also, the database kept timing out when generating palettes.",
+      },
     },
     {
       id: 2,
       title: "Trylo - Virtual Try-On",
-      description: "👗 AI-powered virtual try-on that actually works. Like having a magic mirror, but for your phone. No more guessing if that shirt fits.",
+      description:
+        "👗 AI-powered virtual try-on that actually works. Like having a magic mirror, but for your phone. No more guessing if that shirt fits.",
       tags: ["React", "TensorFlow.js", "Node.js", "Express"],
       icon: "circle",
       link: "https://trylo-virtual-try-on.vercel.app/", // Add your project link here
       details: {
-        fullDescription: "An innovative AI-powered virtual try-on platform enabling realistic garment visualization on various pose or body stances. This technology bridges the gap between online shopping and the physical fitting room experience.",
-        whyExists: "Online shopping is broken. 30% return rates because clothes don't fit. Someone had to fix this mess.",
-        howStarted: "Built it because guessing your size at checkout feels like playing fashion roulette—and losing.",
-        whatBroke: "The pose detection kept thinking arms were legs. Also, the AI occasionally made people look like abstract art."
-      }
+        fullDescription:
+          "An innovative AI-powered virtual try-on platform enabling realistic garment visualization on various pose or body stances. This technology bridges the gap between online shopping and the physical fitting room experience.",
+        whyExists:
+          "Online shopping is broken. 30% return rates because clothes don't fit. Someone had to fix this mess.",
+        howStarted:
+          "Built it because guessing your size at checkout feels like playing fashion roulette—and losing.",
+        whatBroke:
+          "The pose detection kept thinking arms were legs. Also, the AI occasionally made people look like abstract art.",
+      },
     },
     {
       id: 3,
       title: "DocBook",
-      description: "📅 Appointment booking that doesn't make you want to scream. Doctors love it, patients love it, even the receptionist loves it.",
+      description:
+        "📅 Appointment booking that doesn't make you want to scream. Doctors love it, patients love it, even the receptionist loves it.",
       tags: ["React", "TypeScript", "Node.js", "Supabase"],
       icon: "triangle",
       link: "https://docbook-one.vercel.app/", // Add your project link here
       details: {
-        fullDescription: "DocBook: Effortlessly manage doctor appointments with automated booking, reminders, and seamless calendar for patients and healthcare providers.",
-        whyExists: "Healthcare booking is stuck in 1995. Patients deserve better than calling and waiting on hold for 20 minutes.",
-        howStarted: "Just a college project. But even the basics—booking, doctor info, appointments—felt way harder than it should be. So I built a simpler flow.",
-        whatBroke: "Availability timings. Oh god, the availability timings. Also, patients kept double-booking themselves because they didn't trust the system initially."
-      }
+        fullDescription:
+          "DocBook: Effortlessly manage doctor appointments with automated booking, reminders, and seamless calendar for patients and healthcare providers.",
+        whyExists:
+          "Healthcare booking is stuck in 1995. Patients deserve better than calling and waiting on hold for 20 minutes.",
+        howStarted:
+          "Just a college project. But even the basics—booking, doctor info, appointments—felt way harder than it should be. So I built a simpler flow.",
+        whatBroke:
+          "Availability timings. Oh god, the availability timings. Also, patients kept double-booking themselves because they didn't trust the system initially.",
+      },
     },
     {
       id: 4,
       title: "Flow-write",
-      description: "✍️ MacOS app for flow writing. 3 random words, no backspace, pure creative chaos. Writers either love it or hate it.",
+      description:
+        "✍️ MacOS app for flow writing. 3 random words, no backspace, pure creative chaos. Writers either love it or hate it.",
       tags: ["Swift", "MacOS", "Creative Tools"],
       icon: "square",
       link: "https://github.com/MynkSinghal/IdeaDice/releases/download/v1.0.0/IdeaDice.app.zip", // Add your project link here
       details: {
-        fullDescription: "A MacOS App, which helps in flow-writing by giving you 3 random words, and makes you wander your mind, write freely! No backspaces allowed, just free writing.",
-        whyExists: "Writer's block is real. Sometimes you need to trick your brain into being creative. Constraints breed creativity.",
-        howStarted: "Inspired by Julia Cameron's morning pages. Wanted to gamify the writing process and remove the perfectionist paralysis.",
-        whatBroke: "The random word generator kept giving inappropriate combinations. Had to build a filter. Also, users kept trying to hack the 'no backspace' rule."
-      }
+        fullDescription:
+          "A MacOS App, which helps in flow-writing by giving you 3 random words, and makes you wander your mind, write freely! No backspaces allowed, just free writing.",
+        whyExists:
+          "Writer's block is real. Sometimes you need to trick your brain into being creative. Constraints breed creativity.",
+        howStarted:
+          "Inspired by Julia Cameron's morning pages. Wanted to gamify the writing process and remove the perfectionist paralysis.",
+        whatBroke:
+          "The random word generator kept giving inappropriate combinations. Had to build a filter. Also, users kept trying to hack the 'no backspace' rule.",
+      },
     },
     {
       id: 5,
       title: "OMDB Movie Database",
-      description: "🎬 Movie search that actually finds what you're looking for. No more scrolling through Netflix for 2 hours just to watch The Office again.",
+      description:
+        "🎬 Movie search that actually finds what you're looking for. No more scrolling through Netflix for 2 hours just to watch The Office again.",
       tags: ["JavaScript", "Node.js", "Express", "OMDB API"],
       icon: "circle",
       link: "https://web-dev-movie-search-app-using-api.vercel.app/", // Add your project link here
       details: {
-        fullDescription: "A dynamic movie search application integrated with the OMDB API, allowing users to explore a vast database of films. Features include detailed movie information, responsive design, and real-time search functionality.",
-        whyExists: "Movie discovery is broken. You know that feeling when you can't remember that movie with 'that guy from that thing'? This fixes that.",
-        howStarted: "Built during a movie night when we spent more time searching than watching. The OMDB API was free, so why not?",
-        whatBroke: "Rate limiting. Turns out, free APIs don't like it when you hammer them with requests. Had to implement caching and request throttling."
-      }
+        fullDescription:
+          "A dynamic movie search application integrated with the OMDB API, allowing users to explore a vast database of films. Features include detailed movie information, responsive design, and real-time search functionality.",
+        whyExists:
+          "Movie discovery is broken. You know that feeling when you can't remember that movie with 'that guy from that thing'? This fixes that.",
+        howStarted:
+          "Built during a movie night when we spent more time searching than watching. The OMDB API was free, so why not?",
+        whatBroke:
+          "Rate limiting. Turns out, free APIs don't like it when you hammer them with requests. Had to implement caching and request throttling.",
+      },
     },
     {
       id: 6,
       title: "Heart Risk Detection",
-      description: "❤️ ML model that predicts heart disease risk. Because your heart is important, and early detection saves lives. Science is cool.",
+      description:
+        "❤️ ML model that predicts heart disease risk. Because your heart is important, and early detection saves lives. Science is cool.",
       tags: ["Python", "TensorFlow", "React", "Scikit-learn"],
       icon: "triangle",
       link: "https://healthcare-ai-lab.vercel.app/", // Add your project link here
       details: {
-        fullDescription: "A machine learning-powered web application that predicts heart disease risk using the Kaggle dataset. The model analyzes various health parameters providing risk assessment and further helping in early detection and prevention.",
-        whyExists: "Heart disease is the #1 killer globally. If ML can help catch it early, why aren't we using it everywhere?",
-        howStarted: "Started as a college project, got obsessed with the accuracy metrics. Turns out, healthcare data is messy but fascinating.",
-        whatBroke: "The model kept overfitting. Spent weeks tuning hyperparameters. Also, medical disclaimers are harder to write than the actual code."
-      }
-    }
+        fullDescription:
+          "A machine learning-powered web application that predicts heart disease risk using the Kaggle dataset. The model analyzes various health parameters providing risk assessment and further helping in early detection and prevention.",
+        whyExists:
+          "Heart disease is the #1 killer globally. If ML can help catch it early, why aren't we using it everywhere?",
+        howStarted:
+          "Started as a college project, got obsessed with the accuracy metrics. Turns out, healthcare data is messy but fascinating.",
+        whatBroke:
+          "The model kept overfitting. Spent weeks tuning hyperparameters. Also, medical disclaimers are harder to write than the actual code.",
+      },
+    },
   ];
 
   // Intersection Observer for fade-in animation
@@ -107,7 +137,7 @@ export default function ProjectsSection() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     const currentRef = scrollRef.current;
@@ -126,45 +156,48 @@ export default function ProjectsSection() {
   useEffect(() => {
     const calculateLayout = () => {
       if (!scrollRef.current) return;
-      
+
       const container = scrollRef.current;
       const containerWidth = container.offsetWidth;
-      
+
       // Calculate how many items are visible based on responsive widths
       let itemsVisible: number;
-      if (containerWidth >= 1024) { // lg breakpoint - 30% width items
+      if (containerWidth >= 1024) {
+        // lg breakpoint - 30% width items
         itemsVisible = 3; // Show 3 items per page on large screens
-      } else if (containerWidth >= 768) { // md breakpoint - 45% width items  
+      } else if (containerWidth >= 768) {
+        // md breakpoint - 45% width items
         itemsVisible = 2; // Show 2 items per page on medium screens
-      } else { // mobile - 80% width items
+      } else {
+        // mobile - 80% width items
         itemsVisible = 1; // Show 1 item per page on mobile
       }
-      
+
       // Calculate total pages based on items per page
       const pages = Math.ceil(projects.length / itemsVisible);
-      
+
       setItemsPerView(itemsVisible);
       setTotalPages(pages);
     };
 
     calculateLayout();
-    
+
     const handleResize = () => {
       calculateLayout();
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, [projects.length]);
 
   useEffect(() => {
     const handleScroll = () => {
       if (!scrollRef.current || isScrolling) return;
-      
+
       const container = scrollRef.current;
       const scrollLeft = container.scrollLeft;
       const containerWidth = container.offsetWidth;
-      
+
       // Calculate item width based on screen size (including gap)
       let itemWidth: number;
       if (containerWidth >= 1024) {
@@ -174,7 +207,7 @@ export default function ProjectsSection() {
       } else {
         itemWidth = containerWidth * 0.8 + 24; // 80% + gap
       }
-      
+
       // Calculate which page we're on based on items per view
       let pageIndex: number;
       if (containerWidth >= 1024) {
@@ -184,7 +217,7 @@ export default function ProjectsSection() {
       } else {
         pageIndex = Math.round(scrollLeft / itemWidth); // 1 item per page
       }
-      
+
       if (pageIndex !== currentIndex) {
         setCurrentIndex(Math.min(Math.max(pageIndex, 0), totalPages - 1));
       }
@@ -192,18 +225,20 @@ export default function ProjectsSection() {
 
     const scrollContainer = scrollRef.current;
     if (scrollContainer) {
-      scrollContainer.addEventListener('scroll', handleScroll, { passive: true });
-      return () => scrollContainer.removeEventListener('scroll', handleScroll);
+      scrollContainer.addEventListener("scroll", handleScroll, {
+        passive: true,
+      });
+      return () => scrollContainer.removeEventListener("scroll", handleScroll);
     }
   }, [currentIndex, isScrolling, totalPages]);
 
   const scrollToIndex = (index: number) => {
     if (!scrollRef.current) return;
-    
+
     setIsScrolling(true);
     const container = scrollRef.current;
     const containerWidth = container.offsetWidth;
-    
+
     // Calculate item width based on screen size (including gap)
     let itemWidth: number;
     if (containerWidth >= 1024) {
@@ -213,7 +248,7 @@ export default function ProjectsSection() {
     } else {
       itemWidth = containerWidth * 0.8 + 24; // 80% + gap
     }
-    
+
     // Calculate scroll distance based on items per page
     let scrollDistance: number;
     if (containerWidth >= 1024) {
@@ -223,27 +258,30 @@ export default function ProjectsSection() {
     } else {
       scrollDistance = index * itemWidth; // 1 item per page
     }
-    
+
     container.scrollTo({
       left: scrollDistance,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
-    
+
     setCurrentIndex(index);
-    
+
     // Reset scrolling flag after animation
     setTimeout(() => setIsScrolling(false), 500);
   };
 
   return (
-    <section className="py-12 md:py-16 lg:py-24 pb-6 md:pb-8 lg:pb-10" data-section="projects">
+    <section
+      className="py-12 md:py-16 lg:py-24 pb-6 md:pb-8 lg:pb-10"
+      data-section="projects"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         {/* Animated Header */}
-        <div className={`transition-all duration-1000 ease-out ${
-          isVisible 
-            ? 'opacity-100 translate-y-0' 
-            : 'opacity-0 translate-y-8'
-        }`}>
+        <div
+          className={`transition-all duration-1000 ease-out ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
           <div className="mb-8">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 tracking-tight uppercase">
               Things I&apos;ve Built
@@ -252,31 +290,29 @@ export default function ProjectsSection() {
               (and somehow didn't break)
             </p>
           </div>
-
-          
         </div>
 
         {/* Carousel Container */}
         <div className="relative">
-          <div 
+          <div
             ref={scrollRef}
             className="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory gap-6 pb-4"
             style={{
-              scrollbarWidth: 'none',
-              msOverflowStyle: 'none',
-              WebkitOverflowScrolling: 'touch'
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+              WebkitOverflowScrolling: "touch",
             }}
           >
             {projects.map((project, index) => (
-              <div 
-                key={project.id} 
+              <div
+                key={project.id}
                 className={`flex-none w-[80%] md:w-[45%] lg:w-[30%] snap-start transition-all duration-700 ease-out ${
-                  isVisible 
-                    ? 'opacity-100 translate-y-0' 
-                    : 'opacity-0 translate-y-12'
+                  isVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-12"
                 }`}
                 style={{
-                  transitionDelay: `${index * 150}ms`
+                  transitionDelay: `${index * 150}ms`,
                 }}
               >
                 <div className="bg-[#f2f2f2] p-6 rounded-lg hover:shadow-lg hover:shadow-black/5 hover:-translate-y-1 transition-all duration-300 ease-out h-full group">
@@ -293,20 +329,25 @@ export default function ProjectsSection() {
                   </div>
 
                   <div className="flex flex-col h-[calc(100%-14rem)]">
-                    <h3 className="text-lg font-semibold mb-3 group-hover:text-foreground/90 transition-colors duration-200">{project.title}</h3>
+                    <h3 className="text-lg font-semibold mb-3 group-hover:text-foreground/90 transition-colors duration-200">
+                      {project.title}
+                    </h3>
 
-                    <p className="text-xs text-foreground/70 mb-4 group-hover:text-foreground/80 transition-colors duration-200 flex-grow">{project.description}</p>
+                    <p className="text-xs text-foreground/70 mb-4 group-hover:text-foreground/80 transition-colors duration-200 flex-grow">
+                      {project.description}
+                    </p>
 
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.tags.map((tag, tagIndex) => (
-                        <span 
-                          key={tagIndex} 
+                        <span
+                          key={tagIndex}
                           className="text-xs text-foreground/50 group-hover:text-foreground/60 transition-all duration-200"
                           style={{
-                            transitionDelay: `${tagIndex * 50}ms`
+                            transitionDelay: `${tagIndex * 50}ms`,
                           }}
                         >
-                          {tagIndex !== 0 && "• "}{tag}
+                          {tagIndex !== 0 && "• "}
+                          {tag}
                         </span>
                       ))}
                     </div>
@@ -336,22 +377,24 @@ export default function ProjectsSection() {
 
           {/* Animated Dot Indicators */}
           {totalPages > 1 && (
-            <div className={`flex justify-center mt-8 gap-2 transition-all duration-1000 ease-out ${
-              isVisible 
-                ? 'opacity-100 translate-y-0' 
-                : 'opacity-0 translate-y-4'
-            }`}
-            style={{
-              transitionDelay: `${projects.length * 150 + 200}ms`
-            }}>
+            <div
+              className={`flex justify-center mt-8 gap-2 transition-all duration-1000 ease-out ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-4"
+              }`}
+              style={{
+                transitionDelay: `${projects.length * 150 + 200}ms`,
+              }}
+            >
               {Array.from({ length: totalPages }, (_, index) => (
                 <button
                   key={index}
                   onClick={() => scrollToIndex(index)}
                   className={`h-2 rounded-full transition-all duration-500 ease-out hover:scale-125 ${
-                    index === currentIndex 
-                      ? 'bg-foreground/80 w-6 shadow-sm' 
-                      : 'bg-foreground/20 hover:bg-foreground/40 w-2'
+                    index === currentIndex
+                      ? "bg-foreground/80 w-6 shadow-sm"
+                      : "bg-foreground/20 hover:bg-foreground/40 w-2"
                   }`}
                   aria-label={`Go to page ${index + 1}`}
                 />
@@ -363,25 +406,29 @@ export default function ProjectsSection() {
 
       {/* Expanded Project Modal */}
       {expandedProject && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
           onClick={() => setExpandedProject(null)}
         >
-          <div 
+          <div
             className="bg-white dark:bg-gray-900 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {(() => {
-              const project = projects.find(p => p.id === expandedProject);
+              const project = projects.find((p) => p.id === expandedProject);
               if (!project) return null;
-              
+
               return (
                 <div className="p-8">
                   {/* Header */}
                   <div className="flex justify-between items-start mb-8">
                     <div>
-                      <h2 className="text-2xl md:text-3xl font-bold mb-2">{project.title}</h2>
-                      <p className="text-foreground/70">{project.description}</p>
+                      <h2 className="text-2xl md:text-3xl font-bold mb-2">
+                        {project.title}
+                      </h2>
+                      <p className="text-foreground/70">
+                        {project.description}
+                      </p>
                     </div>
                     <button
                       onClick={() => setExpandedProject(null)}
@@ -396,7 +443,10 @@ export default function ProjectsSection() {
                     <h3 className="text-lg font-semibold mb-3">Built With</h3>
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag, index) => (
-                        <span key={index} className="bg-foreground/10 text-foreground/80 px-3 py-1 rounded-full text-sm">
+                        <span
+                          key={index}
+                          className="bg-foreground/10 text-foreground/80 px-3 py-1 rounded-full text-sm"
+                        >
                           {tag}
                         </span>
                       ))}
@@ -408,25 +458,39 @@ export default function ProjectsSection() {
                     {/* Full Description */}
                     <div>
                       <h3 className="text-lg font-semibold mb-3">What It Is</h3>
-                      <p className="text-foreground/80 leading-relaxed">{project.details.fullDescription}</p>
+                      <p className="text-foreground/80 leading-relaxed">
+                        {project.details.fullDescription}
+                      </p>
                     </div>
 
                     {/* Why It Exists */}
                     <div>
-                      <h3 className="text-lg font-semibold mb-3">🤔 Why It Exists</h3>
-                      <p className="text-foreground/80 leading-relaxed">{project.details.whyExists}</p>
+                      <h3 className="text-lg font-semibold mb-3">
+                        🤔 Why It Exists
+                      </h3>
+                      <p className="text-foreground/80 leading-relaxed">
+                        {project.details.whyExists}
+                      </p>
                     </div>
 
                     {/* How It Started */}
                     <div>
-                      <h3 className="text-lg font-semibold mb-3">🚀 How It Started</h3>
-                      <p className="text-foreground/80 leading-relaxed">{project.details.howStarted}</p>
+                      <h3 className="text-lg font-semibold mb-3">
+                        🚀 How It Started
+                      </h3>
+                      <p className="text-foreground/80 leading-relaxed">
+                        {project.details.howStarted}
+                      </p>
                     </div>
 
                     {/* What Broke */}
                     <div>
-                      <h3 className="text-lg font-semibold mb-3">💥 What Broke</h3>
-                      <p className="text-foreground/80 leading-relaxed">{project.details.whatBroke}</p>
+                      <h3 className="text-lg font-semibold mb-3">
+                        💥 What Broke
+                      </h3>
+                      <p className="text-foreground/80 leading-relaxed">
+                        {project.details.whatBroke}
+                      </p>
                     </div>
                   </div>
 

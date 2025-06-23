@@ -1,14 +1,14 @@
-import { MetadataRoute } from 'next';
-import { getAllBlogs } from '@/data/blogs';
+import { getAllBlogs } from "@/data/blogs";
+import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const blogs = getAllBlogs();
-  const baseUrl = 'https://mayanksinghal.tech';
+  const baseUrl = "https://mayanksinghal.tech";
 
   const blogUrls = blogs.map((blog) => ({
     url: `${baseUrl}${blog.href}`,
     lastModified: new Date(blog.date),
-    changeFrequency: 'monthly' as const,
+    changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
@@ -16,9 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'daily',
+      changeFrequency: "daily",
       priority: 1,
     },
     ...blogUrls,
   ];
-} 
+}
