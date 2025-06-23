@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mayanksinghal.tech'),
   title: "Mayank: Still Shipping Wild Ideas",
   description: "Mayank – Modern Tech Creator Portfolio",
+  icons: {
+    icon: '/images/logo.png',
+    shortcut: '/images/logo.png',
+    apple: '/images/logo.png',
+  },
   openGraph: {
     title: "Mayank: Still Shipping Wild Ideas",
     description: "Mayank – Modern Tech Creator Portfolio",
