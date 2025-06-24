@@ -173,7 +173,7 @@ export const blogs: BlogPost[] = [
     slug: "internship-dilemma-no-badge-make-it-big",
     href: "/blog/internship-dilemma-no-badge-make-it-big",
     coverImage: "/blog-covers/internship-dilemma.jpg",
-    published: false,
+    published: true,
   },
   {
     id: "6",
