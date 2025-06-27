@@ -14,7 +14,7 @@ export default function ProjectsSection() {
 
   const projects = [
     {
-      id: 1,
+      id: 3,
       title: "Vibrant Hues",
       description:
         "🎨 Modern color palette management that hits different. Like having a personal stylist for your designs — fast, pretty, always in theme.",
@@ -52,7 +52,7 @@ export default function ProjectsSection() {
       },
     },
     {
-      id: 3,
+      id: 4,
       title: "DocBook",
       description:
         "📅 Appointment booking that doesn't make you want to scream. Doctors love it, patients love it, even the receptionist loves it.",
@@ -71,7 +71,7 @@ export default function ProjectsSection() {
       },
     },
     {
-      id: 4,
+      id: 5,
       title: "Flow-write",
       description:
         "✍️ MacOS app for flow writing. 3 random words, no backspace, pure creative chaos. Writers either love it or hate it.",
@@ -90,7 +90,7 @@ export default function ProjectsSection() {
       },
     },
     {
-      id: 5,
+      id: 6,
       title: "OMDB Movie Database",
       description:
         "🎬 Movie search that actually finds what you're looking for. No more scrolling through Netflix for 2 hours just to watch The Office again.",
@@ -109,7 +109,7 @@ export default function ProjectsSection() {
       },
     },
     {
-      id: 6,
+      id: 7,
       title: "Heart Risk Detection",
       description:
         "❤️ ML model that predicts heart disease risk. Because your heart is important, and early detection saves lives. Science is cool.",
@@ -125,6 +125,25 @@ export default function ProjectsSection() {
           "Started as a college project, got obsessed with the accuracy metrics. Turns out, healthcare data is messy but fascinating.",
         whatBroke:
           "The model kept overfitting. Spent weeks tuning hyperparameters. Also, medical disclaimers are harder to write than the actual code.",
+      },
+    },
+    {
+      id: 1,
+      title: "PromptPolish",
+      description:
+        "✨ Chrome extension that transforms messy text into clean AI prompts. Like having a writing coach who actually gets it — select, right-click, polish.",
+      tags: ["Chrome Extension", "JavaScript", "Gemini API", "Context AI"],
+      icon: "square",
+      link: "https://extension.mayanksinghal.tech",
+      details: {
+        fullDescription:
+          "A Chrome extension that transforms messy text into clean, professional AI prompts directly in your browser. Features smart context detection, works across all websites, and automatically adjusts polishing style based on the platform you're on (Gmail, LinkedIn, GitHub, etc.).",
+        whyExists:
+          "Because writing good prompts is hard, and most people's text looks like they're texting their mom at 2 AM. Everyone deserves to sound professional without spending hours editing.",
+        howStarted:
+          "Got tired of copying text to ChatGPT, polishing it, then copying it back. Thought 'there has to be a better way' — turns out, there is.",
+        whatBroke:
+          "Text replacement on some websites is trickier than expected. Gmail has weird DOM structures, and don't get me started on Google Docs. Also, the context detection sometimes thinks LinkedIn posts should sound like GitHub issues.",
       },
     },
   ];
@@ -188,7 +207,7 @@ export default function ProjectsSection() {
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, [projects.length]);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -303,7 +322,9 @@ export default function ProjectsSection() {
               WebkitOverflowScrolling: "touch",
             }}
           >
-            {projects.map((project, index) => (
+            {projects
+              .sort((a, b) => a.id - b.id)
+              .map((project, index) => (
               <div
                 key={project.id}
                 className={`flex-none w-[80%] md:w-[45%] lg:w-[30%] snap-start transition-all duration-700 ease-out ${
@@ -340,7 +361,7 @@ export default function ProjectsSection() {
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.tags.map((tag, tagIndex) => (
                         <span
-                          key={tagIndex}
+                          key={`${project.id}-tag-${tag}`}
                           className="text-xs text-foreground/50 group-hover:text-foreground/60 transition-all duration-200"
                           style={{
                             transitionDelay: `${tagIndex * 50}ms`,
@@ -389,7 +410,7 @@ export default function ProjectsSection() {
             >
               {Array.from({ length: totalPages }, (_, index) => (
                 <button
-                  key={index}
+                  key={`page-${index}`}
                   onClick={() => scrollToIndex(index)}
                   className={`h-2 rounded-full transition-all duration-500 ease-out hover:scale-125 ${
                     index === currentIndex
@@ -442,9 +463,9 @@ export default function ProjectsSection() {
                   <div className="mb-8">
                     <h3 className="text-lg font-semibold mb-3">Built With</h3>
                     <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag, index) => (
+                      {project.tags.map((tag) => (
                         <span
-                          key={index}
+                          key={`${project.id}-modal-tag-${tag}`}
                           className="bg-foreground/10 text-foreground/80 px-3 py-1 rounded-full text-sm"
                         >
                           {tag}
