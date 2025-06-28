@@ -1,4 +1,45 @@
 import TweetLayout from "@/components/tweet-layout";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Why India's ₹10 Chai Is Obliterating Starbucks (And It's Not Even Close)",
+  description:
+    "Everyone's chasing caramel lattes. But the real power move? Sipping ₹10 chai on a street corner, outsmarting the global giants. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/tweets/chai-beats-starbucks",
+  },
+  openGraph: {
+    title: "Why India's ₹10 Chai Is Obliterating Starbucks (And It's Not Even Close)",
+    description:
+      "Everyone's chasing caramel lattes. But the real power move? Sipping ₹10 chai on a street corner, outsmarting the global giants.",
+    type: "article",
+    url: "https://www.mayanksinghal.tech/tweets/chai-beats-starbucks",
+    publishedTime: "2024-12-19",
+    authors: ["Mayank Singhal"],
+    images: [{
+      url: "https://www.mayanksinghal.tech/banner.png",
+      width: 1200,
+      height: 630,
+      alt: "Why India's ₹10 Chai Is Obliterating Starbucks"
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why India's ₹10 Chai Is Obliterating Starbucks (And It's Not Even Close)",
+    description:
+      "Everyone's chasing caramel lattes. But the real power move? Sipping ₹10 chai on a street corner, outsmarting the global giants.",
+    images: ["https://www.mayanksinghal.tech/banner.png"],
+  },
+  keywords: [
+    "Chai",
+    "Starbucks",
+    "Indian Business",
+    "Local Business",
+    "Street Food",
+    "Mayank Singhal",
+  ],
+  authors: [{ name: "Mayank Singhal", url: "https://www.mayanksinghal.tech" }],
+};
 
 export default function ChaiBeatsstarbucks() {
   return (

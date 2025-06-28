@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "🧠 Why the Smartest Career Advice Rarely Comes From Tutorial Creators | Mayank Singhal",
+  title: "Why the Smartest Career Advice Rarely Comes From Tutorial Creators",
   description:
-    "If everyone's learning the same thing, who's creating the future? Discover why real breakthroughs come from builders, not tutorial makers.",
+    "If everyone's learning the same thing, who's creating the future? Discover why real breakthroughs come from builders, not tutorial makers. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/smartest-career-advice-tutorial-creators",
+  },
   openGraph: {
     title:
       "🧠 Why the Smartest Career Advice Rarely Comes From Tutorial Creators",

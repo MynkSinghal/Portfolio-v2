@@ -1,5 +1,47 @@
 import TweetLayout from "@/components/tweet-layout";
 import { parseText } from "@/lib/text-parser";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Slack Can't Handle This: India's Low-Tech Hustle Leaves Silicon Valley Tools in the Dust",
+  description:
+    "When your billion-dollar app crashes, an Indian shopkeeper's ledger keeps the city running. Discover why low-tech beats high-tech in the real world. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/tweets/slack-dont-work",
+  },
+  openGraph: {
+    title: "Slack Can't Handle This: India's Low-Tech Hustle Leaves Silicon Valley Tools in the Dust",
+    description:
+      "When your billion-dollar app crashes, an Indian shopkeeper's ledger keeps the city running. Discover why low-tech beats high-tech in the real world.",
+    type: "article",
+    url: "https://www.mayanksinghal.tech/tweets/slack-dont-work",
+    publishedTime: "2024-12-20",
+    authors: ["Mayank Singhal"],
+    images: [{
+      url: "https://www.mayanksinghal.tech/banner.png",
+      width: 1200,
+      height: 630,
+      alt: "Slack Can't Handle This: India's Low-Tech Hustle"
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Slack Can't Handle This: India's Low-Tech Hustle Leaves Silicon Valley Tools in the Dust",
+    description:
+      "When your billion-dollar app crashes, an Indian shopkeeper's ledger keeps the city running.",
+    images: ["https://www.mayanksinghal.tech/banner.png"],
+  },
+  keywords: [
+    "Slack",
+    "Indian Business",
+    "Low Tech",
+    "Jugaad",
+    "WhatsApp Business",
+    "Technology",
+    "Mayank Singhal",
+  ],
+  authors: [{ name: "Mayank Singhal", url: "https://www.mayanksinghal.tech" }],
+};
 
 export default function SlackDontWork() {
   return (
@@ -29,11 +71,11 @@ export default function SlackDontWork() {
         <p>
           This post?
           It's not a love letter to tech. It's a reality check:
-          <strong> India's informal business systems are outsmarting digital tools — and nobody's ready to admit it.</strong>
+          <strong> India's informal business systems are outsmarting digital tools - and nobody's ready to admit it.</strong>
         </p>
 
         <p>
-          By the end, you'll see why "low-tech" is the new power move — and how the West's obsession with apps might just be a distraction.
+          By the end, you'll see why "low-tech" is the new power move - and how the West's obsession with apps might just be a distraction.
         </p>
 
         <hr className="border-foreground/20 my-8" />
@@ -44,7 +86,7 @@ export default function SlackDontWork() {
 
         <p>
           Let's get this straight:
-          In India, <em>trust isn't a feature — it's the entire operating system</em>.
+          In India, <em>trust isn't a feature - it's the entire operating system</em>.
         </p>
 
         <p>
@@ -80,7 +122,7 @@ export default function SlackDontWork() {
 
         <p>
           15 million+ small businesses run on it.
-          Order-taking, catalogs, payments, customer support — all in one chat thread.
+          Order-taking, catalogs, payments, customer support - all in one chat thread.
         </p>
 
         <ul className="list-disc list-inside space-y-2 text-foreground/80">
@@ -95,7 +137,7 @@ export default function SlackDontWork() {
         </p>
 
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
-          <p><em>The best tech? The one people already use — even if it wasn't built for business.</em></p>
+          <p><em>The best tech? The one people already use - even if it wasn't built for business.</em></p>
         </blockquote>
 
         <hr className="border-foreground/20 my-8" />
@@ -142,7 +184,7 @@ export default function SlackDontWork() {
 
         <p>
           But here's the twist:
-          People use these apps as helpers — not replacements.
+          People use these apps as helpers - not replacements.
         </p>
 
         <ul className="list-disc list-inside space-y-2 text-foreground/80">
@@ -153,7 +195,7 @@ export default function SlackDontWork() {
 
         <p>
           The winners?
-          Tools that <em>fold into habits</em> — not bulldoze them.
+          Tools that <em>fold into habits</em> - not bulldoze them.
         </p>
 
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -195,7 +237,7 @@ export default function SlackDontWork() {
         <ul className="list-disc list-inside space-y-2 text-foreground/80">
           <li>When the lights go out, the ledger and the phone still work.</li>
           <li>Personal credit scales faster than any onboarding flow.</li>
-          <li>"Low-fi" isn't a compromise — it's a strategy.</li>
+          <li>"Low-fi" isn't a compromise - it's a strategy.</li>
         </ul>
 
         <p>

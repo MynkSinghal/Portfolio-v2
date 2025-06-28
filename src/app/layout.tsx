@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.mayanksinghal.tech"),
   title: "Mayank: Still Shipping Wild Ideas",
   description: "Mayank – Modern Tech Creator Portfolio",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech",
+  },
   icons: {
     icon: "/images/logo.png",
     shortcut: "/images/logo.png",

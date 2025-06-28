@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "💪 Grit Over Gadgets: How Indian SMEs Win Without Fancy Tech | Mayank Singhal",
+  title: "Grit Over Gadgets: How Indian SMEs Win Without Fancy Tech",
   description:
-    "What if I told you that some of India's most successful businesses run on WhatsApp, paper ledgers, and pure hustle? Here's how Indian SMEs are quietly powering 40% of the nation's workforce without the latest tech-and thriving against all odds.",
+    "What if I told you that some of India's most successful businesses run on WhatsApp, paper ledgers, and pure hustle? Here's how Indian SMEs are quietly powering 40% of the nation's workforce without the latest tech-and thriving against all odds. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/grit-over-gadgets-indian-smes-win-without-fancy-tech",
+  },
   openGraph: {
     title: "💪 Grit Over Gadgets: How Indian SMEs Win Without Fancy Tech",
     description:

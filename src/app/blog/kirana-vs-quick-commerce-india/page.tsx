@@ -2,25 +2,33 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "🏪 Kirana vs Quick Commerce: The Battle for India's Retail Soul | Mayank Singhal",
+  title: "Kirana vs Quick Commerce: The Battle for India's Retail Soul",
   description:
-    "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR. This isn't just competition-it's a transformation of how India shops.",
+    "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR. This isn't just competition-it's a transformation of how India shops. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/kirana-vs-quick-commerce-india",
+  },
   openGraph: {
-    title: "🏪 Kirana vs Quick Commerce: The Battle for India's Retail Soul",
+    title: "Kirana vs Quick Commerce: The Battle for India's Retail Soul",
     description:
       "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR. This isn't just competition-it's a transformation of how India shops.",
     type: "article",
+    url: "https://www.mayanksinghal.tech/blog/kirana-vs-quick-commerce-india",
     publishedTime: "2025-06-11",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/kirana-quick-commerce.jpg"],
+    images: [{
+      url: "https://www.mayanksinghal.tech/blog-covers/kirana-quick-commerce.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Kirana vs Quick Commerce: The Battle for India's Retail Soul"
+    }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "🏪 Kirana vs Quick Commerce: The Battle for India's Retail Soul",
+    title: "Kirana vs Quick Commerce: The Battle for India's Retail Soul",
     description:
-      "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR.",
-    images: ["/blog-covers/kirana-quick-commerce.jpg"],
+      "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR. Analysis by Mayank Singhal.",
+    images: ["https://www.mayanksinghal.tech/blog-covers/kirana-quick-commerce.jpg"],
   },
   keywords: [
     "Kirana Stores",
@@ -28,9 +36,10 @@ export const metadata: Metadata = {
     "Indian Retail",
     "ONDC",
     "Digital Transformation",
-    "blog",
     "Mayank Singhal",
+    "blog",
   ],
+  authors: [{ name: "Mayank Singhal", url: "https://www.mayanksinghal.tech" }],
 };
 
 export default function BlogPage() {

@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "☕ Chaiwalas vs Chains: India's Secret Business Superpower | Mayank Singhal",
+  title: "Chaiwalas vs Chains: India's Secret Business Superpower",
   description:
-    "Ever wonder why your local chaiwala is still thriving—even as Starbucks, McDonald's, and big-name chains pop up on every corner? Here's a stat that'll make you look twice: India's street vendors and mom-and-pop shops contribute up to 63% of the country's GDP.",
+    "Ever wonder why your local chaiwala is still thriving—even as Starbucks, McDonald's, and big-name chains pop up on every corner? Here's a stat that'll make you look twice: India's street vendors and mom-and-pop shops contribute up to 63% of the country's GDP. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/chaiwalas-and-chainstores-what-india-gets-right",
+  },
   openGraph: {
     title: "☕ Chaiwalas vs Chains: India's Secret Business Superpower",
     description:

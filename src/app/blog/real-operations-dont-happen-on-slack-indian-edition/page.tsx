@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "📞 Real Operations Don't Happen on Slack: Why India's Business OS Runs on Calls, Paper, and Jugaad | Mayank Singhal",
+  title: "Real Operations Don't Happen on Slack: Why India's Business OS Runs on Calls, Paper, and Jugaad",
   description:
-    "Ever tried running a business in India only with Slack, dashboards, and endless apps? Good luck. Here's the real secret: most of India's commerce happens on phone calls, handwritten ledgers, and a healthy dose of jugaad—not in the digital playgrounds Silicon Valley loves.",
+    "Ever tried running a business in India only with Slack, dashboards, and endless apps? Good luck. Here's the real secret: most of India's commerce happens on phone calls, handwritten ledgers, and a healthy dose of jugaad—not in the digital playgrounds Silicon Valley loves. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/real-operations-dont-happen-on-slack-indian-edition",
+  },
   openGraph: {
     title: "📞 Real Operations Don't Happen on Slack: Why India's Business OS Runs on Calls, Paper, and Jugaad",
     description:

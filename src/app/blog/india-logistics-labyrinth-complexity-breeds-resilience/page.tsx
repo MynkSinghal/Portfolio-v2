@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "🚛 India's Logistics Labyrinth: Why Complexity Breeds Resilience (and Opportunity) | Mayank Singhal",
+  title: "India's Logistics Labyrinth: Why Complexity Breeds Resilience (and Opportunity)",
   description:
-    "Ever wondered how a single parcel can travel from a Himalayan village to a Mumbai skyscraper-without getting lost in the chaos? Here's why India spends 14% of its GDP on logistics and how complexity became the secret sauce behind resilience.",
+    "Ever wondered how a single parcel can travel from a Himalayan village to a Mumbai skyscraper-without getting lost in the chaos? Here's why India spends 14% of its GDP on logistics and how complexity became the secret sauce behind resilience. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/india-logistics-labyrinth-complexity-breeds-resilience",
+  },
   openGraph: {
     title:
       "🚛 India's Logistics Labyrinth: Why Complexity Breeds Resilience (and Opportunity)",

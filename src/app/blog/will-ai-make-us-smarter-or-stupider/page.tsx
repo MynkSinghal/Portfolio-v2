@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "🧠 Will AI Make Us Smarter or Stupider? The Truth Nobody Wants to Admit | Mayank Singhal",
+  title: "Will AI Make Us Smarter or Stupider? The Truth Nobody Wants to Admit",
   description:
-    "Ever wondered if all these AI tools are making you sharper-or just a little lazier? If you've ever Googled an answer you could have figured out, you're not alone. Here's the uncomfortable truth about outsourcing our brains.",
+    "Ever wondered if all these AI tools are making you sharper-or just a little lazier? If you've ever Googled an answer you could have figured out, you're not alone. Here's the uncomfortable truth about outsourcing our brains. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/will-ai-make-us-smarter-or-stupider",
+  },
   openGraph: {
     title:
       "🧠 Will AI Make Us Smarter or Stupider? The Truth Nobody Wants to Admit",

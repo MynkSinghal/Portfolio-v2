@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "🎯 The Internship Dilemma: Why You Don't Need a Fancy Badge to Make It Big | Mayank Singhal",
+  title: "The Internship Dilemma: Why You Don't Need a Fancy Badge to Make It Big",
   description:
-    "No internship? No problem. The game isn't over - it's just getting interesting. Here's your spicy reality check on building a career without that coveted badge.",
+    "No internship? No problem. The game isn't over - it's just getting interesting. Here's your spicy reality check on building a career without that coveted badge. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/internship-dilemma-no-badge-make-it-big",
+  },
   openGraph: {
     title:
       "🎯 The Internship Dilemma: Why You Don't Need a Fancy Badge to Make It Big",

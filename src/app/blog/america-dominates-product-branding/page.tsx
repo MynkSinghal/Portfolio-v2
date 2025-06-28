@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "🇺🇸 Why America Dominates Global Product & Branding | Mayank Singhal",
+  title: "Why America Dominates Global Product & Branding",
   description:
-    "From Apple to Coca-Cola, American companies shape how the world shops, thinks, and lives. Here's the psychology behind America's cultural export machine.",
+    "From Apple to Coca-Cola, American companies shape how the world shops, thinks, and lives. Here's the psychology behind America's cultural export machine. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/america-dominates-product-branding",
+  },
   openGraph: {
     title: "🇺🇸 Why America Dominates Global Product & Branding",
     description:

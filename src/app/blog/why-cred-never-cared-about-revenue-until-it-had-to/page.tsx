@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "💳 Why CRED Ignored Revenue-Until It Couldn't: Lessons for Every Ambitious Founder | Mayank Singhal",
+  title: "Why CRED Ignored Revenue-Until It Couldn't: Lessons for Every Ambitious Founder",
   description:
-    "Ever wondered how a startup can become a household name-and a billion-dollar company-without worrying about making money? CRED did just that. But what happens when the music stops and investors start asking, 'So… where's the revenue?'",
+    "Ever wondered how a startup can become a household name-and a billion-dollar company-without worrying about making money? CRED did just that. But what happens when the music stops and investors start asking, 'So… where's the revenue?' Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/why-cred-never-cared-about-revenue-until-it-had-to",
+  },
   openGraph: {
     title:
       "💳 Why CRED Ignored Revenue-Until It Couldn't: Lessons for Every Ambitious Founder",

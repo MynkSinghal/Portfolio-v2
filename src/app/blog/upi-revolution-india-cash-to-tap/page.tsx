@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "💸 The UPI Revolution: How India Went From Cash to Tap | Mayank Singhal",
+  title: "The UPI Revolution: How India Went From Cash to Tap",
   description:
-    "From 2 billion to 7.3 billion transactions per month. UPI didn't just digitize payments-it rewired a nation. Discover how India built the world's most successful payment system.",
+    "From 2 billion to 7.3 billion transactions per month. UPI didn't just digitize payments-it rewired a nation. Discover how India built the world's most successful payment system. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/upi-revolution-india-cash-to-tap",
+  },
   openGraph: {
     title: "💸 The UPI Revolution: How India Went From Cash to Tap",
     description:

@@ -2,9 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "👑 The Real CEOs of India Don't Post | Mayank Singhal",
+  title: "The Real CEOs of India Don't Post",
   description:
-    "Think India's business titans are all on LinkedIn, dropping wisdom and sharing wins? Here's a reality check: the real empire builders-the ones moving crores, hiring millions, and shaping the economy-are invisible online. Their companies are household names, but their faces? You'll never see them on your feed.",
+    "Think India's business titans are all on LinkedIn, dropping wisdom and sharing wins? Here's a reality check: the real empire builders-the ones moving crores, hiring millions, and shaping the economy-are invisible online. Their companies are household names, but their faces? You'll never see them on your feed. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/the-real-ceos-of-india-are-not-on-linkedin",
+  },
   openGraph: {
     title: "👑 The Real CEOs of India Don't Post",
     description:

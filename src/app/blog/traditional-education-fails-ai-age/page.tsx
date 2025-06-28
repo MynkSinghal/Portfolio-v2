@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "🎓 The Shifting Sands: Why Traditional Education Fails in the Age of AI | Mayank Singhal",
+  title: "The Shifting Sands: Why Traditional Education Fails in the Age of AI",
   description:
-    "We're living in an AI-powered world, yet our education system is still stuck in an era of textbooks and standardized tests. Learn why conventional education no longer aligns with reality.",
+    "We're living in an AI-powered world, yet our education system is still stuck in an era of textbooks and standardized tests. Learn why conventional education no longer aligns with reality. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/traditional-education-fails-ai-age",
+  },
   openGraph: {
     title:
       "🎓 The Shifting Sands: Why Traditional Education Fails in the Age of AI",

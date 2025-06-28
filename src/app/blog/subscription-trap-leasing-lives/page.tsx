@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "🎟️ The Subscription Trap: Are We Leasing Our Lives Away? | Mayank Singhal",
+  title: "The Subscription Trap: Are We Leasing Our Lives Away?",
   description:
-    "You don't own it - you just access it… until you stop paying. Discover the hidden costs of the subscription economy and how to make smarter choices.",
+    "You don't own it - you just access it… until you stop paying. Discover the hidden costs of the subscription economy and how to make smarter choices. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/subscription-trap-leasing-lives",
+  },
   openGraph: {
     title: "🎟️ The Subscription Trap: Are We Leasing Our Lives Away?",
     description:

@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "💎 How Minimalist Built a 3,000 Crore Skincare Brand Without Playing the Usual Marketing Game | Mayank Singhal",
+  title: "How Minimalist Built a 3,000 Crore Skincare Brand Without Playing the Usual Marketing Game",
   description:
-    "Ever feel like every skincare brand is just selling you a story, not a solution? Here's how Minimalist, a Jaipur-based startup, rewrote the rules and built a 3,000 crore empire in just five years—by doing the opposite of what everyone else was doing.",
+    "Ever feel like every skincare brand is just selling you a story, not a solution? Here's how Minimalist, a Jaipur-based startup, rewrote the rules and built a 3,000 crore empire in just five years—by doing the opposite of what everyone else was doing. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/minimalist-3000-crore-skincare-brand-radical-transparency",
+  },
   openGraph: {
     title: "💎 How Minimalist Built a 3,000 Crore Skincare Brand Without Playing the Usual Marketing Game",
     description:

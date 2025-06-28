@@ -2,10 +2,12 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "🔥 Forget 10,000 Hours - It's 10,000 Iterations That Make You Unstoppable | Mayank Singhal",
+  title: "Forget 10,000 Hours - It's 10,000 Iterations That Make You Unstoppable",
   description:
-    "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again. Here's why iterations beat hours every time.",
+    "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again. Here's why iterations beat hours every time. Analysis by Mayank Singhal.",
+  alternates: {
+    canonical: "https://www.mayanksinghal.tech/blog/forget-10000-hours-iterations-make-you-unstoppable",
+  },
   openGraph: {
     title:
       "🔥 Forget 10,000 Hours - It's 10,000 Iterations That Make You Unstoppable",
