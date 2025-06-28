@@ -15,8 +15,68 @@ export default function TweetLayout({
   publishDate,
   author = "Mayank Singhal",
 }: TweetLayoutProps) {
+  // Structured data for SEO - SocialMediaPosting Schema
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "SocialMediaPosting",
+    headline: tweetTitle,
+    text: tweetTitle, // The tweet content
+    author: {
+      "@type": "Person",
+      name: author,
+      url: "https://www.mayanksinghal.tech",
+      sameAs: [
+        "https://x.com/_Mynkkkk_",
+        "https://www.linkedin.com/in/mynkkkk/",
+        "https://github.com/MynkSinghal"
+      ]
+    },
+    datePublished: new Date(publishDate).toISOString(),
+    dateModified: new Date(publishDate).toISOString(),
+    image: "https://www.mayanksinghal.tech/banner.png",
+    publisher: {
+      "@type": "Person",
+      name: "Mayank Singhal",
+      url: "https://www.mayanksinghal.tech",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.mayanksinghal.tech/images/logo.png"
+      }
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.mayanksinghal.tech/tweets/${tweetSlug}`
+    },
+    url: `https://www.mayanksinghal.tech/tweets/${tweetSlug}`,
+    keywords: ["tech", "startup", "india", "business", "thoughts"],
+    inLanguage: "en-US",
+    isAccessibleForFree: true,
+    genre: "Social Media",
+    audience: {
+      "@type": "Audience",
+      audienceType: "Developers, Entrepreneurs, Tech Enthusiasts"
+    },
+    sharedContent: {
+      "@type": "CreativeWork",
+      name: tweetTitle,
+      author: {
+        "@type": "Person",
+        name: author
+      }
+    }
+  };
+
   return (
-    <main className="min-h-screen bg-background">
+    <>
+      {/* Schema.org JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+      
+      <main className="min-h-screen bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12 md:py-16 lg:py-20">
         {/* Back Navigation */}
         <Link
@@ -79,5 +139,6 @@ export default function TweetLayout({
         </footer>
       </div>
     </main>
+    </>
   );
 } 

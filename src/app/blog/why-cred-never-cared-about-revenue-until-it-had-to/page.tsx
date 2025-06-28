@@ -1,17 +1,16 @@
-import BlogFeedback from "@/components/blog-feedback";
+import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "💳 Why CRED Ignored Revenue—Until It Couldn't: Lessons for Every Ambitious Founder | Mayank Singhal",
+    "💳 Why CRED Ignored Revenue-Until It Couldn't: Lessons for Every Ambitious Founder | Mayank Singhal",
   description:
-    "Ever wondered how a startup can become a household name—and a billion-dollar company—without worrying about making money? CRED did just that. But what happens when the music stops and investors start asking, 'So… where's the revenue?'",
+    "Ever wondered how a startup can become a household name-and a billion-dollar company-without worrying about making money? CRED did just that. But what happens when the music stops and investors start asking, 'So… where's the revenue?'",
   openGraph: {
     title:
-      "💳 Why CRED Ignored Revenue—Until It Couldn't: Lessons for Every Ambitious Founder",
+      "💳 Why CRED Ignored Revenue-Until It Couldn't: Lessons for Every Ambitious Founder",
     description:
-      "Ever wondered how a startup can become a household name—and a billion-dollar company—without worrying about making money? CRED did just that. But what happens when the music stops and investors start asking, 'So… where's the revenue?'",
+      "Ever wondered how a startup can become a household name-and a billion-dollar company-without worrying about making money? CRED did just that. But what happens when the music stops and investors start asking, 'So… where's the revenue?'",
     type: "article",
     publishedTime: "2025-08-13",
     authors: ["Mayank Singhal"],
@@ -20,9 +19,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "💳 Why CRED Ignored Revenue—Until It Couldn't: Lessons for Every Ambitious Founder",
+      "💳 Why CRED Ignored Revenue-Until It Couldn't: Lessons for Every Ambitious Founder",
     description:
-      "Ever wondered how a startup can become a household name—and a billion-dollar company—without worrying about making money?",
+      "Ever wondered how a startup can become a household name-and a billion-dollar company-without worrying about making money?",
     images: ["/blog-covers/how-cred-work.jpg"],
   },
   keywords: [
@@ -40,92 +39,20 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  // Structured data for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline:
-      "💳 Why CRED Ignored Revenue—Until It Couldn't: Lessons for Every Ambitious Founder",
-    description:
-      "Ever wondered how a startup can become a household name—and a billion-dollar company—without worrying about making money? CRED did just that. But what happens when the music stops and investors start asking, 'So… where's the revenue?'",
-    author: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-    datePublished: "2025-08-13",
-    dateModified: "2025-08-13",
-    image: "/blog-covers/how-cred-work.jpg",
-    publisher: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-
-      <main className="min-h-screen bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12 md:py-16 lg:py-20">
-          {/* Back Navigation */}
-          <Link
-            href="/#blogs"
-            className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors mb-8 group"
-          >
-            <svg
-              className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 12H5M12 19l-7-7 7-7"
-              />
-            </svg>
-            Back to Blogs
-          </Link>
-
-          {/* Cover Image */}
-          <div className="aspect-[2/1] rounded-2xl overflow-hidden mb-8 bg-foreground/5">
-            <img
-              src="/blog-covers/how-cred-work.jpg"
-              alt="💳 Why CRED Ignored Revenue—Until It Couldn't: Lessons for Every Ambitious Founder"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Article Header */}
-          <header className="mb-8">
-            <div className="flex items-center gap-2 text-sm text-foreground/60 mb-4">
-              <span className="font-medium">Mayank Singhal</span>
-              <span>•</span>
-              <span>4 min read</span>
-              <span>•</span>
-              <span>Aug 13, 2025</span>
-            </div>
-
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              💳 Why CRED Ignored Revenue—Until It Couldn't: Lessons for Every
-              Ambitious Founder
-            </h1>
-
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-foreground/10 text-sm font-medium text-foreground/80 mb-6">
-              Fintech & Strategy
-            </div>
-          </header>
-
-          {/* Article Content */}
-          <article className="prose prose-lg max-w-none">
-            <div className="text-base md:text-lg leading-relaxed space-y-6">
-              <p>
-                Ever wondered how a startup can become a household name—and a
-                billion-dollar company—without worrying about making money?{" "}
+    <BlogLayout
+      blogSlug="why-cred-never-cared-about-revenue-until-it-had-to"
+      blogTitle="💳 Why CRED Ignored Revenue—Until It Couldn't: Lessons for Every Ambitious Founder"
+      publishDate="Aug 13, 2025"
+      coverImage="/blog-covers/how-cred-work.jpg"
+      author="Mayank Singhal"
+      readTime="4 min read"
+      category="Fintech & Strategy"
+    >
+      <div className="text-base md:text-lg leading-relaxed space-y-6">
+        <p>
+                Ever wondered how a startup can become a household name-and a
+                billion-dollar company-without worrying about making money?{" "}
                 <strong>CRED did just that</strong>.
               </p>
 
@@ -141,18 +68,18 @@ export default function BlogPage() {
               </p>
 
               <p>
-                CRED's story is more than a fintech case study—it's a crash
+                CRED's story is more than a fintech case study-it's a crash
                 course in growth hacking, brand psychology, and the art (and
                 risk) of putting revenue on the back burner. You'll learn why
-                CRED's "growth now, profit later" playbook worked—until it
-                didn't—and what every founder (or curious reader) can steal from
+                CRED's "growth now, profit later" playbook worked-until it
+                didn't-and what every founder (or curious reader) can steal from
                 their journey.
               </p>
 
               <p>
                 By the end, you'll know how to build a magnetic brand, when to
                 focus on monetization, and why timing your pivot is
-                everything—without falling into the "growth at all costs" trap.
+                everything-without falling into the "growth at all costs" trap.
               </p>
 
               <hr className="border-foreground/20 my-8" />
@@ -163,10 +90,10 @@ export default function BlogPage() {
 
               <p>
                 CRED's first rule?{" "}
-                <strong>Make users fall in love—worry about money later</strong>
+                <strong>Make users fall in love-worry about money later</strong>
                 . Founder Kunal Shah zeroed in on a unique pain point: India's
                 "trust deficit" in finance. Instead of chasing everyone, CRED
-                courted the top 1%—the affluent, creditworthy, FOMO-prone crowd.
+                courted the top 1%-the affluent, creditworthy, FOMO-prone crowd.
               </p>
 
               <p>Here's how they pulled it off:</p>
@@ -191,14 +118,14 @@ export default function BlogPage() {
 
               <p>
                 CRED burned through cash, but they weren't reckless. The goal
-                was "irreversibility"—make it so sticky that users couldn't
+                was "irreversibility"-make it so sticky that users couldn't
                 imagine life without it.
               </p>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
                   <strong>
-                    If you want loyalty, solve for habit—not just transactions.
+                    If you want loyalty, solve for habit-not just transactions.
                   </strong>
                 </p>
               </blockquote>
@@ -210,7 +137,7 @@ export default function BlogPage() {
               </h2>
 
               <p>
-                CRED didn't just build a product—they built a persona. While
+                CRED didn't just build a product-they built a persona. While
                 other fintechs begged for attention, CRED became the cool club
                 everyone wanted to join.
               </p>
@@ -218,7 +145,7 @@ export default function BlogPage() {
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>
                   <strong>Aspirational branding:</strong> CRED was the Apple of
-                  fintech—premium, exclusive, and a little mysterious ("Not
+                  fintech-premium, exclusive, and a little mysterious ("Not
                   Everyone Gets It").
                 </li>
                 <li>
@@ -239,14 +166,14 @@ export default function BlogPage() {
               </ul>
 
               <p>
-                The result? Brand equity that outpaced revenue—and a user base
+                The result? Brand equity that outpaced revenue-and a user base
                 hooked on more than just cashback.
               </p>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
                   <strong>
-                    The right brand can make your product unforgettable—even
+                    The right brand can make your product unforgettable-even
                     before it's profitable.
                   </strong>
                 </p>
@@ -259,7 +186,7 @@ export default function BlogPage() {
               </h2>
 
               <p>
-                For years, CRED's "revenue can wait" mantra worked—thanks to
+                For years, CRED's "revenue can wait" mantra worked-thanks to
                 deep-pocketed VCs and the promise of future riches. But markets
                 mature, capital tightens, and{" "}
                 <strong>sooner or later, the bill comes due</strong>.
@@ -273,7 +200,7 @@ export default function BlogPage() {
                   lending and UPI made some revenue streams trickier.
                 </li>
                 <li>
-                  <strong>Growth plateau:</strong> Revenue growth slowed—from
+                  <strong>Growth plateau:</strong> Revenue growth slowed-from
                   67% YoY in FY24 to about 20% in FY25.
                 </li>
                 <li>
@@ -324,7 +251,7 @@ export default function BlogPage() {
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>
                   <strong>Brand before revenue:</strong> A strong,
-                  differentiated brand creates loyalty—even when you're not
+                  differentiated brand creates loyalty-even when you're not
                   making money yet.
                 </li>
                 <li>
@@ -333,7 +260,7 @@ export default function BlogPage() {
                 </li>
                 <li>
                   <strong>Capital is a tool, not a crutch:</strong> Venture
-                  money can buy time—but not forever.
+                  money can buy time-but not forever.
                 </li>
                 <li>
                   <strong>Monetization matters:</strong> Growth is fun, but
@@ -349,7 +276,7 @@ export default function BlogPage() {
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
                   <strong>
-                    The best founders know when to chase growth—and when to
+                    The best founders know when to chase growth-and when to
                     pivot to profit.
                   </strong>
                 </p>
@@ -362,7 +289,7 @@ export default function BlogPage() {
               </h2>
 
               <p>
-                Here's the real secret: It's not "growth vs. revenue"—it's{" "}
+                Here's the real secret: It's not "growth vs. revenue"-it's{" "}
                 <strong>knowing when to switch gears</strong>. CRED's early
                 disregard for profit wasn't a mistake; it was a calculated bet.
                 But the smartest leaders know when to change the rules as the
@@ -371,7 +298,7 @@ export default function BlogPage() {
 
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>
-                  <strong>Build your brand and user base first</strong>—if you
+                  <strong>Build your brand and user base first</strong>-if you
                   can afford it.
                 </li>
                 <li>
@@ -382,14 +309,14 @@ export default function BlogPage() {
                 </li>
                 <li>
                   <strong>Pivot to monetization before the music stops</strong>
-                  —not after.
+                  -not after.
                 </li>
               </ul>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
                   <strong>
-                    Long-term wins come from bold bets—and the courage to change
+                    Long-term wins come from bold bets-and the courage to change
                     course when it counts.
                   </strong>
                 </p>
@@ -402,35 +329,25 @@ export default function BlogPage() {
               </h2>
 
               <p>
-                What's your take—would you risk it all for growth, or play it
+                What's your take-would you risk it all for growth, or play it
                 safe with steady revenue?
               </p>
 
               <p>
                 CRED's story shows that both approaches have their time and
-                place. The real skill isn't picking one over the other—it's
+                place. The real skill isn't picking one over the other-it's
                 reading the room, understanding your market, and having the
                 courage to pivot when the moment demands it.
               </p>
 
               <p>
                 The next time you see a startup burning cash for growth,
-                remember: they might be building the next big thing—or they
+                remember: they might be building the next big thing-or they
                 might be one funding round away from reality hitting hard.
               </p>
 
               <hr className="border-foreground/20 my-8" />
-
-              <div className="mt-12">
-                <BlogFeedback
-                  blogTitle="Why CRED Ignored Revenue—Until It Couldn't: Lessons for Every Ambitious Founder"
-                  blogSlug="why-cred-never-cared-about-revenue-until-it-had-to"
-                />
-              </div>
-            </div>
-          </article>
         </div>
-      </main>
-    </>
+    </BlogLayout>
   );
 }

@@ -1,17 +1,16 @@
-import BlogFeedback from "@/components/blog-feedback";
+import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
     "🎯 The Internship Dilemma: Why You Don't Need a Fancy Badge to Make It Big | Mayank Singhal",
   description:
-    "No internship? No problem. The game isn't over — it's just getting interesting. Here's your spicy reality check on building a career without that coveted badge.",
+    "No internship? No problem. The game isn't over - it's just getting interesting. Here's your spicy reality check on building a career without that coveted badge.",
   openGraph: {
     title:
       "🎯 The Internship Dilemma: Why You Don't Need a Fancy Badge to Make It Big",
     description:
-      "No internship? No problem. The game isn't over — it's just getting interesting. Here's your spicy reality check on building a career without that coveted badge.",
+      "No internship? No problem. The game isn't over - it's just getting interesting. Here's your spicy reality check on building a career without that coveted badge.",
     type: "article",
     publishedTime: "2025-06-25",
     authors: ["Mayank Singhal"],
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
     title:
       "🎯 The Internship Dilemma: Why You Don't Need a Fancy Badge to Make It Big",
     description:
-      "No internship? No problem. The game isn't over — it's just getting interesting.",
+      "No internship? No problem. The game isn't over - it's just getting interesting.",
     images: ["/blog-covers/internship-dilemma.jpg"],
   },
   keywords: [
@@ -37,92 +36,20 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  // Structured data for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline:
-      "🎯 The Internship Dilemma: Why You Don't Need a Fancy Badge to Make It Big",
-    description:
-      "No internship? No problem. The game isn't over — it's just getting interesting. Here's your spicy reality check on building a career without that coveted badge.",
-    author: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-    datePublished: "2025-06-25",
-    dateModified: "2025-06-25",
-    image: "/blog-covers/internship-dilemma.jpg",
-    publisher: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-
-      <main className="min-h-screen bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12 md:py-16 lg:py-20">
-          {/* Back Navigation */}
-          <Link
-            href="/#blogs"
-            className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors mb-8 group"
-          >
-            <svg
-              className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 12H5M12 19l-7-7 7-7"
-              />
-            </svg>
-            Back to Blogs
-          </Link>
-
-          {/* Cover Image */}
-          <div className="aspect-[2/1] rounded-2xl overflow-hidden mb-8 bg-foreground/5">
-            <img
-              src="/blog-covers/internship-dilemma.jpg"
-              alt="🎯 The Internship Dilemma: Why You Don't Need a Fancy Badge to Make It Big"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Article Header */}
-          <header className="mb-8">
-            <div className="flex items-center gap-2 text-sm text-foreground/60 mb-4">
-              <span className="font-medium">Mayank Singhal</span>
-              <span>•</span>
-              <span>5 min read</span>
-              <span>•</span>
-              <span>Jun 25, 2025</span>
-            </div>
-
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              🎯 The Internship Dilemma: Why You Don't Need a Fancy Badge to
-              Make It Big
-            </h1>
-
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-foreground/10 text-sm font-medium text-foreground/80 mb-6">
-              Career & Professional Development
-            </div>
-          </header>
-
-          {/* Article Content */}
-          <article className="prose prose-lg max-w-none">
+    <BlogLayout
+      blogSlug="internship-dilemma-no-badge-make-it-big"
+      blogTitle="🎯 The Internship Dilemma: Why You Don't Need a Fancy Badge to Make It Big"
+      publishDate="Jun 25, 2025"
+      coverImage="/blog-covers/internship-dilemma.jpg"
+      author="Mayank Singhal"
+      readTime="5 min read"
+      category="Career"
+    >
             <div className="text-base md:text-lg leading-relaxed space-y-6">
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
-                  "No internship? No problem. The game isn't over — it's just
+                  "No internship? No problem. The game isn't over - it's just
                   getting interesting."
                 </p>
               </blockquote>
@@ -138,7 +65,7 @@ export default function BlogPage() {
               <p>"Super excited to join XYZ as an SDE intern!"</p>
 
               <p>
-                And there you are — staring at your screen, wondering if you're
+                And there you are - staring at your screen, wondering if you're
                 already <em>behind in life</em> just because HR ghosted your 7th
                 cold email.
               </p>
@@ -164,7 +91,7 @@ export default function BlogPage() {
                   Case studies of <em>actually good</em> programs that work
                 </li>
                 <li>
-                  And most importantly — what to do{" "}
+                  And most importantly - what to do{" "}
                   <em>if you don't land one</em>
                 </li>
               </ul>
@@ -172,7 +99,7 @@ export default function BlogPage() {
               <p>
                 By the end, you'll walk away with{" "}
                 <strong>a clear, hype-free roadmap</strong> to level up your
-                career — internship or not.
+                career - internship or not.
               </p>
 
               <p>Let's break it down.</p>
@@ -246,7 +173,7 @@ export default function BlogPage() {
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>
                   <strong>Example:</strong> A student worked at a 10-person
-                  startup, wearing 3 hats — frontend, SEO, and customer support.
+                  startup, wearing 3 hats - frontend, SEO, and customer support.
                 </li>
                 <li>
                   Result? Learned more in 2 months than a year of college.
@@ -273,7 +200,7 @@ export default function BlogPage() {
                   on a research paper with a prof from IIT-Kanpur.
                 </li>
                 <li>
-                  Result? Published in a reputed journal — later helped in MS
+                  Result? Published in a reputed journal - later helped in MS
                   admits.
                 </li>
               </ul>
@@ -284,7 +211,7 @@ export default function BlogPage() {
               </p>
 
               <p>
-                If your internship gives you just one of the three — you're
+                If your internship gives you just one of the three - you're
                 good.
               </p>
 
@@ -299,7 +226,7 @@ export default function BlogPage() {
               <p>No offer. No intern badge. Nada.</p>
 
               <p>
-                Here's what you do instead — and no, it's not binge-watching 4
+                Here's what you do instead - and no, it's not binge-watching 4
                 seasons of Suits (although tempting):
               </p>
 
@@ -325,7 +252,7 @@ export default function BlogPage() {
               </h3>
               <p>Pick a repo. Fix a bug. Add documentation.</p>
               <p>
-                It's literally free experience — and gets noticed by devs across
+                It's literally free experience - and gets noticed by devs across
                 the world.
               </p>
 
@@ -342,7 +269,7 @@ export default function BlogPage() {
                 Design a poster for your local NGO. Automate your college's
                 attendance sheet.
               </p>
-              <p>Everything counts — if you can tell the story right.</p>
+              <p>Everything counts - if you can tell the story right.</p>
 
               <p>
                 👉 Bottom line:{" "}
@@ -353,7 +280,7 @@ export default function BlogPage() {
               <hr className="border-foreground/20 my-8" />
 
               <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
-                🧠 The Bigger Truth — College ≠ Career
+                🧠 The Bigger Truth - College ≠ Career
               </h2>
 
               <p>Here's a thought nobody puts on the placement brochure:</p>
@@ -362,7 +289,7 @@ export default function BlogPage() {
                 <p>"College teaches you to pass. Life teaches you to play."</p>
               </blockquote>
 
-              <p>Internships, grades, CGPA — sure, they're helpful.</p>
+              <p>Internships, grades, CGPA - sure, they're helpful.</p>
               <p>But what really matters?</p>
 
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
@@ -493,7 +420,7 @@ export default function BlogPage() {
                 side. Use it.
               </p>
 
-              <p>Now go make something cool. And if this hit you different —</p>
+              <p>Now go make something cool. And if this hit you different -</p>
 
               <p>
                 👉 <strong>Drop your feedback or thoughts below.</strong>
@@ -519,50 +446,10 @@ export default function BlogPage() {
 
               <p>
                 What's your plan? Are you building something cool this summer?
-                Share your story below — your journey might inspire someone else
+                Share your story below - your journey might inspire someone else
                 who needs to hear this.
               </p>
             </div>
-          </article>
-
-          {/* Blog Feedback Section */}
-          <div className="mt-12">
-            <BlogFeedback
-              blogSlug="internship-dilemma-no-badge-make-it-big"
-              blogTitle="🎯 The Internship Dilemma: Why You Don't Need a Fancy Badge to Make It Big"
-            />
-          </div>
-
-          {/* Footer */}
-          <footer className="mt-12 pt-8 border-t border-foreground/10">
-            <div className="flex items-center justify-between">
-              <Link
-                href="/#blogs"
-                className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors group"
-              >
-                <svg
-                  className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 12H5M12 19l-7-7 7-7"
-                  />
-                </svg>
-                Back to Blogs
-              </Link>
-
-              <div className="text-sm text-foreground/50">
-                Published on Jun 25, 2025
-              </div>
-            </div>
-          </footer>
-        </div>
-      </main>
-    </>
+    </BlogLayout>
   );
 }

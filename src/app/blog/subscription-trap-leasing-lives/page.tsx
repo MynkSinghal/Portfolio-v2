@@ -1,16 +1,15 @@
-import BlogFeedback from "@/components/blog-feedback";
+import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
     "🎟️ The Subscription Trap: Are We Leasing Our Lives Away? | Mayank Singhal",
   description:
-    "You don't own it — you just access it… until you stop paying. Discover the hidden costs of the subscription economy and how to make smarter choices.",
+    "You don't own it - you just access it… until you stop paying. Discover the hidden costs of the subscription economy and how to make smarter choices.",
   openGraph: {
     title: "🎟️ The Subscription Trap: Are We Leasing Our Lives Away?",
     description:
-      "You don't own it — you just access it… until you stop paying. Discover the hidden costs of the subscription economy and how to make smarter choices.",
+      "You don't own it - you just access it… until you stop paying. Discover the hidden costs of the subscription economy and how to make smarter choices.",
     type: "article",
     publishedTime: "2025-06-04",
     authors: ["Mayank Singhal"],
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "🎟️ The Subscription Trap: Are We Leasing Our Lives Away?",
     description:
-      "You don't own it — you just access it… until you stop paying.",
+      "You don't own it - you just access it… until you stop paying.",
     images: ["/blog-covers/subscription-trap.jpg"],
   },
   keywords: [
@@ -35,90 +34,20 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  // Structured data for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: "🎟️ The Subscription Trap: Are We Leasing Our Lives Away?",
-    description:
-      "You don't own it — you just access it… until you stop paying. Discover the hidden costs of the subscription economy and how to make smarter choices.",
-    author: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-    datePublished: "2025-06-04",
-    dateModified: "2025-06-04",
-    image: "/blog-covers/subscription-trap.jpg",
-    publisher: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-
-      <main className="min-h-screen bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12 md:py-16 lg:py-20">
-          {/* Back Navigation */}
-          <Link
-            href="/#blogs"
-            className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors mb-8 group"
-          >
-            <svg
-              className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 12H5M12 19l-7-7 7-7"
-              />
-            </svg>
-            Back to Blogs
-          </Link>
-
-          {/* Cover Image */}
-          <div className="aspect-[2/1] rounded-2xl overflow-hidden mb-8 bg-foreground/5">
-            <img
-              src="/blog-covers/subscription-trap.jpg"
-              alt="🎟️ The Subscription Trap: Are We Leasing Our Lives Away?"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Article Header */}
-          <header className="mb-8">
-            <div className="flex items-center gap-2 text-sm text-foreground/60 mb-4">
-              <span className="font-medium">Mayank Singhal</span>
-              <span>•</span>
-              <span>3 min read</span>
-              <span>•</span>
-              <span>Jun 4, 2025</span>
-            </div>
-
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              🎟️ The Subscription Trap: Are We Leasing Our Lives Away?
-            </h1>
-
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-foreground/10 text-sm font-medium text-foreground/80 mb-6">
-              Finance & Digital Life
-            </div>
-          </header>
-
-          {/* Article Content */}
-          <article className="prose prose-lg max-w-none">
+    <BlogLayout
+      blogSlug="subscription-trap-leasing-lives"
+      blogTitle="🎟️ The Subscription Trap: Are We Leasing Our Lives Away?"
+      publishDate="Jun 4, 2025"
+      coverImage="/blog-covers/subscription-trap.jpg"
+      author="Mayank Singhal"
+      readTime="3 min read"
+      category="Finance & Culture"
+    >
             <div className="text-base md:text-lg leading-relaxed space-y-6">
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
-                  "You don't own it — you just <em>access</em> it… until you
+                  "You don't own it - you just <em>access</em> it… until you
                   stop paying."
                 </p>
               </blockquote>
@@ -130,7 +59,7 @@ export default function BlogPage() {
               </h2>
 
               <p>
-                From movies to meals to motor vehicles — everything's on a
+                From movies to meals to motor vehicles - everything's on a
                 subscription now.
                 <br />
                 Sounds convenient, right?
@@ -141,7 +70,7 @@ export default function BlogPage() {
                 a slow financial leak.
                 <br />
                 This post unpacks the rise of the <em>subscription economy</em>{" "}
-                — the good, the bad, and the quietly dangerous.
+                - the good, the bad, and the quietly dangerous.
               </p>
 
               <p>
@@ -165,7 +94,7 @@ export default function BlogPage() {
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
-                  Netflix, Spotify, Amazon Prime — the pioneers of this model
+                  Netflix, Spotify, Amazon Prime - the pioneers of this model
                   didn't just offer content. They changed behavior.
                 </p>
               </blockquote>
@@ -183,7 +112,7 @@ export default function BlogPage() {
               <hr className="border-foreground/20 my-8" />
 
               <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
-                💸 What We're Gaining — and Losing
+                💸 What We're Gaining - and Losing
               </h2>
 
               <p>
@@ -207,7 +136,7 @@ export default function BlogPage() {
 
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>
-                  <strong>Liabilities &gt; Assets</strong> — You're paying, but
+                  <strong>Liabilities &gt; Assets</strong> - You're paying, but
                   never <em>owning</em>.
                 </li>
                 <li>
@@ -232,7 +161,7 @@ export default function BlogPage() {
               <p>
                 Forget to pay?
                 <br />
-                You don't just lose a movie night — you lose access to{" "}
+                You don't just lose a movie night - you lose access to{" "}
                 <strong>essentials</strong>.
               </p>
 
@@ -247,7 +176,7 @@ export default function BlogPage() {
                 </li>
                 <li>
                   <strong>HP printer ink plans</strong> auto-lock you into
-                  monthly purchases — even if you don't need them.
+                  monthly purchases - even if you don't need them.
                 </li>
               </ul>
 
@@ -291,7 +220,7 @@ export default function BlogPage() {
                 <li>You forget what you're subscribed to.</li>
                 <li>You feel overwhelmed and digitally cluttered.</li>
                 <li>
-                  You feel guilty about things you don't use — but still pay
+                  You feel guilty about things you don't use - but still pay
                   for.
                 </li>
               </ul>
@@ -316,7 +245,7 @@ export default function BlogPage() {
 
               <p>
                 Because companies start <strong>optimizing for revenue</strong>{" "}
-                — not users.
+                - not users.
               </p>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -329,7 +258,7 @@ export default function BlogPage() {
                 🌈 It's Not All Bad (But It <em>Is</em> All Strategic)
               </h2>
 
-              <p>Let's be fair — not everything about subscriptions is evil.</p>
+              <p>Let's be fair - not everything about subscriptions is evil.</p>
 
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>
@@ -343,7 +272,7 @@ export default function BlogPage() {
                 </li>
                 <li>
                   <strong>Flexibility:</strong> You don't have to commit forever
-                  — you can test and cancel (if they let you).
+                  - you can test and cancel (if they let you).
                 </li>
               </ul>
 
@@ -358,7 +287,7 @@ export default function BlogPage() {
               </p>
 
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
-                <li>Audit your subscriptions — list them out.</li>
+                <li>Audit your subscriptions - list them out.</li>
                 <li>Cancel what you don't use.</li>
                 <li>
                   Be mindful of how much control you're giving away in the name
@@ -370,7 +299,7 @@ export default function BlogPage() {
                 Because in the end, the subscription economy reflects a deeper
                 human desire:
                 <br />
-                To <em>access</em> more, <em>own</em> less — and avoid the
+                To <em>access</em> more, <em>own</em> less - and avoid the
                 feeling of missing out.
               </p>
 
@@ -401,50 +330,10 @@ export default function BlogPage() {
               <p>
                 Found this breakdown useful? Confused about something?
                 <br />
-                Drop your thoughts or suggestions in the comments — your input
+                Drop your thoughts or suggestions in the comments - your input
                 helps shape better posts ahead.
               </p>
             </div>
-          </article>
-
-          {/* Blog Feedback Section */}
-          <div className="mt-12">
-            <BlogFeedback
-              blogSlug="subscription-trap-leasing-lives"
-              blogTitle="🎟️ The Subscription Trap: Are We Leasing Our Lives Away?"
-            />
-          </div>
-
-          {/* Footer */}
-          <footer className="mt-12 pt-8 border-t border-foreground/10">
-            <div className="flex items-center justify-between">
-              <Link
-                href="/#blogs"
-                className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors group"
-              >
-                <svg
-                  className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 12H5M12 19l-7-7 7-7"
-                  />
-                </svg>
-                Back to Blogs
-              </Link>
-
-              <div className="text-sm text-foreground/50">
-                Published on Jun 4, 2025
-              </div>
-            </div>
-          </footer>
-        </div>
-      </main>
-    </>
+    </BlogLayout>
   );
 }

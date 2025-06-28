@@ -1,16 +1,15 @@
-import BlogFeedback from "@/components/blog-feedback";
+import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
     "🏪 Kirana vs Quick Commerce: The Battle for India's Retail Soul | Mayank Singhal",
   description:
-    "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR. This isn't just competition—it's a transformation of how India shops.",
+    "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR. This isn't just competition-it's a transformation of how India shops.",
   openGraph: {
     title: "🏪 Kirana vs Quick Commerce: The Battle for India's Retail Soul",
     description:
-      "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR. This isn't just competition—it's a transformation of how India shops.",
+      "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR. This isn't just competition-it's a transformation of how India shops.",
     type: "article",
     publishedTime: "2025-06-11",
     authors: ["Mayank Singhal"],
@@ -35,86 +34,16 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  // Structured data for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: "🏪 Kirana vs Quick Commerce: The Battle for India's Retail Soul",
-    description:
-      "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR. This isn't just competition—it's a transformation of how India shops.",
-    author: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-    datePublished: "2025-06-11",
-    dateModified: "2025-06-11",
-    image: "/blog-covers/kirana-quick-commerce.jpg",
-    publisher: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-
-      <main className="min-h-screen bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12 md:py-16 lg:py-20">
-          {/* Back Navigation */}
-          <Link
-            href="/#blogs"
-            className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors mb-8 group"
-          >
-            <svg
-              className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 12H5M12 19l-7-7 7-7"
-              />
-            </svg>
-            Back to Blogs
-          </Link>
-
-          {/* Cover Image */}
-          <div className="aspect-[2/1] rounded-2xl overflow-hidden mb-8 bg-foreground/5">
-            <img
-              src="/blog-covers/kirana-quick-commerce.jpg"
-              alt="🏪 Kirana vs Quick Commerce: The Battle for India's Retail Soul"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Article Header */}
-          <header className="mb-8">
-            <div className="flex items-center gap-2 text-sm text-foreground/60 mb-4">
-              <span className="font-medium">Mayank Singhal</span>
-              <span>•</span>
-              <span>4 min read</span>
-              <span>•</span>
-              <span>Jun 11, 2025</span>
-            </div>
-
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              🏪 Kirana vs Quick Commerce: The Battle for India's Retail Soul
-            </h1>
-
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-foreground/10 text-sm font-medium text-foreground/80 mb-6">
-              Indian Retail & Commerce
-            </div>
-          </header>
-
-          {/* Article Content */}
-          <article className="prose prose-lg max-w-none">
+    <BlogLayout
+      blogSlug="kirana-vs-quick-commerce-india"
+      blogTitle="🏪 Kirana vs Quick Commerce: The Battle for India's Retail Soul"
+      publishDate="Jun 11, 2025"
+      coverImage="/blog-covers/kirana-quick-commerce.jpg"
+      author="Mayank Singhal"
+      readTime="4 min read"
+      category="Indian Retail"
+    >
             <div className="text-base md:text-lg leading-relaxed space-y-6">
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
@@ -214,7 +143,7 @@ export default function BlogPage() {
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
-                  "This isn't just competition—it's an existential threat for
+                  "This isn't just competition-it's an existential threat for
                   kirana retailers."
                 </p>
               </blockquote>
@@ -302,7 +231,7 @@ export default function BlogPage() {
               </h2>
 
               <p>
-                Let's be fair—quick commerce isn't just hype. Here's what's
+                Let's be fair-quick commerce isn't just hype. Here's what's
                 driving adoption:
               </p>
 
@@ -352,7 +281,7 @@ export default function BlogPage() {
               </p>
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>
-                  India has <strong>13 million kirana stores</strong>—a crucial
+                  India has <strong>13 million kirana stores</strong>-a crucial
                   employment source
                 </li>
                 <li>
@@ -366,7 +295,7 @@ export default function BlogPage() {
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
                   Kiranas often provide cultural familiarity and community
-                  trust—intangibles that platforms can't replicate.
+                  trust-intangibles that platforms can't replicate.
                 </p>
               </blockquote>
 
@@ -468,7 +397,7 @@ export default function BlogPage() {
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
                   "The future lies in open, interoperable, inclusive platforms."
-                  — T. Koshy, ONDC CEO
+                  - T. Koshy, ONDC CEO
                 </p>
               </blockquote>
 
@@ -489,7 +418,7 @@ export default function BlogPage() {
               </h2>
 
               <p>
-                The future isn't about choosing sides—it's about building
+                The future isn't about choosing sides-it's about building
                 bridges:
               </p>
 
@@ -502,7 +431,7 @@ export default function BlogPage() {
                   survival
                 </li>
                 <li>
-                  <strong>But</strong> the answer isn't either-or—it's both-and
+                  <strong>But</strong> the answer isn't either-or-it's both-and
                 </li>
               </ul>
 
@@ -525,56 +454,16 @@ export default function BlogPage() {
               </h2>
 
               <p>
-                This transformation affects all of us—as consumers, as community
+                This transformation affects all of us-as consumers, as community
                 members, as Indians building the future of commerce.
               </p>
 
               <p>
                 Do you think kiranas and quick commerce can coexist? Or is one
-                bound to replace the other? Share your thoughts below—your
+                bound to replace the other? Share your thoughts below-your
                 perspective shapes how we understand this retail revolution.
               </p>
             </div>
-          </article>
-
-          {/* Blog Feedback Section */}
-          <div className="mt-12">
-            <BlogFeedback
-              blogSlug="kirana-vs-quick-commerce-india"
-              blogTitle="🏪 Kirana vs Quick Commerce: The Battle for India's Retail Soul"
-            />
-          </div>
-
-          {/* Footer */}
-          <footer className="mt-12 pt-8 border-t border-foreground/10">
-            <div className="flex items-center justify-between">
-              <Link
-                href="/#blogs"
-                className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors group"
-              >
-                <svg
-                  className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 12H5M12 19l-7-7 7-7"
-                  />
-                </svg>
-                Back to Blogs
-              </Link>
-
-              <div className="text-sm text-foreground/50">
-                Published on Jun 11, 2025
-              </div>
-            </div>
-          </footer>
-        </div>
-      </main>
-    </>
+    </BlogLayout>
   );
 }

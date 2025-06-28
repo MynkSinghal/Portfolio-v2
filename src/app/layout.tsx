@@ -66,6 +66,7 @@ export default function RootLayout({
       <head>
         {/* Additional Meta Tags for Global Sharing */}
         <meta property="og:image" content="https://www.mayanksinghal.tech/banner.png" />
+        <meta property="og:image:secure_url" content="https://www.mayanksinghal.tech/banner.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />
@@ -76,6 +77,9 @@ export default function RootLayout({
         <meta property="og:title" content="Mayank: Still Shipping Wild Ideas" />
         <meta property="og:description" content="Mayank – Modern Tech Creator Portfolio" />
         <meta property="og:site_name" content="Mayank Singhal" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="author" content="Mayank Singhal" />
         
         {/* Google Tag Manager */}
         <script

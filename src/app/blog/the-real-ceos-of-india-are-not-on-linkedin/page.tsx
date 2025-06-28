@@ -1,15 +1,14 @@
-import BlogFeedback from "@/components/blog-feedback";
+import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "👑 The Real CEOs of India Don't Post | Mayank Singhal",
   description:
-    "Think India's business titans are all on LinkedIn, dropping wisdom and sharing wins? Here's a reality check: the real empire builders—the ones moving crores, hiring millions, and shaping the economy—are invisible online. Their companies are household names, but their faces? You'll never see them on your feed.",
+    "Think India's business titans are all on LinkedIn, dropping wisdom and sharing wins? Here's a reality check: the real empire builders-the ones moving crores, hiring millions, and shaping the economy-are invisible online. Their companies are household names, but their faces? You'll never see them on your feed.",
   openGraph: {
     title: "👑 The Real CEOs of India Don't Post",
     description:
-      "Think India's business titans are all on LinkedIn, dropping wisdom and sharing wins? Here's a reality check: the real empire builders—the ones moving crores, hiring millions, and shaping the economy—are invisible online. Their companies are household names, but their faces? You'll never see them on your feed.",
+      "Think India's business titans are all on LinkedIn, dropping wisdom and sharing wins? Here's a reality check: the real empire builders-the ones moving crores, hiring millions, and shaping the economy-are invisible online. Their companies are household names, but their faces? You'll never see them on your feed.",
     type: "article",
     publishedTime: "2025-09-03",
     authors: ["Mayank Singhal"],
@@ -38,92 +37,22 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  // Structured data for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: "👑 The Real CEOs of India Don't Post",
-    description:
-      "Think India's business titans are all on LinkedIn, dropping wisdom and sharing wins? Here's a reality check: the real empire builders—the ones moving crores, hiring millions, and shaping the economy—are invisible online. Their companies are household names, but their faces? You'll never see them on your feed.",
-    author: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-    datePublished: "2025-09-03",
-    dateModified: "2025-09-03",
-    image: "/blog-covers/ceo-of-india.jpg",
-    publisher: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-
-      <main className="min-h-screen bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12 md:py-16 lg:py-20">
-          {/* Back Navigation */}
-          <Link
-            href="/#blogs"
-            className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors mb-8 group"
-          >
-            <svg
-              className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 12H5M12 19l-7-7 7-7"
-              />
-            </svg>
-            Back to Blogs
-          </Link>
-
-          {/* Cover Image */}
-          <div className="aspect-[2/1] rounded-2xl overflow-hidden mb-8 bg-foreground/5">
-            <img
-              src="/blog-covers/ceo-of-india.jpg"
-              alt="👑 The Real CEOs of India Don't Post"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Article Header */}
-          <header className="mb-8">
-            <div className="flex items-center gap-2 text-sm text-foreground/60 mb-4">
-              <span className="font-medium">Mayank Singhal</span>
-              <span>•</span>
-              <span>3 min read</span>
-              <span>•</span>
-              <span>Sep 3, 2025</span>
-            </div>
-
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              👑 The Real CEOs of India Don't Post
-            </h1>
-
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-foreground/10 text-sm font-medium text-foreground/80 mb-6">
-              Leadership & Success
-            </div>
-          </header>
-
-          {/* Article Content */}
-          <article className="prose prose-lg max-w-none">
-            <div className="text-base md:text-lg leading-relaxed space-y-6">
-              <p>
+    <BlogLayout
+      blogSlug="the-real-ceos-of-india-are-not-on-linkedin"
+      blogTitle="👑 The Real CEOs of India Don't Post"
+      publishDate="Sep 3, 2025"
+      coverImage="/blog-covers/ceo-of-india.jpg"
+      author="Mayank Singhal"
+      readTime="3 min read"
+      category="Leadership & Success"
+    >
+      <div className="text-base md:text-lg leading-relaxed space-y-6">
+        <p>
                 Think India's business titans are all on LinkedIn, dropping
                 wisdom and sharing wins? <strong>Here's a reality check</strong>
-                : the real empire builders—the ones moving crores, hiring
-                millions, and shaping the economy—are invisible online.
+                : the real empire builders-the ones moving crores, hiring
+                millions, and shaping the economy-are invisible online.
               </p>
 
               <p>
@@ -140,7 +69,7 @@ export default function BlogPage() {
                 While the world obsesses over social media clout, India's silent
                 operators are building generational wealth in the shadows. By
                 the end, you'll know why the country's true business powerhouses
-                value substance over status—and how that mindset could change
+                value substance over status-and how that mindset could change
                 your own approach to building, scaling, and sustaining success.
               </p>
 
@@ -151,7 +80,7 @@ export default function BlogPage() {
               </h2>
 
               <p>
-                India's business backbone isn't built on viral posts—it's built
+                India's business backbone isn't built on viral posts-it's built
                 by operators who stay off the grid.
               </p>
 
@@ -163,7 +92,7 @@ export default function BlogPage() {
                 </li>
                 <li>
                   <strong>Kirana stores:</strong> 12 million+ shops, 10% of GDP,
-                  and still 95% of food and grocery sales—run by local legends
+                  and still 95% of food and grocery sales-run by local legends
                   who'd rather serve than self-promote.
                 </li>
                 <li>
@@ -173,7 +102,7 @@ export default function BlogPage() {
               </ul>
 
               <p>
-                These aren't just small shops—they're neighborhood empires and
+                These aren't just small shops-they're neighborhood empires and
                 industrial titans, quietly scaling without the noise.
               </p>
 
@@ -213,7 +142,7 @@ export default function BlogPage() {
 
               <p>
                 Communities like the Marwaris, Gujaratis, and Sindhis have
-                controlled vast swathes of Indian industry for decades—without
+                controlled vast swathes of Indian industry for decades-without
                 ever chasing followers.
               </p>
 
@@ -243,7 +172,7 @@ export default function BlogPage() {
                 </li>
                 <li>
                   <strong>Adaptability:</strong> Embracing digital payments and
-                  WhatsApp orders—without losing the personal touch.
+                  WhatsApp orders-without losing the personal touch.
                 </li>
                 <li>
                   <strong>Resilience:</strong> Customer spending at kiranas
@@ -272,7 +201,7 @@ export default function BlogPage() {
               </h2>
 
               <p>
-                Think Haldiram's, Bikaji, or any textile giant—multi-crore
+                Think Haldiram's, Bikaji, or any textile giant-multi-crore
                 empires run like family kitchens.
               </p>
 
@@ -292,8 +221,8 @@ export default function BlogPage() {
               </ul>
 
               <p>
-                These businesses scale by focusing on the fundamentals—product,
-                people, and process—not by posting updates.
+                These businesses scale by focusing on the fundamentals-product,
+                people, and process-not by posting updates.
               </p>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -333,7 +262,7 @@ export default function BlogPage() {
 
               <p>
                 As VC funding tightens, founders are rediscovering the power of
-                staying under the radar—and thriving.
+                staying under the radar-and thriving.
               </p>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -364,13 +293,13 @@ export default function BlogPage() {
                 </li>
                 <li>
                   <strong>Blend tradition and tech:</strong> WhatsApp, digital
-                  payments, and e-commerce—adopted only when it actually helps.
+                  payments, and e-commerce-adopted only when it actually helps.
                 </li>
               </ul>
 
               <p>
                 Their secret? Focus on real customers, real profits, and real
-                relationships—everything else is just a distraction.
+                relationships-everything else is just a distraction.
               </p>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -402,21 +331,11 @@ export default function BlogPage() {
                 The next time you see a headline about another unicorn CEO's
                 latest post, remember: somewhere in India, there's a quiet
                 operator moving more money, employing more people, and creating
-                more value—and you'll never see them trending.
+                more value-and you'll never see them trending.
               </p>
 
               <hr className="border-foreground/20 my-8" />
-
-              <div className="mt-12">
-                <BlogFeedback
-                  blogTitle="The Real CEOs of India Don't Post"
-                  blogSlug="the-real-ceos-of-india-are-not-on-linkedin"
-                />
-              </div>
-            </div>
-          </article>
         </div>
-      </main>
-    </>
+    </BlogLayout>
   );
 }

@@ -1,16 +1,15 @@
-import BlogFeedback from "@/components/blog-feedback";
+import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
     "💸 The UPI Revolution: How India Went From Cash to Tap | Mayank Singhal",
   description:
-    "From 2 billion to 7.3 billion transactions per month. UPI didn't just digitize payments—it rewired a nation. Discover how India built the world's most successful payment system.",
+    "From 2 billion to 7.3 billion transactions per month. UPI didn't just digitize payments-it rewired a nation. Discover how India built the world's most successful payment system.",
   openGraph: {
     title: "💸 The UPI Revolution: How India Went From Cash to Tap",
     description:
-      "From 2 billion to 7.3 billion transactions per month. UPI didn't just digitize payments—it rewired a nation. Discover how India built the world's most successful payment system.",
+      "From 2 billion to 7.3 billion transactions per month. UPI didn't just digitize payments-it rewired a nation. Discover how India built the world's most successful payment system.",
     type: "article",
     publishedTime: "2025-06-18",
     authors: ["Mayank Singhal"],
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "💸 The UPI Revolution: How India Went From Cash to Tap",
     description:
-      "From 2 billion to 7.3 billion transactions per month. UPI didn't just digitize payments—it rewired a nation.",
+      "From 2 billion to 7.3 billion transactions per month. UPI didn't just digitize payments-it rewired a nation.",
     images: ["/blog-covers/upi-revolution.jpg"],
   },
   keywords: [
@@ -36,90 +35,20 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  // Structured data for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: "💸 The UPI Revolution: How India Went From Cash to Tap",
-    description:
-      "From 2 billion to 7.3 billion transactions per month. UPI didn't just digitize payments—it rewired a nation. Discover how India built the world's most successful payment system.",
-    author: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-    datePublished: "2025-06-18",
-    dateModified: "2025-06-18",
-    image: "/blog-covers/upi-revolution.jpg",
-    publisher: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-
-      <main className="min-h-screen bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12 md:py-16 lg:py-20">
-          {/* Back Navigation */}
-          <Link
-            href="/#blogs"
-            className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors mb-8 group"
-          >
-            <svg
-              className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 12H5M12 19l-7-7 7-7"
-              />
-            </svg>
-            Back to Blogs
-          </Link>
-
-          {/* Cover Image */}
-          <div className="aspect-[2/1] rounded-2xl overflow-hidden mb-8 bg-foreground/5">
-            <img
-              src="/blog-covers/upi-revolution.jpg"
-              alt="💸 The UPI Revolution: How India Went From Cash to Tap"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Article Header */}
-          <header className="mb-8">
-            <div className="flex items-center gap-2 text-sm text-foreground/60 mb-4">
-              <span className="font-medium">Mayank Singhal</span>
-              <span>•</span>
-              <span>4 min read</span>
-              <span>•</span>
-              <span>Jun 18, 2025</span>
-            </div>
-
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              💸 The UPI Revolution: How India Went From Cash to Tap
-            </h1>
-
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-foreground/10 text-sm font-medium text-foreground/80 mb-6">
-              Fintech & Digital India
-            </div>
-          </header>
-
-          {/* Article Content */}
-          <article className="prose prose-lg max-w-none">
+    <BlogLayout
+      blogSlug="upi-revolution-india-cash-to-tap"
+      blogTitle="💸 The UPI Revolution: How India Went From Cash to Tap"
+      publishDate="Jun 18, 2025"
+      coverImage="/blog-covers/upi-revolution.jpg"
+      author="Mayank Singhal"
+      readTime="4 min read"
+      category="Fintech & Digital India"
+    >
             <div className="text-base md:text-lg leading-relaxed space-y-6">
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
-                  "It's not just a payment — it's a pulse check on a new India."
+                  "It's not just a payment - it's a pulse check on a new India."
                 </p>
               </blockquote>
 
@@ -163,7 +92,7 @@ export default function BlogPage() {
 
               <p>
                 While the rest of the world debated crypto, India was quietly
-                building a seamless payment layer for everyone — from chaiwalas
+                building a seamless payment layer for everyone - from chaiwalas
                 to CEOs.
               </p>
 
@@ -175,7 +104,7 @@ export default function BlogPage() {
               </p>
 
               <p>
-                By 2020, we weren't just using UPI — we were living on it.
+                By 2020, we weren't just using UPI - we were living on it.
                 <br />📈 <strong>2 billion+ transactions per month</strong>.
                 <br />
                 By 2023? <strong>7.3 billion</strong>. That's not growth. That's
@@ -191,7 +120,7 @@ export default function BlogPage() {
               <p>Let's zoom in.</p>
 
               <p>
-                Meet Rashmi — a textile shop owner in Uttar Pradesh.
+                Meet Rashmi - a textile shop owner in Uttar Pradesh.
                 <br />
                 Before UPI: counting notes, fearing theft, losing customers
                 without exact change.
@@ -207,7 +136,7 @@ export default function BlogPage() {
               <p>
                 And she's not alone. Across rural India, farmers started getting
                 subsidies <strong>directly in their UPI-linked accounts</strong>{" "}
-                — no middlemen, no "missing funds."
+                - no middlemen, no "missing funds."
               </p>
 
               <p>It wasn't just convenience. It was dignity.</p>
@@ -223,7 +152,7 @@ export default function BlogPage() {
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
                 <li>
                   🏛 <strong>Policy Push:</strong> Digital India wasn't just a
-                  slogan — it became infrastructure.
+                  slogan - it became infrastructure.
                 </li>
                 <li>
                   📱 <strong>Phones + Youth:</strong> With 65% under 35 and
@@ -231,7 +160,7 @@ export default function BlogPage() {
                 </li>
                 <li>
                   🤝 <strong>Partnerships That Clicked:</strong> Google Pay,
-                  PhonePe, Paytm — each played their part in making UPI feel...
+                  PhonePe, Paytm - each played their part in making UPI feel...
                   effortless.
                 </li>
               </ul>
@@ -249,7 +178,7 @@ export default function BlogPage() {
               </h2>
 
               <p>
-                UPI didn't just digitize payments — it{" "}
+                UPI didn't just digitize payments - it{" "}
                 <strong>reshaped the economy</strong>.
               </p>
 
@@ -273,7 +202,7 @@ export default function BlogPage() {
                 <strong>
                   overdrafts, mandates, and even blockchain integration
                 </strong>
-                . This isn't a fad — it's financial infrastructure for the
+                . This isn't a fad - it's financial infrastructure for the
                 future.
               </p>
 
@@ -300,7 +229,7 @@ export default function BlogPage() {
               </ul>
 
               <p>
-                The challenge ahead isn't scale — it's{" "}
+                The challenge ahead isn't scale - it's{" "}
                 <strong>trust and teaching.</strong>
                 <br />
                 If UPI is the highway, India needs to build the on-ramps.
@@ -424,7 +353,7 @@ export default function BlogPage() {
               <hr className="border-foreground/20 my-8" />
 
               <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
-                🛍️ Final Swipe: UPI Isn't Just a Tool — It's a Tectonic Shift
+                🛍️ Final Swipe: UPI Isn't Just a Tool - It's a Tectonic Shift
               </h2>
 
               <p>
@@ -435,7 +364,7 @@ export default function BlogPage() {
                 It's Rashmi expanding her shop. It's farmers skipping the red
                 tape. It's students splitting chai bills in seconds.
                 <br />
-                It's millions of stories stitched into a new digital fabric —
+                It's millions of stories stitched into a new digital fabric -
                 with UPI as the thread.
               </p>
 
@@ -499,50 +428,10 @@ export default function BlogPage() {
 
               <p>
                 How has UPI changed your daily life? Do you remember the last
-                time you used cash? Share your UPI story below — let's celebrate
+                time you used cash? Share your UPI story below - let's celebrate
                 India's biggest digital leap, one transaction at a time.
               </p>
             </div>
-          </article>
-
-          {/* Blog Feedback Section */}
-          <div className="mt-12">
-            <BlogFeedback
-              blogSlug="upi-revolution-india-cash-to-tap"
-              blogTitle="💸 The UPI Revolution: How India Went From Cash to Tap"
-            />
-          </div>
-
-          {/* Footer */}
-          <footer className="mt-12 pt-8 border-t border-foreground/10">
-            <div className="flex items-center justify-between">
-              <Link
-                href="/#blogs"
-                className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors group"
-              >
-                <svg
-                  className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 12H5M12 19l-7-7 7-7"
-                  />
-                </svg>
-                Back to Blogs
-              </Link>
-
-              <div className="text-sm text-foreground/50">
-                Published on Jun 18, 2025
-              </div>
-            </div>
-          </footer>
-        </div>
-      </main>
-    </>
+    </BlogLayout>
   );
 }

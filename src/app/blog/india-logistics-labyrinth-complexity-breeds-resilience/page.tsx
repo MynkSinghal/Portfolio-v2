@@ -1,17 +1,16 @@
-import BlogFeedback from "@/components/blog-feedback";
+import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
     "🚛 India's Logistics Labyrinth: Why Complexity Breeds Resilience (and Opportunity) | Mayank Singhal",
   description:
-    "Ever wondered how a single parcel can travel from a Himalayan village to a Mumbai skyscraper—without getting lost in the chaos? Here's why India spends 14% of its GDP on logistics and how complexity became the secret sauce behind resilience.",
+    "Ever wondered how a single parcel can travel from a Himalayan village to a Mumbai skyscraper-without getting lost in the chaos? Here's why India spends 14% of its GDP on logistics and how complexity became the secret sauce behind resilience.",
   openGraph: {
     title:
       "🚛 India's Logistics Labyrinth: Why Complexity Breeds Resilience (and Opportunity)",
     description:
-      "Ever wondered how a single parcel can travel from a Himalayan village to a Mumbai skyscraper—without getting lost in the chaos? Here's why India spends 14% of its GDP on logistics and how complexity became the secret sauce behind resilience.",
+      "Ever wondered how a single parcel can travel from a Himalayan village to a Mumbai skyscraper-without getting lost in the chaos? Here's why India spends 14% of its GDP on logistics and how complexity became the secret sauce behind resilience.",
     type: "article",
     publishedTime: "2025-07-30",
     authors: ["Mayank Singhal"],
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
     title:
       "🚛 India's Logistics Labyrinth: Why Complexity Breeds Resilience (and Opportunity)",
     description:
-      "Ever wondered how a single parcel can travel from a Himalayan village to a Mumbai skyscraper—without getting lost in the chaos?",
+      "Ever wondered how a single parcel can travel from a Himalayan village to a Mumbai skyscraper-without getting lost in the chaos?",
     images: ["/blog-covers/supply-chain-maze-india.jpg"],
   },
   keywords: [
@@ -40,92 +39,20 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  // Structured data for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline:
-      "🚛 India's Logistics Labyrinth: Why Complexity Breeds Resilience (and Opportunity)",
-    description:
-      "Ever wondered how a single parcel can travel from a Himalayan village to a Mumbai skyscraper—without getting lost in the chaos? Here's why India spends 14% of its GDP on logistics and how complexity became the secret sauce behind resilience.",
-    author: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-    datePublished: "2025-07-30",
-    dateModified: "2025-07-30",
-    image: "/blog-covers/supply-chain-maze-india.jpg",
-    publisher: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-
-      <main className="min-h-screen bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12 md:py-16 lg:py-20">
-          {/* Back Navigation */}
-          <Link
-            href="/#blogs"
-            className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors mb-8 group"
-          >
-            <svg
-              className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 12H5M12 19l-7-7 7-7"
-              />
-            </svg>
-            Back to Blogs
-          </Link>
-
-          {/* Cover Image */}
-          <div className="aspect-[2/1] rounded-2xl overflow-hidden mb-8 bg-foreground/5">
-            <img
-              src="/blog-covers/supply-chain-maze-india.jpg"
-              alt="🚛 India's Logistics Labyrinth: Why Complexity Breeds Resilience (and Opportunity)"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Article Header */}
-          <header className="mb-8">
-            <div className="flex items-center gap-2 text-sm text-foreground/60 mb-4">
-              <span className="font-medium">Mayank Singhal</span>
-              <span>•</span>
-              <span>4 min read</span>
-              <span>•</span>
-              <span>Jul 30, 2025</span>
-            </div>
-
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              🚛 India's Logistics Labyrinth: Why Complexity Breeds Resilience
-              (and Opportunity)
-            </h1>
-
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-foreground/10 text-sm font-medium text-foreground/80 mb-6">
-              Infrastructure & Economics
-            </div>
-          </header>
-
-          {/* Article Content */}
-          <article className="prose prose-lg max-w-none">
-            <div className="text-base md:text-lg leading-relaxed space-y-6">
-              <p>
+    <BlogLayout
+      blogSlug="india-logistics-labyrinth-complexity-breeds-resilience"
+      blogTitle="🚛 India's Logistics Labyrinth: Why Complexity Breeds Resilience (and Opportunity)"
+      publishDate="Jul 30, 2025"
+      coverImage="/blog-covers/supply-chain-maze-india.jpg"
+      author="Mayank Singhal"
+      readTime="4 min read"
+      category="Infrastructure"
+    >
+      <div className="text-base md:text-lg leading-relaxed space-y-6">
+        <p>
                 Ever wondered how a single parcel can travel from a Himalayan
-                village to a Mumbai skyscraper—without getting lost in the
+                village to a Mumbai skyscraper-without getting lost in the
                 chaos?
               </p>
 
@@ -134,7 +61,7 @@ export default function BlogPage() {
                 happens behind the scenes in logistics. Here's a stat to chew
                 on:{" "}
                 <strong>
-                  India spends nearly 14% of its GDP on logistics—almost double
+                  India spends nearly 14% of its GDP on logistics-almost double
                   the global average
                 </strong>
                 .
@@ -152,14 +79,14 @@ export default function BlogPage() {
               </h2>
 
               <p>
-                Let's pull back the curtain on India's logistics sector—a world
+                Let's pull back the curtain on India's logistics sector-a world
                 where diversity, fragmentation, and innovation collide daily.
               </p>
 
               <p>
                 If you're a business owner, supply chain nerd, or just curious
                 about what keeps the country moving, this post is for you. By
-                the end, you'll see why complexity isn't just a headache—it's
+                the end, you'll see why complexity isn't just a headache-it's
                 the secret sauce behind India's logistics resilience (plus, how
                 to spot the biggest opportunities for growth).
               </p>
@@ -196,7 +123,7 @@ export default function BlogPage() {
                 </li>
                 <li>
                   <strong>Sky-High Costs:</strong> Shipping something across
-                  India can cost up to 14% of its value—ouch.
+                  India can cost up to 14% of its value-ouch.
                 </li>
                 <li>
                   <strong>Tech Gaps:</strong> Some fleets run on AI, some on
@@ -206,7 +133,7 @@ export default function BlogPage() {
 
               <p>
                 It's like trying to choreograph a flash mob in a crowded
-                bazaar—exciting, but chaos is always one step away.
+                bazaar-exciting, but chaos is always one step away.
               </p>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -228,7 +155,7 @@ export default function BlogPage() {
               <p>
                 Here's the twist: <strong>Complexity breeds resilience</strong>.
                 When COVID hit, or global supply chains wobbled, India's
-                logistics sector didn't collapse—it adapted.
+                logistics sector didn't collapse-it adapted.
               </p>
 
               <ul className="list-disc list-inside space-y-2 text-foreground/80">
@@ -247,7 +174,7 @@ export default function BlogPage() {
                 </li>
                 <li>
                   <strong>Workforce Grit:</strong> Millions of drivers,
-                  warehouse workers, and planners keep the wheels turning—often
+                  warehouse workers, and planners keep the wheels turning-often
                   against the odds.
                 </li>
               </ul>
@@ -270,7 +197,7 @@ export default function BlogPage() {
               </h2>
 
               <p>
-                Let's get real—resilience doesn't mean perfection. Here's where
+                Let's get real-resilience doesn't mean perfection. Here's where
                 the cracks show:
               </p>
 
@@ -298,14 +225,14 @@ export default function BlogPage() {
               </ul>
 
               <p>
-                If you've ever waited days for a parcel—or paid more than you
-                expected—you've felt these pain points firsthand.
+                If you've ever waited days for a parcel-or paid more than you
+                expected-you've felt these pain points firsthand.
               </p>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
                   <strong>
-                    Fixing logistics isn't just about speed—it's about smoothing
+                    Fixing logistics isn't just about speed-it's about smoothing
                     out the entire journey.
                   </strong>
                 </p>
@@ -331,7 +258,7 @@ export default function BlogPage() {
                 <li>
                   <strong>Multimodal Integration:</strong> Logistics parks and
                   freight corridors are connecting road, rail, air, and
-                  waterways—cutting costs and delays.
+                  waterways-cutting costs and delays.
                 </li>
                 <li>
                   <strong>Green Logistics:</strong> From electric trucks to
@@ -352,7 +279,7 @@ export default function BlogPage() {
 
               <p>
                 If you're looking to invest, innovate, or just understand where
-                the next wave of growth is coming from—this is where to watch.
+                the next wave of growth is coming from-this is where to watch.
               </p>
 
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -403,8 +330,8 @@ export default function BlogPage() {
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
                   <strong>
-                    In Indian logistics, the winners are the ones who learn—and
-                    pivot—fastest.
+                    In Indian logistics, the winners are the ones who learn-and
+                    pivot-fastest.
                   </strong>
                 </p>
               </blockquote>
@@ -422,7 +349,7 @@ export default function BlogPage() {
               </p>
 
               <p>
-                India's logistics labyrinth touches everyone—from the farmer
+                India's logistics labyrinth touches everyone-from the farmer
                 shipping produce to the startup scaling nationwide. The
                 complexity that frustrates us today is building the resilience
                 that will power tomorrow's economy.
@@ -431,21 +358,11 @@ export default function BlogPage() {
               <p>
                 The next time your package takes an unexpected detour, remember:
                 you're witnessing one of the world's most complex logistics
-                systems in action—and that's exactly why it works.
+                systems in action-and that's exactly why it works.
               </p>
 
               <hr className="border-foreground/20 my-8" />
-
-              <div className="mt-12">
-                <BlogFeedback
-                  blogTitle="India's Logistics Labyrinth: Why Complexity Breeds Resilience (and Opportunity)"
-                  blogSlug="india-logistics-labyrinth-complexity-breeds-resilience"
-                />
-              </div>
-            </div>
-          </article>
         </div>
-      </main>
-    </>
+    </BlogLayout>
   );
 }

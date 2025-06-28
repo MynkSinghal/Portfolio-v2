@@ -22,8 +22,63 @@ export default function BlogLayout({
   readTime = "8 min read",
   category,
 }: BlogLayoutProps) {
+  // Structured data for SEO - BlogPosting Schema
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: blogTitle,
+    description: blogTitle, // Will be extracted from content or passed as prop
+    author: {
+      "@type": "Person",
+      name: author,
+      url: "https://www.mayanksinghal.tech",
+      sameAs: [
+        "https://x.com/_Mynkkkk_",
+        "https://www.linkedin.com/in/mynkkkk/",
+        "https://github.com/MynkSinghal"
+      ]
+    },
+    datePublished: new Date(publishDate).toISOString(),
+    dateModified: new Date(publishDate).toISOString(),
+    image: coverImage ? `https://www.mayanksinghal.tech${coverImage}` : "https://www.mayanksinghal.tech/banner.png",
+    publisher: {
+      "@type": "Person",
+      name: "Mayank Singhal",
+      url: "https://www.mayanksinghal.tech",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.mayanksinghal.tech/images/logo.png"
+      }
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.mayanksinghal.tech/blog/${blogSlug}`
+    },
+    url: `https://www.mayanksinghal.tech/blog/${blogSlug}`,
+    articleSection: category || "Technology",
+    keywords: category ? [category, "tech", "startup", "india", "business"] : ["tech", "startup", "india", "business"],
+    wordCount: 1000, // Approximate
+    timeRequired: readTime,
+    inLanguage: "en-US",
+    isAccessibleForFree: true,
+    genre: "Technology",
+    audience: {
+      "@type": "Audience",
+      audienceType: "Developers, Entrepreneurs, Tech Enthusiasts"
+    }
+  };
+
   return (
-    <main className="min-h-screen bg-background">
+    <>
+      {/* Schema.org JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+      
+      <main className="min-h-screen bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12 md:py-16 lg:py-20">
         {/* Back Navigation */}
         <Link
@@ -116,5 +171,6 @@ export default function BlogLayout({
         </footer>
       </div>
     </main>
+    </>
   );
 }

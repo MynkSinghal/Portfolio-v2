@@ -1,15 +1,14 @@
-import BlogFeedback from "@/components/blog-feedback";
+import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable | Mayank Singhal",
+    "🔥 Forget 10,000 Hours - It's 10,000 Iterations That Make You Unstoppable | Mayank Singhal",
   description:
     "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again. Here's why iterations beat hours every time.",
   openGraph: {
     title:
-      "🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable",
+      "🔥 Forget 10,000 Hours - It's 10,000 Iterations That Make You Unstoppable",
     description:
       "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again. Here's why iterations beat hours every time.",
     type: "article",
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable",
+      "🔥 Forget 10,000 Hours - It's 10,000 Iterations That Make You Unstoppable",
     description:
       "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again.",
     images: ["/blog-covers/10000-iterations.jpg"],
@@ -38,88 +37,16 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  // Structured data for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline:
-      "🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable",
-    description:
-      "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again. Here's why iterations beat hours every time.",
-    author: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-    datePublished: "2025-07-02",
-    dateModified: "2025-07-02",
-    image: "/blog-covers/10000-iterations.jpg",
-    publisher: {
-      "@type": "Person",
-      name: "Mayank Singhal",
-    },
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-
-      <main className="min-h-screen bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12 md:py-16 lg:py-20">
-          {/* Back Navigation */}
-          <Link
-            href="/#blogs"
-            className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors mb-8 group"
-          >
-            <svg
-              className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 12H5M12 19l-7-7 7-7"
-              />
-            </svg>
-            Back to Blogs
-          </Link>
-
-          {/* Cover Image */}
-          <div className="aspect-[2/1] rounded-2xl overflow-hidden mb-8 bg-foreground/5">
-            <img
-              src="/blog-covers/10000-iterations.jpg"
-              alt="🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Article Header */}
-          <header className="mb-8">
-            <div className="flex items-center gap-2 text-sm text-foreground/60 mb-4">
-              <span className="font-medium">Mayank Singhal</span>
-              <span>•</span>
-              <span>5 min read</span>
-              <span>•</span>
-              <span>Jul 2, 2025</span>
-            </div>
-
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You
-              Unstoppable
-            </h1>
-
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-foreground/10 text-sm font-medium text-foreground/80 mb-6">
-              Skill Development & Mastery
-            </div>
-          </header>
-
-          {/* Article Content */}
-          <article className="prose prose-lg max-w-none">
+    <BlogLayout
+      blogSlug="forget-10000-hours-iterations-make-you-unstoppable"
+      blogTitle="🔥 Forget 10,000 Hours - It's 10,000 Iterations That Make You Unstoppable"
+      publishDate="Jul 2, 2025"
+      coverImage="/blog-covers/10000-iterations.jpg"
+      author="Mayank Singhal"
+      readTime="5 min read"
+      category="Skill Development"
+    >
             <div className="text-base md:text-lg leading-relaxed space-y-6">
               <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
                 <p>
@@ -186,7 +113,7 @@ export default function BlogPage() {
               </ul>
 
               <p>
-                This isn't some vague motivational fluff — it's your wake-up
+                This isn't some vague motivational fluff - it's your wake-up
                 call to break the perfection paralysis and launch into action.
               </p>
 
@@ -202,7 +129,7 @@ export default function BlogPage() {
               </p>
 
               <p>
-                Sure, <strong>time matters</strong> — but it's not the{" "}
+                Sure, <strong>time matters</strong> - but it's not the{" "}
                 <em>only</em> thing that matters.
               </p>
 
@@ -228,7 +155,7 @@ export default function BlogPage() {
               <hr className="border-foreground/20 my-8" />
 
               <h2 className="text-2xl md:text-3xl font-bold mb-4 mt-8">
-                🔄 Real Growth Comes from 10,000 Iterations — Not Hours
+                🔄 Real Growth Comes from 10,000 Iterations - Not Hours
               </h2>
 
               <p>
@@ -243,7 +170,7 @@ export default function BlogPage() {
               </ol>
 
               <p>
-                Now imagine doing that loop 10,000 times. Boom — that's how you
+                Now imagine doing that loop 10,000 times. Boom - that's how you
                 really get good.
               </p>
 
@@ -314,7 +241,7 @@ export default function BlogPage() {
                   fast cycles
                 </li>
                 <li>
-                  <strong>Momentum builds</strong> like a snowball — every
+                  <strong>Momentum builds</strong> like a snowball - every
                   update pushes you higher
                 </li>
               </ul>
@@ -540,7 +467,7 @@ export default function BlogPage() {
 
               <p>
                 Pick one skill you want to crush. Plan your{" "}
-                <strong>first 10 iterations</strong> — and just start.
+                <strong>first 10 iterations</strong> - and just start.
               </p>
 
               <p>Remember:</p>
@@ -571,50 +498,10 @@ export default function BlogPage() {
               <p>
                 What skill will you start iterating on? What's your first tiny
                 version that you can ship this week? Share your iteration plan
-                below — your commitment might inspire someone else to break free
+                below - your commitment might inspire someone else to break free
                 from the hours trap.
               </p>
             </div>
-          </article>
-
-          {/* Blog Feedback Section */}
-          <div className="mt-12">
-            <BlogFeedback
-              blogSlug="forget-10000-hours-iterations-make-you-unstoppable"
-              blogTitle="🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable"
-            />
-          </div>
-
-          {/* Footer */}
-          <footer className="mt-12 pt-8 border-t border-foreground/10">
-            <div className="flex items-center justify-between">
-              <Link
-                href="/#blogs"
-                className="inline-flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors group"
-              >
-                <svg
-                  className="w-4 h-4 group-hover:-translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 12H5M12 19l-7-7 7-7"
-                  />
-                </svg>
-                Back to Blogs
-              </Link>
-
-              <div className="text-sm text-foreground/50">
-                Published on Jul 2, 2025
-              </div>
-            </div>
-          </footer>
-        </div>
-      </main>
-    </>
+    </BlogLayout>
   );
 }
