@@ -1,0 +1,44 @@
+export interface Tweet {
+  id: string;
+  title: string;
+  tagline: string;
+  description: string;
+  author: string;
+  date: string;
+  slug: string;
+  href: string; // Path to the tweet page
+  published: boolean;
+}
+
+export const tweets: Tweet[] = [
+  {
+    id: "2",
+    title: "Chai Beats Starbucks",
+    tagline: "₹10 tapri chai built more deals than every pitch at Starbucks.",
+    description: "India gulps down 1.2 billion kg of tea a year. That's 13x more than coffee. Starbucks? 479 stores. Chaiwalas? 2 million+ stalls. The real business masterclass isn't in a boardroom—it's on a street corner with a folding stool.",
+    author: "Mayank Singhal",
+    date: "Dec 19, 2024",
+    slug: "chai-beats-starbucks",
+    href: "/tweets/chai-beats-starbucks",
+    published: true,
+  },
+  {
+    id: "1",
+    title: "Slack Don't Work",
+    tagline: "India doesn't run on SaaS. It runs on missed calls and notebooks.",
+    description: "Ever tried running a business in India only with Slack, dashboards, and endless apps? Good luck. Here's the real secret: most of India's commerce happens on phone calls, handwritten ledgers, and a healthy dose of jugaad—not in the digital playgrounds Silicon Valley loves.",
+    author: "Mayank Singhal",
+    date: "Dec 20, 2024",
+    slug: "slack-dont-work",
+    href: "/tweets/slack-dont-work",
+    published: true,
+  },
+];
+
+export function getTweetBySlug(slug: string): Tweet | undefined {
+  return tweets.find((tweet) => tweet.slug === slug);
+}
+
+export function getAllTweets(): Tweet[] {
+  return tweets.filter((tweet) => tweet.published);
+} 
