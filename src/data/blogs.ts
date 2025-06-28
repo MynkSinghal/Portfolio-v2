@@ -25,7 +25,7 @@ export const blogs: BlogPost[] = [
     slug: "the-real-ceos-of-india-are-not-on-linkedin",
     href: "/blog/the-real-ceos-of-india-are-not-on-linkedin",
     coverImage: "/blog-covers/ceo-of-india.jpg",
-    published: true,
+    published: false,
   },
   {
     id: "16",
@@ -40,7 +40,7 @@ export const blogs: BlogPost[] = [
     slug: "real-operations-dont-happen-on-slack-indian-edition",
     href: "/blog/real-operations-dont-happen-on-slack-indian-edition",
     coverImage: "/blog-covers/indian-slack-channel.jpg",
-    published: true,
+    published: false,
   },
   {
     id: "15",
@@ -54,7 +54,7 @@ export const blogs: BlogPost[] = [
     slug: "chaiwalas-and-chainstores-what-india-gets-right",
     href: "/blog/chaiwalas-and-chainstores-what-india-gets-right",
     coverImage: "/blog-covers/indian-chaiwalas.jpg",
-    published: true,
+    published: false,
   },
   {
     id: "14",
@@ -69,7 +69,7 @@ export const blogs: BlogPost[] = [
     slug: "why-cred-never-cared-about-revenue-until-it-had-to",
     href: "/blog/why-cred-never-cared-about-revenue-until-it-had-to",
     coverImage: "/blog-covers/how-cred-work.jpg",
-    published: true,
+    published: false,
   },
   {
     id: "13",
@@ -83,7 +83,7 @@ export const blogs: BlogPost[] = [
     slug: "grit-over-gadgets-indian-smes-win-without-fancy-tech",
     href: "/blog/grit-over-gadgets-indian-smes-win-without-fancy-tech",
     coverImage: "/blog-covers/india-logistic.jpg",
-    published: true,
+    published: false,
   },
   {
     id: "12",
@@ -98,7 +98,7 @@ export const blogs: BlogPost[] = [
     slug: "india-logistics-labyrinth-complexity-breeds-resilience",
     href: "/blog/india-logistics-labyrinth-complexity-breeds-resilience",
     coverImage: "/blog-covers/supply-chain-maze-india.jpg",
-    published: true,
+    published: false,
   },
   {
     id: "11",
@@ -113,7 +113,7 @@ export const blogs: BlogPost[] = [
     slug: "minimalist-3000-crore-skincare-brand-radical-transparency",
     href: "/blog/minimalist-3000-crore-skincare-brand-radical-transparency",
     coverImage: "/blog-covers/minimalist-brand-magic.jpg",
-    published: true,
+    published: false,
   },
   {
     id: "10",
@@ -128,7 +128,7 @@ export const blogs: BlogPost[] = [
     slug: "will-ai-make-us-smarter-or-stupider",
     href: "/blog/will-ai-make-us-smarter-or-stupider",
     coverImage: "/blog-covers/ai-make-dumb.jpg",
-    published: true,
+    published: false,
   },
   {
     id: "9",
@@ -143,7 +143,7 @@ export const blogs: BlogPost[] = [
     slug: "knowledge-is-cheap-knowing-what-to-use-real-hustle",
     href: "/blog/knowledge-is-cheap-knowing-what-to-use-real-hustle",
     coverImage: "/blog-covers/knowledge-application.jpg",
-    published: true,
+    published: false,
   },
   {
     id: "8",
@@ -158,7 +158,7 @@ export const blogs: BlogPost[] = [
     slug: "forget-10000-hours-iterations-make-you-unstoppable",
     href: "/blog/forget-10000-hours-iterations-make-you-unstoppable",
     coverImage: "/blog-covers/10000-iterations.jpg",
-    published: true,
+    published: false,
   },
   {
     id: "7",
