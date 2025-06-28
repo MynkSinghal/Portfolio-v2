@@ -33,11 +33,20 @@ export const metadata: Metadata = {
     url: "https://mayanksinghal.tech",
     siteName: "Mayank Singhal",
     type: "website",
+    images: [
+      {
+        url: "/banner.png",
+        width: 1200,
+        height: 630,
+        alt: "Mayank Singhal - Building useful things with code and curiosity",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mayank: Still Shipping Wild Ideas",
     description: "Mayank – Modern Tech Creator Portfolio",
+    images: ["/banner.png"],
   },
   robots: {
     index: true,
