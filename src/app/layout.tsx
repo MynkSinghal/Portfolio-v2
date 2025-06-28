@@ -19,7 +19,7 @@ const libreCaslonText = Libre_Caslon_Text({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mayanksinghal.tech"),
+  metadataBase: new URL("https://www.mayanksinghal.tech"),
   title: "Mayank: Still Shipping Wild Ideas",
   description: "Mayank – Modern Tech Creator Portfolio",
   icons: {
@@ -30,12 +30,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mayank: Still Shipping Wild Ideas",
     description: "Mayank – Modern Tech Creator Portfolio",
-    url: "https://mayanksinghal.tech",
+    url: "https://www.mayanksinghal.tech",
     siteName: "Mayank Singhal",
     type: "website",
     images: [
       {
-        url: "/banner.png",
+        url: "https://www.mayanksinghal.tech/banner.png",
         width: 1200,
         height: 630,
         alt: "Mayank Singhal - Building useful things with code and curiosity",
@@ -46,7 +46,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mayank: Still Shipping Wild Ideas",
     description: "Mayank – Modern Tech Creator Portfolio",
-    images: ["/banner.png"],
+    images: ["https://www.mayanksinghal.tech/banner.png"],
+    creator: "@mayanksinghal_",
+    site: "@mayanksinghal_",
   },
   robots: {
     index: true,
@@ -62,6 +64,19 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${libreCaslonText.variable}`}>
       <head>
+        {/* Additional Meta Tags for Global Sharing */}
+        <meta property="og:image" content="https://www.mayanksinghal.tech/banner.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta name="twitter:image" content="https://www.mayanksinghal.tech/banner.png" />
+        <meta name="twitter:image:alt" content="Mayank Singhal - Building useful things with code and curiosity" />
+        <meta property="og:url" content="https://www.mayanksinghal.tech" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Mayank: Still Shipping Wild Ideas" />
+        <meta property="og:description" content="Mayank – Modern Tech Creator Portfolio" />
+        <meta property="og:site_name" content="Mayank Singhal" />
+        
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
