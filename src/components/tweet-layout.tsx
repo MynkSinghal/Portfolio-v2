@@ -96,7 +96,7 @@ export default function TweetLayout({
               d="M19 12H5M12 19l-7-7 7-7"
             />
           </svg>
-          Back to What I'm Saying
+          Back to My Tweets
         </Link>
 
         {/* Article Header */}
@@ -133,7 +133,7 @@ export default function TweetLayout({
                   d="M19 12H5M12 19l-7-7 7-7"
                 />
               </svg>
-              Back to What I'm Saying
+              Back to My Tweets
             </Link>
           </div>
         </footer>
