@@ -4,14 +4,14 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Dabbawalas Don't Miss: Zero-Tech Army That Makes Amazon Look Like Amateur Hour",
   description:
-    "Mumbai's dabbawalas have been running a 200,000-meal relay for 135 years with no GPS, no apps, no excuses. With a Six Sigma error rate that makes your iPhone look like amateur hour, they're the ultimate masterclass in human systems beating high-tech. Analysis by Mayank Singhal.",
+    "Mumbai's dabbawalas have been running a 200,000-meal relay for 135 years with no GPS, no apps, no excuses. With a Six Sigma error rate, they're the ultimate masterclass in human systems beating high-tech. Analysis by Mayank Singhal.",
   alternates: {
     canonical: "https://www.mayanksinghal.tech/tweets/dabbawalas-dont-miss",
   },
   openGraph: {
     title: "Dabbawalas Don't Miss: Zero-Tech Army That Makes Amazon Look Like Amateur Hour",
     description:
-      "Mumbai's dabbawalas have been running a 200,000-meal relay for 135 years with no GPS, no apps, no excuses. With a Six Sigma error rate that makes your iPhone look like amateur hour.",
+      "Mumbai's dabbawalas have been running a 200,000-meal relay for 135 years with no GPS, no apps, no excuses. With a Six Sigma error rate that puts NASA to shame.",
     type: "article",
     url: "https://www.mayanksinghal.tech/tweets/dabbawalas-dont-miss",
     publishedTime: "2024-12-21",
@@ -69,7 +69,7 @@ export default function DabbawalasDontMiss() {
         </p>
 
         <p>
-          While your delivery app is busy "finding a rider," these guys are already halfway across the city, dodging monsoons and traffic jams, with a <strong>Six Sigma error rate</strong> that makes your iPhone look like a toddler's science project.
+          While your delivery app is busy "finding a rider," these guys are already halfway across the city, dodging monsoons and traffic jams, with a <strong>Six Sigma error rate</strong> that would put NASA to shame.
         </p>
 
         <p>
