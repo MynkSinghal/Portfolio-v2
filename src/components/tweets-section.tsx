@@ -112,7 +112,7 @@ export default function TweetsSection() {
         >
           <div className="mb-8">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 tracking-tight uppercase">
-              What I'm Saying
+              My Tweets
             </h2>
             <p className="text-base text-foreground/60 italic">
               {parseText(
