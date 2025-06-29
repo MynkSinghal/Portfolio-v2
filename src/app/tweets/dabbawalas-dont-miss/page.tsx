@@ -84,7 +84,7 @@ export default function DabbawalasDontMiss() {
 
         <p>
           Forget barcodes.<br />
-          Dabbawalas use a <strong>handwritten code</strong> that looks like a toddler's doodle but runs a city-wide ballet.
+          Dabbawalas use a <strong>handwritten code</strong> that looks like random scribbles but runs a city-wide ballet.
         </p>
 
         <p>
@@ -93,7 +93,7 @@ export default function DabbawalasDontMiss() {
         </p>
 
         <p>
-          They sort, swap, and relay 200,000 tiffins daily - all on the backs of trains, bikes, and pure hustle.
+          They sort, swap, and relay 200,000 tiffins daily - all on the backs of trains and cycles.
         </p>
 
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -108,7 +108,7 @@ export default function DabbawalasDontMiss() {
 
         <p>
           Forbes called it: <strong>99.999999% accuracy</strong>.<br />
-          That's one mistake in 16 million. (Your phone autocorrects "ducking" wrong more often.)
+          That's one mistake in 16 million.
         </p>
 
         <p>
@@ -123,7 +123,7 @@ export default function DabbawalasDontMiss() {
 
         <ul className="list-disc list-inside space-y-2 text-foreground/80">
           <li>₹500/month flat fee. No surge pricing. No "your order is delayed."</li>
-          <li>Uniforms: White kurta, Gandhi cap, and a work ethic that would shame your productivity app.</li>
+          <li>Uniforms: White kurta, Gandhi cap, and a work ethic that would beat your hustle culture by miles - literally.</li>
         </ul>
 
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -138,7 +138,7 @@ export default function DabbawalasDontMiss() {
 
         <p>
           These aren't just lunchboxes.<br />
-          They're <strong>love letters, salary packets, and sometimes, marriage counselors</strong>.
+          They're <strong>love letters, salary packets, and at times, quiet bridge between hearts.</strong>.
         </p>
 
         <p>
@@ -232,7 +232,7 @@ export default function DabbawalasDontMiss() {
         </ul>
 
         <p>
-          All powered by a code in their heads and a cap on their heads.
+          Their software? Memory. Their uniform? Precision and a white cap.
         </p>
 
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
