@@ -53,7 +53,7 @@ export default function DabbawalasDontMiss() {
       <div className="text-base md:text-lg leading-relaxed space-y-6">
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
           <p>
-            "Before Silicon Valley promised efficiency, 5,000 men in white were already delivering the impossible — on foot, by train, and with zero tech."
+            "Before Silicon Valley promised efficiency, 5,000 men in white were already delivering the impossible - on foot, by train, and with zero tech."
           </p>
         </blockquote>
 
@@ -65,7 +65,7 @@ export default function DabbawalasDontMiss() {
 
         <p>
           Let's get real:<br />
-          You trust apps to bring you food, but Mumbai's dabbawalas have been running a <strong>200,000-meal relay</strong> for 135 years — with <strong>no GPS, no apps, no excuses</strong>.
+          You trust apps to bring you food, but Mumbai's dabbawalas have been running a <strong>200,000-meal relay</strong> for 135 years - with <strong>no GPS, no apps, no excuses</strong>.
         </p>
 
         <p>
@@ -73,7 +73,7 @@ export default function DabbawalasDontMiss() {
         </p>
 
         <p>
-          This isn't nostalgia. It's a <strong>masterclass in human systems</strong> — and it's eating Big Tech's lunch.
+          This isn't nostalgia. It's a <strong>masterclass in human systems</strong> - and it's eating Big Tech's lunch.
         </p>
 
         <hr className="border-foreground/20 my-8" />
@@ -93,7 +93,7 @@ export default function DabbawalasDontMiss() {
         </p>
 
         <p>
-          They sort, swap, and relay 200,000 tiffins daily — all on the backs of trains, bikes, and pure hustle.
+          They sort, swap, and relay 200,000 tiffins daily - all on the backs of trains, bikes, and pure hustle.
         </p>
 
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -143,7 +143,7 @@ export default function DabbawalasDontMiss() {
 
         <p>
           One day it's a wife's apology note.<br />
-          Another, it's a customer's entire paycheck — trusted to the dabbawala, not the bank.
+          Another, it's a customer's entire paycheck - trusted to the dabbawala, not the bank.
         </p>
 
         <p>
@@ -173,7 +173,7 @@ export default function DabbawalasDontMiss() {
 
         <p>
           COVID?<br />
-          The city shut down, but the dabbawalas pivoted — delivering restaurant meals, launching digitaldabbawala.com, and even joining Flipkart's last-mile army.
+          The city shut down, but the dabbawalas pivoted - delivering restaurant meals, launching digitaldabbawala.com, and even joining Flipkart's last-mile army.
         </p>
 
         <ul className="list-disc list-inside space-y-2 text-foreground/80">
@@ -193,7 +193,7 @@ export default function DabbawalasDontMiss() {
         </h2>
 
         <p>
-          Swiggy and Zomato promise 30-minute delivery — with surge pricing, missing OTPs, and the occasional scam call.
+          Swiggy and Zomato promise 30-minute delivery - with surge pricing, missing OTPs, and the occasional scam call.
         </p>
 
         <p>Dabbawalas?</p>
@@ -206,7 +206,7 @@ export default function DabbawalasDontMiss() {
 
         <p>
           Their model isn't about instant gratification.<br />
-          It's about <strong>long-term trust</strong> — the kind you can't code.
+          It's about <strong>long-term trust</strong> - the kind you can't code.
         </p>
 
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -227,7 +227,7 @@ export default function DabbawalasDontMiss() {
         <ul className="list-disc list-inside space-y-2 text-foreground/80">
           <li><strong>Pickup:</strong> One guy collects dozens of dabbas by 9 a.m.</li>
           <li><strong>Sort:</strong> Teams at the station decode, stack, and load.</li>
-          <li><strong>Relay:</strong> Trains, bikes, handcarts — a city-wide relay race.</li>
+          <li><strong>Relay:</strong> Trains, bikes, handcarts - a city-wide relay race.</li>
           <li><strong>Delivery:</strong> The right dabba, to the right desk, every time.</li>
         </ul>
 
@@ -246,7 +246,7 @@ export default function DabbawalasDontMiss() {
         </h2>
 
         <p>
-          What would it take for you to trust a stranger with your lunch, your cash, your secrets — every single day?
+          What would it take for you to trust a stranger with your lunch, your cash, your secrets - every single day?
         </p>
 
         <p>
