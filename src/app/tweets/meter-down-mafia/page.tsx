@@ -1,5 +1,6 @@
 import TweetLayout from "@/components/tweet-layout";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Meter Down Mafia: Mumbai's OG Hustlers Ran This City - No GPS Required",
@@ -48,7 +49,7 @@ export default function MeterDownMafia() {
     <TweetLayout
       tweetSlug="meter-down-mafia"
       tweetTitle="💥 Meter Down Mafia: Mumbai's OG Hustlers Ran This City - No GPS Required"
-      publishDate="June 30, 2025"
+      publishDate="Jun 30, 2025"
     >
       <div className="text-base md:text-lg leading-relaxed space-y-6">
         <p>
@@ -212,8 +213,20 @@ export default function MeterDownMafia() {
 
         <hr className="border-foreground/20 my-8" />
 
-        
-        
+        {/* Tweet Image */}
+        <div className="mt-12 pt-8 border-t border-foreground/10">
+          <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src="/Tweet-pics/Image-Meter Down Mafia.webp"
+              alt="Meter Down Mafia - Mumbai's OG Hustlers Ran This City"
+              width={1200}
+              height={675}
+              className="w-full h-auto"
+              priority={false}
+              loading="lazy"
+            />
+          </div>
+        </div>
       </div>
     </TweetLayout>
   );

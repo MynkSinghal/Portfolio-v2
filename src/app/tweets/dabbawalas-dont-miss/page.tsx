@@ -1,5 +1,6 @@
 import TweetLayout from "@/components/tweet-layout";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Dabbawalas Don't Miss: Zero-Tech Army That Makes Amazon Look Like Amateur Hour",
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
       "Mumbai's dabbawalas have been running a 200,000-meal relay for 135 years with no GPS, no apps, no excuses. With a Six Sigma error rate that puts NASA to shame.",
     type: "article",
     url: "https://www.mayanksinghal.tech/tweets/dabbawalas-dont-miss",
-    publishedTime: "2024-12-21",
+    publishedTime: "2025-06-29",
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",
@@ -48,7 +49,7 @@ export default function DabbawalasDontMiss() {
     <TweetLayout
       tweetSlug="dabbawalas-dont-miss"
       tweetTitle="💥 Mumbai's Dabbawalas: The Zero-Tech Army That Makes Amazon Look Like Amateur Hour"
-      publishDate="Dec 21, 2024"
+      publishDate="Jun 29, 2025"
     >
       <div className="text-base md:text-lg leading-relaxed space-y-6">
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -256,6 +257,21 @@ export default function DabbawalasDontMiss() {
         <p className="text-xl font-semibold">
           <strong>Who do you trust more: the algorithm, or the human chain? Let's talk.</strong>
         </p>
+
+        {/* Tweet Image */}
+        <div className="mt-12 pt-8 border-t border-foreground/10">
+          <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src="/Tweet-pics/Image-Dabbawalas Don't Miss.webp"
+              alt="Dabbawalas Don't Miss - Mumbai's Zero-Tech Army"
+              width={1200}
+              height={675}
+              className="w-full h-auto"
+              priority={false}
+              loading="lazy"
+            />
+          </div>
+        </div>
       </div>
     </TweetLayout>
   );
