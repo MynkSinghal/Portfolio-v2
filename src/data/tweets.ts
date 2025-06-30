@@ -12,6 +12,17 @@ export interface Tweet {
 
 export const tweets: Tweet[] = [
   {
+    id: "5",
+    title: "Visa Cancel Nation",
+    tagline: "When America Starts Revoking Dreams Before They're Even Lived",
+    description: "If you thought the US immigration system was a maze, welcome to the new level — where the walls move, the rules change mid-game, and the exit signs point straight to the airport. This isn't about 'illegal' vs. 'legal' anymore — it's about anyone with a visa, a dream, and a traffic ticket.",
+    author: "Mayank Singhal",
+    date: "July 1, 2025",
+    slug: "visa-cancel-nation",
+    href: "/tweets/visa-cancel-nation",
+    published: true,
+  },
+  {
     id: "4",
     title: "Meter Down Mafia",
     tagline: "When Mumbai Rolled in Black and Yellow - Nostalgia That Won't Park.",
