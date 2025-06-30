@@ -12,10 +12,21 @@ export interface Tweet {
 
 export const tweets: Tweet[] = [
   {
+    id: "4",
+    title: "Meter Down Mafia",
+    tagline: "When Mumbai Rolled in Black and Yellow - Nostalgia That Won't Park.",
+    description: "For sixty years, Mumbai's Kaali Peeli taxi drivers ruled the streets with nothing but muscle memory, street smarts, and zero digital help. They were the OG AIs with actual intelligence, navigating chaos that Google Maps still can't decode.",
+    author: "Mayank Singhal",
+    date: "June 30, 2025",
+    slug: "meter-down-mafia",
+    href: "/tweets/meter-down-mafia",
+    published: true,
+  },
+  {
     id: "3",
     title: "Dabbawalas Don't Miss",
     tagline: "Zero Tech. Zero Errors. Just 5,000 Men and 200,000 Promises.",
-    description: "Mumbai's dabbawalas have been running a 200,000-meal relay for 135 years with no GPS, no apps, no excuses. With a Six Sigma error rate that makes your iPhone look like amateur hour, they're the ultimate masterclass in human systems beating high-tech.",
+    description: "Mumbai's dabbawalas have been running a 200,000-meal relay for 135 years with no GPS, no apps, no excuses. With a Six Sigma error rate, they're the ultimate masterclass in human systems beating high-tech.",
     author: "Mayank Singhal",
     date: "June 29, 2025",
     slug: "dabbawalas-dont-miss",
