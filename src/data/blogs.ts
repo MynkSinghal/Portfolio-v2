@@ -158,7 +158,7 @@ export const blogs: BlogPost[] = [
     slug: "forget-10000-hours-iterations-make-you-unstoppable",
     href: "/blog/forget-10000-hours-iterations-make-you-unstoppable",
     coverImage: "/blog-covers/10000-iterations.jpg",
-    published: false,
+    published: true,
   },
   {
     id: "7",
