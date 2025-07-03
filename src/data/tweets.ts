@@ -12,6 +12,28 @@ export interface Tweet {
 
 export const tweets: Tweet[] = [
   {
+    id: "8",
+    title: "India Builds Bold",
+    tagline: "How Tier-2 India Is Quietly Rewriting the Startup Playbook",
+    description: "Forget what you've been sold: the real startup action isn't happening in glass towers or VC-studded boardrooms. It's brewing in chai-splattered cafes in Indore, in Surat's textile backrooms, and in Bhilai's steel-shadowed lanes. 45% of new Indian startups are now tier-2 or tier-3 born, and they're outsmarting the metro crowd.",
+    author: "Mayank Singhal",
+    date: "July 4, 2025",
+    slug: "india-builds-bold",
+    href: "/tweets/india-builds-bold",
+    published: true,
+  },
+  {
+    id: "7",
+    title: "India Ships Anyway",
+    tagline: "Roads break. Systems bend. But your parcel still shows up.",
+    description: "India spends a mind-bending 14% of its GDP just moving stuff around—nearly double what the 'efficient' West pays. Yet somehow, your package still lands in your village, rain or bandh. This is Bharat's shipping jungle where chaos is the secret sauce, and 'inefficiency' is actually a feature.",
+    author: "Mayank Singhal",
+    date: "July 4, 2025",
+    slug: "india-ships-anyway",
+    href: "/tweets/india-ships-anyway",
+    published: false,
+  },
+  {
     id: "6",
     title: "Hustle Beats Harvard",
     tagline: "Your momo guy has better retention than your MBA-backed food startup.",
