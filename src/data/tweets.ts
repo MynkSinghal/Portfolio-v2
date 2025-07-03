@@ -12,6 +12,17 @@ export interface Tweet {
 
 export const tweets: Tweet[] = [
   {
+    id: "6",
+    title: "Hustle Beats Harvard",
+    tagline: "Your momo guy has better retention than your MBA-backed food startup.",
+    description: "90% of startups in India face-plant within five years. Meanwhile, that dosa guy on the corner? He's printing cash and probably knows your lunch order better than your co-founder knows your product roadmap. Street vendors are quietly dunking on boardroom geniuses with a failure rate that's 9x lower.",
+    author: "Mayank Singhal",
+    date: "July 3, 2025",
+    slug: "hustle-beats-harvard",
+    href: "/tweets/hustle-beats-harvard",
+    published: true,
+  },
+  {
     id: "5",
     title: "Visa Cancel Nation",
     tagline: "When America Starts Revoking Dreams Before They're Even Lived",
