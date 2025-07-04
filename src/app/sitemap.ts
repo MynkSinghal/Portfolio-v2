@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const tweetUrls = tweets.map((tweet) => ({
     url: `${baseUrl}${tweet.href}`,
-    lastModified: new Date(tweet.date),
+    lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
