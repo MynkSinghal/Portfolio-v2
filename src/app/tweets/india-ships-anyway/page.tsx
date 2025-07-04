@@ -2,7 +2,7 @@ import TweetLayout from "@/components/tweet-layout";
 import { Metadata } from "next";
 import Bold from "@/components/ui/Bold";
 import Italic from "@/components/ui/Italic";
-import Image from "next/image";
+
 
 export const metadata: Metadata = {
   title: "India Ships Anyway: Roads Break. Systems Bend. But Your Parcel Still Shows Up | Mayank Singhal",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: "India spends a mind-bending 14% of its GDP just moving stuff around—nearly double what the 'efficient' West pays. Yet somehow, your package still lands in your village, rain or bandh.",
     type: "article",
     url: "https://www.mayanksinghal.tech/tweets/india-ships-anyway",
-    publishedTime: "2025-07-04",
+
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",
@@ -47,7 +47,6 @@ export default function IndiaShipsAnywayTweetPage() {
     <TweetLayout 
       tweetSlug="india-ships-anyway"
       tweetTitle="💥 India Ships Anyway: Roads Break. Systems Bend. But Your Parcel Still Shows Up"
-      publishDate="Jul 4, 2025"
     >
       <div className="space-y-6">
         <div className="text-lg leading-relaxed">
@@ -269,19 +268,7 @@ export default function IndiaShipsAnywayTweetPage() {
           </blockquote>
         </div>
 
-        {/* Image at the bottom */}
-        <div className="mt-8 pt-6 border-t border-foreground/10">
-          <Image
-            src="/Tweet-pics/Image-India Ships Anyway.png"
-            alt="India Ships Anyway - Roads break. Systems bend. But your parcel still shows up."
-            width={1200}
-            height={675}
-            className="w-full h-auto rounded-lg shadow-lg"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECA//EACQQAAIBAwMEAwEAAAAAAAAAAAECEQADIQQSMUFRYXETIoGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQEBAQEAAAAAAAAAAAAAAAABAAIR/9oADAMBAAIRAxEAPwCukyruBAkkDsKytOaLTra28kKCCZIHJMk9/wA1Lqr5XWWiPbVCrA9AqAmY7kCOOTTpOXOkcBVnWPNGkcJZZGTjI8RP8VGqsrY1N1Kyj7M2YP8AKgcxP5+Ksf/Z"
-          />
-        </div>
+
       </div>
     </TweetLayout>
   );

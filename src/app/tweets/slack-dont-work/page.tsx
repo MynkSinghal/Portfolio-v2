@@ -1,7 +1,7 @@
 import TweetLayout from "@/components/tweet-layout";
 import { parseText } from "@/lib/text-parser";
 import { Metadata } from "next";
-import Image from "next/image";
+
 
 export const metadata: Metadata = {
   title: "Slack Can't Handle This: India's Low-Tech Hustle Leaves Silicon Valley Tools in the Dust",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       "When your billion-dollar app crashes, an Indian shopkeeper's ledger keeps the city running. Discover why low-tech beats high-tech in the real world.",
     type: "article",
     url: "https://www.mayanksinghal.tech/tweets/slack-dont-work",
-    publishedTime: "2025-06-27",
+
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",
@@ -49,7 +49,6 @@ export default function SlackDontWork() {
     <TweetLayout
       tweetSlug="slack-dont-work"
       tweetTitle="💥 Slack Can't Handle This: India's Low-Tech Hustle Leaves Silicon Valley Tools in the Dust"
-      publishDate="Jun 27, 2025"
     >
       <div className="text-base md:text-lg leading-relaxed space-y-6">
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -251,20 +250,7 @@ export default function SlackDontWork() {
           <p><em>In chaos, the simplest system survives.</em></p>
         </blockquote>
 
-        {/* Tweet Image */}
-        <div className="mt-12 pt-8 border-t border-foreground/10">
-          <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src="/Tweet-pics/Image-Slack Dont Work.webp"
-              alt="Slack Don't Work - India's Low-Tech Hustle Leaves Silicon Valley Tools in the Dust"
-              width={1200}
-              height={675}
-              className="w-full h-auto"
-              priority={false}
-              loading="lazy"
-            />
-          </div>
-        </div>
+
       </div>
     </TweetLayout>
   );

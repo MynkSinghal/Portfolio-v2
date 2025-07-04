@@ -1,6 +1,6 @@
 import TweetLayout from "@/components/tweet-layout";
 import { Metadata } from "next";
-import Image from "next/image";
+
 
 export const metadata: Metadata = {
   title: "Why India's ₹10 Chai Is Obliterating Starbucks (And It's Not Even Close)",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       "Everyone's chasing caramel lattes. But the real power move? Sipping ₹10 chai on a street corner, outsmarting the global giants.",
     type: "article",
     url: "https://www.mayanksinghal.tech/tweets/chai-beats-starbucks",
-    publishedTime: "2025-06-28",
+
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",
@@ -47,7 +47,6 @@ export default function ChaiBeatsstarbucks() {
     <TweetLayout
       tweetSlug="chai-beats-starbucks"
       tweetTitle="💥 Why India's ₹10 Chai Is Obliterating Starbucks (And It's Not Even Close)"
-      publishDate="Jun 28, 2025"
     >
       <div className="text-base md:text-lg leading-relaxed space-y-6">
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
@@ -305,20 +304,7 @@ export default function ChaiBeatsstarbucks() {
           Are you buying the story, or the substance?
         </p>
 
-        {/* Tweet Image */}
-        <div className="mt-12 pt-8 border-t border-foreground/10">
-          <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
-            <Image
-              src="/Tweet-pics/Image-Chai beats Starbucks.webp"
-              alt="Chai Beats Starbucks - Why India's ₹10 Chai Is Obliterating Starbucks"
-              width={1200}
-              height={675}
-              className="w-full h-auto"
-              priority={false}
-              loading="lazy"
-            />
-          </div>
-        </div>
+
       </div>
     </TweetLayout>
   );

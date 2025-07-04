@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "45% of new Indian startups are now tier-2 or tier-3 born. The real startup action is brewing in chai-splattered cafes in Indore, Surat's textile backrooms, and Bhilai's steel-shadowed lanes.",
     type: "article",
     url: "https://www.mayanksinghal.tech/tweets/india-builds-bold",
-    publishedTime: "2025-07-04",
+
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",
@@ -45,7 +45,6 @@ export default function IndiaBuildsBoldTweetPage() {
     <TweetLayout 
       tweetSlug="india-builds-bold"
       tweetTitle="💥 India Builds Bold: How Tier-2 India Is Quietly Rewriting the Startup Playbook"
-      publishDate="Jul 4, 2025"
     >
       <div className="space-y-6">
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">

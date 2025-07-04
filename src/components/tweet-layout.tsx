@@ -4,7 +4,6 @@ interface TweetLayoutProps {
   children: React.ReactNode;
   tweetSlug: string;
   tweetTitle: string;
-  publishDate: string;
   author?: string;
 }
 
@@ -12,7 +11,6 @@ export default function TweetLayout({
   children,
   tweetSlug,
   tweetTitle,
-  publishDate,
   author = "Mayank Singhal",
 }: TweetLayoutProps) {
   // Structured data for SEO - SocialMediaPosting Schema
@@ -31,8 +29,6 @@ export default function TweetLayout({
         "https://github.com/MynkSinghal"
       ]
     },
-    datePublished: new Date(publishDate).toISOString(),
-    dateModified: new Date(publishDate).toISOString(),
     image: "https://www.mayanksinghal.tech/banner.png",
     publisher: {
       "@type": "Person",
