@@ -1,2 +1,8 @@
 node_modules
 .next
+.env
+.env.local
+.env.production
+.env.staging
+.env.*.local
+.env.keys

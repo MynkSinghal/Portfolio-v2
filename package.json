@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -H 0.0.0.0",
-    "build": "next build",
-    "start": "next start",
+    "dev": "dotenvx run -- next dev -H 0.0.0.0",
+    "dev:prod": "dotenvx run -f .env.production -- next dev -H 0.0.0.0",
+    "build": "dotenvx run -- next build",
+    "start": "dotenvx run -- next start",
     "lint": "bunx biome lint --write && bunx tsc --noEmit",
     "format": "bunx biome format --write"
   },
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@dotenvx/dotenvx": "^1.45.2",
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^18.3.18",
