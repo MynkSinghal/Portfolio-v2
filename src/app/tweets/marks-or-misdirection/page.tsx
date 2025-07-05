@@ -237,14 +237,7 @@ export default function MarksOrMisdirectionTweetPage() {
           <p><strong>"You can't follow your passion if nobody ever shows you what it looks like."</strong></p>
         </blockquote>
 
-        <div className="mt-8 p-6 bg-foreground/5 rounded-lg border border-foreground/20">
-          <p className="text-lg font-semibold mb-2">
-            What's the career you wish someone had told you about at 15?
-          </p>
-          <p className="text-foreground/80">
-            Drop it below - let's build that map, together.
-          </p>
-        </div>
+        
       </div>
     </TweetLayout>
   );
