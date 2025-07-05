@@ -11,6 +11,16 @@ export interface Tweet {
 
 export const tweets: Tweet[] = [
   {
+    id: "11",
+    title: "Marks or Misdirection",
+    tagline: "When Schools Teach Facts, But Hide The Futures",
+    description: "93% of Indian students can't name more than 7 career options. Not because they're lazy—because nobody ever showed them the map. At 15, you pick Science, Arts, or Commerce blindfolded. India needs 1.4 million career counselors. We have maybe 1 lakh. The system creates 'qualified confusion'—kids know facts, not futures.",
+    author: "Mayank Singhal",
+    slug: "marks-or-misdirection",
+    href: "/tweets/marks-or-misdirection",
+    published: true,
+  },
+  {
     id: "10",
     title: "Word of Mouth",
     tagline: "How India's real jobs get filled",
