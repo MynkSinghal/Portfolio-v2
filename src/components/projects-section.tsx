@@ -10,143 +10,75 @@ export default function ProjectsSection() {
   const [itemsPerView, setItemsPerView] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [isVisible, setIsVisible] = useState(false);
-  const [expandedProject, setExpandedProject] = useState<number | null>(null);
 
   const projects = [
     {
-      id: 3,
-      title: "Vibrant Hues",
-      description:
-        "🎨 Modern color palette management that hits different. Like having a personal stylist for your designs — fast, pretty, always in theme.",
-      tags: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
-      icon: "square",
-      link: "https://vibrant-hues-color-picker-website-zjhg.vercel.app/", // Add your project link here
-      details: {
-        fullDescription:
-          "A modern colour palette management application that helps designers and developers discover, create, and preview color palettes in both light and dark modes. Features include palette downloads, real-time previews, and an intuitive user interface.",
-        whyExists:
-          "Because finding the perfect color palette shouldn't feel like searching for a needle in a haystack. Designers needed a tool that actually understood their workflow.",
-        howStarted:
-          "Started as a weekend project when I got frustrated with existing color tools. Spent way too much time tweaking gradients instead of building features.",
-        whatBroke:
-          "The color picker broke on Safari (classic). Spent 3 days debugging CSS color spaces. Also, the database kept timing out when generating palettes.",
-      },
+      id: 1,
+      title: "PromptPolish",
+      description: "Chrome extension that transforms messy text into clean AI prompts. Select, right-click, polish.",
+      tags: ["Chrome Extension", "JavaScript", "Gemini API"],
+      screenshot: "/images/projects/promptpolish.png", // Placeholder for screenshot
+      link: "https://extension.mayanksinghal.tech",
+      published: true,
     },
     {
       id: 2,
       title: "Trylo - Virtual Try-On",
-      description:
-        "👗 AI-powered virtual try-on that actually works. Like having a magic mirror, but for your phone. No more guessing if that shirt fits.",
-      tags: ["React", "TensorFlow.js", "Node.js", "Express"],
-      icon: "circle",
-      link: "https://trylo-virtual-try-on.vercel.app/", // Add your project link here
-      details: {
-        fullDescription:
-          "An innovative AI-powered virtual try-on platform enabling realistic garment visualization on various pose or body stances. This technology bridges the gap between online shopping and the physical fitting room experience.",
-        whyExists:
-          "Online shopping is broken. 30% return rates because clothes don't fit. Someone had to fix this mess.",
-        howStarted:
-          "Built it because guessing your size at checkout feels like playing fashion roulette—and losing.",
-        whatBroke:
-          "The pose detection kept thinking arms were legs. Also, the AI occasionally made people look like abstract art.",
-      },
+      description: "AI-powered virtual try-on platform for realistic garment visualization on different body poses.",
+      tags: ["React", "TensorFlow.js", "AI"],
+      screenshot: "/images/projects/trylo.png", // Placeholder for screenshot
+      link: "https://tryon.mayanksinghal.tech",
+      published: true,
+    },
+    {
+      id: 3,
+      title: "Vibrant Hues",
+      description: "Modern color palette management tool for designers with light/dark mode previews.",
+      tags: ["Next.js", "TypeScript", "Tailwind"],
+      screenshot: "/images/projects/vibranthues.png", // Placeholder for screenshot
+      link: "https://vibranthues.mayanksinghal.tech",
+      published: true,
     },
     {
       id: 4,
       title: "DocBook",
-      description:
-        "📅 Appointment booking that doesn't make you want to scream. Doctors love it, patients love it, even the receptionist loves it.",
-      tags: ["React", "TypeScript", "Node.js", "Supabase"],
-      icon: "triangle",
-      link: "https://docbook-one.vercel.app/", // Add your project link here
-      details: {
-        fullDescription:
-          "DocBook: Effortlessly manage doctor appointments with automated booking, reminders, and seamless calendar for patients and healthcare providers.",
-        whyExists:
-          "Healthcare booking is stuck in 1995. Patients deserve better than calling and waiting on hold for 20 minutes.",
-        howStarted:
-          "Just a college project. But even the basics—booking, doctor info, appointments—felt way harder than it should be. So I built a simpler flow.",
-        whatBroke:
-          "Availability timings. Oh god, the availability timings. Also, patients kept double-booking themselves because they didn't trust the system initially.",
-      },
+      description: "Streamlined appointment booking system for doctors and patients with automated reminders.",
+      tags: ["React", "TypeScript", "Supabase"],
+      screenshot: "/images/projects/docbook.png", // Placeholder for screenshot
+      link: "https://docbook.mayanksinghal.tech",
+      published: true,
     },
     {
       id: 5,
       title: "Flow-write",
-      description:
-        "✍️ MacOS app for flow writing. 3 random words, no backspace, pure creative chaos. Writers either love it or hate it.",
+      description: "MacOS app for creative flow writing with 3 random words and no backspace allowed.",
       tags: ["Swift", "MacOS", "Creative Tools"],
-      icon: "square",
-      link: "https://github.com/MynkSinghal/IdeaDice/releases/download/v1.0.0/IdeaDice.app.zip", // Add your project link here
-      details: {
-        fullDescription:
-          "A MacOS App, which helps in flow-writing by giving you 3 random words, and makes you wander your mind, write freely! No backspaces allowed, just free writing.",
-        whyExists:
-          "Writer's block is real. Sometimes you need to trick your brain into being creative. Constraints breed creativity.",
-        howStarted:
-          "Inspired by Julia Cameron's morning pages. Wanted to gamify the writing process and remove the perfectionist paralysis.",
-        whatBroke:
-          "The random word generator kept giving inappropriate combinations. Had to build a filter. Also, users kept trying to hack the 'no backspace' rule.",
-      },
+      screenshot: "/images/projects/flowwrite.png", // Placeholder for screenshot
+      link: "https://github.com/MynkSinghal/IdeaDice/releases/download/v1.0.0/IdeaDice.app.zip",
+      published: true,
     },
     {
       id: 6,
       title: "OMDB Movie Database",
-      description:
-        "🎬 Movie search that actually finds what you're looking for. No more scrolling through Netflix for 2 hours just to watch The Office again.",
-      tags: ["JavaScript", "Node.js", "Express", "OMDB API"],
-      icon: "circle",
-      link: "https://web-dev-movie-search-app-using-api.vercel.app/", // Add your project link here
-      details: {
-        fullDescription:
-          "A dynamic movie search application integrated with the OMDB API, allowing users to explore a vast database of films. Features include detailed movie information, responsive design, and real-time search functionality.",
-        whyExists:
-          "Movie discovery is broken. You know that feeling when you can't remember that movie with 'that guy from that thing'? This fixes that.",
-        howStarted:
-          "Built during a movie night when we spent more time searching than watching. The OMDB API was free, so why not?",
-        whatBroke:
-          "Rate limiting. Turns out, free APIs don't like it when you hammer them with requests. Had to implement caching and request throttling.",
-      },
+      description: "Movie search application with detailed film information and real-time search functionality.",
+      tags: ["JavaScript", "Node.js", "OMDB API"],
+      screenshot: "/images/projects/omdb.png", // Placeholder for screenshot
+      link: "https://movie.mayanksinghal.tech/",
+      published: true,
     },
     {
       id: 7,
       title: "Heart Risk Detection",
-      description:
-        "❤️ ML model that predicts heart disease risk. Because your heart is important, and early detection saves lives. Science is cool.",
-      tags: ["Python", "TensorFlow", "React", "Scikit-learn"],
-      icon: "triangle",
-      link: "https://healthcare-ai-lab.vercel.app/", // Add your project link here
-      details: {
-        fullDescription:
-          "A machine learning-powered web application that predicts heart disease risk using the Kaggle dataset. The model analyzes various health parameters providing risk assessment and further helping in early detection and prevention.",
-        whyExists:
-          "Heart disease is the #1 killer globally. If ML can help catch it early, why aren't we using it everywhere?",
-        howStarted:
-          "Started as a college project, got obsessed with the accuracy metrics. Turns out, healthcare data is messy but fascinating.",
-        whatBroke:
-          "The model kept overfitting. Spent weeks tuning hyperparameters. Also, medical disclaimers are harder to write than the actual code.",
-      },
-    },
-    {
-      id: 1,
-      title: "PromptPolish",
-      description:
-        "✨ Chrome extension that transforms messy text into clean AI prompts. Like having a writing coach who actually gets it — select, right-click, polish.",
-      tags: ["Chrome Extension", "JavaScript", "Gemini API", "Context AI"],
-      icon: "square",
-      link: "https://extension.mayanksinghal.tech",
-      details: {
-        fullDescription:
-          "A Chrome extension that transforms messy text into clean, professional AI prompts directly in your browser. Features smart context detection, works across all websites, and automatically adjusts polishing style based on the platform you're on (Gmail, LinkedIn, GitHub, etc.).",
-        whyExists:
-          "Because writing good prompts is hard, and most people's text looks like they're texting their mom at 2 AM. Everyone deserves to sound professional without spending hours editing.",
-        howStarted:
-          "Got tired of copying text to ChatGPT, polishing it, then copying it back. Thought 'there has to be a better way' — turns out, there is.",
-        whatBroke:
-          "Text replacement on some websites is trickier than expected. Gmail has weird DOM structures, and don't get me started on Google Docs. Also, the context detection sometimes thinks LinkedIn posts should sound like GitHub issues.",
-      },
+      description: "ML-powered web application that predicts heart disease risk using health parameters.",
+      tags: ["Python", "TensorFlow", "Machine Learning"],
+      screenshot: "/images/projects/heart.png", // Placeholder for screenshot
+      link: "https://heart.mayanksinghal.tech",
+      published: true,
     },
   ];
+
+  // Filter projects to only show published ones
+  const publishedProjects = projects.filter(project => project.published);
 
   // Intersection Observer for fade-in animation
   useEffect(() => {
@@ -179,21 +111,16 @@ export default function ProjectsSection() {
       const container = scrollRef.current;
       const containerWidth = container.offsetWidth;
 
-      // Calculate how many items are visible based on responsive widths
       let itemsVisible: number;
       if (containerWidth >= 1024) {
-        // lg breakpoint - 30% width items
-        itemsVisible = 3; // Show 3 items per page on large screens
+        itemsVisible = 3;
       } else if (containerWidth >= 768) {
-        // md breakpoint - 45% width items
-        itemsVisible = 2; // Show 2 items per page on medium screens
+        itemsVisible = 2;
       } else {
-        // mobile - 80% width items
-        itemsVisible = 1; // Show 1 item per page on mobile
+        itemsVisible = 1;
       }
 
-      // Calculate total pages based on items per page
-      const pages = Math.ceil(projects.length / itemsVisible);
+      const pages = Math.ceil(publishedProjects.length / itemsVisible);
 
       setItemsPerView(itemsVisible);
       setTotalPages(pages);
@@ -207,7 +134,7 @@ export default function ProjectsSection() {
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [publishedProjects.length]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -217,24 +144,22 @@ export default function ProjectsSection() {
       const scrollLeft = container.scrollLeft;
       const containerWidth = container.offsetWidth;
 
-      // Calculate item width based on screen size (including gap)
       let itemWidth: number;
       if (containerWidth >= 1024) {
-        itemWidth = containerWidth * 0.3 + 24; // 30% + gap
+        itemWidth = containerWidth * 0.3 + 24;
       } else if (containerWidth >= 768) {
-        itemWidth = containerWidth * 0.45 + 24; // 45% + gap
+        itemWidth = containerWidth * 0.45 + 24;
       } else {
-        itemWidth = containerWidth * 0.8 + 24; // 80% + gap
+        itemWidth = containerWidth * 0.8 + 24;
       }
 
-      // Calculate which page we're on based on items per view
       let pageIndex: number;
       if (containerWidth >= 1024) {
-        pageIndex = Math.round(scrollLeft / (itemWidth * 3)); // 3 items per page
+        pageIndex = Math.round(scrollLeft / (itemWidth * 3));
       } else if (containerWidth >= 768) {
-        pageIndex = Math.round(scrollLeft / (itemWidth * 2)); // 2 items per page
+        pageIndex = Math.round(scrollLeft / (itemWidth * 2));
       } else {
-        pageIndex = Math.round(scrollLeft / itemWidth); // 1 item per page
+        pageIndex = Math.round(scrollLeft / itemWidth);
       }
 
       if (pageIndex !== currentIndex) {
@@ -258,24 +183,22 @@ export default function ProjectsSection() {
     const container = scrollRef.current;
     const containerWidth = container.offsetWidth;
 
-    // Calculate item width based on screen size (including gap)
     let itemWidth: number;
     if (containerWidth >= 1024) {
-      itemWidth = containerWidth * 0.3 + 24; // 30% + gap
+      itemWidth = containerWidth * 0.3 + 24;
     } else if (containerWidth >= 768) {
-      itemWidth = containerWidth * 0.45 + 24; // 45% + gap
+      itemWidth = containerWidth * 0.45 + 24;
     } else {
-      itemWidth = containerWidth * 0.8 + 24; // 80% + gap
+      itemWidth = containerWidth * 0.8 + 24;
     }
 
-    // Calculate scroll distance based on items per page
     let scrollDistance: number;
     if (containerWidth >= 1024) {
-      scrollDistance = index * itemWidth * 3; // 3 items per page
+      scrollDistance = index * itemWidth * 3;
     } else if (containerWidth >= 768) {
-      scrollDistance = index * itemWidth * 2; // 2 items per page
+      scrollDistance = index * itemWidth * 2;
     } else {
-      scrollDistance = index * itemWidth; // 1 item per page
+      scrollDistance = index * itemWidth;
     }
 
     container.scrollTo({
@@ -285,7 +208,6 @@ export default function ProjectsSection() {
 
     setCurrentIndex(index);
 
-    // Reset scrolling flag after animation
     setTimeout(() => setIsScrolling(false), 500);
   };
 
@@ -322,7 +244,7 @@ export default function ProjectsSection() {
               WebkitOverflowScrolling: "touch",
             }}
           >
-            {projects
+            {publishedProjects
               .sort((a, b) => a.id - b.id)
               .map((project, index) => (
               <div
@@ -337,16 +259,21 @@ export default function ProjectsSection() {
                 }}
               >
                 <div className="bg-[#f2f2f2] p-6 rounded-lg hover:shadow-lg hover:shadow-black/5 hover:-translate-y-1 transition-all duration-300 ease-out h-full group">
-                  <div className="h-48 w-full flex items-center justify-center mb-8 bg-[#f5f5f5] rounded-md overflow-hidden">
-                    {project.icon === "square" && (
-                      <div className="w-24 h-24 bg-[#FFFFF0] rounded-md shadow-sm group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 ease-out"></div>
-                    )}
-                    {project.icon === "circle" && (
-                      <div className="w-24 h-24 bg-[#FFFFF0] rounded-full shadow-sm group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 ease-out"></div>
-                    )}
-                    {project.icon === "triangle" && (
-                      <div className="w-0 h-0 border-l-[45px] border-r-[45px] border-b-[80px] border-[#FFFFF0] shadow-sm group-hover:scale-110 group-hover:-rotate-6 transition-all duration-300 ease-out"></div>
-                    )}
+                  {/* Screenshot Container */}
+                  <div className="h-48 w-full mb-6 bg-[#f5f5f5] rounded-md overflow-hidden border">
+                    <img
+                      src={project.screenshot}
+                      alt={`${project.title} Screenshot`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out"
+                      onError={(e) => {
+                        // Fallback to placeholder if image doesn't exist
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                      }}
+                    />
+                    <div className="w-full h-full flex items-center justify-center text-foreground/40 text-sm hidden">
+                      Screenshot coming soon
+                    </div>
                   </div>
 
                   <div className="flex flex-col h-[calc(100%-14rem)]">
@@ -354,40 +281,33 @@ export default function ProjectsSection() {
                       {project.title}
                     </h3>
 
-                    <p className="text-xs text-foreground/70 mb-4 group-hover:text-foreground/80 transition-colors duration-200 flex-grow">
+                    <p className="text-sm text-foreground/70 mb-4 group-hover:text-foreground/80 transition-colors duration-200 flex-grow leading-relaxed">
                       {project.description}
                     </p>
 
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="flex flex-wrap gap-2 mb-6">
                       {project.tags.map((tag, tagIndex) => (
                         <span
                           key={`${project.id}-tag-${tag}`}
-                          className="text-xs text-foreground/50 group-hover:text-foreground/60 transition-all duration-200"
+                          className="text-xs bg-foreground/10 text-foreground/60 px-2 py-1 rounded-md group-hover:bg-foreground/15 transition-all duration-200"
                           style={{
                             transitionDelay: `${tagIndex * 50}ms`,
                           }}
                         >
-                          {tagIndex !== 0 && "• "}
                           {tag}
                         </span>
                       ))}
                     </div>
 
-                    {/* Action Buttons */}
-                    <div className="flex gap-2 mt-auto">
-                      <button
-                        onClick={() => setExpandedProject(project.id)}
-                        className="flex-1 bg-foreground/10 hover:bg-foreground/20 text-foreground/80 text-xs py-2 px-3 rounded-md transition-all duration-200 hover:scale-105"
-                      >
-                        🔍 Deep Dive
-                      </button>
+                    {/* Visit Button */}
+                    <div className="mt-auto">
                       <a
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-foreground/80 hover:bg-foreground text-white text-xs py-2 px-3 rounded-md transition-all duration-200 hover:scale-105"
+                        className="w-full bg-foreground/80 hover:bg-foreground text-white text-sm py-3 px-4 rounded-md transition-all duration-200 hover:scale-105 font-medium text-center block"
                       >
-                        🚀 Visit
+                        🚀 Visit Project
                       </a>
                     </div>
                   </div>
@@ -405,139 +325,28 @@ export default function ProjectsSection() {
                   : "opacity-0 translate-y-4"
               }`}
               style={{
-                transitionDelay: `${projects.length * 150 + 200}ms`,
+                transitionDelay: `${publishedProjects.length * 150 + 200}ms`,
               }}
             >
-              {Array.from({ length: totalPages }, (_, index) => (
-                <button
-                  key={`page-${index}`}
-                  onClick={() => scrollToIndex(index)}
-                  className={`h-2 rounded-full transition-all duration-500 ease-out hover:scale-125 ${
-                    index === currentIndex
-                      ? "bg-foreground/80 w-6 shadow-sm"
-                      : "bg-foreground/20 hover:bg-foreground/40 w-2"
-                  }`}
-                  aria-label={`Go to page ${index + 1}`}
-                />
-              ))}
+              {Array.from({ length: totalPages }).map((_, index) => {
+                const pageNumber = index + 1;
+                return (
+                  <button
+                    key={`page-${pageNumber}`}
+                    onClick={() => scrollToIndex(index)}
+                    className={`h-2 rounded-full transition-all duration-500 ease-out hover:scale-125 ${
+                      index === currentIndex
+                        ? "bg-foreground/80 w-6 shadow-sm"
+                        : "bg-foreground/20 hover:bg-foreground/40 w-2"
+                    }`}
+                    aria-label={`Go to page ${pageNumber}`}
+                  />
+                );
+              })}
             </div>
           )}
         </div>
       </div>
-
-      {/* Expanded Project Modal */}
-      {expandedProject && (
-        <div
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-          onClick={() => setExpandedProject(null)}
-        >
-          <div
-            className="bg-white dark:bg-gray-900 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {(() => {
-              const project = projects.find((p) => p.id === expandedProject);
-              if (!project) return null;
-
-              return (
-                <div className="p-8">
-                  {/* Header */}
-                  <div className="flex justify-between items-start mb-8">
-                    <div>
-                      <h2 className="text-2xl md:text-3xl font-bold mb-2">
-                        {project.title}
-                      </h2>
-                      <p className="text-foreground/70">
-                        {project.description}
-                      </p>
-                    </div>
-                    <button
-                      onClick={() => setExpandedProject(null)}
-                      className="text-foreground/50 hover:text-foreground/80 text-2xl p-2 hover:bg-foreground/10 rounded-full transition-all duration-200"
-                    >
-                      ✕
-                    </button>
-                  </div>
-
-                  {/* Tech Stack */}
-                  <div className="mb-8">
-                    <h3 className="text-lg font-semibold mb-3">Built With</h3>
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
-                        <span
-                          key={`${project.id}-modal-tag-${tag}`}
-                          className="bg-foreground/10 text-foreground/80 px-3 py-1 rounded-full text-sm"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Project Details */}
-                  <div className="space-y-8">
-                    {/* Full Description */}
-                    <div>
-                      <h3 className="text-lg font-semibold mb-3">What It Is</h3>
-                      <p className="text-foreground/80 leading-relaxed">
-                        {project.details.fullDescription}
-                      </p>
-                    </div>
-
-                    {/* Why It Exists */}
-                    <div>
-                      <h3 className="text-lg font-semibold mb-3">
-                        🤔 Why It Exists
-                      </h3>
-                      <p className="text-foreground/80 leading-relaxed">
-                        {project.details.whyExists}
-                      </p>
-                    </div>
-
-                    {/* How It Started */}
-                    <div>
-                      <h3 className="text-lg font-semibold mb-3">
-                        🚀 How It Started
-                      </h3>
-                      <p className="text-foreground/80 leading-relaxed">
-                        {project.details.howStarted}
-                      </p>
-                    </div>
-
-                    {/* What Broke */}
-                    <div>
-                      <h3 className="text-lg font-semibold mb-3">
-                        💥 What Broke
-                      </h3>
-                      <p className="text-foreground/80 leading-relaxed">
-                        {project.details.whatBroke}
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Action Buttons */}
-                  <div className="flex gap-4 mt-8 pt-6 border-t border-foreground/10">
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-foreground text-white px-6 py-3 rounded-lg hover:bg-foreground/90 transition-all duration-200 hover:scale-105 font-medium"
-                    >
-                      🚀 Visit Project
-                    </a>
-                    <button
-                      onClick={() => setExpandedProject(null)}
-                      className="bg-foreground/10 text-foreground/80 px-6 py-3 rounded-lg hover:bg-foreground/20 transition-all duration-200 font-medium"
-                    >
-                      ← Back to Projects
-                    </button>
-                  </div>
-                </div>
-              );
-            })()}
-          </div>
-        </div>
-      )}
 
       <style jsx>{`
         .scrollbar-hide {
