@@ -1,10 +1,10 @@
 import { getAllBlogs } from "@/data/blogs";
-import { getAllTweets } from "@/data/tweets";
+import { getAllThreads } from "@/data/threads";
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const blogs = getAllBlogs();
-  const tweets = getAllTweets();
+  const threads = getAllThreads();
   const baseUrl = "https://mayanksinghal.tech";
 
   const blogUrls = blogs.map((blog) => ({
@@ -14,8 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const tweetUrls = tweets.map((tweet) => ({
-    url: `${baseUrl}${tweet.href}`,
+  const threadUrls = threads.map((thread) => ({
+    url: `${baseUrl}${thread.href}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.7,
@@ -29,6 +29,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     ...blogUrls,
-    ...tweetUrls,
+    ...threadUrls,
   ];
 }

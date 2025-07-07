@@ -58,16 +58,16 @@ export default function QuickNavSection() {
 
               <button
                 onClick={() => {
-                  const tweetsSection = document.querySelector(
-                    '[data-section="tweets"]',
-                  );
-                  if (tweetsSection) {
-                    tweetsSection.scrollIntoView({ behavior: "smooth" });
+                  const threadsSection = document.querySelector(
+                    '[data-section="threads"]',
+                  ) as HTMLElement;
+                  if (threadsSection) {
+                    threadsSection.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
                 className="text-xs text-foreground/60 hover:text-foreground/90 underline underline-offset-2 transition-colors"
               >
-                Tweets
+                Threads
               </button>
             </div>
           </div>

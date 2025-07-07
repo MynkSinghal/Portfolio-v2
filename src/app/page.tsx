@@ -8,7 +8,7 @@ import QuickNavSection from "@/components/quick-nav-section";
 import QuotesSection from "@/components/quotes-section";
 import SocialLinksSection from "@/components/social-links-section";
 import TimelineSection from "@/components/timeline-section";
-import TweetsSection from "@/components/tweets-section";
+import ThreadsSection from "@/components/threads-section";
 import WorkspaceSection from "@/components/workspace-section";
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
         <WorkspaceSection />
         <ProjectsSection />
         <BlogsSection />
-        <TweetsSection />
+        <ThreadsSection />
         <QuotesSection />
         <TimelineSection />
         <SocialLinksSection />

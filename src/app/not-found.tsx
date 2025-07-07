@@ -56,7 +56,7 @@ export default function NotFound() {
           </Link>
 
           <Link
-            href="/#tweets"
+            href="/#threads"
             className="bg-foreground/10 text-foreground/80 px-6 py-3 rounded-lg font-medium hover:bg-foreground/20 transition-all duration-200 hover:scale-105 inline-flex items-center gap-2"
           >
             <svg
@@ -72,7 +72,7 @@ export default function NotFound() {
                 d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
               />
             </svg>
-            Go to tweets
+            Go to threads
           </Link>
 
           {randomBlog && (

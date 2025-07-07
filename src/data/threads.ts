@@ -1,17 +1,27 @@
-export interface Tweet {
+export interface Thread {
   id: string;
   title: string;
   tagline: string;
   description: string;
   author: string;
   slug: string;
-  href: string; // Path to the tweet page
+  href: string; // Path to the thread page
   published: boolean;
 }
 
-export const tweets: Tweet[] = [
+export const threads: Thread[] = [
   {
-    id: "11",
+    id: "10",
+    title: "The Unpaid Economy",
+    tagline: "The most efficient, overlooked engine of the Indian economy",
+    description: "She doesn't earn. But without her, nothing runs. India's economy depends on an invisible workforce — housewives. Here's how unpaid labor keeps the country moving, and why it's time we see it for what it is.",
+    author: "Mayank Singhal",
+    slug: "the-unpaid-economy",
+    href: "/tweets/the-unpaid-economy",
+    published: true,
+  },
+  {
+    id: "9",
     title: "Marks or Misdirection",
     tagline: "When Schools Teach Facts, But Hide The Futures",
     description: "93% of Indian students can't name more than 7 career options. Not because they're lazy—because nobody ever showed them the map. At 15, you pick Science, Arts, or Commerce blindfolded. India needs 1.4 million career counselors. We have maybe 1 lakh. The system creates 'qualified confusion'—kids know facts, not futures.",
@@ -21,7 +31,7 @@ export const tweets: Tweet[] = [
     published: true,
   },
   {
-    id: "10",
+    id: "8",
     title: "Word of Mouth",
     tagline: "How India's real jobs get filled",
     description: "Everyone's busy optimizing their LinkedIn profiles. But here's the truth: Most jobs in India don't even touch LinkedIn. They're born in living rooms, barber shops, and WhatsApp groups. 85-93% of India's workforce is informal, and 400+ million people work outside the 'system'. Welcome to India's original hiring hack.",
@@ -31,17 +41,7 @@ export const tweets: Tweet[] = [
     published: true,
   },
   {
-    id: "9",
-    title: "Fix Karlo Bhaiya",
-    tagline: "Why India's Repair Culture Is an Economic Superpower (And Nobody's Noticed)",
-    description: "Walk down any Indian street. You'll find more repair shops than Starbucks, more mochi stalls than McDonald's. We don't say 'replace it.' We say 'chalo, fix karlo.' And that one phrase? It powers a silent economic engine bigger than most people think. India's repair sector is a financial beast.",
-    author: "Mayank Singhal",
-    slug: "fix-karlo-bhaiya",
-    href: "/tweets/fix-karlo-bhaiya",
-    published: false,
-  },
-  {
-    id: "8",
+    id: "7",
     title: "India Builds Bold",
     tagline: "How Tier-2 India Is Quietly Rewriting the Startup Playbook",
     description: "Forget what you've been sold: the real startup action isn't happening in glass towers or VC-studded boardrooms. It's brewing in chai-splattered cafes in Indore, in Surat's textile backrooms, and in Bhilai's steel-shadowed lanes. 45% of new Indian startups are now tier-2 or tier-3 born, and they're outsmarting the metro crowd.",
@@ -49,16 +49,6 @@ export const tweets: Tweet[] = [
     slug: "india-builds-bold",
     href: "/tweets/india-builds-bold",
     published: true,
-  },
-  {
-    id: "7",
-    title: "India Ships Anyway",
-    tagline: "Roads break. Systems bend. But your parcel still shows up.",
-    description: "India spends a mind-bending 14% of its GDP just moving stuff around—nearly double what the 'efficient' West pays. Yet somehow, your package still lands in your village, rain or bandh. This is Bharat's shipping jungle where chaos is the secret sauce, and 'inefficiency' is actually a feature.",
-    author: "Mayank Singhal",
-    slug: "india-ships-anyway",
-    href: "/tweets/india-ships-anyway",
-    published: false,
   },
   {
     id: "6",
@@ -122,10 +112,10 @@ export const tweets: Tweet[] = [
   },
 ];
 
-export function getTweetBySlug(slug: string): Tweet | undefined {
-  return tweets.find((tweet) => tweet.slug === slug);
+export function getThreadBySlug(slug: string): Thread | undefined {
+  return threads.find((thread) => thread.slug === slug);
 }
 
-export function getAllTweets(): Tweet[] {
-  return tweets.filter((tweet) => tweet.published);
+export function getAllThreads(): Thread[] {
+  return threads.filter((thread) => thread.published);
 } 

@@ -1,12 +1,12 @@
 "use client";
 
-import { getAllTweets } from "@/data/tweets";
+import { getAllThreads } from "@/data/threads";
 import { parseText } from "@/lib/text-parser";
 import { useEffect, useRef, useState } from "react";
-import TweetCard from "./TweetCard";
+import ThreadCard from "./ThreadCard";
 
-export default function TweetsSection() {
-  const tweets = getAllTweets();
+export default function ThreadsSection() {
+  const threads = getAllThreads();
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
@@ -27,14 +27,14 @@ export default function TweetsSection() {
         else items = 1; // w-[85%]
 
         setItemsPerView(items);
-        setTotalPages(Math.ceil(tweets.length / items));
+        setTotalPages(Math.ceil(threads.length / items));
       }
     };
 
     calculateLayout();
     window.addEventListener("resize", calculateLayout);
     return () => window.removeEventListener("resize", calculateLayout);
-  }, [tweets.length]);
+  }, [threads.length]);
 
   // Intersection Observer for fade-in animation
   useEffect(() => {
@@ -99,9 +99,9 @@ export default function TweetsSection() {
 
   return (
     <section
-      id="tweets"
+      id="threads"
       className="py-16 md:py-20 lg:py-24 pt-6 md:pt-8 lg:pt-12 pb-8 md:pb-10 lg:pb-12"
-      data-section="tweets"
+      data-section="threads"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         {/* Animated Header */}
@@ -112,7 +112,7 @@ export default function TweetsSection() {
         >
           <div className="mb-8">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 tracking-tight uppercase">
-              My Tweets
+              My Threads
             </h2>
             <p className="text-base text-foreground/60 italic">
               {parseText(
@@ -122,7 +122,7 @@ export default function TweetsSection() {
           </div>
         </div>
 
-        {tweets.length > 0 ? (
+        {threads.length > 0 ? (
           <div className="relative">
             <div
               ref={scrollContainerRef}
@@ -137,9 +137,9 @@ export default function TweetsSection() {
                 }
               }
             >
-              {tweets.map((tweet, index) => (
+              {threads.map((thread, index) => (
                 <div
-                  key={tweet.id}
+                  key={thread.id}
                   className={`flex-none w-[85%] md:w-[48%] lg:w-[32%] snap-start transition-all duration-700 ease-out ${
                     isVisible
                       ? "opacity-100 translate-y-0"
@@ -149,7 +149,7 @@ export default function TweetsSection() {
                     transitionDelay: `${index * 150}ms`,
                   }}
                 >
-                  <TweetCard tweet={tweet} />
+                  <ThreadCard thread={thread} />
                 </div>
               ))}
             </div>
@@ -163,7 +163,7 @@ export default function TweetsSection() {
                     : "opacity-0 translate-y-4"
                 }`}
                 style={{
-                  transitionDelay: `${tweets.length * 150 + 200}ms`,
+                  transitionDelay: `${threads.length * 150 + 200}ms`,
                 }}
               >
                 {Array.from({ length: totalPages }, (_, pageIndex) => {
@@ -204,16 +204,12 @@ export default function TweetsSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
+                  d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2M4 13h2m13-6h-2M6 7h2"
                 />
               </svg>
             </div>
-            <h3 className="text-lg font-medium text-foreground/60 mb-2">
-              No tweets yet
-            </h3>
-            <p className="text-sm text-foreground/50">
-              Check back soon for my latest thoughts and insights.
-            </p>
+            <h3 className="text-lg font-semibold mb-2">No threads yet</h3>
+            <p className="text-foreground/60">Check back soon for my latest thoughts!</p>
           </div>
         )}
       </div>
