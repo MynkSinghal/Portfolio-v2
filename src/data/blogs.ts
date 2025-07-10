@@ -143,7 +143,7 @@ export const blogs: BlogPost[] = [
     slug: "knowledge-is-cheap-knowing-what-to-use-real-hustle",
     href: "/blog/knowledge-is-cheap-knowing-what-to-use-real-hustle",
     coverImage: "/blog-covers/knowledge-application.jpg",
-    published: false,
+    published: true,
   },
   {
     id: "8",
