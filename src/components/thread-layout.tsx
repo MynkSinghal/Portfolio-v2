@@ -25,12 +25,12 @@ export default function ThreadLayout({
       name: "Mayank Singhal",
     },
     datePublished: "2024-01-01",
-    "@id": `https://www.mayanksinghal.tech/tweets/${threadSlug}`,
+    "@id": `https://www.mayanksinghal.tech/threads/${threadSlug}`,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.mayanksinghal.tech/tweets/${threadSlug}`,
+      "@id": `https://www.mayanksinghal.tech/threads/${threadSlug}`,
     },
-    url: `https://www.mayanksinghal.tech/tweets/${threadSlug}`,
+    url: `https://www.mayanksinghal.tech/threads/${threadSlug}`,
     publisher: {
       "@type": "Person",
       name: "Mayank Singhal",

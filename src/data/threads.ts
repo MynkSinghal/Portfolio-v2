@@ -11,13 +11,43 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "13",
+    title: "Tired by Design",
+    tagline: "From traffic to footpaths, Indian urban design wasn't built to help you",
+    description: "Tired all the time? It's not just your job. It's your city. From traffic to toilets — Indian cities are designed to drain you. Here's how poor urban planning quietly exhausts 1.4 billion people.",
+    author: "Mayank Singhal",
+    slug: "tired-by-design",
+    href: "/threads/tired-by-design",
+    published: true,
+  },
+  {
+    id: "12",
+    title: "Pop Up Megacity",
+    tagline: "Temporary town. Permanent lessons. Kumbh Mela 2025 turned empty riverbanks into a high-tech megacity.",
+    description: "India builds a megacity... then deletes it. Kumbh Mela isn't just a religious event — it's the world's largest pop-up city. From AI surveillance to zero discharge sanitation — here's a masterclass in temporary urbanism.",
+    author: "Mayank Singhal",
+    slug: "pop-up-megacity",
+    href: "/threads/pop-up-megacity",
+    published: true,
+  },
+  {
+    id: "11",
+    title: "Faith as Infrastructure",
+    tagline: "What if your temple feed was doing more than god's work?",
+    description: "Temples don't just serve God. They serve 100 million Indians — daily. From langars to ₹10 sabjis, India's real welfare isn't run by the state. It's run by faith.",
+    author: "Mayank Singhal",
+    slug: "faith-as-infrastructure",
+    href: "/threads/faith-as-infrastructure",
+    published: true,
+  },
+  {
     id: "10",
     title: "The Unpaid Economy",
     tagline: "The most efficient, overlooked engine of the Indian economy",
     description: "She doesn't earn. But without her, nothing runs. India's economy depends on an invisible workforce — housewives. Here's how unpaid labor keeps the country moving, and why it's time we see it for what it is.",
     author: "Mayank Singhal",
     slug: "the-unpaid-economy",
-    href: "/tweets/the-unpaid-economy",
+    href: "/threads/the-unpaid-economy",
     published: true,
   },
   {
@@ -27,7 +57,7 @@ export const threads: Thread[] = [
     description: "93% of Indian students can't name more than 7 career options. Not because they're lazy—because nobody ever showed them the map. At 15, you pick Science, Arts, or Commerce blindfolded. India needs 1.4 million career counselors. We have maybe 1 lakh. The system creates 'qualified confusion'—kids know facts, not futures.",
     author: "Mayank Singhal",
     slug: "marks-or-misdirection",
-    href: "/tweets/marks-or-misdirection",
+    href: "/threads/marks-or-misdirection",
     published: true,
   },
   {
@@ -37,7 +67,7 @@ export const threads: Thread[] = [
     description: "Everyone's busy optimizing their LinkedIn profiles. But here's the truth: Most jobs in India don't even touch LinkedIn. They're born in living rooms, barber shops, and WhatsApp groups. 85-93% of India's workforce is informal, and 400+ million people work outside the 'system'. Welcome to India's original hiring hack.",
     author: "Mayank Singhal",
     slug: "word-of-mouth",
-    href: "/tweets/word-of-mouth",
+    href: "/threads/word-of-mouth",
     published: true,
   },
   {
@@ -47,7 +77,7 @@ export const threads: Thread[] = [
     description: "Forget what you've been sold: the real startup action isn't happening in glass towers or VC-studded boardrooms. It's brewing in chai-splattered cafes in Indore, in Surat's textile backrooms, and in Bhilai's steel-shadowed lanes. 45% of new Indian startups are now tier-2 or tier-3 born, and they're outsmarting the metro crowd.",
     author: "Mayank Singhal",
     slug: "india-builds-bold",
-    href: "/tweets/india-builds-bold",
+    href: "/threads/india-builds-bold",
     published: true,
   },
   {
@@ -57,7 +87,7 @@ export const threads: Thread[] = [
     description: "90% of startups in India face-plant within five years. Meanwhile, that dosa guy on the corner? He's printing cash and probably knows your lunch order better than your co-founder knows your product roadmap. Street vendors are quietly dunking on boardroom geniuses with a failure rate that's 9x lower.",
     author: "Mayank Singhal",
     slug: "hustle-beats-harvard",
-    href: "/tweets/hustle-beats-harvard",
+    href: "/threads/hustle-beats-harvard",
     published: true,
   },
   {
@@ -67,7 +97,7 @@ export const threads: Thread[] = [
     description: "If you thought the US immigration system was a maze, welcome to the new level — where the walls move, the rules change mid-game, and the exit signs point straight to the airport. This isn't about 'illegal' vs. 'legal' anymore — it's about anyone with a visa, a dream, and a traffic ticket.",
     author: "Mayank Singhal",
     slug: "visa-cancel-nation",
-    href: "/tweets/visa-cancel-nation",
+    href: "/threads/visa-cancel-nation",
     published: true,
   },
   {
@@ -77,7 +107,7 @@ export const threads: Thread[] = [
     description: "For sixty years, Mumbai's Kaali Peeli taxi drivers ruled the streets with nothing but muscle memory, street smarts, and zero digital help. They were the OG AIs with actual intelligence, navigating chaos that Google Maps still can't decode.",
     author: "Mayank Singhal",
     slug: "meter-down-mafia",
-    href: "/tweets/meter-down-mafia",
+    href: "/threads/meter-down-mafia",
     published: true,
   },
   {
@@ -87,7 +117,7 @@ export const threads: Thread[] = [
     description: "Mumbai's dabbawalas have been running a 200,000-meal relay for 135 years with no GPS, no apps, no excuses. With a Six Sigma error rate, they're the ultimate masterclass in human systems beating high-tech.",
     author: "Mayank Singhal",
     slug: "dabbawalas-dont-miss",
-    href: "/tweets/dabbawalas-dont-miss",
+    href: "/threads/dabbawalas-dont-miss",
     published: true,
   },
   {
@@ -97,7 +127,7 @@ export const threads: Thread[] = [
     description: "India gulps down 1.2 billion kg of tea a year. That's 13x more than coffee. Starbucks? 479 stores. Chaiwalas? 2 million+ stalls. The real business masterclass isn't in a boardroom—it's on a street corner with a folding stool.",
     author: "Mayank Singhal",
     slug: "chai-beats-starbucks",
-    href: "/tweets/chai-beats-starbucks",
+    href: "/threads/chai-beats-starbucks",
     published: true,
   },
   {
@@ -107,7 +137,7 @@ export const threads: Thread[] = [
     description: "Ever tried running a business in India only with Slack, dashboards, and endless apps? Good luck. Here's the real secret: most of India's commerce happens on phone calls, handwritten ledgers, and a healthy dose of jugaad—not in the digital playgrounds Silicon Valley loves.",
     author: "Mayank Singhal",
     slug: "slack-dont-work",
-    href: "/tweets/slack-dont-work",
+    href: "/threads/slack-dont-work",
     published: true,
   },
 ];
