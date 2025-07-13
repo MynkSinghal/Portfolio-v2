@@ -11,6 +11,16 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "14",
+    title: "Coaching Over Classrooms",
+    tagline: "Lakhs migrate to Kota. Families spend more on tutors than school fees. Let's unpack India's real education engine.",
+    description: "India has 1.5 million+ coaching centers, from IIT to NEET to UPSC. This isn't 'extra help' — it's the main syllabus. Each year, 2.5 lakh students move to Kota chasing dreams. Families spend lakhs, mortgage land, all for one shot at an 'entry ticket'. This is India's real education system.",
+    author: "Mayank Singhal",
+    slug: "coaching-over-classrooms",
+    href: "/threads/coaching-over-classrooms",
+    published: true,
+  },
+  {
     id: "13",
     title: "Tired by Design",
     tagline: "From traffic to footpaths, Indian urban design wasn't built to help you",
