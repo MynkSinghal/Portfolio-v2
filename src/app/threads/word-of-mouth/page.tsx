@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: "Word of Mouth - India's Real Job Portal: Your neighbor's WhatsApp, Not LinkedIn | Mayank Singhal",
   description: "LinkedIn isn't India's job portal. Most jobs here start with chai, not a CV. This thread breaks down how trust, not tech, fills 400 million jobs and why your watchman's WhatsApp matters.",
   alternates: {
-    canonical: "https://www.mayanksinghal.tech/tweets/word-of-mouth",
+    canonical: "https://www.mayanksinghal.tech/threads/word-of-mouth",
   },
   openGraph: {
     title: "Word of Mouth - India's Real Job Portal",
     description: "LinkedIn isn't India's job portal. Most jobs here start with chai, not a CV. This thread breaks down how trust, not tech, fills 400 million jobs.",
     type: "article",
-    url: "https://www.mayanksinghal.tech/tweets/word-of-mouth",
+    url: "https://www.mayanksinghal.tech/threads/word-of-mouth",
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",

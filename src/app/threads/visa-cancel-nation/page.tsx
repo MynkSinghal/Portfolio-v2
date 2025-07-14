@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: "Visa Cancel Nation - Why Innocent Indians Are Getting Kicked Out of America | Mayank Singhal",
   description: "A visa. A dream. And a speeding ticket that ruins your life. In Trump's America, even that's enough. Here's how the game changed. And how it's rigged.",
   alternates: {
-    canonical: "https://www.mayanksinghal.tech/tweets/visa-cancel-nation",
+    canonical: "https://www.mayanksinghal.tech/threads/visa-cancel-nation",
   },
   openGraph: {
     title: "Visa Cancel Nation - Why Innocent Indians Are Getting Kicked Out of America",
     description: "A visa. A dream. And a speeding ticket that ruins your life. In Trump's America, even that's enough.",
     type: "article",
-    url: "https://www.mayanksinghal.tech/tweets/visa-cancel-nation",
+    url: "https://www.mayanksinghal.tech/threads/visa-cancel-nation",
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",

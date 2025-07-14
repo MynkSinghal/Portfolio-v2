@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: "Meter Down Mafia - Why the Meter Down Mafia still owns Mumbai's nostalgia | Mayank Singhal",
   description: "Mumbai's Kaali Peeli taxis didn't need GPS, apps, or a startup pitch deck. They ran the city with pure memory, street hacks, and swagger. Here's why the Meter Down Mafia still owns Mumbai's nostalgia.",
   alternates: {
-    canonical: "https://www.mayanksinghal.tech/tweets/meter-down-mafia",
+    canonical: "https://www.mayanksinghal.tech/threads/meter-down-mafia",
   },
   openGraph: {
     title: "Meter Down Mafia - Why the Meter Down Mafia still owns Mumbai's nostalgia",
     description: "Mumbai's Kaali Peeli taxis didn't need GPS, apps, or a startup pitch deck. They ran the city with pure memory, street hacks, and swagger.",
     type: "article",
-    url: "https://www.mayanksinghal.tech/tweets/meter-down-mafia",
+    url: "https://www.mayanksinghal.tech/threads/meter-down-mafia",
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",

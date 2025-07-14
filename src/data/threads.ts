@@ -11,6 +11,16 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "15",
+    title: "Aunty Info Network",
+    tagline: "They know rishtas, real estate deals, politics, even police movements — all from chai-time whispers.",
+    description: "The most powerful surveillance system in India isn't tech or cops — it's your neighborhood aunty. From temple attendance to relationship status, these information brokers run an intelligence network that puts modern tech to shame. A humorous yet insightful look at how social surveillance shapes Indian society.",
+    author: "Mayank Singhal",
+    slug: "aunty-info-network",
+    href: "/threads/aunty-info-network",
+    published: true,
+  },
+  {
     id: "14",
     title: "Coaching Over Classrooms",
     tagline: "Lakhs migrate to Kota. Families spend more on tutors than school fees. Let's unpack India's real education engine.",

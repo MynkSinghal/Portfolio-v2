@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: "Marks or Misdirection - When Schools Teach Facts, But Hide The Futures | Mayank Singhal",
   description: "93% of Indian students can't name more than 7 career options. Not because they're lazy-because nobody ever showed them the map. At 15, you pick Science, Arts, or Commerce blindfolded. India needs 1.4 million career counselors. We have maybe 1 lakh. The system creates 'qualified confusion'-kids know facts, not futures.",
   alternates: {
-    canonical: "https://www.mayanksinghal.tech/tweets/marks-or-misdirection",
+    canonical: "https://www.mayanksinghal.tech/threads/marks-or-misdirection",
   },
   openGraph: {
     title: "Marks or Misdirection - When Schools Teach Facts, But Hide The Futures",
     description: "93% of Indian students can't name more than 7 career options. India needs 1.4 million career counselors, but we have maybe 1 lakh. The system creates 'qualified confusion'-kids know facts, not futures.",
     type: "article",
-    url: "https://www.mayanksinghal.tech/tweets/marks-or-misdirection",
+    url: "https://www.mayanksinghal.tech/threads/marks-or-misdirection",
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",

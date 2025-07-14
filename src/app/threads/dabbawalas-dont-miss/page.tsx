@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: "Dabbawalas Don't Miss - How they outsmart Silicon Valley's best | Mayank Singhal",
   description: "Think your food app is efficient? Mumbai's dabbawalas have been running a 200,000-meal relay for 135 years - zero tech, zero excuses, zero errors. Here's how they outsmart Silicon Valley's best.",
   alternates: {
-    canonical: "https://www.mayanksinghal.tech/tweets/dabbawalas-dont-miss",
+    canonical: "https://www.mayanksinghal.tech/threads/dabbawalas-dont-miss",
   },
   openGraph: {
     title: "Dabbawalas Don't Miss - How they outsmart Silicon Valley's best",
     description: "Mumbai's dabbawalas have been running a 200,000-meal relay for 135 years - zero tech, zero excuses, zero errors.",
     type: "article",
-    url: "https://www.mayanksinghal.tech/tweets/dabbawalas-dont-miss",
+    url: "https://www.mayanksinghal.tech/threads/dabbawalas-dont-miss",
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",

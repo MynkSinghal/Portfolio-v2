@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: "The Unpaid Economy - The most efficient, overlooked engine of the Indian economy | Mayank Singhal",
   description: "She doesn't earn. But without her, nothing runs. India's economy depends on an invisible workforce — housewives. Here's how unpaid labor keeps the country moving.",
   alternates: {
-    canonical: "https://www.mayanksinghal.tech/tweets/the-unpaid-economy",
+    canonical: "https://www.mayanksinghal.tech/threads/the-unpaid-economy",
   },
   openGraph: {
     title: "The Unpaid Economy - The most efficient, overlooked engine of the Indian economy",
     description: "She doesn't earn. But without her, nothing runs. India's economy depends on an invisible workforce — housewives.",
     type: "article",
-    url: "https://www.mayanksinghal.tech/tweets/the-unpaid-economy",
+    url: "https://www.mayanksinghal.tech/threads/the-unpaid-economy",
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",

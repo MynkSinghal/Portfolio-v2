@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: "Chai Beats Starbucks - How authenticity is crushing premium, one cup at a time | Mayank Singhal",
   description: "Starbucks is losing in India — not to another global brand, but to the humble ₹10 chai on every street corner. This thread breaks down how authenticity is crushing premium, one cup at a time.",
   alternates: {
-    canonical: "https://www.mayanksinghal.tech/tweets/chai-beats-starbucks",
+    canonical: "https://www.mayanksinghal.tech/threads/chai-beats-starbucks",
   },
   openGraph: {
     title: "Chai Beats Starbucks - How authenticity is crushing premium",
     description: "Starbucks is losing in India — not to another global brand, but to the humble ₹10 chai on every street corner.",
     type: "article",
-    url: "https://www.mayanksinghal.tech/tweets/chai-beats-starbucks",
+    url: "https://www.mayanksinghal.tech/threads/chai-beats-starbucks",
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",

@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: "Coaching Over Classrooms - Let's unpack India's real education engine | Mayank Singhal",
   description: "Lakhs migrate to Kota. Families spend more on tutors than school fees. Let's unpack India's real education engine.",
   alternates: {
-    canonical: "https://www.mayanksinghal.tech/tweets/coaching-over-classrooms",
+    canonical: "https://www.mayanksinghal.tech/threads/coaching-over-classrooms",
   },
   openGraph: {
     title: "Coaching Over Classrooms - India's real education engine",
     description: "Lakhs migrate to Kota. Families spend more on tutors than school fees. Let's unpack India's real education engine.",
     type: "article",
-    url: "https://www.mayanksinghal.tech/tweets/coaching-over-classrooms",
+    url: "https://www.mayanksinghal.tech/threads/coaching-over-classrooms",
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",

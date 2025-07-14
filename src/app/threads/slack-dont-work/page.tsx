@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: "Slack Don't Work - Why 'low-tech' hacks beat enterprise software | Mayank Singhal",
   description: "India's billion-dollar businesses run on missed calls, scribbled notes, and pure trust — not Slack or Salesforce. Why 'low-tech' hacks beat enterprise software in the world's fastest-growing economy.",
   alternates: {
-    canonical: "https://www.mayanksinghal.tech/tweets/slack-dont-work",
+    canonical: "https://www.mayanksinghal.tech/threads/slack-dont-work",
   },
   openGraph: {
     title: "Slack Don't Work - Why 'low-tech' hacks beat enterprise software",
     description: "India's billion-dollar businesses run on missed calls, scribbled notes, and pure trust — not Slack or Salesforce.",
     type: "article",
-    url: "https://www.mayanksinghal.tech/tweets/slack-dont-work",
+    url: "https://www.mayanksinghal.tech/threads/slack-dont-work",
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",

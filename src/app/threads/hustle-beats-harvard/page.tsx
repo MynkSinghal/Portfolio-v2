@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: "Hustle Beats Harvard - Why street vendors run a business with 10% failure rate | Mayank Singhal", 
   description: "Your MBA won't save you when the street vendor outside your office is running a business with a 10% failure rate, without a single spreadsheet. This thread breaks down why hustle > Harvard in India's real economy.",
   alternates: {
-    canonical: "https://www.mayanksinghal.tech/tweets/hustle-beats-harvard",
+    canonical: "https://www.mayanksinghal.tech/threads/hustle-beats-harvard",
   },
   openGraph: {
     title: "Hustle Beats Harvard - Why street vendors run a business with 10% failure rate",
     description: "Your MBA won't save you when the street vendor outside your office is running a business with a 10% failure rate, without a single spreadsheet.",
     type: "article",
-    url: "https://www.mayanksinghal.tech/tweets/hustle-beats-harvard",
+    url: "https://www.mayanksinghal.tech/threads/hustle-beats-harvard",
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",

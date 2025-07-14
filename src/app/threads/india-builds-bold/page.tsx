@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: "India Builds Bold - How Tier-2 cities are eating metro's lunch | Mayank Singhal",
   description: "The next billion-dollar Indian startup isn't in Bangalore or Mumbai. It's brewing in Bhilai, Indore, Surat, quietly rewriting the rules of business genius from the heartland.",
   alternates: {
-    canonical: "https://www.mayanksinghal.tech/tweets/india-builds-bold",
+    canonical: "https://www.mayanksinghal.tech/threads/india-builds-bold",
   },
   openGraph: {
     title: "India Builds Bold - How Tier-2 cities are eating metro's lunch",
     description: "The next billion-dollar Indian startup isn't in Bangalore or Mumbai. It's brewing in Bhilai, Indore, Surat.",
     type: "article",
-    url: "https://www.mayanksinghal.tech/tweets/india-builds-bold",
+    url: "https://www.mayanksinghal.tech/threads/india-builds-bold",
     authors: ["Mayank Singhal"],
     images: [{
       url: "https://www.mayanksinghal.tech/banner.png",
