@@ -11,6 +11,16 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "16",
+    title: "Kirana vs Quick Com",
+    tagline: "Your local shop is being crushed by pricing tricks and packaging lies. Let's decode what's really going on.",
+    description: "From MRP manipulation to white-label deception, Q-commerce platforms are using psychology and packaging tricks to eat away at local kirana stores. With just 1% market share, they're reshaping retail through illusion rather than innovation. A deep dive into how digital commerce is quietly killing neighborhood trust.",
+    author: "Mayank Singhal",
+    slug: "kirana-vs-quick-commerce",
+    href: "/threads/kirana-vs-quick-commerce",
+    published: true,
+  },
+  {
     id: "15",
     title: "Aunty Info Network",
     tagline: "They know rishtas, real estate deals, politics, even police movements — all from chai-time whispers.",
