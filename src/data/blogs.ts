@@ -25,7 +25,7 @@ export const blogs: BlogPost[] = [
     slug: "the-real-ceos-of-india-are-not-on-linkedin",
     href: "/blog/the-real-ceos-of-india-are-not-on-linkedin",
     coverImage: "/blog-covers/ceo-of-india.jpg",
-    published: false,
+    published: true,
   },
   {
     id: "16",
@@ -128,7 +128,7 @@ export const blogs: BlogPost[] = [
     slug: "will-ai-make-us-smarter-or-stupider",
     href: "/blog/will-ai-make-us-smarter-or-stupider",
     coverImage: "/blog-covers/ai-make-dumb.jpg",
-    published: false,
+    published: true,
   },
   {
     id: "9",

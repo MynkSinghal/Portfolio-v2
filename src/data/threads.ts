@@ -11,6 +11,16 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "17",
+    title: "Indian Queue Logic",
+    tagline: "What looks like chaos is actually choreography. Let's decode the hidden logic behind every Indian queue.",
+    description: "From train stations to temple lines, Indian queues aren't about order—they're about optimization. This isn't chaos; it's a sophisticated dance of space, urgency, and social dynamics. Discover how 1.4 billion people navigate daily life through an unwritten system of tactical negotiations and dynamic flows.",
+    author: "Mayank Singhal",
+    slug: "indian-queue-logic",
+    href: "/threads/indian-queue-logic",
+    published: true,
+  },
+  {
     id: "16",
     title: "Kirana vs Quick Com",
     tagline: "Your local shop is being crushed by pricing tricks and packaging lies. Let's decode what's really going on.",

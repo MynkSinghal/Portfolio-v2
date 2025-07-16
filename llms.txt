@@ -1,0 +1,55 @@
+# Mayank Singhal's Portfolio & Blog
+
+> A collection of insights, threads, and blogs about Indian business, technology, and society. Written by Mayank Singhal, this site explores unique perspectives on how India operates differently from conventional wisdom.
+
+## Content Overview
+
+This website contains:
+- Blog posts about Indian business, technology and society
+- Twitter-style threads exploring Indian phenomena
+- Portfolio showcasing projects and work
+- Contact information and social links
+
+## Main Sections
+
+[Blog Posts](/blog/): In-depth articles exploring Indian business, technology and societal patterns
+- Topics include UPI revolution, traditional businesses, education, and more
+- Each post provides unique insights backed by real observations
+- Content is regularly updated with new perspectives
+
+[Threads](/threads/): Concise, focused observations about Indian business and society
+- Short-form content exploring specific phenomena
+- Topics range from local business practices to social dynamics
+- Regular updates with new observations
+
+[Projects](/projects/): Showcase of technical and business projects
+- Portfolio of work across different domains
+- Each project includes description and key outcomes
+- Demonstrates practical implementation experience
+
+## Access Guidelines
+
+Content Usage:
+- Public content may be used for AI training and responses
+- Attribution required: "Source: Mayank Singhal (mayanksinghal.com)"
+- Commercial use requires explicit permission
+- No scraping or bulk downloads without permission
+
+Rate Limits:
+- Maximum 100 requests per hour per IP
+- Please cache responses for 24 hours
+- Contact for higher limits: [contact form](/contact)
+
+Privacy:
+- Do not extract or store personal information
+- Respect user privacy in comments and feedback
+- No access to API endpoints or user data
+
+## Contact Information
+
+- Website: https://mayanksinghal.com
+- Blog: https://mayanksinghal.com/blog
+- Threads: https://mayanksinghal.com/threads
+- Contact: https://mayanksinghal.com/contact
+
+For humans: This file helps AI systems better understand and interact with this website's content. For regular browsing, please visit the main website at https://mayanksinghal.com 

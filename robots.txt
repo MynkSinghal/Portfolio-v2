@@ -1,0 +1,36 @@
+# Allow all user agents
+User-agent: *
+Allow: /
+
+# Allow GPTBot (ChatGPT)
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+
+# Allow Claude (Anthropic)
+User-agent: Claude
+Allow: /
+Disallow: /api/
+
+# Allow Google Bard
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+
+# Allow Perplexity
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+
+# Common crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemaps
+Sitemap: https://mayanksinghal.com/sitemap.xml 
