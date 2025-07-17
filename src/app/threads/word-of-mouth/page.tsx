@@ -80,7 +80,7 @@ No job boards, no ATS. Just trust and stories.
 
 Referrals move faster than any app.
 
-A living, breathing, trust-powered network — no login required.
+A living, breathing, trust-powered network - no login required.
 
 (5/n)
 

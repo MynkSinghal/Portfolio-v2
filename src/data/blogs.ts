@@ -17,7 +17,7 @@ export const blogs: BlogPost[] = [
     id: "17",
     title: "👑 The Real CEOs of India Don't Post",
     description:
-      "Think India's business titans are all on LinkedIn, dropping wisdom and sharing wins? Here's a reality check: the real empire builders—the ones moving crores, hiring millions, and shaping the economy—are invisible online. Their companies are household names, but their faces? You'll never see them on your feed.",
+      "Think India's business titans are all on LinkedIn, dropping wisdom and sharing wins? Here's a reality check: the real empire builders-the ones moving crores, hiring millions, and shaping the economy-are invisible online. Their companies are household names, but their faces? You'll never see them on your feed.",
     author: "Mayank Singhal",
     readTime: "3 min read",
     date: "Sep 3, 2025",
@@ -32,7 +32,7 @@ export const blogs: BlogPost[] = [
     title:
       "📞 Real Operations Don't Happen on Slack: Why India's Business OS Runs on Calls, Paper, and Jugaad",
     description:
-      "Ever tried running a business in India only with Slack, dashboards, and endless apps? Good luck. Here's the real secret: most of India's commerce happens on phone calls, handwritten ledgers, and a healthy dose of jugaad—not in the digital playgrounds Silicon Valley loves.",
+      "Ever tried running a business in India only with Slack, dashboards, and endless apps? Good luck. Here's the real secret: most of India's commerce happens on phone calls, handwritten ledgers, and a healthy dose of jugaad-not in the digital playgrounds Silicon Valley loves.",
     author: "Mayank Singhal",
     readTime: "4 min read",
     date: "Aug 27, 2025",
@@ -46,7 +46,7 @@ export const blogs: BlogPost[] = [
     id: "15",
     title: "☕ Chaiwalas vs Chains: India's Secret Business Superpower",
     description:
-      "Ever wonder why your local chaiwala is still thriving—even as Starbucks, McDonald's, and big-name chains pop up on every corner? Here's a stat that'll make you look twice: India's street vendors and mom-and-pop shops contribute up to 63% of the country's GDP.",
+      "Ever wonder why your local chaiwala is still thriving-even as Starbucks, McDonald's, and big-name chains pop up on every corner? Here's a stat that'll make you look twice: India's street vendors and mom-and-pop shops contribute up to 63% of the country's GDP.",
     author: "Mayank Singhal",
     readTime: "3 min read",
     date: "Aug 20, 2025",
@@ -59,9 +59,9 @@ export const blogs: BlogPost[] = [
   {
     id: "14",
     title:
-      "💳 Why CRED Ignored Revenue—Until It Couldn't: Lessons for Every Ambitious Founder",
+      "💳 Why CRED Ignored Revenue-Until It Couldn't: Lessons for Every Ambitious Founder",
     description:
-      "Ever wondered how a startup can become a household name—and a billion-dollar company—without worrying about making money? CRED did just that. But what happens when the music stops and investors start asking, 'So… where's the revenue?'",
+      "Ever wondered how a startup can become a household name-and a billion-dollar company-without worrying about making money? CRED did just that. But what happens when the music stops and investors start asking, 'So… where's the revenue?'",
     author: "Mayank Singhal",
     readTime: "4 min read",
     date: "Aug 13, 2025",
@@ -75,7 +75,7 @@ export const blogs: BlogPost[] = [
     id: "13",
     title: "💪 Grit Over Gadgets: How Indian SMEs Win Without Fancy Tech",
     description:
-      "What if I told you that some of India's most successful businesses run on WhatsApp, paper ledgers, and pure hustle? Here's how Indian SMEs are quietly powering 40% of the nation's workforce without the latest tech—and thriving against all odds.",
+      "What if I told you that some of India's most successful businesses run on WhatsApp, paper ledgers, and pure hustle? Here's how Indian SMEs are quietly powering 40% of the nation's workforce without the latest tech-and thriving against all odds.",
     author: "Mayank Singhal",
     readTime: "4 min read",
     date: "Aug 6, 2025",
@@ -90,7 +90,7 @@ export const blogs: BlogPost[] = [
     title:
       "🚛 India's Logistics Labyrinth: Why Complexity Breeds Resilience (and Opportunity)",
     description:
-      "Ever wondered how a single parcel can travel from a Himalayan village to a Mumbai skyscraper—without getting lost in the chaos? Here's why India spends 14% of its GDP on logistics and how complexity became the secret sauce behind resilience.",
+      "Ever wondered how a single parcel can travel from a Himalayan village to a Mumbai skyscraper-without getting lost in the chaos? Here's why India spends 14% of its GDP on logistics and how complexity became the secret sauce behind resilience.",
     author: "Mayank Singhal",
     readTime: "4 min read",
     date: "Jul 30, 2025",
@@ -105,7 +105,7 @@ export const blogs: BlogPost[] = [
     title:
       "💎 How Minimalist Built a 3,000 Crore Skincare Brand Without Playing the Usual Marketing Game",
     description:
-      "Ever feel like every skincare brand is just selling you a story, not a solution? Here's how Minimalist, a Jaipur-based startup, rewrote the rules and built a 3,000 crore empire in just five years—by doing the opposite of what everyone else was doing.",
+      "Ever feel like every skincare brand is just selling you a story, not a solution? Here's how Minimalist, a Jaipur-based startup, rewrote the rules and built a 3,000 crore empire in just five years-by doing the opposite of what everyone else was doing.",
     author: "Mayank Singhal",
     readTime: "4 min read",
     date: "Jul 23, 2025",
@@ -120,7 +120,7 @@ export const blogs: BlogPost[] = [
     title:
       "🧠 Will AI Make Us Smarter or Stupider? The Truth Nobody Wants to Admit",
     description:
-      "Ever wondered if all these AI tools are making you sharper—or just a little lazier? If you've ever Googled an answer you could have figured out, you're not alone. Here's the uncomfortable truth about outsourcing our brains.",
+      "Ever wondered if all these AI tools are making you sharper-or just a little lazier? If you've ever Googled an answer you could have figured out, you're not alone. Here's the uncomfortable truth about outsourcing our brains.",
     author: "Mayank Singhal",
     readTime: "4 min read",
     date: "Jul 16, 2025",
@@ -133,9 +133,9 @@ export const blogs: BlogPost[] = [
   {
     id: "9",
     title:
-      "🧠 Knowledge Is Cheap — Knowing What to Use? That's the Real Hustle",
+      "🧠 Knowledge Is Cheap - Knowing What to Use? That's the Real Hustle",
     description:
-      "In an era where information is infinite, the real power isn't in what you know—it's in knowing what to use and when. Here's how to turn your knowledge into unstoppable action.",
+      "In an era where information is infinite, the real power isn't in what you know-it's in knowing what to use and when. Here's how to turn your knowledge into unstoppable action.",
     author: "Mayank Singhal",
     readTime: "6 min read",
     date: "Jul 9, 2025",
@@ -148,7 +148,7 @@ export const blogs: BlogPost[] = [
   {
     id: "8",
     title:
-      "🔥 Forget 10,000 Hours — It's 10,000 Iterations That Make You Unstoppable",
+      "🔥 Forget 10,000 Hours - It's 10,000 Iterations That Make You Unstoppable",
     description:
       "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again. Here's why iterations beat hours every time.",
     author: "Mayank Singhal",
@@ -165,7 +165,7 @@ export const blogs: BlogPost[] = [
     title:
       "🎯 The Internship Dilemma: Why You Don't Need a Fancy Badge to Make It Big",
     description:
-      "No internship? No problem. The game isn't over — it's just getting interesting. Here's your spicy reality check on building a career without that coveted badge.",
+      "No internship? No problem. The game isn't over - it's just getting interesting. Here's your spicy reality check on building a career without that coveted badge.",
     author: "Mayank Singhal",
     readTime: "5 min read",
     date: "Jun 25, 2025",
@@ -179,7 +179,7 @@ export const blogs: BlogPost[] = [
     id: "6",
     title: "💸 The UPI Revolution: How India Went From Cash to Tap",
     description:
-      "From 2 billion to 7.3 billion transactions per month. UPI didn't just digitize payments—it rewired a nation. Discover how India built the world's most successful payment system.",
+      "From 2 billion to 7.3 billion transactions per month. UPI didn't just digitize payments-it rewired a nation. Discover how India built the world's most successful payment system.",
     author: "Mayank Singhal",
     readTime: "4 min read",
     date: "Jun 18, 2025",
@@ -193,7 +193,7 @@ export const blogs: BlogPost[] = [
     id: "5",
     title: "🏪 Kirana vs Quick Commerce: The Battle for India's Retail Soul",
     description:
-      "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR. This isn't just competition—it's a transformation of how India shops.",
+      "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR. This isn't just competition-it's a transformation of how India shops.",
     author: "Mayank Singhal",
     readTime: "4 min read",
     date: "Jun 11, 2025",
