@@ -25,7 +25,7 @@ export const blogs: BlogPost[] = [
     slug: "the-real-ceos-of-india-are-not-on-linkedin",
     href: "/blog/the-real-ceos-of-india-are-not-on-linkedin",
     coverImage: "/blog-covers/ceo-of-india.jpg",
-    published: true,
+    published: false,
   },
   {
     id: "16",
