@@ -123,7 +123,7 @@ export default function ThreadsSection() {
               </p>
               <Link
                 href="/threads"
-                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors duration-200 flex items-center gap-1"
+                className="hidden md:flex text-sm font-medium text-foreground/80 hover:text-foreground transition-colors duration-200 items-center gap-1"
               >
                 View All
                 <svg
@@ -179,7 +179,7 @@ export default function ThreadsSection() {
             {/* Enhanced Dot Indicators */}
             {totalPages > 1 && (
               <div
-                className={`flex justify-center mt-8 gap-3 transition-all duration-1000 ease-out ${
+                className={`hidden md:flex justify-center mt-8 gap-3 transition-all duration-1000 ease-out ${
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-4"
