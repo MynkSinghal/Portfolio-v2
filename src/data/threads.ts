@@ -11,6 +11,16 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "20",
+    title: "Ghar Ka Khana",
+    tagline: "Swiggy, dabbawalas, tiffins, maa ke haath - India's food story isn't just hunger. It's homesickness.",
+    description: "From steel tiffin boxes to Mumbai's dabbawala network, home food is India's emotional currency. It's not just about taste - it's about memory, care, and connection. While startups try to bottle this nostalgia, the real story is in the daily ritual of love packed in lunch boxes, the office bonds formed over shared meals, and the hidden labor of those who keep this tradition alive.",
+    author: "Mayank Singhal",
+    slug: "ghar-ka-khana",
+    href: "/threads/ghar-ka-khana",
+    published: true,
+  },
+  {
     id: "19",
     title: "Free Advice Nation",
     tagline: "You didn't ask. They'll still tell you what to do. Here's why India runs on unsolicited gyaan.",

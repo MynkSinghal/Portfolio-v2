@@ -4,6 +4,7 @@ import { getAllBlogs } from "@/data/blogs";
 import { parseText } from "@/lib/text-parser";
 import { useEffect, useRef, useState } from "react";
 import BlogCard from "./BlogCard";
+import Link from "next/link";
 
 export default function BlogsSection() {
   const blogs = getAllBlogs();
@@ -19,12 +20,12 @@ export default function BlogsSection() {
     const calculateLayout = () => {
       if (typeof window !== "undefined") {
         const width = window.innerWidth;
-        let items;
+        let items: number;
         if (width >= 1024)
-          items = 3; // lg: w-[30%]
+          items = 3; // lg: w-[32%]
         else if (width >= 768)
-          items = 2; // md: w-[45%]
-        else items = 1; // w-[80%]
+          items = 2; // md: w-[48%]
+        else items = 1; // w-[85%]
 
         setItemsPerView(items);
         setTotalPages(Math.ceil(blogs.length / items));
@@ -62,39 +63,74 @@ export default function BlogsSection() {
   // Handle scroll to update current index
   useEffect(() => {
     const handleScroll = () => {
-      if (scrollContainerRef.current && !isScrolling) {
-        const container = scrollContainerRef.current;
-        const scrollLeft = container.scrollLeft;
-        const cardWidth = container.offsetWidth / itemsPerView;
-        const newIndex = Math.round(scrollLeft / cardWidth / itemsPerView);
-        setCurrentIndex(Math.min(newIndex, totalPages - 1));
+      if (!scrollContainerRef.current || isScrolling) return;
+
+      const container = scrollContainerRef.current;
+      const scrollLeft = container.scrollLeft;
+      const containerWidth = container.offsetWidth;
+
+      let itemWidth: number;
+      if (containerWidth >= 1024) {
+        itemWidth = containerWidth * 0.32 + 24; // 32% + gap
+      } else if (containerWidth >= 768) {
+        itemWidth = containerWidth * 0.48 + 24; // 48% + gap
+      } else {
+        itemWidth = containerWidth * 0.9 + 24; // 90% + gap
+      }
+
+      let pageIndex: number;
+      if (containerWidth >= 1024) {
+        pageIndex = Math.round(scrollLeft / (itemWidth * 3));
+      } else if (containerWidth >= 768) {
+        pageIndex = Math.round(scrollLeft / (itemWidth * 2));
+      } else {
+        pageIndex = Math.round(scrollLeft / itemWidth);
+      }
+
+      if (pageIndex !== currentIndex) {
+        setCurrentIndex(Math.min(Math.max(pageIndex, 0), totalPages - 1));
       }
     };
 
     const container = scrollContainerRef.current;
     if (container) {
-      container.addEventListener("scroll", handleScroll);
+      container.addEventListener("scroll", handleScroll, { passive: true });
       return () => container.removeEventListener("scroll", handleScroll);
     }
-  }, [itemsPerView, totalPages, isScrolling]);
+  }, [currentIndex, isScrolling, totalPages]);
 
   const scrollToIndex = (index: number) => {
-    if (scrollContainerRef.current) {
-      setIsScrolling(true);
-      const container = scrollContainerRef.current;
-      const cardWidth = container.offsetWidth / itemsPerView;
-      const scrollLeft = index * cardWidth * itemsPerView;
+    if (!scrollContainerRef.current) return;
 
-      container.scrollTo({
-        left: scrollLeft,
-        behavior: "smooth",
-      });
+    setIsScrolling(true);
+    const container = scrollContainerRef.current;
+    const containerWidth = container.offsetWidth;
 
-      setTimeout(() => {
-        setIsScrolling(false);
-        setCurrentIndex(index);
-      }, 500);
+    let itemWidth: number;
+    if (containerWidth >= 1024) {
+      itemWidth = containerWidth * 0.32 + 24;
+    } else if (containerWidth >= 768) {
+      itemWidth = containerWidth * 0.48 + 24;
+    } else {
+      itemWidth = containerWidth * 0.9 + 24;
     }
+
+    let scrollDistance: number;
+    if (containerWidth >= 1024) {
+      scrollDistance = index * itemWidth * 3;
+    } else if (containerWidth >= 768) {
+      scrollDistance = index * itemWidth * 2;
+    } else {
+      scrollDistance = index * itemWidth;
+    }
+
+    container.scrollTo({
+      left: scrollDistance,
+      behavior: "smooth",
+    });
+
+    setCurrentIndex(index);
+    setTimeout(() => setIsScrolling(false), 500);
   };
 
   return (
@@ -114,11 +150,32 @@ export default function BlogsSection() {
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 tracking-tight uppercase">
               My Blogs
             </h2>
-            <p className="text-base text-foreground/60 italic">
-              {parseText(
-                "(thoughts, experiments, and <italic>occasional wisdom</italic>)",
-              )}
-            </p>
+            <div className="flex items-center justify-between">
+              <p className="text-base text-foreground/60 italic">
+                {parseText(
+                  "(thoughts, experiments, and <italic>occasional wisdom</italic>)",
+                )}
+              </p>
+              <Link
+                href="/blog"
+                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors duration-200 flex items-center gap-1"
+              >
+                View All
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -126,7 +183,7 @@ export default function BlogsSection() {
           <div className="relative">
             <div
               ref={scrollContainerRef}
-              className="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory gap-6 pb-4"
+              className="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory gap-6 pb-8"
               style={
                 {
                   scrollbarWidth: "none",
@@ -140,7 +197,7 @@ export default function BlogsSection() {
               {blogs.map((blog, index) => (
                 <div
                   key={blog.id}
-                  className={`flex-none w-[80%] md:w-[45%] lg:w-[30%] snap-start transition-all duration-700 ease-out ${
+                  className={`flex-none w-[90%] md:w-[48%] lg:w-[32%] snap-start transition-all duration-700 ease-out ${
                     isVisible
                       ? "opacity-100 translate-y-0"
                       : "opacity-0 translate-y-12"
@@ -154,10 +211,10 @@ export default function BlogsSection() {
               ))}
             </div>
 
-            {/* Animated Dot Indicators */}
+            {/* Enhanced Dot Indicators */}
             {totalPages > 1 && (
               <div
-                className={`flex justify-center mt-8 gap-2 transition-all duration-1000 ease-out ${
+                className={`flex justify-center mt-8 gap-3 transition-all duration-1000 ease-out ${
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-4"
@@ -166,25 +223,52 @@ export default function BlogsSection() {
                   transitionDelay: `${blogs.length * 150 + 200}ms`,
                 }}
               >
-                {Array.from({ length: totalPages }, (_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => scrollToIndex(index)}
-                    className={`h-2 rounded-full transition-all duration-500 ease-out hover:scale-125 ${
-                      index === currentIndex
-                        ? "bg-foreground/80 w-6 shadow-sm"
-                        : "bg-foreground/20 hover:bg-foreground/40 w-2"
-                    }`}
-                    aria-label={`Go to page ${index + 1}`}
-                  />
-                ))}
+                {Array.from({ length: totalPages }, (_, pageIndex) => {
+                  const pageNumber = pageIndex + 1;
+                  const isActive = pageIndex === currentIndex;
+                  return (
+                    <button
+                      key={`pagination-page-${pageNumber}`}
+                      onClick={() => scrollToIndex(pageIndex)}
+                      className={`group relative transition-all duration-500 ease-out ${
+                        isActive ? "scale-110" : "hover:scale-105"
+                      }`}
+                      aria-label={`Go to page ${pageNumber}`}
+                    >
+                      <div className={`h-2 rounded-full transition-all duration-500 ease-out ${
+                        isActive
+                          ? "bg-foreground/80 w-8"
+                          : "bg-foreground/20 w-2 group-hover:bg-foreground/40"
+                      }`} />
+                      {/* Animated dot label */}
+                      <div className={`absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs text-foreground/60 transition-all duration-300 ${
+                        isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                      }`}>
+                        {pageNumber}
+                      </div>
+                    </button>
+                  );
+                })}
               </div>
             )}
 
-            {/* Mobile scroll indicators */}
-            <div className="md:hidden flex justify-center mt-6 gap-2">
-              <div className="text-xs text-foreground/50 bg-foreground/5 px-3 py-1 rounded-full">
-                Swipe to see more →
+            {/* Enhanced Mobile Scroll Indicator */}
+            <div className="md:hidden flex justify-center mt-6">
+              <div className="text-xs bg-foreground/5 px-4 py-2 rounded-full text-foreground/50 flex items-center gap-2 animate-pulse">
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+                Swipe to explore
               </div>
             </div>
           </div>

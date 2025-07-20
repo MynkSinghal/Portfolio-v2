@@ -1,16 +1,33 @@
+"use client";
+
 import { BlogPost } from "@/data/blogs";
 import Link from "next/link";
+import { useState } from "react";
 
 interface BlogCardProps {
   blog: BlogPost;
 }
 
 export default function BlogCard({ blog }: BlogCardProps) {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <Link href={blog.href} className="group block">
-      <div className="bg-[#f2f2f2] p-6 rounded-lg hover:shadow-lg hover:shadow-black/5 hover:-translate-y-1 transition-all duration-300 ease-out h-full group">
+    <Link 
+      href={blog.href} 
+      className="group block h-full"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className="relative bg-[#f8f8f8] dark:bg-[#1a1a1a] rounded-xl hover:shadow-xl hover:shadow-black/5 hover:-translate-y-1 transition-all duration-300 ease-out h-full border border-foreground/5 overflow-hidden group flex flex-col">
+        {/* Accent line that animates on hover */}
+        <div 
+          className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-foreground/30 via-foreground/20 to-transparent transform origin-left transition-transform duration-500 ease-out ${
+            isHovered ? 'scale-x-100' : 'scale-x-0'
+          }`}
+        />
+
         {/* Cover Image - Fixed Height */}
-        <div className="h-48 w-full flex items-center justify-center mb-6 bg-[#f5f5f5] rounded-md overflow-hidden">
+        <div className="h-48 w-full overflow-hidden">
           {blog.coverImage ? (
             <img
               src={blog.coverImage}
@@ -18,7 +35,7 @@ export default function BlogCard({ blog }: BlogCardProps) {
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
             />
           ) : (
-            <div className="w-24 h-24 rounded-lg bg-[#FFFFF0] flex items-center justify-center shadow-sm group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 ease-out">
+            <div className="w-full h-full bg-[#FFFFF0] flex items-center justify-center">
               <svg
                 className="w-10 h-10 text-foreground/30"
                 fill="none"
@@ -36,50 +53,55 @@ export default function BlogCard({ blog }: BlogCardProps) {
           )}
         </div>
 
-        {/* Content - Fixed Height Structure */}
-        <div className="h-44 flex flex-col">
-          {/* Author and Read Time - Fixed Height */}
-          <div className="flex items-center gap-2 text-sm text-foreground/60 mb-3 h-6">
-            <span className="font-medium">{blog.author}</span>
-            <span>•</span>
-            <span>{blog.readTime}</span>
+        {/* Content Container */}
+        <div className="p-6 flex flex-col flex-grow">
+          {/* Category Tag */}
+          <div className="flex items-center justify-between mb-4">
+            <span className="text-xs font-medium px-3 py-1 rounded-full bg-foreground/10 text-foreground/80">
+              {blog.category}
+            </span>
+            <span className="text-xs text-foreground/50">{blog.date}</span>
           </div>
 
-          {/* Title with External Link Arrow - Fixed Height */}
-          <div className="flex items-start justify-between gap-3 mb-4 h-12">
-            <h3 className="text-lg font-semibold text-foreground leading-tight group-hover:text-foreground/90 transition-colors duration-200 flex-grow line-clamp-2">
+          {/* Title */}
+          <div className="relative mb-3">
+            <h3 className="text-lg font-bold text-foreground leading-tight group-hover:text-foreground/90 transition-colors duration-200 line-clamp-2">
               {blog.title}
             </h3>
-            <div className="flex-shrink-0 w-6 h-6 flex items-center justify-center">
-              <svg
-                className="w-5 h-5 text-foreground/40 group-hover:text-foreground/60 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M7 17L17 7M17 7H7M17 7V17"
-                />
+            <div className={`absolute bottom-0 left-0 w-full h-0.5 bg-foreground/20 transform origin-left transition-transform duration-500 ease-out ${
+              isHovered ? 'scale-x-100' : 'scale-x-0'
+            }`} />
+          </div>
+
+          {/* Description */}
+          <p className="text-sm text-foreground/70 group-hover:text-foreground/80 transition-colors duration-200 leading-relaxed line-clamp-3 mb-6">
+            {blog.description}
+          </p>
+
+          {/* Bottom row with read time and arrow */}
+          <div className="mt-auto flex items-center justify-between">
+            <span className="text-xs text-foreground/50 flex items-center gap-1.5">
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2" />
+                <circle cx="12" cy="12" r="10" strokeWidth={2} />
               </svg>
-            </div>
-          </div>
-
-          {/* Description - Fixed Height */}
-          <div className="mb-6 h-12">
-            <p className="text-xs text-foreground/70 group-hover:text-foreground/80 transition-colors duration-200 leading-relaxed line-clamp-3">
-              {blog.description}
-            </p>
-          </div>
-
-          {/* Category and Date - Fixed Height */}
-          <div className="flex items-center justify-between h-8 mt-auto">
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-foreground/10 text-xs font-medium text-foreground/80">
-              {blog.category}
-            </div>
-            <span className="text-xs text-foreground/50">{blog.date}</span>
+              {blog.readTime}
+            </span>
+            <svg
+              className={`w-5 h-5 text-foreground/40 group-hover:text-foreground transform transition-all duration-300 ${
+                isHovered ? 'translate-x-1 -translate-y-1' : ''
+              }`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M7 17L17 7M17 7H7M17 7V17"
+              />
+            </svg>
           </div>
         </div>
       </div>
