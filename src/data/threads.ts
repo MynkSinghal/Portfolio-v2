@@ -11,6 +11,16 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "21",
+    title: "The Highway Logic",
+    tagline: "India's highways are the country's real lanes. What powers this roadside economy",
+    description: "From dhabas to digital dreams, India's highways aren't just roads - they're living, breathing economies. These arteries of commerce blend ancient traditions with modern ambitions, where family-run dhabas become multi-crore enterprises and informal entrepreneurs power the nation's logistics backbone.",
+    author: "Mayank Singhal",
+    slug: "the-highway-logic",
+    href: "/threads/the-highway-logic",
+    published: true,
+  },
+  {
     id: "20",
     title: "Ghar Ka Khana",
     tagline: "Swiggy, dabbawalas, tiffins, maa ke haath - India's food story isn't just hunger. It's homesickness.",
