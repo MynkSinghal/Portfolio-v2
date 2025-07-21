@@ -28,9 +28,7 @@ export default function NotFound() {
           <p className="text-lg text-foreground/60 mb-2">
             Looks like this page decided to play hide and seek...
           </p>
-          <p className="text-base text-foreground/50 italic">
-            (and it's winning)
-          </p>
+          
         </div>
 
         {/* Navigation Buttons */}
@@ -56,7 +54,7 @@ export default function NotFound() {
           </Link>
 
           <Link
-            href="/#threads"
+            href="/threads"
             className="bg-foreground/10 text-foreground/80 px-6 py-3 rounded-lg font-medium hover:bg-foreground/20 transition-all duration-200 hover:scale-105 inline-flex items-center gap-2"
           >
             <svg
@@ -99,9 +97,7 @@ export default function NotFound() {
         </div>
 
         {/* Footer Text */}
-        <div className="mt-8 text-sm text-foreground/50">
-          <p>Don't worry, even the best developers get lost sometimes 🤷‍♂️</p>
-        </div>
+        
       </div>
     </main>
   );
