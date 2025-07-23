@@ -11,6 +11,16 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "22",
+    title: "When India Watched",
+    tagline: "Rewind: The Shows, Ads & Emotions That Once United Indian Living Room",
+    description: "From Ramayan Sundays to KBC evenings, TV wasn't just entertainment - it was a social ritual that united families and neighborhoods. As we moved from shared living room screens to personal devices, we gained convenience but lost connection. A nostalgic look at how India's watching habits shaped its cultural fabric.",
+    author: "Mayank Singhal",
+    slug: "when-india-watched",
+    href: "/threads/when-india-watched",
+    published: true,
+  },
+  {
     id: "21",
     title: "The Highway Logic",
     tagline: "India's highways are the country's real lanes. What powers this roadside economy",
