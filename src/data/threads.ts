@@ -11,6 +11,16 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "23",
+    title: "The Silent Suffering",
+    tagline: "From trains to marriages, India survives by adjusting. But what's the cost of this 'skill'?",
+    description: "In a culture where 'thoda adjust kar lo' is both a request and a command, we've normalized discomfort as virtue. From crowded trains to toxic workplaces, from arranged marriages to family dynamics - this thread explores how India's culture of adjustment often masks deeper issues of boundaries, consent, and personal well-being.",
+    author: "Mayank Singhal",
+    slug: "the-silent-suffering",
+    href: "/threads/the-silent-suffering",
+    published: true,
+  },
+  {
     id: "22",
     title: "When India Watched",
     tagline: "Rewind: The Shows, Ads & Emotions That Once United Indian Living Room",
