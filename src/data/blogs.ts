@@ -113,7 +113,7 @@ export const blogs: BlogPost[] = [
     slug: "minimalist-3000-crore-skincare-brand-radical-transparency",
     href: "/blog/minimalist-3000-crore-skincare-brand-radical-transparency",
     coverImage: "/blog-covers/minimalist-brand-magic.jpg",
-    published: false,
+    published: true,
   },
   {
     id: "10",
