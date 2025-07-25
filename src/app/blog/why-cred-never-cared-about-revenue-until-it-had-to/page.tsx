@@ -44,7 +44,7 @@ export default function BlogPage() {
   return (
     <BlogLayout
       blogSlug="why-cred-never-cared-about-revenue-until-it-had-to"
-      blogTitle="💳 Why CRED Ignored Revenue—Until It Couldn't: Lessons for Every Ambitious Founder"
+      blogTitle="💳 Why CRED Ignored Revenue-Until It Couldn't: Lessons for Every Ambitious Founder"
       publishDate="Aug 13, 2025"
       coverImage="/blog-covers/how-cred-work.jpg"
       author="Mayank Singhal"

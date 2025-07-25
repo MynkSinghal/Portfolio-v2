@@ -76,7 +76,7 @@ Mumbai's original Twitter.
 
 (4/n)
 
-These drivers weren't just hustlers—they were legends.
+These drivers weren't just hustlers-they were legends.
 
 Abdul Kareem, the last Padmini king.
 
@@ -106,7 +106,7 @@ Could you survive Mumbai without a map?
 
 What's your wildest taxi story or shortcut Google can't find?
 
-Drop it below—let's see which hustler hacks still live on.
+Drop it below-let's see which hustler hacks still live on.
 
 (8/n)`;
 

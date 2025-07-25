@@ -4,14 +4,14 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How Minimalist Built a 3,000 Crore Skincare Brand Without Playing the Usual Marketing Game",
   description:
-    "Ever feel like every skincare brand is just selling you a story, not a solution? Here's how Minimalist, a Jaipur-based startup, rewrote the rules and built a 3,000 crore empire in just five years—by doing the opposite of what everyone else was doing. Analysis by Mayank Singhal.",
+    "Ever feel like every skincare brand is just selling you a story, not a solution? Here's how Minimalist, a Jaipur-based startup, rewrote the rules and built a 3,000 crore empire in just five years-by doing the opposite of what everyone else was doing. Analysis by Mayank Singhal.",
   alternates: {
     canonical: "https://www.mayanksinghal.tech/blog/minimalist-3000-crore-skincare-brand-radical-transparency",
   },
   openGraph: {
     title: "💎 How Minimalist Built a 3,000 Crore Skincare Brand Without Playing the Usual Marketing Game",
     description:
-      "Ever feel like every skincare brand is just selling you a story, not a solution? Here's how Minimalist, a Jaipur-based startup, rewrote the rules and built a 3,000 crore empire in just five years—by doing the opposite of what everyone else was doing.",
+      "Ever feel like every skincare brand is just selling you a story, not a solution? Here's how Minimalist, a Jaipur-based startup, rewrote the rules and built a 3,000 crore empire in just five years-by doing the opposite of what everyone else was doing.",
     type: "article",
     publishedTime: "2025-07-23",
     authors: ["Mayank Singhal"],
@@ -56,12 +56,12 @@ export default function BlogPage() {
 
         <p>
           What if the secret to building a breakout brand isn't flashy ads
-          or celebrity faces—but radical honesty and real results?
+          or celebrity faces-but radical honesty and real results?
         </p>
 
         <p>
           Here's how Minimalist, a Jaipur-based startup, rewrote the rules
-          and built a 3,000 crore empire in just five years—by doing the{" "}
+          and built a 3,000 crore empire in just five years-by doing the{" "}
           <em>opposite</em> of what everyone else was doing.
         </p>
 
@@ -77,7 +77,7 @@ export default function BlogPage() {
         </p>
 
         <p>
-          But Minimalist's rise isn't just a business story—it's a
+          But Minimalist's rise isn't just a business story-it's a
           masterclass in{" "}
           <strong>
             building trust, creating real value, and scaling with
@@ -88,7 +88,7 @@ export default function BlogPage() {
 
         <p>
           By the end of this post, you'll know how to spot (or build) a
-          brand that actually delivers—without falling for the hype or
+          brand that actually delivers-without falling for the hype or
           burning out on endless marketing tricks.
         </p>
 
@@ -108,7 +108,7 @@ export default function BlogPage() {
         <p>
           But here's the kicker:{" "}
           <strong>
-            many products use trace amounts of active ingredients—just
+            many products use trace amounts of active ingredients-just
             enough to make a claim, not enough to make a difference
           </strong>
           .
@@ -124,8 +124,8 @@ export default function BlogPage() {
             concentrations.
           </li>
           <li>
-            Brands can call a product "brightening" with 0.1% vitamin C—or
-            10%—and you'd never know the difference.
+            Brands can call a product "brightening" with 0.1% vitamin C-or
+            10%-and you'd never know the difference.
           </li>
           <li>
             Most "new" trends are just recycled marketing stories, not
@@ -164,7 +164,7 @@ export default function BlogPage() {
           </li>
           <li>
             <strong>No marketing fluff:</strong> No paid influencer
-            blitzes, no celebrity faces—just real users sharing real
+            blitzes, no celebrity faces-just real users sharing real
             results.
           </li>
           <li>
@@ -175,7 +175,7 @@ export default function BlogPage() {
         </ul>
 
         <p>
-          This approach wasn't just ethical—it was <em>magnetic</em> for a
+          This approach wasn't just ethical-it was <em>magnetic</em> for a
           new generation of savvy, research-driven consumers.
         </p>
 
@@ -216,14 +216,14 @@ export default function BlogPage() {
         </ul>
 
         <p>
-          The result? A brand that customers actually trust—and defend
+          The result? A brand that customers actually trust-and defend
           against competitors.
         </p>
 
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
           <p>
             <strong>
-              True brand loyalty isn't bought with ads—it's earned with
+              True brand loyalty isn't bought with ads-it's earned with
               results.
             </strong>
           </p>
@@ -277,7 +277,7 @@ export default function BlogPage() {
 
         <p>
           Minimalist understood that the future of beauty retail is
-          direct-to-consumer—and they built their entire business around
+          direct-to-consumer-and they built their entire business around
           this insight.
         </p>
 
@@ -347,7 +347,7 @@ export default function BlogPage() {
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
           <p>
             <strong>
-              The best brands don't just sell products—they solve problems
+              The best brands don't just sell products-they solve problems
               and build trust.
             </strong>
           </p>
@@ -360,14 +360,14 @@ export default function BlogPage() {
         </h2>
 
         <p>
-          What's one brand you trust completely—and why?
+          What's one brand you trust completely-and why?
         </p>
 
         <p>
           Minimalist's story shows us that in an age of information
           overload and marketing fatigue, the brands that win are the ones
           that cut through the noise with genuine value. They prove that
-          you don't need the biggest budget or the loudest voice—you just
+          you don't need the biggest budget or the loudest voice-you just
           need to solve real problems for real people.
         </p>
 

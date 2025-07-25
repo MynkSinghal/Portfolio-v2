@@ -5,13 +5,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Tired by Design - How Indian Cities Exhaust Their People | Mayank Singhal",
-  description: "From traffic to toilets — Indian cities are designed to drain you. Here's how poor urban planning quietly exhausts 1.4 billion people.",
+  description: "From traffic to toilets - Indian cities are designed to drain you. Here's how poor urban planning quietly exhausts 1.4 billion people.",
   alternates: {
     canonical: "https://www.mayanksinghal.tech/threads/tired-by-design",
   },
   openGraph: {
     title: "Tired by Design - How Indian Cities Exhaust Their People",
-    description: "From traffic to toilets — Indian cities are designed to drain you. Here's how poor urban planning quietly exhausts 1.4 billion people.",
+    description: "From traffic to toilets - Indian cities are designed to drain you. Here's how poor urban planning quietly exhausts 1.4 billion people.",
     type: "article",
     url: "https://www.mayanksinghal.tech/threads/tired-by-design",
     authors: ["Mayank Singhal"],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Tired by Design - How Indian Cities Exhaust Their People",
-    description: "From traffic to toilets — Indian cities are designed to drain you. Here's how poor urban planning quietly exhausts 1.4 billion people.",
+    description: "From traffic to toilets - Indian cities are designed to drain you. Here's how poor urban planning quietly exhausts 1.4 billion people.",
     images: ["https://www.mayanksinghal.tech/banner.png"],
   },
   keywords: [
@@ -46,7 +46,7 @@ It's not just your job.
 
 It's your city.
 
-From traffic to toilets — Indian cities are designed to drain you.
+From traffic to toilets - Indian cities are designed to drain you.
 
 Here's how poor urban planning quietly exhausts 1.4 billion people.
 
@@ -56,7 +56,7 @@ Our cities weren't built for people.
 
 They were built for vehicles.
 
-Try walking in most Indian towns — it's cracked footpaths, honking chaos, and zero safety.
+Try walking in most Indian towns - it's cracked footpaths, honking chaos, and zero safety.
 
 Speed won. Safety lost.
 
@@ -97,7 +97,7 @@ No ramps. No rails. No access.
 
 Cities assume strength and youth.
 
-Forget inclusion — they're barely functional.
+Forget inclusion - they're barely functional.
 
 (5/n)
 
@@ -137,7 +137,7 @@ export default function TiredByDesignThreadPage() {
     <ThreadLayout
       threadSlug="tired-by-design"
       title="Tired by Design - How Indian Cities Exhaust Their People"
-      description="From traffic to toilets — Indian cities are designed to drain you. Here's how poor urban planning quietly exhausts 1.4 billion people."
+      description="From traffic to toilets - Indian cities are designed to drain you. Here's how poor urban planning quietly exhausts 1.4 billion people."
     >
       {threads.map((thread, index) => (
         <ThreadCard

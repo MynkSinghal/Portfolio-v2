@@ -5,13 +5,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Faith as Infrastructure - How Religious Institutions Power India | Mayank Singhal",
-  description: "Temples don't just serve God. They serve 100 million Indians — daily. From langars to ₹10 sabjis, India's real welfare isn't run by the state. It's run by faith.",
+  description: "Temples don't just serve God. They serve 100 million Indians - daily. From langars to ₹10 sabjis, India's real welfare isn't run by the state. It's run by faith.",
   alternates: {
     canonical: "https://www.mayanksinghal.tech/threads/faith-as-infrastructure",
   },
   openGraph: {
     title: "Faith as Infrastructure - How Religious Institutions Power India",
-    description: "Temples don't just serve God. They serve 100 million Indians — daily. From langars to ₹10 sabjis, India's real welfare isn't run by the state. It's run by faith.",
+    description: "Temples don't just serve God. They serve 100 million Indians - daily. From langars to ₹10 sabjis, India's real welfare isn't run by the state. It's run by faith.",
     type: "article",
     url: "https://www.mayanksinghal.tech/threads/faith-as-infrastructure",
     authors: ["Mayank Singhal"],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Faith as Infrastructure - How Religious Institutions Power India",
-    description: "Temples don't just serve God. They serve 100 million Indians — daily. From langars to ₹10 sabjis, India's real welfare isn't run by the state. It's run by faith.",
+    description: "Temples don't just serve God. They serve 100 million Indians - daily. From langars to ₹10 sabjis, India's real welfare isn't run by the state. It's run by faith.",
     images: ["https://www.mayanksinghal.tech/banner.png"],
   },
   keywords: [
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 
 const threadContent = `🛕 Temples don't just serve God.
 
-They serve 100 million Indians — daily.
+They serve 100 million Indians - daily.
 
 From langars to ₹10 sabjis, India's real welfare isn't run by the state.
 
@@ -62,7 +62,7 @@ Just stainless steel plates and pure operations.
 
 Gurudwaras became India's emergency kitchens during COVID.
 
-Police, migrant workers, slum dwellers — all fed without a form.
+Police, migrant workers, slum dwellers - all fed without a form.
 
 No OTP. No app. Just roti and warmth.
 
@@ -115,7 +115,7 @@ We always ask: "Why isn't the government doing more?"
 
 But here's the real question:
 
-If a gurudwara can serve 100,000 daily —
+If a gurudwara can serve 100,000 daily -
 what's stopping the state?
 
 (8/n)`;
@@ -127,7 +127,7 @@ export default function FaithAsInfrastructureThreadPage() {
     <ThreadLayout
       threadSlug="faith-as-infrastructure"
       title="Faith as Infrastructure - How Religious Institutions Power India"
-      description="Temples don't just serve God. They serve 100 million Indians — daily. From langars to ₹10 sabjis, India's real welfare isn't run by the state. It's run by faith."
+      description="Temples don't just serve God. They serve 100 million Indians - daily. From langars to ₹10 sabjis, India's real welfare isn't run by the state. It's run by faith."
     >
       {threads.map((thread, index) => (
         <ThreadCard

@@ -139,7 +139,7 @@ export default function MarksOrMisdirectionTweetPage() {
     <ThreadLayout
       threadSlug="marks-or-misdirection"
       title="Marks or Misdirection - When Schools Teach Facts, But Hide The Futures"
-      description="93% of Indian students can't name more than 7 career options. Not because they're lazy—because nobody ever showed them the map."
+      description="93% of Indian students can't name more than 7 career options. Not because they're lazy-because nobody ever showed them the map."
     >
       {threads.map((thread, index) => (
         <ThreadCard

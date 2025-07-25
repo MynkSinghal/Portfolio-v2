@@ -106,7 +106,7 @@ Runway = longer, stress = lower, focus = sharper.
 
 (8/n)
 
-👨‍👩‍👧‍👦 Family businesses aren't "old school"—they're anti-fragile. 70% of Indian enterprises are family-run, blending tradition with digital scale. 
+👨‍👩‍👧‍👦 Family businesses aren't "old school"-they're anti-fragile. 70% of Indian enterprises are family-run, blending tradition with digital scale. 
 
 By 2050, they could power 80% of India's GDP.
 

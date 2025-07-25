@@ -4,14 +4,14 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Chaiwalas vs Chains: India's Secret Business Superpower",
   description:
-    "Ever wonder why your local chaiwala is still thriving—even as Starbucks, McDonald's, and big-name chains pop up on every corner? Here's a stat that'll make you look twice: India's street vendors and mom-and-pop shops contribute up to 63% of the country's GDP. Analysis by Mayank Singhal.",
+    "Ever wonder why your local chaiwala is still thriving-even as Starbucks, McDonald's, and big-name chains pop up on every corner? Here's a stat that'll make you look twice: India's street vendors and mom-and-pop shops contribute up to 63% of the country's GDP. Analysis by Mayank Singhal.",
   alternates: {
     canonical: "https://www.mayanksinghal.tech/blog/chaiwalas-and-chainstores-what-india-gets-right",
   },
   openGraph: {
     title: "☕ Chaiwalas vs Chains: India's Secret Business Superpower",
     description:
-      "Ever wonder why your local chaiwala is still thriving—even as Starbucks, McDonald's, and big-name chains pop up on every corner?",
+      "Ever wonder why your local chaiwala is still thriving-even as Starbucks, McDonald's, and big-name chains pop up on every corner?",
     type: "article",
     publishedTime: "2025-08-20",
     authors: ["Mayank Singhal"],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "☕ Chaiwalas vs Chains: India's Secret Business Superpower",
     description:
-      "Ever wonder why your local chaiwala is still thriving—even as Starbucks, McDonald's, and big-name chains pop up on every corner?",
+      "Ever wonder why your local chaiwala is still thriving-even as Starbucks, McDonald's, and big-name chains pop up on every corner?",
     images: ["/blog-covers/indian-chaiwalas.jpg"],
   },
   keywords: [

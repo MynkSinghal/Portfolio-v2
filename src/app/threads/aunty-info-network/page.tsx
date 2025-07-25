@@ -5,13 +5,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Aunty Info Network - India's Most Powerful Surveillance System | Mayank Singhal",
-  description: "They know rishtas, real estate deals, politics, even police movements — all from chai-time whispers.",
+  description: "They know rishtas, real estate deals, politics, even police movements - all from chai-time whispers.",
   alternates: {
     canonical: "https://www.mayanksinghal.tech/threads/aunty-info-network",
   },
   openGraph: {
     title: "Aunty Info Network - India's Most Powerful Surveillance System",
-    description: "They know rishtas, real estate deals, politics, even police movements — all from chai-time whispers.",
+    description: "They know rishtas, real estate deals, politics, even police movements - all from chai-time whispers.",
     type: "article",
     url: "https://www.mayanksinghal.tech/threads/aunty-info-network",
     authors: ["Mayank Singhal"],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Aunty Info Network - India's Most Powerful Surveillance System",
-    description: "They know rishtas, real estate deals, politics, even police movements — all from chai-time whispers.",
+    description: "They know rishtas, real estate deals, politics, even police movements - all from chai-time whispers.",
     images: ["https://www.mayanksinghal.tech/banner.png"],
   },
   keywords: [
@@ -45,7 +45,7 @@ const threadContent = `🔥 The most powerful surveillance system in India? Not 
 
 It's your neighborhood aunty.
 
-She knows your salary, syllabus, rishta, and secrets — before you do.
+She knows your salary, syllabus, rishta, and secrets - before you do.
 
 Here's how India's OG Intelligence Agency really works
 
@@ -125,7 +125,7 @@ Only unsent friend requests and collected clues.
 
 (7/n)
 
-⚠️ And still — she's underrated.
+⚠️ And still - she's underrated.
 
 We ignore her power, dismiss her talk.
 
@@ -144,7 +144,7 @@ export default function AuntyInfoNetworkThreadPage() {
     <ThreadLayout
       threadSlug="aunty-info-network"
       title="Aunty Info Network - India's Most Powerful Surveillance System"
-      description="They know rishtas, real estate deals, politics, even police movements — all from chai-time whispers."
+      description="They know rishtas, real estate deals, politics, even police movements - all from chai-time whispers."
     >
       {threads.map((thread, index) => (
         <ThreadCard

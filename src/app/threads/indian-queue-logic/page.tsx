@@ -53,7 +53,7 @@ Let's decode the hidden system behind India's "lines."
 
 🔄 In India, queues aren't lines.
 
-They're flows — constantly shifting based on urgency, awareness, and instinct.
+They're flows - constantly shifting based on urgency, awareness, and instinct.
 
 You don't stand still.
 

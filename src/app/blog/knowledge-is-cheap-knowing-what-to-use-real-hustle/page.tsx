@@ -2,16 +2,16 @@ import BlogLayout from "@/components/blog-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Knowledge Is Cheap — Knowing What to Use? That's the Real Hustle",
+  title: "Knowledge Is Cheap - Knowing What to Use? That's the Real Hustle",
   description:
-    "In an era where information is infinite, the real power isn't in what you know—it's in knowing what to use and when. Here's how to turn your knowledge into unstoppable action. Analysis by Mayank Singhal.",
+    "In an era where information is infinite, the real power isn't in what you know-it's in knowing what to use and when. Here's how to turn your knowledge into unstoppable action. Analysis by Mayank Singhal.",
   alternates: {
     canonical: "https://www.mayanksinghal.tech/blog/knowledge-is-cheap-knowing-what-to-use-real-hustle",
   },
   openGraph: {
-    title: "🧠 Knowledge Is Cheap — Knowing What to Use? That's the Real Hustle",
+    title: "🧠 Knowledge Is Cheap - Knowing What to Use? That's the Real Hustle",
     description:
-      "In an era where information is infinite, the real power isn't in what you know—it's in knowing what to use and when.",
+      "In an era where information is infinite, the real power isn't in what you know-it's in knowing what to use and when.",
     type: "article",
     publishedTime: "2025-07-09",
     authors: ["Mayank Singhal"],
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "🧠 Knowledge Is Cheap — Knowing What to Use? That's the Real Hustle",
+    title: "🧠 Knowledge Is Cheap - Knowing What to Use? That's the Real Hustle",
     description:
-      "In an era where information is infinite, the real power isn't in what you know—it's in knowing what to use and when.",
+      "In an era where information is infinite, the real power isn't in what you know-it's in knowing what to use and when.",
     images: ["/blog-covers/knowledge-application.jpg"],
   },
   keywords: [
@@ -40,7 +40,7 @@ export default function BlogPage() {
   return (
     <BlogLayout
       blogSlug="knowledge-is-cheap-knowing-what-to-use-real-hustle"
-      blogTitle="🧠 Knowledge Is Cheap — Knowing What to Use? That's the Real Hustle"
+      blogTitle="🧠 Knowledge Is Cheap - Knowing What to Use? That's the Real Hustle"
       publishDate="Jul 9, 2025"
       coverImage="/blog-covers/knowledge-application.jpg"
       author="Mayank Singhal"

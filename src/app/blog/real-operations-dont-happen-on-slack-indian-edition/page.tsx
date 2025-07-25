@@ -4,14 +4,14 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Real Operations Don't Happen on Slack: Why India's Business OS Runs on Calls, Paper, and Jugaad",
   description:
-    "Ever tried running a business in India only with Slack, dashboards, and endless apps? Good luck. Here's the real secret: most of India's commerce happens on phone calls, handwritten ledgers, and a healthy dose of jugaad—not in the digital playgrounds Silicon Valley loves. Analysis by Mayank Singhal.",
+    "Ever tried running a business in India only with Slack, dashboards, and endless apps? Good luck. Here's the real secret: most of India's commerce happens on phone calls, handwritten ledgers, and a healthy dose of jugaad-not in the digital playgrounds Silicon Valley loves. Analysis by Mayank Singhal.",
   alternates: {
     canonical: "https://www.mayanksinghal.tech/blog/real-operations-dont-happen-on-slack-indian-edition",
   },
   openGraph: {
     title: "📞 Real Operations Don't Happen on Slack: Why India's Business OS Runs on Calls, Paper, and Jugaad",
     description:
-      "Ever tried running a business in India only with Slack, dashboards, and endless apps? Good luck. Here's the real secret: most of India's commerce happens on phone calls, handwritten ledgers, and a healthy dose of jugaad—not in the digital playgrounds Silicon Valley loves.",
+      "Ever tried running a business in India only with Slack, dashboards, and endless apps? Good luck. Here's the real secret: most of India's commerce happens on phone calls, handwritten ledgers, and a healthy dose of jugaad-not in the digital playgrounds Silicon Valley loves.",
     type: "article",
     publishedTime: "2025-08-27",
     authors: ["Mayank Singhal"],
@@ -57,7 +57,7 @@ export default function BlogPage() {
         <p>
           Here's the real secret: most of India's commerce happens on
           phone calls, handwritten ledgers, and a healthy dose of
-          jugaad—not in the digital playgrounds Silicon Valley loves.
+          jugaad-not in the digital playgrounds Silicon Valley loves.
         </p>
 
         <p>
@@ -71,7 +71,7 @@ export default function BlogPage() {
           relationships, trust, and fast decisions. While the West chases
           automation, India's real operators know how to blend tradition
           with just enough tech. By the end of this post, you'll see why
-          calls, paperwork, and improvisation aren't relics—they're
+          calls, paperwork, and improvisation aren't relics-they're
           competitive advantages.
         </p>
 
@@ -83,7 +83,7 @@ export default function BlogPage() {
 
         <p>
           India's business DNA is all about spoken word and personal
-          connection. Forget endless email threads—when something matters,
+          connection. Forget endless email threads-when something matters,
           people pick up the phone.
         </p>
 
@@ -100,13 +100,13 @@ export default function BlogPage() {
           </li>
           <li>
             <strong>Real-time rapport:</strong> In India, business is
-            personal—decisions often happen in the space of a single call,
+            personal-decisions often happen in the space of a single call,
             not a week of Slack messages.
           </li>
         </ul>
 
         <p>
-          When stakes are high, Indians default to voice—because trust
+          When stakes are high, Indians default to voice-because trust
           isn't built with emojis.
         </p>
 
@@ -141,13 +141,13 @@ export default function BlogPage() {
           </li>
           <li>
             <strong>Trust + flexibility:</strong> Verbal deals are
-            common—but they're backed by handwritten records that double
+            common-but they're backed by handwritten records that double
             as legal proof and relationship history.
           </li>
         </ul>
 
         <p>
-          Paper isn't just nostalgia—it's the flexible, auditable backbone
+          Paper isn't just nostalgia-it's the flexible, auditable backbone
           of Indian business.
         </p>
 
@@ -167,14 +167,14 @@ export default function BlogPage() {
         </h2>
 
         <p>
-          Jugaad isn't just a meme—it's a mindset for making things work
+          Jugaad isn't just a meme-it's a mindset for making things work
           with whatever you've got.
         </p>
 
         <ul className="list-disc list-inside space-y-2 text-foreground/80">
           <li>
             <strong>Improvisation over process:</strong> Need a solution
-            now? Call, negotiate, adapt—don't wait for IT to approve a new
+            now? Call, negotiate, adapt-don't wait for IT to approve a new
             tool.
           </li>
           <li>
@@ -184,13 +184,13 @@ export default function BlogPage() {
           </li>
           <li>
             <strong>Real innovation:</strong> From street vendors to CEOs,
-            jugaad means finding a way—especially when the "official" way
+            jugaad means finding a way-especially when the "official" way
             is too slow or rigid.
           </li>
         </ul>
 
         <p>
-          It's the business version of "done is better than perfect"—and
+          It's the business version of "done is better than perfect"-and
           it works.
         </p>
 
@@ -210,7 +210,7 @@ export default function BlogPage() {
         </h2>
 
         <p>
-          India's digital revolution isn't about fancy dashboards—it's
+          India's digital revolution isn't about fancy dashboards-it's
           WhatsApp groups, voice notes, and instant photos.
         </p>
 
@@ -221,11 +221,11 @@ export default function BlogPage() {
           </li>
           <li>
             <strong>Personalization:</strong> Daily lists, custom deals,
-            and support—all managed 1:1, not by bots.
+            and support-all managed 1:1, not by bots.
           </li>
           <li>
             <strong>Adaptation:</strong> During lockdowns, kirana stores
-            went digital overnight—via WhatsApp, not web apps.
+            went digital overnight-via WhatsApp, not web apps.
           </li>
         </ul>
 
@@ -250,7 +250,7 @@ export default function BlogPage() {
         </h2>
 
         <p>
-          Digital dashboards are great for numbers—but Indian business
+          Digital dashboards are great for numbers-but Indian business
           runs on nuance.
         </p>
 
@@ -276,7 +276,7 @@ export default function BlogPage() {
         <blockquote className="border-l-4 border-foreground/20 pl-4 italic text-foreground/80 bg-foreground/5 p-4 rounded-r-lg">
           <p>
             <strong>
-              In India, the most valuable business metric is trust—not
+              In India, the most valuable business metric is trust-not
               traffic.
             </strong>
           </p>
@@ -289,7 +289,7 @@ export default function BlogPage() {
         </h2>
 
         <p>
-          India isn't anti-tech—it's just selective. The magic is in how
+          India isn't anti-tech-it's just selective. The magic is in how
           technology gets used.
         </p>
 
@@ -304,12 +304,12 @@ export default function BlogPage() {
           </li>
           <li>
             <strong>Parallel systems:</strong> Many businesses run Tally
-            and handwritten ledgers—for compliance and flexibility.
+            and handwritten ledgers-for compliance and flexibility.
           </li>
         </ul>
 
         <p>
-          It's not about going digital. It's about going human-first—with
+          It's not about going digital. It's about going human-first-with
           the right digital assists.
         </p>
 
@@ -329,7 +329,7 @@ export default function BlogPage() {
         </h2>
 
         <p>
-          Ever closed a deal over chai and a phone call—or seen jugaad in
+          Ever closed a deal over chai and a phone call-or seen jugaad in
           action?
         </p>
 
@@ -338,7 +338,7 @@ export default function BlogPage() {
           everything," remember that India's most successful businesses
           already know the secret: technology should amplify human
           connection, not replace it. The real competitive advantage isn't
-          in having the latest app—it's in knowing when not to use it.
+          in having the latest app-it's in knowing when not to use it.
         </p>
 
         <p>

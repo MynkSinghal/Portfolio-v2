@@ -5,13 +5,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Pop Up Megacity - Kumbh Mela's High-Tech Urban Miracle | Mayank Singhal",
-  description: "India builds a megacity... then deletes it. Kumbh Mela isn't just a religious event — it's the world's largest pop-up city. From AI surveillance to zero discharge sanitation — here's a masterclass in temporary urbanism.",
+  description: "India builds a megacity... then deletes it. Kumbh Mela isn't just a religious event - it's the world's largest pop-up city. From AI surveillance to zero discharge sanitation - here's a masterclass in temporary urbanism.",
   alternates: {
     canonical: "https://www.mayanksinghal.tech/threads/pop-up-megacity",
   },
   openGraph: {
     title: "Pop Up Megacity - Kumbh Mela's High-Tech Urban Miracle",
-    description: "India builds a megacity... then deletes it. Kumbh Mela isn't just a religious event — it's the world's largest pop-up city.",
+    description: "India builds a megacity... then deletes it. Kumbh Mela isn't just a religious event - it's the world's largest pop-up city.",
     type: "article",
     url: "https://www.mayanksinghal.tech/threads/pop-up-megacity",
     authors: ["Mayank Singhal"],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Pop Up Megacity - Kumbh Mela's High-Tech Urban Miracle",
-    description: "India builds a megacity... then deletes it. Kumbh Mela isn't just a religious event — it's the world's largest pop-up city.",
+    description: "India builds a megacity... then deletes it. Kumbh Mela isn't just a religious event - it's the world's largest pop-up city.",
     images: ["https://www.mayanksinghal.tech/banner.png"],
   },
   keywords: [
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
 
 const threadContent = `🔥 India builds a megacity... then deletes it.
 
-Kumbh Mela isn't just a religious event — it's the world's largest pop-up city.
+Kumbh Mela isn't just a religious event - it's the world's largest pop-up city.
 
-From AI surveillance to zero discharge sanitation — here's a masterclass in temporary urbanism.
+From AI surveillance to zero discharge sanitation - here's a masterclass in temporary urbanism.
 
 (1/n)
 
@@ -52,7 +52,7 @@ From AI surveillance to zero discharge sanitation — here's a masterclass in te
 
 The 2025 Maha Kumbh in Prayagraj builds a city larger than most countries.
 
-Divided into 25 sectors with water, power, roads, hospitals — all temporary.
+Divided into 25 sectors with water, power, roads, hospitals - all temporary.
 
 (2/n)
 
@@ -64,7 +64,7 @@ Built on modular design.
 
 Add 400 km of roads, 30 pontoon bridges, 56,000 taps, and 1,270 km of water pipelines.
 
-All built — and removed — in months.
+All built - and removed - in months.
 
 (3/n)
 
@@ -100,7 +100,7 @@ Including 7,667 special trains.
 
 Info in 12–23 languages.
 
-Kumbh moves people like a nation mobilizing for war — except it's peaceful faith.
+Kumbh moves people like a nation mobilizing for war - except it's peaceful faith.
 
 (6/n)
 
@@ -120,7 +120,7 @@ It's hybrid faith-tech capitalism.
 
 150% revenue boost for local shops.
 
-From ride operators to food stalls — this pop-up city powers a micro-economy overnight.
+From ride operators to food stalls - this pop-up city powers a micro-economy overnight.
 
 (8/n)
 
@@ -153,7 +153,7 @@ export default function PopUpMegacityThreadPage() {
     <ThreadLayout
       threadSlug="pop-up-megacity"
       title="Pop Up Megacity - Kumbh Mela's High-Tech Urban Miracle"
-      description="India builds a megacity... then deletes it. Kumbh Mela isn't just a religious event — it's the world's largest pop-up city. From AI surveillance to zero discharge sanitation — here's a masterclass in temporary urbanism."
+      description="India builds a megacity... then deletes it. Kumbh Mela isn't just a religious event - it's the world's largest pop-up city. From AI surveillance to zero discharge sanitation - here's a masterclass in temporary urbanism."
     >
       {threads.map((thread, index) => (
         <ThreadCard

@@ -45,7 +45,7 @@ const threadContent = `🔥 Indian schools give you marks.
 
 Coaching centers? They give you a chance.
 
-This is why India's parallel education economy — led by Kota & coaching — is bigger than school itself.
+This is why India's parallel education economy - led by Kota & coaching - is bigger than school itself.
 
 (1/n)
 
@@ -79,7 +79,7 @@ Families spend ₹1–4 lakh/year just on coaching.
 
 Some mortgage land, sell gold, or borrow from relatives.
 
-All for one shot at an "entry ticket" — IIT, AIIMS, a future.
+All for one shot at an "entry ticket" - IIT, AIIMS, a future.
 
 This isn't fees.
 It's faith.
@@ -118,7 +118,7 @@ We normalized:
 💯 Tests over curiosity
 📈 Fear over growth
 
-The machine works — but for what?
+The machine works - but for what?
 
 (7/n)
 

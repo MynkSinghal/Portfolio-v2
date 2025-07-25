@@ -5,13 +5,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Chai Beats Starbucks - How authenticity is crushing premium, one cup at a time | Mayank Singhal",
-  description: "Starbucks is losing in India — not to another global brand, but to the humble ₹10 chai on every street corner. This thread breaks down how authenticity is crushing premium, one cup at a time.",
+  description: "Starbucks is losing in India - not to another global brand, but to the humble ₹10 chai on every street corner. This thread breaks down how authenticity is crushing premium, one cup at a time.",
   alternates: {
     canonical: "https://www.mayanksinghal.tech/threads/chai-beats-starbucks",
   },
   openGraph: {
     title: "Chai Beats Starbucks - How authenticity is crushing premium",
-    description: "Starbucks is losing in India — not to another global brand, but to the humble ₹10 chai on every street corner.",
+    description: "Starbucks is losing in India - not to another global brand, but to the humble ₹10 chai on every street corner.",
     type: "article",
     url: "https://www.mayanksinghal.tech/threads/chai-beats-starbucks",
     authors: ["Mayank Singhal"],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Chai Beats Starbucks - How authenticity is crushing premium",
-    description: "Starbucks is losing in India — not to another global brand, but to the humble ₹10 chai on every street corner.",
+    description: "Starbucks is losing in India - not to another global brand, but to the humble ₹10 chai on every street corner.",
     images: ["https://www.mayanksinghal.tech/banner.png"],
   },
   keywords: [
@@ -40,13 +40,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Mayank Singhal", url: "https://www.mayanksinghal.tech" }],
 };
 
-const threadContent = `🔥 Starbucks is losing in India — not to another global brand, but to the humble ₹10 chai on every street corner.
+const threadContent = `🔥 Starbucks is losing in India - not to another global brand, but to the humble ₹10 chai on every street corner.
 
 This thread breaks down how authenticity is crushing premium, one cup at a time.
 
 (1/n)
 
-💥 India drinks 1.2 billion kg of tea a year — 13x more than coffee.
+💥 India drinks 1.2 billion kg of tea a year - 13x more than coffee.
 
 2 million+ chai stalls vs 479 Starbucks.
 
@@ -89,7 +89,7 @@ Instagrammable is out, authenticity is in.
 
 🔍 Global chains can't hack ritual.
 
-Chai is India's social glue — a handshake, a pause button, a daily habit.
+Chai is India's social glue - a handshake, a pause button, a daily habit.
 
 Starbucks is still fighting for market share (and losing money).
 
@@ -122,7 +122,7 @@ export default function ChaiBeatsStarbucksThreadPage() {
     <ThreadLayout
       threadSlug="chai-beats-starbucks"
       title="Chai Beats Starbucks - How authenticity is crushing premium, one cup at a time"
-      description="Starbucks is losing in India — not to another global brand, but to the humble ₹10 chai on every street corner."
+      description="Starbucks is losing in India - not to another global brand, but to the humble ₹10 chai on every street corner."
     >
       {threads.map((thread, index) => (
         <ThreadCard

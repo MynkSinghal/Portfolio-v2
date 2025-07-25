@@ -5,13 +5,13 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "The Unpaid Economy - The most efficient, overlooked engine of the Indian economy | Mayank Singhal",
-  description: "She doesn't earn. But without her, nothing runs. India's economy depends on an invisible workforce — housewives. Here's how unpaid labor keeps the country moving.",
+  description: "She doesn't earn. But without her, nothing runs. India's economy depends on an invisible workforce - housewives. Here's how unpaid labor keeps the country moving.",
   alternates: {
     canonical: "https://www.mayanksinghal.tech/threads/the-unpaid-economy",
   },
   openGraph: {
     title: "The Unpaid Economy - The most efficient, overlooked engine of the Indian economy",
-    description: "She doesn't earn. But without her, nothing runs. India's economy depends on an invisible workforce — housewives.",
+    description: "She doesn't earn. But without her, nothing runs. India's economy depends on an invisible workforce - housewives.",
     type: "article",
     url: "https://www.mayanksinghal.tech/threads/the-unpaid-economy",
     authors: ["Mayank Singhal"],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "The Unpaid Economy - The most efficient, overlooked engine of the Indian economy",
-    description: "She doesn't earn. But without her, nothing runs. India's economy depends on an invisible workforce — housewives.",
+    description: "She doesn't earn. But without her, nothing runs. India's economy depends on an invisible workforce - housewives.",
     images: ["https://www.mayanksinghal.tech/banner.png"],
   },
   keywords: [
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 
 const threadContent = `🔥 She doesn't earn. But without her, nothing runs.
 
-India's economy depends on an invisible workforce — housewives.
+India's economy depends on an invisible workforce - housewives.
 
 Here's how unpaid labor keeps the country moving, and why it's time we see it for what it is.
 
@@ -74,7 +74,7 @@ But economists say if unpaid labor were counted,
 
 India's GDP would rise by 35–40%.
 
-India isn't unproductive — it's underreported.
+India isn't unproductive - it's underreported.
 
 (4/n)
 
@@ -136,7 +136,7 @@ export default function TheUnpaidEconomyThreadPage() {
     <ThreadLayout
       threadSlug="the-unpaid-economy"
       title="The Unpaid Economy - The most efficient, overlooked engine of the Indian economy"
-      description="She doesn't earn. But without her, nothing runs. India's economy depends on an invisible workforce — housewives. Here's how unpaid labor keeps the country moving."
+      description="She doesn't earn. But without her, nothing runs. India's economy depends on an invisible workforce - housewives. Here's how unpaid labor keeps the country moving."
     >
       {threads.map((thread, index) => (
         <ThreadCard
