@@ -11,6 +11,16 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "24",
+    title: "₹10 Note Life",
+    tagline: "Ignored by banks, loved by vendors - this is the silent engine of the offline economy.",
+    description: "From chai stalls to sabziwalas, the humble ₹10 note powers India's informal economy. While UPI grabs headlines, these cotton-cloth warriors silently keep small businesses running, proving that sometimes the most powerful innovations are the ones that never needed upgrading.",
+    author: "Mayank Singhal",
+    slug: "ten-rupee-note-life",
+    href: "/threads/ten-rupee-note-life",
+    published: true,
+  },
+  {
     id: "23",
     title: "The Silent Suffering",
     tagline: "From trains to marriages, India survives by adjusting. But what's the cost of this 'skill'?",
