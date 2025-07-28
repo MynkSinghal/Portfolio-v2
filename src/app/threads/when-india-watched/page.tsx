@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 };
 
 const threadContent = `🔥 Before Netflix, India didn't binge-watch.
-It *waited.*
+It waited.
 Every Sunday morning, the whole nation paused for a show.
 
 Here's how India's watching habits changed — and what we lost in the process.
@@ -65,7 +65,7 @@ They were imagination, morality, and magic.
 
 Shaktimaan taught right from wrong.
 Shaka Laka Boom Boom made dreams tangible.
-Every show felt like a *message with meaning.*
+Every show felt like a message with meaning.
 
 (3/n)
 
@@ -73,7 +73,7 @@ Every show felt like a *message with meaning.*
 Washing Powder Nirma. Dhara's jalebi boy. Fevicol. Dairy Milk.
 
 You didn't skip them.
-You *sang* them. You *felt* them.
+You sang them. You felt them.
 
 Today's 5-sec skippables can't match that emotional grip.
 
@@ -83,7 +83,7 @@ Today's 5-sec skippables can't match that emotional grip.
 Indian Idol. KBC. DID.
 
 You didn't just watch.
-You *voted*. You *cried*. You felt like family.
+You voted. You cried. You felt like family.
 
 "SMS karo apne sapne jeetne ke liye"
 Now it's: "Next episode in 5 seconds."
@@ -112,8 +112,8 @@ No waiting. No family. No ritual.
 
 (7/n)
 
-👀 TV used to be about *togetherness*.
-Today, it's just *convenience*.
+👀 TV used to be about togetherness.
+Today, it's just convenience.
 
 From "Sab saath baith ke dekhenge"
 To "Tu dekh le, mujhe mat bataana spoiler"
@@ -124,7 +124,7 @@ But lost connection.
 (8/n)
 
 🧠 Content changed.
-But so did *how* we consume.
+But so did how we consume.
 
 From:
 — Scheduled shows → Infinite scroll
@@ -140,7 +140,7 @@ It was a cultural shift.
 — The joy of waiting
 — The power of ritual
 — The warmth of shared emotion
-— A generation raised by *one* story at a time
+— A generation raised by one story at a time
 
 Now?
 We're alone.

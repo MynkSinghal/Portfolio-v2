@@ -54,7 +54,7 @@ Only to end up crushed in someone's blouse or autorickshaw dashboard.
 (2/n)
 
 🏦 It enters circulation through banks — but here's the twist:
-ATMs *hate* ₹10 notes.
+ATMs hate ₹10 notes.
 They jam machines, take too much space, and aren't "cost-effective."
 
 So guess where they go?
@@ -62,14 +62,14 @@ Your local chai tapri.
 
 (3/n)
 
-🍵 From mandis to metro trains, this note is *everywhere*.
+🍵 From mandis to metro trains, this note is everywhere.
 Chai stalls, paan shops, school canteens.
-It *flows* where QR codes don't.
+It flows where QR codes don't.
 Not flashy — but functional.
 
 (4/n)
 
-🔁 Vendors *prefer* ₹10 notes.
+🔁 Vendors prefer ₹10 notes.
 Digital is great, but what if signal's gone? Or the uncle doesn't know how to "scan"?
 ₹10 is instant. Tangible. Trustable.
 
@@ -79,7 +79,7 @@ It makes small biz run without any app update.
 
 📉 Everyone talks about UPI.
 But ₹10 cash demand is RISING.
-India is *short* by 500+ crore notes.
+India is short by 500+ crore notes.
 Even RBI brought back ₹10 coins — people still don't like them.
 
 They want the note. Not the metal.
@@ -104,9 +104,9 @@ But for years, it held India's informal economy together.
 (8/n)
 
 💥 In the battle between code and cash, ₹10 survives not because it's smart —
-But because it's *understood.*
+But because it's understood.
 It's not "legacy."
-It's *infrastructure.*
+It's infrastructure.
 
 A living, breathing node in India's daily trade.
 

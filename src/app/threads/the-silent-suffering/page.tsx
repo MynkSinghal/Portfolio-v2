@@ -66,8 +66,8 @@ But it's also how discomfort becomes culture.
 "Let the elders decide."
 
 We teach kids early:
-*Boundaries break harmony.*
-*Speaking up = being selfish.*
+Boundaries break harmony.
+Speaking up = being selfish.
 
 (3/n)
 
@@ -93,7 +93,7 @@ But adjust karte-karte, log khud hi kho jaate hain.
 • Scarcity mindset
 • Fear of conflict
 • Desire to please
-• Shame around saying *"No"*
+• Shame around saying "No"
 
 Saying "I need space" feels wrong.
 Because we weren't taught we deserve it.
@@ -108,7 +108,7 @@ Because we weren't taught we deserve it.
 • A culture where comfort feels selfish
 
 We call it flexibility.
-But it's often *silent surrender.*
+But it's often silent surrender.
 
 (7/n)
 
@@ -126,7 +126,7 @@ It's refusal.
 Refusing to adjust to broken systems, bad behavior, and thankless sacrifice.
 
 Not because we're rude.
-Because we're *done breaking to fit in.*
+Because we're done breaking to fit in.
 
 (9/n)`;
 

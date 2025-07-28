@@ -11,6 +11,16 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "25",
+    title: "Train Ka Tashan",
+    tagline: "How the Indian Train Carries More Than Just People",
+    description: "From sleeper class theatrics to pantry car economics, Indian Railways isn't just transport—it's a moving sociology lesson. Every journey is a story of class divides, micro-economies, and unspoken social contracts that keep 1.4 billion people moving on steel tracks.",
+    author: "Mayank Singhal",
+    slug: "train-ka-tashan",
+    href: "/threads/train-ka-tashan",
+    published: true,
+  },
+  {
     id: "24",
     title: "₹10 Note Life",
     tagline: "Ignored by banks, loved by vendors - this is the silent engine of the offline economy.",
