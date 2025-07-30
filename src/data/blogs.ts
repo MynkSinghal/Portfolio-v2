@@ -24,7 +24,7 @@ export const blogs: BlogPost[] = [
     category: "Leadership & Success",
     slug: "the-real-ceos-of-india-are-not-on-linkedin",
     href: "/blog/the-real-ceos-of-india-are-not-on-linkedin",
-    coverImage: "/blog-covers/ceo-of-india.jpg",
+    coverImage: "/blog-covers/ceo-of-india.webp",
     published: false,
   },
   {
@@ -39,7 +39,7 @@ export const blogs: BlogPost[] = [
     category: "Business Operations",
     slug: "real-operations-dont-happen-on-slack-indian-edition",
     href: "/blog/real-operations-dont-happen-on-slack-indian-edition",
-    coverImage: "/blog-covers/indian-slack-channel.jpg",
+    coverImage: "/blog-covers/indian-slack-channel.webp",
     published: false,
   },
   {
@@ -53,7 +53,7 @@ export const blogs: BlogPost[] = [
     category: "Business & Community",
     slug: "chaiwalas-and-chainstores-what-india-gets-right",
     href: "/blog/chaiwalas-and-chainstores-what-india-gets-right",
-    coverImage: "/blog-covers/indian-chaiwalas.jpg",
+    coverImage: "/blog-covers/indian-chaiwalas.webp",
     published: false,
   },
   {
@@ -68,7 +68,7 @@ export const blogs: BlogPost[] = [
     category: "Fintech & Strategy",
     slug: "why-cred-never-cared-about-revenue-until-it-had-to",
     href: "/blog/why-cred-never-cared-about-revenue-until-it-had-to",
-    coverImage: "/blog-covers/how-cred-work.jpg",
+    coverImage: "/blog-covers/how-cred-work.webp",
     published: false,
   },
   {
@@ -82,7 +82,7 @@ export const blogs: BlogPost[] = [
     category: "Entrepreneurship",
     slug: "grit-over-gadgets-indian-smes-win-without-fancy-tech",
     href: "/blog/grit-over-gadgets-indian-smes-win-without-fancy-tech",
-    coverImage: "/blog-covers/india-logistic.jpg",
+    coverImage: "/blog-covers/india-logistic.webp",
     published: false,
   },
   {
@@ -97,7 +97,7 @@ export const blogs: BlogPost[] = [
     category: "Infrastructure",
     slug: "india-logistics-labyrinth-complexity-breeds-resilience",
     href: "/blog/india-logistics-labyrinth-complexity-breeds-resilience",
-    coverImage: "/blog-covers/supply-chain-maze-india.jpg",
+    coverImage: "/blog-covers/supply-chain-maze-india.webp",
     published: false,
   },
   {
@@ -112,7 +112,7 @@ export const blogs: BlogPost[] = [
     category: "Business & Branding",
     slug: "minimalist-3000-crore-skincare-brand-radical-transparency",
     href: "/blog/minimalist-3000-crore-skincare-brand-radical-transparency",
-    coverImage: "/blog-covers/minimalist-brand-magic.jpg",
+    coverImage: "/blog-covers/minimalist-brand-magic.webp",
     published: true,
   },
   {
@@ -127,7 +127,7 @@ export const blogs: BlogPost[] = [
     category: "AI & Learning",
     slug: "will-ai-make-us-smarter-or-stupider",
     href: "/blog/will-ai-make-us-smarter-or-stupider",
-    coverImage: "/blog-covers/ai-make-dumb.jpg",
+    coverImage: "/blog-covers/ai-make-dumb.webp",
     published: true,
   },
   {
@@ -142,7 +142,7 @@ export const blogs: BlogPost[] = [
     category: "Learning & Growth",
     slug: "knowledge-is-cheap-knowing-what-to-use-real-hustle",
     href: "/blog/knowledge-is-cheap-knowing-what-to-use-real-hustle",
-    coverImage: "/blog-covers/knowledge-application.jpg",
+    coverImage: "/blog-covers/knowledge-application.webp",
     published: true,
   },
   {
@@ -157,7 +157,7 @@ export const blogs: BlogPost[] = [
     category: "Skill Development",
     slug: "forget-10000-hours-iterations-make-you-unstoppable",
     href: "/blog/forget-10000-hours-iterations-make-you-unstoppable",
-    coverImage: "/blog-covers/10000-iterations.jpg",
+    coverImage: "/blog-covers/10000-iterations.webp",
     published: true,
   },
   {
@@ -172,7 +172,7 @@ export const blogs: BlogPost[] = [
     category: "Career",
     slug: "internship-dilemma-no-badge-make-it-big",
     href: "/blog/internship-dilemma-no-badge-make-it-big",
-    coverImage: "/blog-covers/internship-dilemma.jpg",
+    coverImage: "/blog-covers/internship-dilemma.webp",
     published: true,
   },
   {
@@ -186,7 +186,7 @@ export const blogs: BlogPost[] = [
     category: "Fintech & Digital India",
     slug: "upi-revolution-india-cash-to-tap",
     href: "/blog/upi-revolution-india-cash-to-tap",
-    coverImage: "/blog-covers/upi-revolution.jpg",
+    coverImage: "/blog-covers/upi-revolution.webp",
     published: true,
   },
   {
@@ -200,7 +200,7 @@ export const blogs: BlogPost[] = [
     category: "Indian Retail",
     slug: "kirana-vs-quick-commerce-india",
     href: "/blog/kirana-vs-quick-commerce-india",
-    coverImage: "/blog-covers/kirana-quick-commerce.jpg",
+    coverImage: "/blog-covers/kirana-quick-commerce.webp",
     published: true,
   },
   {
@@ -214,7 +214,7 @@ export const blogs: BlogPost[] = [
     category: "Finance & Culture",
     slug: "subscription-trap-leasing-lives",
     href: "/blog/subscription-trap-leasing-lives",
-    coverImage: "/blog-covers/subscription-trap.jpg",
+    coverImage: "/blog-covers/subscription-trap.webp",
     published: true,
   },
   {
@@ -229,7 +229,7 @@ export const blogs: BlogPost[] = [
     category: "Career & AI",
     slug: "smartest-career-advice-tutorial-creators",
     href: "/blog/smartest-career-advice-tutorial-creators",
-    coverImage: "/blog-covers/career-advice.jpg",
+    coverImage: "/blog-covers/career-advice.webp",
     published: true,
   },
   {
@@ -243,7 +243,7 @@ export const blogs: BlogPost[] = [
     category: "Business & Culture",
     slug: "america-dominates-product-branding",
     href: "/blog/america-dominates-product-branding",
-    coverImage: "/blog-covers/america-branding.jpg",
+    coverImage: "/blog-covers/america-branding.webp",
     published: true,
   },
   {
@@ -258,7 +258,7 @@ export const blogs: BlogPost[] = [
     category: "Education & AI",
     slug: "traditional-education-fails-ai-age",
     href: "/blog/traditional-education-fails-ai-age",
-    coverImage: "/blog-covers/ai-education.jpg",
+    coverImage: "/blog-covers/ai-education.webp",
     published: true,
   },
 ];

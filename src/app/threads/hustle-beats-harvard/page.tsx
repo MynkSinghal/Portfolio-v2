@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://www.mayanksinghal.tech/threads/hustle-beats-harvard",
     authors: ["Mayank Singhal"],
     images: [{
-      url: "https://www.mayanksinghal.tech/banner.png",
+      url: "https://www.mayanksinghal.tech/banner.webp",
       width: 1200,
       height: 630,
       alt: "Hustle Beats Harvard - Street Smart Business"
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hustle Beats Harvard - Why street vendors run a business with 10% failure rate",
     description: "Your MBA won't save you when the street vendor outside your office is running a business with a 10% failure rate.",
-    images: ["https://www.mayanksinghal.tech/banner.png"],
+    images: ["https://www.mayanksinghal.tech/banner.webp"],
   },
   keywords: [
     "Street Vendors",

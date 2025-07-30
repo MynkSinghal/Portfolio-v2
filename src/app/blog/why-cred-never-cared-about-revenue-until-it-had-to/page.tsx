@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-08-13",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/how-cred-work.jpg"],
+    images: ["/blog-covers/how-cred-work.webp"],
   },
   twitter: {
     card: "summary_large_image",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "💳 Why CRED Ignored Revenue-Until It Couldn't: Lessons for Every Ambitious Founder",
     description:
       "Ever wondered how a startup can become a household name-and a billion-dollar company-without worrying about making money?",
-    images: ["/blog-covers/how-cred-work.jpg"],
+    images: ["/blog-covers/how-cred-work.webp"],
   },
   keywords: [
     "CRED",
@@ -46,7 +46,7 @@ export default function BlogPage() {
       blogSlug="why-cred-never-cared-about-revenue-until-it-had-to"
       blogTitle="💳 Why CRED Ignored Revenue-Until It Couldn't: Lessons for Every Ambitious Founder"
       publishDate="Aug 13, 2025"
-      coverImage="/blog-covers/how-cred-work.jpg"
+      coverImage="/blog-covers/how-cred-work.webp"
       author="Mayank Singhal"
       readTime="4 min read"
       category="Fintech & Strategy"

@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-05-25",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/america-branding.jpg"],
+    images: ["/blog-covers/america-branding.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "🇺🇸 Why America Dominates Global Product & Branding",
     description:
       "From Apple to Coca-Cola, American companies shape how the world shops, thinks, and lives.",
-    images: ["/blog-covers/america-branding.jpg"],
+    images: ["/blog-covers/america-branding.webp"],
   },
   keywords: [
     "America",
@@ -41,7 +41,7 @@ export default function BlogPage() {
       blogSlug="america-dominates-product-branding"
       blogTitle="🇺🇸 Why America Dominates Global Product & Branding"
       publishDate="May 25, 2025"
-      coverImage="/blog-covers/america-branding.jpg"
+      coverImage="/blog-covers/america-branding.webp"
       author="Mayank Singhal"
       readTime="2 min read"
       category="Business & Culture"
@@ -57,7 +57,7 @@ export default function BlogPage() {
           author: { "@type": "Person", name: "Mayank Singhal" },
           datePublished: "2025-05-25",
           dateModified: "2025-05-25",
-          image: "/blog-covers/america-branding.jpg",
+          image: "/blog-covers/america-branding.webp",
           publisher: { "@type": "Person", name: "Mayank Singhal" },
         }) }}
       />

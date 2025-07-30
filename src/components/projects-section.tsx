@@ -17,7 +17,7 @@ export default function ProjectsSection() {
       title: "PromptPolish",
       description: "Chrome extension that transforms messy text into clean AI prompts. Select, right-click, polish.",
       tags: ["Chrome Extension", "JavaScript", "Gemini API"],
-      screenshot: "/images/projects/promptpolish.png", // Placeholder for screenshot
+      screenshot: "/images/projects/promptpolish.webp", // Placeholder for screenshot
       link: "https://extension.mayanksinghal.tech",
       published: true,
     },
@@ -26,7 +26,7 @@ export default function ProjectsSection() {
       title: "Trylo - Virtual Try-On",
       description: "AI-powered virtual try-on platform for realistic garment visualization on different body poses.",
       tags: ["React", "TensorFlow.js", "AI"],
-      screenshot: "/images/projects/trylo.png", // Placeholder for screenshot
+      screenshot: "/images/projects/trylo.webp", // Placeholder for screenshot
       link: "https://tryon.mayanksinghal.tech",
       published: true,
     },
@@ -35,7 +35,7 @@ export default function ProjectsSection() {
       title: "Vibrant Hues",
       description: "Modern color palette management tool for designers with light/dark mode previews.",
       tags: ["Next.js", "TypeScript", "Tailwind"],
-      screenshot: "/images/projects/vibranthues.png", // Placeholder for screenshot
+      screenshot: "/images/projects/vibranthues.webp", // Placeholder for screenshot
       link: "https://vibranthues.mayanksinghal.tech",
       published: true,
     },
@@ -44,7 +44,7 @@ export default function ProjectsSection() {
       title: "DocBook",
       description: "Streamlined appointment booking system for doctors and patients with automated reminders.",
       tags: ["React", "TypeScript", "Supabase"],
-      screenshot: "/images/projects/docbook.png", // Placeholder for screenshot
+      screenshot: "/images/projects/docbook.webp", // Placeholder for screenshot
       link: "https://docbook.mayanksinghal.tech",
       published: true,
     },
@@ -53,7 +53,7 @@ export default function ProjectsSection() {
       title: "Flow-write",
       description: "MacOS app for creative flow writing with 3 random words and no backspace allowed.",
       tags: ["Swift", "MacOS", "Creative Tools"],
-      screenshot: "/images/projects/flowwrite.png", // Placeholder for screenshot
+      screenshot: "/images/projects/flowwrite.webp", // Placeholder for screenshot
       link: "https://github.com/MynkSinghal/IdeaDice/releases/download/v1.0.0/IdeaDice.app.zip",
       published: true,
     },
@@ -62,7 +62,7 @@ export default function ProjectsSection() {
       title: "OMDB Movie Database",
       description: "Movie search application with detailed film information and real-time search functionality.",
       tags: ["JavaScript", "Node.js", "OMDB API"],
-      screenshot: "/images/projects/omdb.png", // Placeholder for screenshot
+      screenshot: "/images/projects/omdb.webp", // Placeholder for screenshot
       link: "https://movie.mayanksinghal.tech/",
       published: true,
     },
@@ -71,7 +71,7 @@ export default function ProjectsSection() {
       title: "Heart Risk Detection",
       description: "ML-powered web application that predicts heart disease risk using health parameters.",
       tags: ["Python", "TensorFlow", "Machine Learning"],
-      screenshot: "/images/projects/heart.png", // Placeholder for screenshot
+      screenshot: "/images/projects/heart.webp", // Placeholder for screenshot
       link: "https://heart.mayanksinghal.tech",
       published: true,
     },

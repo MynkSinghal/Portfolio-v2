@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://www.mayanksinghal.tech/threads/dabbawalas-dont-miss",
     authors: ["Mayank Singhal"],
     images: [{
-      url: "https://www.mayanksinghal.tech/banner.png",
+      url: "https://www.mayanksinghal.tech/banner.webp",
       width: 1200,
       height: 630,
       alt: "Dabbawalas Don't Miss - Mumbai's Efficiency Marvel"
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dabbawalas Don't Miss - How they outsmart Silicon Valley's best",
     description: "Mumbai's dabbawalas have been running a 200,000-meal relay for 135 years - zero tech, zero excuses, zero errors.",
-    images: ["https://www.mayanksinghal.tech/banner.png"],
+    images: ["https://www.mayanksinghal.tech/banner.webp"],
   },
   keywords: [
     "Mumbai Dabbawalas",

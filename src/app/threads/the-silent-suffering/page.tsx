@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://www.mayanksinghal.tech/threads/the-silent-suffering",
     authors: ["Mayank Singhal"],
     images: [{
-      url: "https://www.mayanksinghal.tech/banner.png",
+      url: "https://www.mayanksinghal.tech/banner.webp",
       width: 1200,
       height: 630,
       alt: "The Silent Suffering: India's Culture of Adjustment"
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Silent Suffering: India's Culture of Adjustment",
     description: "From trains to marriages, India survives by adjusting. But what's the cost of this 'skill'?",
-    images: ["https://www.mayanksinghal.tech/banner.png"],
+    images: ["https://www.mayanksinghal.tech/banner.webp"],
   },
   keywords: [
     "Indian Culture",

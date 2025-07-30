@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-06-04",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/subscription-trap.jpg"],
+    images: ["/blog-covers/subscription-trap.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "🎟️ The Subscription Trap: Are We Leasing Our Lives Away?",
     description:
       "You don't own it - you just access it… until you stop paying.",
-    images: ["/blog-covers/subscription-trap.jpg"],
+    images: ["/blog-covers/subscription-trap.webp"],
   },
   keywords: [
     "Subscription Economy",
@@ -41,7 +41,7 @@ export default function BlogPage() {
       blogSlug="subscription-trap-leasing-lives"
       blogTitle="🎟️ The Subscription Trap: Are We Leasing Our Lives Away?"
       publishDate="Jun 4, 2025"
-      coverImage="/blog-covers/subscription-trap.jpg"
+      coverImage="/blog-covers/subscription-trap.webp"
       author="Mayank Singhal"
       readTime="3 min read"
       category="Finance & Culture"

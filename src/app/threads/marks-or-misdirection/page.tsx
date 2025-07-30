@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://www.mayanksinghal.tech/threads/marks-or-misdirection",
     authors: ["Mayank Singhal"],
     images: [{
-      url: "https://www.mayanksinghal.tech/banner.png",
+      url: "https://www.mayanksinghal.tech/banner.webp",
       width: 1200,
       height: 630,
       alt: "Marks or Misdirection - India's Education System"
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Marks or Misdirection - When Schools Teach Facts, But Hide The Futures",
     description: "93% of Indian students can't name more than 7 career options. The system creates 'qualified confusion'-kids know facts, not futures.",
-    images: ["https://www.mayanksinghal.tech/banner.png"],
+    images: ["https://www.mayanksinghal.tech/banner.webp"],
   },
   keywords: [
     "India Education",

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://www.mayanksinghal.tech/threads/word-of-mouth",
     authors: ["Mayank Singhal"],
     images: [{
-      url: "https://www.mayanksinghal.tech/banner.png",
+      url: "https://www.mayanksinghal.tech/banner.webp",
       width: 1200,
       height: 630,
       alt: "Word of Mouth - India's Job Portal"
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Word of Mouth - India's Real Job Portal",
     description: "LinkedIn isn't India's job portal. Most jobs here start with chai, not a CV.",
-    images: ["https://www.mayanksinghal.tech/banner.png"],
+    images: ["https://www.mayanksinghal.tech/banner.webp"],
   },
   keywords: [
     "India Jobs",

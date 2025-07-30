@@ -10,7 +10,7 @@ export default function WorkspaceSection() {
   const workspaceImages = [
     {
       id: 1,
-      url: "/images/workspace/setup-1.png",
+      url: "/images/workspace/setup-1.webp",
       alt: "My workspace setup",
 
       subcaption: "Dual monitors, mechanical keyboard, and enough RGB",

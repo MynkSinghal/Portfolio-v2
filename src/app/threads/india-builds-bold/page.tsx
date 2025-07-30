@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://www.mayanksinghal.tech/threads/india-builds-bold",
     authors: ["Mayank Singhal"],
     images: [{
-      url: "https://www.mayanksinghal.tech/banner.png",
+      url: "https://www.mayanksinghal.tech/banner.webp",
       width: 1200,
       height: 630,
       alt: "India Builds Bold - Tier-2 City Innovation"
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "India Builds Bold - How Tier-2 cities are eating metro's lunch",
     description: "The next billion-dollar Indian startup isn't in Bangalore or Mumbai. It's brewing in Bhilai, Indore, Surat.",
-    images: ["https://www.mayanksinghal.tech/banner.png"],
+    images: ["https://www.mayanksinghal.tech/banner.webp"],
   },
   keywords: [
     "Tier-2 Cities",

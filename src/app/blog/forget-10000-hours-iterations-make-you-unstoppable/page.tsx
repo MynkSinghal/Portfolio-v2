@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-07-02",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/10000-iterations.jpg"],
+    images: ["/blog-covers/10000-iterations.webp"],
   },
   twitter: {
     card: "summary_large_image",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "🔥 Forget 10,000 Hours - It's 10,000 Iterations That Make You Unstoppable",
     description:
       "You don't get better by clocking in time. You get better by bleeding, failing, shipping, and doing it all over again.",
-    images: ["/blog-covers/10000-iterations.jpg"],
+    images: ["/blog-covers/10000-iterations.webp"],
   },
   keywords: [
     "Skill Development",
@@ -44,7 +44,7 @@ export default function BlogPage() {
       blogSlug="forget-10000-hours-iterations-make-you-unstoppable"
       blogTitle="🔥 Forget 10,000 Hours - It's 10,000 Iterations That Make You Unstoppable"
       publishDate="Jul 2, 2025"
-      coverImage="/blog-covers/10000-iterations.jpg"
+      coverImage="/blog-covers/10000-iterations.webp"
       author="Mayank Singhal"
       readTime="5 min read"
       category="Skill Development"

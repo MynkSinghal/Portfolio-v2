@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-08-20",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/indian-chaiwalas.jpg"],
+    images: ["/blog-covers/indian-chaiwalas.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "☕ Chaiwalas vs Chains: India's Secret Business Superpower",
     description:
       "Ever wonder why your local chaiwala is still thriving-even as Starbucks, McDonald's, and big-name chains pop up on every corner?",
-    images: ["/blog-covers/indian-chaiwalas.jpg"],
+    images: ["/blog-covers/indian-chaiwalas.webp"],
   },
   keywords: [
     "India",
@@ -42,7 +42,7 @@ export default function BlogPage() {
       blogSlug="chaiwalas-and-chainstores-what-india-gets-right"
       blogTitle="☕ Chaiwalas vs Chains: India's Secret Business Superpower"
       publishDate="Aug 20, 2025"
-      coverImage="/blog-covers/indian-chaiwalas.jpg"
+      coverImage="/blog-covers/indian-chaiwalas.webp"
       author="Mayank Singhal"
       readTime="3 min read"
       category="Business & Community"

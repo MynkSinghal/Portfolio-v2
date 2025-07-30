@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-08-06",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/india-logistic.jpg"],
+    images: ["/blog-covers/india-logistic.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "💪 Grit Over Gadgets: How Indian SMEs Win Without Fancy Tech",
     description:
       "What if I told you that some of India's most successful businesses run on WhatsApp, paper ledgers, and pure hustle?",
-    images: ["/blog-covers/india-logistic.jpg"],
+    images: ["/blog-covers/india-logistic.webp"],
   },
   keywords: [
     "SME",
@@ -44,7 +44,7 @@ export default function BlogPage() {
       blogSlug="grit-over-gadgets-indian-smes-win-without-fancy-tech"
       blogTitle="💪 Grit Over Gadgets: How Indian SMEs Win Without Fancy Tech"
       publishDate="Aug 6, 2025"
-      coverImage="/blog-covers/india-logistic.jpg"
+      coverImage="/blog-covers/india-logistic.webp"
       author="Mayank Singhal"
       readTime="4 min read"
       category="Entrepreneurship"

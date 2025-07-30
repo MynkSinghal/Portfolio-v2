@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-07-23",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/minimalist-brand-magic.jpg"],
+    images: ["/blog-covers/minimalist-brand-magic.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "💎 How Minimalist Built a 3,000 Crore Skincare Brand Without Playing the Usual Marketing Game",
     description:
       "Ever feel like every skincare brand is just selling you a story, not a solution?",
-    images: ["/blog-covers/minimalist-brand-magic.jpg"],
+    images: ["/blog-covers/minimalist-brand-magic.webp"],
   },
   keywords: [
     "Minimalist",
@@ -43,7 +43,7 @@ export default function BlogPage() {
       blogSlug="minimalist-3000-crore-skincare-brand-radical-transparency"
       blogTitle="💎 How Minimalist Built a 3,000 Crore Skincare Brand Without Playing the Usual Marketing Game"
       publishDate="Jul 23, 2025"
-      coverImage="/blog-covers/minimalist-brand-magic.jpg"
+      coverImage="/blog-covers/minimalist-brand-magic.webp"
       author="Mayank Singhal"
       readTime="4 min read"
       category="Business & Branding"

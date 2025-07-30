@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-07-09",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/knowledge-application.jpg"],
+    images: ["/blog-covers/knowledge-application.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "🧠 Knowledge Is Cheap - Knowing What to Use? That's the Real Hustle",
     description:
       "In an era where information is infinite, the real power isn't in what you know-it's in knowing what to use and when.",
-    images: ["/blog-covers/knowledge-application.jpg"],
+    images: ["/blog-covers/knowledge-application.webp"],
   },
   keywords: [
     "Knowledge",
@@ -42,7 +42,7 @@ export default function BlogPage() {
       blogSlug="knowledge-is-cheap-knowing-what-to-use-real-hustle"
       blogTitle="🧠 Knowledge Is Cheap - Knowing What to Use? That's the Real Hustle"
       publishDate="Jul 9, 2025"
-      coverImage="/blog-covers/knowledge-application.jpg"
+      coverImage="/blog-covers/knowledge-application.webp"
       author="Mayank Singhal"
       readTime="6 min read"
       category="Learning & Growth"
@@ -58,7 +58,7 @@ export default function BlogPage() {
           author: { "@type": "Person", name: "Mayank Singhal" },
           datePublished: "2025-07-09",
           dateModified: "2025-07-09",
-          image: "/blog-covers/knowledge-application.jpg",
+          image: "/blog-covers/knowledge-application.webp",
           publisher: { "@type": "Person", name: "Mayank Singhal" },
         }) }}
       />

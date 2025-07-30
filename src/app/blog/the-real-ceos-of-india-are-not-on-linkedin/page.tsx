@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-09-03",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/ceo-of-india.jpg"],
+    images: ["/blog-covers/ceo-of-india.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "👑 The Real CEOs of India Don't Post",
     description:
       "Think India's business titans are all on LinkedIn, dropping wisdom and sharing wins? Here's a reality check: the real empire builders are invisible online.",
-    images: ["/blog-covers/ceo-of-india.jpg"],
+    images: ["/blog-covers/ceo-of-india.webp"],
   },
   keywords: [
     "CEOs",
@@ -45,7 +45,7 @@ export default function BlogPage() {
       blogSlug="the-real-ceos-of-india-are-not-on-linkedin"
       blogTitle="👑 The Real CEOs of India Don't Post"
       publishDate="Sep 3, 2025"
-      coverImage="/blog-covers/ceo-of-india.jpg"
+      coverImage="/blog-covers/ceo-of-india.webp"
       author="Mayank Singhal"
       readTime="3 min read"
       category="Leadership & Success"

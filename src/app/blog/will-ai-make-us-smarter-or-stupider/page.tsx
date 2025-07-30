@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-07-16",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/ai-make-dumb.jpg"],
+    images: ["/blog-covers/ai-make-dumb.webp"],
   },
   twitter: {
     card: "summary_large_image",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "🧠 Will AI Make Us Smarter or Stupider? The Truth Nobody Wants to Admit",
     description:
       "Ever wondered if all these AI tools are making you sharper-or just a little lazier?",
-    images: ["/blog-covers/ai-make-dumb.jpg"],
+    images: ["/blog-covers/ai-make-dumb.webp"],
   },
   keywords: [
     "AI",
@@ -44,7 +44,7 @@ export default function BlogPage() {
       blogSlug="will-ai-make-us-smarter-or-stupider"
       blogTitle="🧠 Will AI Make Us Smarter or Stupider? The Truth Nobody Wants to Admit"
       publishDate="Jul 16, 2025"
-      coverImage="/blog-covers/ai-make-dumb.jpg"
+      coverImage="/blog-covers/ai-make-dumb.webp"
       author="Mayank Singhal"
       readTime="4 min read"
       category="AI & Learning"
