@@ -11,10 +11,20 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "26",
+    title: "Second Cities Rising",
+    tagline: "India's real growth story is quietly unfolding in cities like Indore, Surat, and Bhubaneswar.",
+    description: "From diamond exports to clean city rankings, India's second cities are no longer just catching up - they're leading. With cheaper real estate, homegrown talent, and a perfect blend of tradition and ambition, these cities are building a new template of Indian modernity that's changing everything.",
+    author: "Mayank Singhal",
+    slug: "second-cities-rising",
+    href: "/threads/second-cities-rising",
+    published: true,
+  },
+  {
     id: "25",
     title: "Train Ka Tashan",
     tagline: "How the Indian Train Carries More Than Just People",
-    description: "From sleeper class theatrics to pantry car economics, Indian Railways isn't just transport—it's a moving sociology lesson. Every journey is a story of class divides, micro-economies, and unspoken social contracts that keep 1.4 billion people moving on steel tracks.",
+    description: "From sleeper class theatrics to pantry car economics, Indian Railways isn't just transport-it's a moving sociology lesson. Every journey is a story of class divides, micro-economies, and unspoken social contracts that keep 1.4 billion people moving on steel tracks.",
     author: "Mayank Singhal",
     slug: "train-ka-tashan",
     href: "/threads/train-ka-tashan",
