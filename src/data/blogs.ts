@@ -98,7 +98,7 @@ export const blogs: BlogPost[] = [
     slug: "india-logistics-labyrinth-complexity-breeds-resilience",
     href: "/blog/india-logistics-labyrinth-complexity-breeds-resilience",
     coverImage: "/blog-covers/supply-chain-maze-india.webp",
-    published: false,
+    published: true,
   },
   {
     id: "11",
