@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-06-18",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/upi-revolution.jpg"],
+    images: ["/blog-covers/upi-revolution.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "💸 The UPI Revolution: How India Went From Cash to Tap",
     description:
       "From 2 billion to 7.3 billion transactions per month. UPI didn't just digitize payments-it rewired a nation.",
-    images: ["/blog-covers/upi-revolution.jpg"],
+    images: ["/blog-covers/upi-revolution.webp"],
   },
   keywords: [
     "UPI",
@@ -42,7 +42,7 @@ export default function BlogPage() {
       blogSlug="upi-revolution-india-cash-to-tap"
       blogTitle="💸 The UPI Revolution: How India Went From Cash to Tap"
       publishDate="Jun 18, 2025"
-      coverImage="/blog-covers/upi-revolution.jpg"
+      coverImage="/blog-covers/upi-revolution.webp"
       author="Mayank Singhal"
       readTime="4 min read"
       category="Fintech & Digital India"

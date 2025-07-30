@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     canonical: "https://www.mayanksinghal.tech",
   },
   icons: {
-    icon: "/images/logo.png",
-    shortcut: "/images/logo.png",
-    apple: "/images/logo.png",
+    icon: "/images/logo.webp",
+    shortcut: "/images/logo.webp",
+    apple: "/images/logo.webp",
   },
   openGraph: {
     title: "Mayank: Still Shipping Wild Ideas",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.mayanksinghal.tech/banner.png",
+        url: "https://www.mayanksinghal.tech/banner.webp",
         width: 1200,
         height: 630,
         alt: "Mayank Singhal - Building useful things with code and curiosity",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mayank: Still Shipping Wild Ideas",
     description: "Mayank – Modern Tech Creator Portfolio",
-    images: ["https://www.mayanksinghal.tech/banner.png"],
+    images: ["https://www.mayanksinghal.tech/banner.webp"],
     creator: "@mayanksinghal_",
     site: "@mayanksinghal_",
   },
@@ -69,12 +69,12 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${libreCaslonText.variable}`}>
       <head>
         {/* Additional Meta Tags for Global Sharing */}
-        <meta property="og:image" content="https://www.mayanksinghal.tech/banner.png" />
-        <meta property="og:image:secure_url" content="https://www.mayanksinghal.tech/banner.png" />
+        <meta property="og:image" content="https://www.mayanksinghal.tech/banner.webp" />
+        <meta property="og:image:secure_url" content="https://www.mayanksinghal.tech/banner.webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />
-        <meta name="twitter:image" content="https://www.mayanksinghal.tech/banner.png" />
+        <meta name="twitter:image" content="https://www.mayanksinghal.tech/banner.webp" />
         <meta name="twitter:image:alt" content="Mayank Singhal - Building useful things with code and curiosity" />
         <meta property="og:url" content="https://www.mayanksinghal.tech" />
         <meta property="og:type" content="website" />

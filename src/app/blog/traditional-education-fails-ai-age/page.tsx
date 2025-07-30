@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-05-20",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/ai-education.jpg"],
+    images: ["/blog-covers/ai-education.webp"],
   },
   twitter: {
     card: "summary_large_image",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "🎓 The Shifting Sands: Why Traditional Education Fails in the Age of AI",
     description:
       "We're living in an AI-powered world, yet our education system is still stuck in an era of textbooks and standardized tests.",
-    images: ["/blog-covers/ai-education.jpg"],
+    images: ["/blog-covers/ai-education.webp"],
   },
   keywords: [
     "Education",
@@ -44,7 +44,7 @@ export default function BlogPage() {
       blogSlug="traditional-education-fails-ai-age"
       blogTitle="🎓 The Shifting Sands: Why Traditional Education Fails in the Age of AI"
       publishDate="May 20, 2025"
-      coverImage="/blog-covers/ai-education.jpg"
+      coverImage="/blog-covers/ai-education.webp"
       author="Mayank Singhal"
       readTime="3 min read"
       category="Education & AI"
@@ -60,7 +60,7 @@ export default function BlogPage() {
           author: { "@type": "Person", name: "Mayank Singhal" },
           datePublished: "2025-05-20",
           dateModified: "2025-05-20",
-          image: "/blog-covers/ai-education.jpg",
+          image: "/blog-covers/ai-education.webp",
           publisher: { "@type": "Person", name: "Mayank Singhal" },
         }) }}
       />

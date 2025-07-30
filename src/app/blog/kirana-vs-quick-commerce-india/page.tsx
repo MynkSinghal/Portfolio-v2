@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     publishedTime: "2025-06-11",
     authors: ["Mayank Singhal"],
     images: [{
-      url: "https://www.mayanksinghal.tech/blog-covers/kirana-quick-commerce.jpg",
+      url: "https://www.mayanksinghal.tech/blog-covers/kirana-quick-commerce.webp",
       width: 1200,
       height: 630,
       alt: "Kirana vs Quick Commerce: The Battle for India's Retail Soul"
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Kirana vs Quick Commerce: The Battle for India's Retail Soul",
     description:
       "200,000 kirana stores closed in one year. Quick commerce is growing at 48% CAGR. Analysis by Mayank Singhal.",
-    images: ["https://www.mayanksinghal.tech/blog-covers/kirana-quick-commerce.jpg"],
+    images: ["https://www.mayanksinghal.tech/blog-covers/kirana-quick-commerce.webp"],
   },
   keywords: [
     "Kirana Stores",
@@ -48,7 +48,7 @@ export default function BlogPage() {
       blogSlug="kirana-vs-quick-commerce-india"
       blogTitle="🏪 Kirana vs Quick Commerce: The Battle for India's Retail Soul"
       publishDate="Jun 11, 2025"
-      coverImage="/blog-covers/kirana-quick-commerce.jpg"
+      coverImage="/blog-covers/kirana-quick-commerce.webp"
       author="Mayank Singhal"
       readTime="4 min read"
       category="Indian Retail"

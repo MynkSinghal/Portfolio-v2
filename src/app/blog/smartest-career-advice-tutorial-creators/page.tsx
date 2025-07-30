@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-06-01",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/career-advice.jpg"],
+    images: ["/blog-covers/career-advice.webp"],
   },
   twitter: {
     card: "summary_large_image",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "🧠 Why the Smartest Career Advice Rarely Comes From Tutorial Creators",
     description:
       "If everyone's learning the same thing, who's creating the future?",
-    images: ["/blog-covers/career-advice.jpg"],
+    images: ["/blog-covers/career-advice.webp"],
   },
   keywords: [
     "Career Advice",
@@ -43,7 +43,7 @@ export default function BlogPage() {
       blogSlug="smartest-career-advice-tutorial-creators"
       blogTitle="🧠 Why the Smartest Career Advice Rarely Comes From Tutorial Creators"
       publishDate="Jun 1, 2025"
-      coverImage="/blog-covers/career-advice.jpg"
+      coverImage="/blog-covers/career-advice.webp"
       author="Mayank Singhal"
       readTime="3 min read"
       category="Career & AI"

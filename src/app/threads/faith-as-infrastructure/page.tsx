@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://www.mayanksinghal.tech/threads/faith-as-infrastructure",
     authors: ["Mayank Singhal"],
     images: [{
-      url: "https://www.mayanksinghal.tech/banner.png",
+      url: "https://www.mayanksinghal.tech/banner.webp",
       width: 1200,
       height: 630,
       alt: "Faith as Infrastructure - Religious Institutions in India"
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Faith as Infrastructure - How Religious Institutions Power India",
     description: "Temples don't just serve God. They serve 100 million Indians - daily. From langars to ₹10 sabjis, India's real welfare isn't run by the state. It's run by faith.",
-    images: ["https://www.mayanksinghal.tech/banner.png"],
+    images: ["https://www.mayanksinghal.tech/banner.webp"],
   },
   keywords: [
     "Religious Institutions",

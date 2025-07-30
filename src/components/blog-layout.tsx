@@ -40,14 +40,14 @@ export default function BlogLayout({
     },
     datePublished: new Date(publishDate).toISOString(),
     dateModified: new Date(publishDate).toISOString(),
-    image: coverImage ? `https://www.mayanksinghal.tech${coverImage}` : "https://www.mayanksinghal.tech/banner.png",
+    image: coverImage ? `https://www.mayanksinghal.tech${coverImage}` : "https://www.mayanksinghal.tech/banner.webp",
     publisher: {
       "@type": "Person",
       name: "Mayank Singhal",
       url: "https://www.mayanksinghal.tech",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.mayanksinghal.tech/images/logo.png"
+        url: "https://www.mayanksinghal.tech/images/logo.webp"
       }
     },
     mainEntityOfPage: {

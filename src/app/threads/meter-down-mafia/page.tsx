@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://www.mayanksinghal.tech/threads/meter-down-mafia",
     authors: ["Mayank Singhal"],
     images: [{
-      url: "https://www.mayanksinghal.tech/banner.png",
+      url: "https://www.mayanksinghal.tech/banner.webp",
       width: 1200,
       height: 630,
       alt: "Meter Down Mafia - Mumbai Taxi Culture"
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Meter Down Mafia - Why the Meter Down Mafia still owns Mumbai's nostalgia",
     description: "Mumbai's Kaali Peeli taxis didn't need GPS, apps, or a startup pitch deck. They ran the city with pure memory, street hacks, and swagger.",
-    images: ["https://www.mayanksinghal.tech/banner.png"],
+    images: ["https://www.mayanksinghal.tech/banner.webp"],
   },
   keywords: [
     "Mumbai Taxis",

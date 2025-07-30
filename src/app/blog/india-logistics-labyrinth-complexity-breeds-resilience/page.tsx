@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-07-30",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/supply-chain-maze-india.jpg"],
+    images: ["/blog-covers/supply-chain-maze-india.webp"],
   },
   twitter: {
     card: "summary_large_image",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "🚛 India's Logistics Labyrinth: Why Complexity Breeds Resilience (and Opportunity)",
     description:
       "Ever wondered how a single parcel can travel from a Himalayan village to a Mumbai skyscraper-without getting lost in the chaos?",
-    images: ["/blog-covers/supply-chain-maze-india.jpg"],
+    images: ["/blog-covers/supply-chain-maze-india.webp"],
   },
   keywords: [
     "India",
@@ -46,7 +46,7 @@ export default function BlogPage() {
       blogSlug="india-logistics-labyrinth-complexity-breeds-resilience"
       blogTitle="🚛 India's Logistics Labyrinth: Why Complexity Breeds Resilience (and Opportunity)"
       publishDate="Jul 30, 2025"
-      coverImage="/blog-covers/supply-chain-maze-india.jpg"
+      coverImage="/blog-covers/supply-chain-maze-india.webp"
       author="Mayank Singhal"
       readTime="4 min read"
       category="Infrastructure"

@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-08-27",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/indian-slack-channel.jpg"],
+    images: ["/blog-covers/indian-slack-channel.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "📞 Real Operations Don't Happen on Slack: Why India's Business OS Runs on Calls, Paper, and Jugaad",
     description:
       "Ever tried running a business in India only with Slack, dashboards, and endless apps? Good luck.",
-    images: ["/blog-covers/indian-slack-channel.jpg"],
+    images: ["/blog-covers/indian-slack-channel.webp"],
   },
   keywords: [
     "India",
@@ -43,7 +43,7 @@ export default function BlogPage() {
       blogSlug="real-operations-dont-happen-on-slack-indian-edition"
       blogTitle="📞 Real Operations Don't Happen on Slack: Why India's Business OS Runs on Calls, Paper, and Jugaad"
       publishDate="Aug 27, 2025"
-      coverImage="/blog-covers/indian-slack-channel.jpg"
+      coverImage="/blog-covers/indian-slack-channel.webp"
       author="Mayank Singhal"
       readTime="4 min read"
       category="Business Operations"

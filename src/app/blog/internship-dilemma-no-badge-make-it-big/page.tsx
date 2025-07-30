@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2025-06-25",
     authors: ["Mayank Singhal"],
-    images: ["/blog-covers/internship-dilemma.jpg"],
+    images: ["/blog-covers/internship-dilemma.webp"],
   },
   twitter: {
     card: "summary_large_image",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "🎯 The Internship Dilemma: Why You Don't Need a Fancy Badge to Make It Big",
     description:
       "No internship? No problem. The game isn't over - it's just getting interesting.",
-    images: ["/blog-covers/internship-dilemma.jpg"],
+    images: ["/blog-covers/internship-dilemma.webp"],
   },
   keywords: [
     "Internships",
@@ -43,7 +43,7 @@ export default function BlogPage() {
       blogSlug="internship-dilemma-no-badge-make-it-big"
       blogTitle="🎯 The Internship Dilemma: Why You Don't Need a Fancy Badge to Make It Big"
       publishDate="Jun 25, 2025"
-      coverImage="/blog-covers/internship-dilemma.jpg"
+      coverImage="/blog-covers/internship-dilemma.webp"
       author="Mayank Singhal"
       readTime="5 min read"
       category="Career"
