@@ -11,6 +11,16 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "27",
+    title: "India's OG Welfare",
+    tagline: "Before NGOs and UPI, India had bhandaras. No Aadhaar, no agenda, just garam khana and quiet dignity.",
+    description: "From temples to gurudwaras, India's traditional food-sharing systems have been quietly feeding millions without paperwork or prejudice. This decentralized welfare network, powered by faith and community, shows how ancient practices might hold solutions to modern challenges.",
+    author: "Mayank Singhal",
+    slug: "indias-og-welfare",
+    href: "/threads/indias-og-welfare",
+    published: true,
+  },
+  {
     id: "26",
     title: "Second Cities Rising",
     tagline: "India's real growth story is quietly unfolding in cities like Indore, Surat, and Bhubaneswar.",
