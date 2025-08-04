@@ -3,6 +3,8 @@ import ContactSection from "@/components/contact-section";
 import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
 import JourneySection from "@/components/journey-section";
+import ExperienceSection from "@/components/experience-section";
+import SkillsSection from "@/components/skills-section";
 import ProjectsSection from "@/components/projects-section";
 import QuickNavSection from "@/components/quick-nav-section";
 import QuotesSection from "@/components/quotes-section";
@@ -19,13 +21,13 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <QuickNavSection />
+        <ExperienceSection />
+        <SkillsSection />
         <JourneySection />
-        <WorkspaceSection />
         <ProjectsSection />
         <BlogsSection />
         <ThreadsSection />
         <QuotesSection />
-        <TimelineSection />
         <SocialLinksSection />
         <ContactSection />
       </main>

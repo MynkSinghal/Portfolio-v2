@@ -1,4 +1,7 @@
+"use client";
+
 import { parseText } from "@/lib/text-parser";
+import CollapsibleSection from "./CollapsibleSection";
 
 export default function JourneySection() {
   return (
@@ -15,11 +18,11 @@ export default function JourneySection() {
 
         <div className="space-y-12 text-foreground/90">
           {/* Level One */}
-          <div className="border-l-4 border-blue-500/30 pl-6">
-            <h3 className="text-lg md:text-xl font-bold mb-6 text-foreground">
-              🎮 {parseText("<bold>Level One: Where It All Began</bold>")}
-            </h3>
-
+          <CollapsibleSection 
+            title="Level One: Where It All Began" 
+            emoji="🎮"
+            borderColor="border-blue-500/30"
+          >
             <div className="space-y-4">
               <p className="text-base md:text-lg leading-relaxed">
                 Picture this: it's 2019, lockdown hits, and 15-year-old me
@@ -50,15 +53,14 @@ export default function JourneySection() {
                 </p>
               </blockquote>
             </div>
-          </div>
+          </CollapsibleSection>
 
           {/* Level Two */}
-          <div className="border-l-4 border-green-500/30 pl-6">
-            <h3 className="text-lg md:text-xl font-bold mb-6 text-foreground">
-              🚀{" "}
-              {parseText("<bold>Made It Look Cool. Made It Make Money.</bold>")}
-            </h3>
-
+          <CollapsibleSection 
+            title="Made It Look Cool. Made It Make Money." 
+            emoji="🚀"
+            borderColor="border-green-500/30"
+          >
             <div className="space-y-4">
               <p className="text-base md:text-lg leading-relaxed">
                 Next stop: {parseText("<bold>LaVisuals</bold>")} — a global
@@ -109,14 +111,14 @@ export default function JourneySection() {
                 vibe.
               </p>
             </div>
-          </div>
+          </CollapsibleSection>
 
           {/* Level Three */}
-          <div className="border-l-4 border-purple-500/30 pl-6">
-            <h3 className="text-lg md:text-xl font-bold mb-6 text-foreground">
-              🎯 {parseText("<bold>Chaos, Crashes & Comebacks</bold>")}
-            </h3>
-
+          <CollapsibleSection 
+            title="Chaos, Crashes & Comebacks" 
+            emoji="🎯"
+            borderColor="border-purple-500/30"
+          >
             <div className="space-y-4">
               <p className="text-base md:text-lg leading-relaxed">
                 Tried a bit of everything — and I mean{" "}
@@ -150,9 +152,7 @@ export default function JourneySection() {
                 {parseText("<bold>Took some L's, Took some learning...</bold>")}
               </p>
             </div>
-          </div>
-
-          {/* Current Status */}
+          </CollapsibleSection>
         </div>
       </div>
     </section>

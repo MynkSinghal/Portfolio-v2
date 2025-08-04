@@ -143,4 +143,42 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none; /* WebKit */
   }
+
+  /* Marquee Animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .marquee-container {
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+  }
+
+  .marquee-container:hover {
+    animation-play-state: paused;
+  }
+
+  /* Floating Animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .floating-cta {
+    animation: float 3s ease-in-out infinite;
+  }
 }

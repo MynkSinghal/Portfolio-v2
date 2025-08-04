@@ -1,3 +1,5 @@
+"use client";
+
 import { parseText } from "@/lib/text-parser";
 
 export default function HeroSection() {
@@ -57,16 +59,15 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* The Kicker */}
-        <div className="border-l-2 border-foreground/20 pl-6">
-          <p className="text-lg md:text-xl leading-relaxed text-foreground/80 mb-3">
-            {parseText(
-              'From earning real cash before knowing what a "startup" was, to helping others turn their <bold>weird ideas</bold> into working stuff.',
-            )}
-          </p>
-          <p className="text-sm text-foreground/50 italic">
-            *Plot twist: The weird ideas are usually the best ones
-          </p>
+        {/* Professional Summary */}
+        <div className="mb-8">
+          <div className="border-l-2 border-foreground/20 pl-6">
+            <p className="text-lg md:text-xl leading-relaxed text-foreground/80 mb-3">
+              {parseText(
+                'Computer Science student with hands-on experience in <bold>AI/ML</bold> and <bold>full-stack development</bold>. Building impactful systems using ML, cloud infrastructure, and modern web technologies.',
+              )}
+            </p>
+          </div>
         </div>
       </div>
     </section>
