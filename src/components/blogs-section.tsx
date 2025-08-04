@@ -153,7 +153,7 @@ export default function BlogsSection() {
             <div className="flex items-center justify-between">
               <p className="text-base text-foreground/60 italic">
                 {parseText(
-                  "(thoughts, experiments, and <italic>occasional wisdom</italic>)",
+                  "(thoughts and <italic>occasional wisdom</italic>)",
                 )}
               </p>
               <Link

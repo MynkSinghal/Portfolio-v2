@@ -33,13 +33,13 @@ export default function TimelineItem({
       >
         {/* Company Logo and Info */}
         <div className="flex items-start gap-4 mb-4">
-          <div className="relative w-14 h-14 rounded-full overflow-hidden bg-[#f0f6ff] border-2 border-[#e1e8f0] flex items-center justify-center">
+          <div className="relative w-14 h-14 rounded-full overflow-hidden bg-[#f0f6ff] border-2 border-[#e1e8f0]">
             <Image
               src={logo}
               alt={`${company} logo`}
-              width={48}
-              height={48}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              style={{ objectPosition: 'center' }}
             />
           </div>
           <div>

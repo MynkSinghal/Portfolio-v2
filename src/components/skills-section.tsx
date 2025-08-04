@@ -63,13 +63,12 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section className="py-12 md:py-16 lg:py-24 pb-6 md:pb-8 lg:pb-10" id="skills">
+    <section className="py-16" id="skills">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <div className="mb-8">
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 tracking-tight uppercase">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight uppercase">
             Skills and Tools
           </h2>
-          
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -93,13 +92,9 @@ export default function SkillsSection() {
 
               <div className="grid grid-cols-2 gap-3">
                 {category.skills.map((skill, index) => (
-                  <motion.div
+                  <div
                     key={skill.name}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.2, delay: index * 0.05 }}
-                    viewport={{ once: true }}
-                    className="flex items-center gap-2 bg-white/80 rounded-lg p-2.5 hover:bg-white hover:shadow-sm transition-all duration-200"
+                    className="flex items-center gap-2 bg-white/80 rounded-lg p-2.5 hover:bg-white hover:shadow-sm transition-colors duration-200"
                   >
                     <div className="relative w-8 h-8 flex items-center justify-center">
                       <Image
@@ -113,7 +108,7 @@ export default function SkillsSection() {
                     <span className="text-base text-foreground/80 group-hover:text-foreground transition-colors duration-200">
                       {skill.name}
                     </span>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </motion.div>
