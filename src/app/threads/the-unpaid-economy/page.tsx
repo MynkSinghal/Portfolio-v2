@@ -48,7 +48,7 @@ Here's how unpaid labor keeps the country moving, and why it's time we see it fo
 
 #UnpaidLabor #GenderEconomy #WomenInIndia  #WomensWork
 
-(🧵1/n)
+(1/n)
 
 She wakes before everyone. Sleeps after.
 

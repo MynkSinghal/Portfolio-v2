@@ -51,7 +51,7 @@ Let's unpack the real education gap nobody talks about.
 
 #IndianEducation #CareerGuidance #EducationMatters  #IndiaUntold
 
-(🧵1/n)
+(1/n)
 
 🎯 You're 15. You pick Science, Commerce, or Arts.
 
