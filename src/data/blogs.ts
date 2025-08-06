@@ -83,7 +83,7 @@ export const blogs: BlogPost[] = [
     slug: "grit-over-gadgets-indian-smes-win-without-fancy-tech",
     href: "/blog/grit-over-gadgets-indian-smes-win-without-fancy-tech",
     coverImage: "/blog-covers/india-logistic.webp",
-    published: false,
+    published: true,
   },
   {
     id: "12",
