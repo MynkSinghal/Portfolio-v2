@@ -11,6 +11,16 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "28",
+    title: "Retail Without Receipts",
+    tagline: "It's more than just shopping; it's the chaotic, vibrant, and essential social ritual of every Sunday.",
+    description: "From Mangal Bazaar to Shani Bazaar, India's weekly street markets aren't just retail spaces - they're social theaters where bargaining is an art, trust is currency, and community trumps convenience. While apps promise 10-minute delivery, these bazaars deliver something more valuable: authentic human connection.",
+    author: "Mayank Singhal",
+    slug: "retail-without-receipts",
+    href: "/threads/retail-without-receipts",
+    published: true,
+  },
+  {
     id: "27",
     title: "India's OG Welfare",
     tagline: "Before NGOs and UPI, India had bhandaras. No Aadhaar, no agenda, just garam khana and quiet dignity.",
