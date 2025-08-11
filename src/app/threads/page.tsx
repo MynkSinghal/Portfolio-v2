@@ -1,14 +1,13 @@
 import { getAllThreads } from "@/data/threads";
 import ThreadCard from "@/components/ThreadCard";
 import Link from "next/link";
-import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export default function AllThreadsPage() {
   const threads = getAllThreads();
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
       <main className="flex-grow">
         <div className="container mx-auto px-4 py-8 md:py-12 max-w-7xl">
           {/* Back navigation */}
@@ -57,6 +56,7 @@ export default function AllThreadsPage() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 } 

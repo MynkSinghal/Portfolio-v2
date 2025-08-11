@@ -201,9 +201,9 @@ export default function BlogsSection() {
                     isVisible
                       ? "opacity-100 translate-y-0"
                       : "opacity-0 translate-y-12"
-                  }`}
+                  } sr ${isVisible ? 'sr-in' : ''}`}
                   style={{
-                    transitionDelay: `${index * 150}ms`,
+                    transitionDelay: `${index * 120}ms`,
                   }}
                 >
                   <BlogCard blog={blog} />

@@ -213,6 +213,7 @@ export default function ProjectsSection() {
 
   return (
     <section
+      id="projects"
       className="py-12 md:py-16 lg:py-24 pb-6 md:pb-8 lg:pb-10"
       data-section="projects"
     >
@@ -227,9 +228,7 @@ export default function ProjectsSection() {
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 tracking-tight uppercase">
               Things I&apos;ve Built
             </h2>
-            <p className="text-base text-foreground/60 italic">
-              (and somehow didn't break)
-            </p>
+            
           </div>
         </div>
 
@@ -249,18 +248,19 @@ export default function ProjectsSection() {
               .map((project, index) => (
               <div
                 key={project.id}
-                className={`flex-none w-[80%] md:w-[45%] lg:w-[30%] snap-start transition-all duration-700 ease-out ${
+                  className={`flex-none w-[80%] md:w-[45%] lg:w-[30%] snap-start transition-all duration-700 ease-out ${
                   isVisible
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-12"
-                }`}
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-12"
+                  } sr ${isVisible ? 'sr-in' : ''}`}
                 style={{
                   transitionDelay: `${index * 150}ms`,
                 }}
               >
-                <div className="bg-[#f2f2f2] p-6 rounded-lg hover:shadow-lg hover:shadow-black/5 hover:-translate-y-1 transition-all duration-300 ease-out h-full group">
+                <div className="relative p-6 rounded-2xl hover:shadow-xl hover:shadow-black/5 hover:-translate-y-1 transition-all duration-300 ease-out h-full group border border-foreground/10 bg-white/60 backdrop-blur-sm overflow-hidden tilt">
+                  {/* Removed grid overlay as requested */}
                   {/* Screenshot Container */}
-                  <div className="h-48 w-full mb-6 bg-[#f5f5f5] rounded-md overflow-hidden border">
+                   <div className="h-48 w-full mb-6 bg-[#f5f5f5] rounded-xl overflow-hidden border border-foreground/10">
                     <img
                       src={project.screenshot}
                       alt={`${project.title} Screenshot`}
@@ -268,10 +268,13 @@ export default function ProjectsSection() {
                       onError={(e) => {
                         // Fallback to placeholder if image doesn't exist
                         e.currentTarget.style.display = 'none';
-                        e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                        const fallback = e.currentTarget.nextElementSibling as HTMLElement | null;
+                        if (fallback) {
+                          fallback.style.display = 'flex';
+                        }
                       }}
                     />
-                    <div className="w-full h-full flex items-center justify-center text-foreground/40 text-sm hidden">
+                    <div className="w-full h-full items-center justify-center text-foreground/40 text-sm" style={{ display: 'none' }}>
                       Screenshot coming soon
                     </div>
                   </div>
@@ -305,7 +308,7 @@ export default function ProjectsSection() {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full bg-foreground/80 hover:bg-foreground text-white text-sm py-3 px-4 rounded-md transition-all duration-200 hover:scale-105 font-medium text-center block"
+                        className="w-full bg-foreground/90 hover:bg-foreground text-white text-sm py-3 px-4 rounded-xl transition-all duration-200 hover:scale-105 font-medium text-center block"
                       >
                         🚀 Visit Project
                       </a>

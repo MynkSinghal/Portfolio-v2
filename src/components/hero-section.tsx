@@ -1,14 +1,69 @@
 "use client";
 
 import { parseText } from "@/lib/text-parser";
+import { useEffect, useRef, useState } from "react";
 
 export default function HeroSection() {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [mouse, setMouse] = useState({ x: 0, y: 0 });
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const onMouseMove = (e: MouseEvent) => {
+      if (!containerRef.current) return;
+      const rect = containerRef.current.getBoundingClientRect();
+      setMouse({ x: e.clientX - rect.left - rect.width / 2, y: e.clientY - rect.top - 200 });
+    };
+    const onScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   return (
-    <section className="py-12 md:py-16 lg:py-24 pt-10 md:pt-16 lg:pt-20 pb-6 md:pb-8 lg:pb-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+    <section className="relative py-12 md:py-16 lg:py-24 pt-10 md:pt-16 lg:pt-20 pb-6 md:pb-8 lg:pb-12 overflow-hidden">
+      {/* Parallax auras */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10"
+      >
+        <div
+          className="absolute left-1/2 top-10 -translate-x-1/2 w-[800px] h-[800px] rounded-full opacity-[0.25] blur-3xl"
+          style={{
+            background:
+              "radial-gradient(closest-side, rgba(25,182,243,0.25), rgba(25,182,243,0)_70%)",
+            transform: `translate(-50%, ${Math.min(scrollY * 0.15, 80)}px)`
+          }}
+        />
+        <div
+          className="absolute right-[-200px] top-[120px] w-[520px] h-[520px] rounded-full opacity-[0.18] blur-2xl"
+          style={{
+            background:
+              "radial-gradient(closest-side, rgba(144,97,249,0.25), rgba(144,97,249,0)_70%)",
+            transform: `translate(${mouse.x * 0.03}px, ${mouse.y * 0.03}px)`
+          }}
+        />
+      </div>
+
+      <div ref={containerRef} className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        {/* Top-right Resume CTA */}
+        <div className="flex justify-end">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative inline-flex items-center rounded-full px-5 py-2 text-sm font-medium text-foreground/90 hover:text-foreground transition-colors bg-white/60 backdrop-blur-md border border-foreground/10 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
+          >
+            <span className="absolute -inset-[1px] rounded-full bg-[linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0)_40%),linear-gradient(120deg,rgba(0,0,0,0.08),rgba(0,0,0,0)_30%)] opacity-70" aria-hidden />
+            <span className="relative">Resume</span>
+          </a>
+        </div>
         {/* Main Hook - Big and Bold */}
         <div className="mb-8">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight leading-tight flex items-center gap-3">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight leading-tight flex items-center gap-3 font-libre-caslon">
             Hey, I'm {parseText("<bold>Mayank</bold>")}
             <img
               src="/hi.gif"
@@ -30,6 +85,9 @@ export default function HeroSection() {
             — and somehow make it work
           </p>
         </div>
+
+        {/* Inline primary actions */}
+        
 
         {/* Status Updates */}
         <div className="space-y-3 mb-8">

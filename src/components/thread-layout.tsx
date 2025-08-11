@@ -1,5 +1,4 @@
 import Footer from "./footer";
-import Header from "./header";
 import Link from "next/link";
 
 interface ThreadLayoutProps {
@@ -43,7 +42,6 @@ export default function ThreadLayout({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Header />
       <main className="flex-grow">
         <div className="container mx-auto px-4 py-8 md:py-12 max-w-4xl">
           {/* Back navigation */}

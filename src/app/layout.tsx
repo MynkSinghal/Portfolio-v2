@@ -97,7 +97,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
         {/* End Google Tag Manager */}
       </head>
-      <body suppressHydrationWarning className="antialiased">
+      <body suppressHydrationWarning className="antialiased bg-[radial-gradient(1200px_800px_at_50%_-10%,rgba(25,182,243,0.08),transparent_60%),radial-gradient(1000px_700px_at_100%_10%,rgba(144,97,249,0.06),transparent_50%)]">
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

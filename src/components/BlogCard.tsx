@@ -18,7 +18,8 @@ export default function BlogCard({ blog }: BlogCardProps) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative bg-[#f8f8f8] dark:bg-[#1a1a1a] rounded-xl hover:shadow-xl hover:shadow-black/5 hover:-translate-y-1 transition-all duration-300 ease-out h-full border border-foreground/5 overflow-hidden group flex flex-col">
+      <div className="relative rounded-2xl hover:shadow-xl hover:shadow-black/5 hover:-translate-y-1 transition-all duration-300 ease-out h-full border border-foreground/10 overflow-hidden group flex flex-col bg-white/60 backdrop-blur-sm tilt">
+        {/* Removed grid overlay as requested */}
         {/* Accent line that animates on hover */}
         <div 
           className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-foreground/30 via-foreground/20 to-transparent transform origin-left transition-transform duration-500 ease-out ${
