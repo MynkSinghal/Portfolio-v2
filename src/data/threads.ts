@@ -11,6 +11,17 @@ export interface Thread {
 
 export const threads: Thread[] = [
   {
+    id: "29",
+    title: "Indian Hospitality Script",
+    tagline: "Why we overfeed, insist, gift, and refuse before accepting.",
+    description:
+      "Why we overfeed, insist, gift, and refuse before accepting. The social contract behind warmth.",
+    author: "Mayank Singhal",
+    slug: "indian-hospitality-script",
+    href: "/threads/indian-hospitality-script",
+    published: true,
+  },
+  {
     id: "28",
     title: "Retail Without Receipts",
     tagline: "It's more than just shopping; it's the chaotic, vibrant, and essential social ritual of every Sunday.",
