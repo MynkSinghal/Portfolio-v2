@@ -1,7 +1,3 @@
-Absolutely. Here's a Baithak-style Twitter thread on the topic: “Bhandaras: India’s Oldest Social Safety Net”, following your exact playbook:
-
-
-
 🔥 Before welfare schemes, before UPI, before NGOs…
 India had the bhandara.
 No paperwork. No ID. No judgment.
@@ -10,7 +6,7 @@ Just sit. Eat. Breathe.
 The OG social support system hidden in plain sight.
 Let’s break it down 👇
 
-(🧵1/n)
+(1/n)
 
 ---
 
